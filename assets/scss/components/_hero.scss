@@ -1,6 +1,26 @@
-.hc-hero {
-  padding: 32px;
-  padding-top: 200px;
-  padding-bottom: 200px;
-  background-size: cover;
+.hero {
+
+  &__top {
+    background-color: $color-red;
+    display: flex;
+    flex-direction: column;
+    height: 450px;
+    h1, p {
+      text-align: center;
+      color: $color-white;
+    }
+    .btn-wrapper {
+      text-align: center;
+      a {
+        color: $color-white;
+      }
+    }
+
+  }
+  &__bottom {
+    img {
+      background-size: 100% 100%;
+    }
+  }
+
 }
