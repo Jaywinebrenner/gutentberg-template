@@ -45,6 +45,7 @@
     .desktop-image {
       height: 450px;
       object-fit: cover;
+      width: 100%;
       @media(max-width: 700px){
         display: none;
       }
