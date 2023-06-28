@@ -7,20 +7,33 @@
   line-height: 50px;
   border: 1px solid $color-licorice;
   border-radius: 50px;
+  @media(max-width: $bp-small){
+    font-size: 0.875rem;
+  }
   &:hover {
     background-color: $color-licorice;
     color: $color-linen!important;
     cursor: pointer;
   }
-  &_1 {
+  &_white {
     @extend .btn;
-    color: $white;
-    background-color: $color-licorice;
-    border: 1px solid $color-licorice;
-    font-weight: 100;
+    color: $color-linen;
+    border: 1px solid $color-linen;
     &:hover {
-      opacity: 0.8;
-      color: $color-linen;
+      background-color: $color-linen;
+      color: $color-red!important;
+      border: 1px solid $color-red;
+      cursor: pointer;
+    }
+  }
+  &_red {
+    @extend .btn;
+    color: $color-red;
+    border: 1px solid $color-red;
+    &:hover {
+      background-color: $color-red;
+      color: $color-linen!important;
+      border: 1px solid $color-red;
       cursor: pointer;
     }
   }

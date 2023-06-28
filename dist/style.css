@@ -85,22 +85,21 @@ h1.hero,
 
 h2,
 .h2 {
-  font-size: 3.5rem;
+  font-size: 4rem;
   line-height: 4.25rem;
   font-weight: 400;
 }
 @media (max-width: 800px) {
   h2,
   .h2 {
-    font-size: 2rem;
     line-height: 2.375rem;
+    font-size: 1.75rem;
   }
 }
 
 h3,
 .h3 {
   font-weight: 300;
-  font-size: 2.25rem;
   line-height: normal;
   margin-bottom: 1.25rem;
   font-size: 2.5rem;
@@ -277,7 +276,7 @@ hr {
   }
 }
 
-.btn, .btn_1 {
+.btn, .btn_red, .btn_white {
   text-transform: uppercase;
   padding: 0.5rem 1.3125rem;
   letter-spacing: 1.4px;
@@ -287,20 +286,34 @@ hr {
   border: 1px solid #1D0800;
   border-radius: 50px;
 }
-.btn:hover, .btn_1:hover {
+@media (max-width: 800px) {
+  .btn, .btn_red, .btn_white {
+    font-size: 0.875rem;
+  }
+}
+.btn:hover, .btn_red:hover, .btn_white:hover {
   background-color: #1D0800;
   color: #F7F4F0 !important;
   cursor: pointer;
 }
-.btn_1 {
-  color: #FFFFFF;
-  background-color: #1D0800;
-  border: 1px solid #1D0800;
-  font-weight: 100;
-}
-.btn_1:hover {
-  opacity: 0.8;
+.btn_white {
   color: #F7F4F0;
+  border: 1px solid #F7F4F0;
+}
+.btn_white:hover {
+  background-color: #F7F4F0;
+  color: #D64936 !important;
+  border: 1px solid #D64936;
+  cursor: pointer;
+}
+.btn_red {
+  color: #D64936;
+  border: 1px solid #D64936;
+}
+.btn_red:hover {
+  background-color: #D64936;
+  color: #F7F4F0 !important;
+  border: 1px solid #D64936;
   cursor: pointer;
 }
 
@@ -599,6 +612,7 @@ Component
 .hero {
   position: relative;
   background-color: #F7F4F0;
+  background-color: lightblue;
 }
 @media (min-width: 1400px) {
   .hero .hero-container {
