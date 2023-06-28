@@ -1,133 +1,229 @@
-@import 'fonts';
-
-//FONTS
-$sans: 'Helvetica', sans-serif;
-$title: 'Helvetica', sans-serif;
 
 
-/* =Typographical Mixins/Functions
--------------------------------------------------------------- */
+html,
+button {
+  font-family: $body;
+  font-size: clamp(1px, .9vw, 19px);
+  color: $color-licorice;
 
-//SIZING
-$font-min : 16px;
-$font-min-int : 16;
-
-$font-max : 18px;
-$font-max-int : 18;
-
-$view-min : 600px;
-$view-min-int : 600;
-$view-max : 1500;
-
-html {
-  font-size: calc(#{$font-min} + (#{$font-max-int} - #{$font-min-int}) * ((100vw - #{$view-min}) / (#{$view-max} - #{$view-min-int})));
-}
-h1, h2, h3, h4, h5, h6 {
-    clear: both;
-    float: none;
-    line-height: 1.25em;
-    margin: 0;
-}
-h1, .h1 {
-    font-size: 2.4em;
-    font-family: $title;
-    letter-spacing: 2.5px;
-    font-weight: 500;
-    text-transform: uppercase;
-}
-h2, .h2 {
-    font-size: 1.8em;
-    font-family: $title;
-    font-weight: 500;
-}
-h3, .h3 {
-    font-size: 1.4em;
-    font-family: $sans;
-    font-weight: 100;
-}
-h4, .h4 {
-    font-size: .7em;
-    font-family: $title;
-    text-transform: uppercase;
-}
-h5, .h5 {
-    font-size: .7em;
-    font-family: $sans;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-}
-h6, .h6 {
-    font-size: .9em;
-    font-family: $title;
-}
-p, i, strong {
-  font-size: .9em;
-  font-family: $sans;
-  line-height: 28px;
-}
-blockquote {
-    background-color: darken($base-body-color, 3%);
-    font-style: italic;
-    padding: 20px;
-}
-cite {
-    font-style: italic;
-}
-strong, b {
-    color: $primary-font-color;
-    font-family: $title;
-}
-a {
-  color: $primary-font-color;
-  text-decoration: none;
-  font-size: .7em;
-  font-family: $sans;
-  transition: all 400ms;
-  &:hover {
+  @media (max-width: $bp-small) {
+    font-size: clamp(14px, 1vw, 1000vw);
   }
 }
 
-li {
-  list-style: none;
-  font-size: .9em;
-  margin-bottom: 10px;
-  font-family: $sans;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  clear: both;
+  float: none;
+  margin: 0;
+  font-family: $header;
+  // text-transform: uppercase;
+}
+
+h1,
+.h1 {
+  font-style: normal;
+  font-size: 5rem;
+  line-height: 111%;
+  font-weight: $regular;
+  margin-bottom: 1rem;
+
+  @media (max-width: $bp-small) {
+    font-size: 2.25rem;
+    margin-bottom: 2.5625rem;
+  }
+
+  &.hero {
+    font-size: 8.75rem;
+    line-height: 9.625rem;
+
+    @media (max-width: $bp-small) {
+      font-size: 2.625rem;
+      line-height: 3rem;
+    }
+  }
+}
+h2,
+.h2 {
+  font-size: 3.5rem;
+  line-height: 4.25rem;
+  font-weight: $semi;
+
+  @media (max-width: $bp-small) {
+    font-size: 2rem;
+    line-height: 2.375rem;
+  }
+}
+h3,
+.h3 {
+  font-weight: $regular;
+  font-size: 2.25rem;
+  line-height: normal;
+  margin-bottom: 1.25rem;
+
+  font-size: 2.5rem;
+  font-family: "Inter";
+  line-height: 128%;
+
+  @media (max-width: $bp-small) {
+    font-size: 1.5rem;
+    line-height: normal;
+  }
+}
+h4,
+.h4 {
+  font-weight: $regular;
+  margin-bottom: 20px;
+  font-size: 2rem;
+  font-family: "Inter";
+  line-height: 125.5%;
+
+  @media (max-width: $bp-small) {
+    font-size: 1.25rem;
+  }
+}
+h5,
+.h5 {
+  margin-bottom: 1.25rem;
+
+  font-size: 1.3125rem;
+  font-family: "Inter";
+  font-weight: $bold;
+  line-height: 143.023%;
+
+  @media (max-width: $bp-small) {
+    font-size: 0.875rem;
+  }
+}
+
+h6,
+.h6 {
+  font-size: 1rem;
+  font-family: "Inter";
+  font-weight: 700;
+  line-height: 135.023%;
+  letter-spacing: 0.045rem;
+  text-transform: uppercase;
+  color: $color-red;
+
+  @media (max-width: $bp-small) {
+    font-size: 0.875rem;
+  }
+}
+
+p,
+i,
+strong {
+  font-size: 1.25rem;
+  font-weight: $regular;
+  line-height: 150%;
+
+  @media (max-width: $bp-small) {
+    font-size: 1rem;
+  }
+}
+
+p {
+  margin: 0;
+  margin-bottom: 18px;
+
+  &.major {
+    font-size: 1.813rem;
+    line-height: 150%;
+
+    @media (max-width: $bp-small) {
+      font-size: 1.188rem;
+    }
+  }
+
+  &.minor {
+    font-size: 1rem;
+    font-family: "Inter";
+    line-height: 135.023%;
+    letter-spacing: 0.045rem;
+
+    @media (max-width: $bp-small) {
+      font-size: 0.875rem;
+    }
+  }
+}
+
+strong,
+b {
+  font-weight: $bold;
+}
+
+button,
+a {
+  font-weight: $semi;
+  text-decoration: none;
+  transition: all 100ms;
+}
+
+a {
+  color: $color-licorice;
+}
+a:not(.button):visited {
+  color: $color-licorice;
 }
 
 ul {
-  padding: 0;
+  padding-left: 20px;
+}
+
+li {
+  list-style-type: none;
+  font-weight: $regular;
+}
+
+li {
+  font-size: 1.375rem;
+  font-weight: $regular;
+  line-height: 150%;
+  margin-bottom: 16px;
+
+  @media (max-width: $bp-small) {
+    font-size: 1rem;
+  }
+}
+
+ul {
+  margin: 0;
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid #182b3e;
+  opacity: 0.25;
+}
+
+.marker-underline {
+  display: inline;
+  white-space: nowrap;
+  position: relative;
+  z-index: 1;
+
+  &:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: -1rem;
+    right: -1rem;
+    z-index: -1;
+    width: calc(100% + 2rem);
+    height: 3rem;
+    // background-image: url('/images/marker-highlight.png');
+    background-size: 100% 75%;
+    background-repeat: no-repeat;
+
+    @media(max-width: $bp-small) {
+      bottom: -1.2rem;
+    }
+  }
 }
 
 
-form {
-  display: flex;
-  flex-direction: column;
-}
-label {
-  font-size: .9em;
-  font-family: $sans;
-  margin-bottom: 10px;
-}
-input, input::placeholder, textarea, textarea::placeholder {
-  font-size: .9em;
-  font-family: $sans;
-  margin-bottom: 20px;
-  // padding: 7px;
-  line-height: 28px;
-  font-weight: 100;
-  text-transform: uppercase;
-  color: $grey;
-}
-
-textarea, input, button { outline: none; }
-
-textarea, input {
-  border: 1px solid $grey;
-  padding: 5px;
-  padding-left: 0;
-  padding-right: 0;
-}
-
-textarea:focus, input:focus {
-  border: 1px solid $black;
-}

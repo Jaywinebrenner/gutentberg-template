@@ -1,19 +1,26 @@
 .btn {
   text-transform: uppercase;
-  padding: 20px 30px;
+  padding: 0.5rem 1.3125rem;
   letter-spacing: 1.4px;
   transition: all 300ms;
-  font-size: .8rem;
+  font-size: 1rem;
   line-height: 50px;
+  border: 1px solid $color-linen;
+  border-radius: 50px;
+  &:hover {
+    background-color: $color-linen;
+    color: $color-red!important;
+    cursor: pointer;
+  }
   &_1 {
     @extend .btn;
     color: $white;
-    background-color: $black;
-    border: 1px solid $black;
+    background-color: $color-licorice;
+    border: 1px solid $color-licorice;
     font-weight: 100;
     &:hover {
       opacity: 0.8;
-      color: $white;
+      color: $color-linen;
       cursor: pointer;
     }
   }

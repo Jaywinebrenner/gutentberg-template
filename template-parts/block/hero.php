@@ -19,14 +19,17 @@ $id = 'hero-' . $block['id'];
       $button = get_field('button');
       if( $button ): ?>
       <div class="btn-wrapper">
-        <a class="btn"><?php echo $button['text']?></a>
+        <a href="<?php echo esc_url( $button['url'] ); ?>" class="btn"><?php echo $button['text']?></a>
       </div>
       <?php endif; ?>
     </div>
   </div>
   <div class="hero__bottom">
   <?php if( get_field('image') ): ?>
-    <img src="<?php the_field('image'); ?>" />
-    <?php endif; ?>
+    <img class="desktop-image hide" src="<?php the_field('image'); ?>" />
+  <?php endif; ?>
+  <?php if( get_field('mobile_image') ): ?>
+    <img class="mobile-image hide" src="<?php the_field('mobile_image'); ?>" />
+  <?php endif; ?>
   </div>
   </section>

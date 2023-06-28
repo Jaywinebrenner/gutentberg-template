@@ -4,23 +4,37 @@
     background-color: $color-red;
     display: flex;
     flex-direction: column;
-    height: 450px;
+    // height: 450px;
+    padding-bottom: 80px;
+    padding-top: 200px;
+    @media(max-width: 700px){
+      height: unset;
+      padding: 20% 0;
+    }
     h1, p {
       text-align: center;
       color: $color-white;
     }
     .btn-wrapper {
       text-align: center;
+      margin-top: 7%;
       a {
         color: $color-white;
       }
     }
-
   }
   &__bottom {
-    img {
-      background-size: 100% 100%;
+    .desktop-image {
+      width:100%;
+      @media(max-width: 700px){
+        display: none;
+      }
+    }
+    .mobile-image {
+      width:100%;
+      @media(min-width: 700px){
+        display: none;
+      }
     }
   }
-
 }
