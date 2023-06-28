@@ -284,12 +284,12 @@ hr {
   transition: all 300ms;
   font-size: 1rem;
   line-height: 50px;
-  border: 1px solid #F7F4F0;
+  border: 1px solid #1D0800;
   border-radius: 50px;
 }
 .btn:hover, .btn_1:hover {
-  background-color: #F7F4F0;
-  color: #D64936 !important;
+  background-color: #1D0800;
+  color: #F7F4F0 !important;
   cursor: pointer;
 }
 .btn_1 {
@@ -596,8 +596,28 @@ body {
 /*--------------------------------------------------------------
 Component
 --------------------------------------------------------------*/
+.hero {
+  position: relative;
+  background-color: #F7F4F0;
+}
+@media (min-width: 1400px) {
+  .hero .hero-container {
+    max-width: 1800px;
+    margin: auto;
+    width: calc(100vw - 10%);
+  }
+}
+@media (min-width: 1400px) {
+  .hero .monitor-white-bars {
+    position: absolute;
+    background-color: #FFFFFF;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 24%;
+  }
+}
 .hero__top {
-  background-color: #D64936;
   display: flex;
   flex-direction: column;
   padding-bottom: 80px;
@@ -611,17 +631,22 @@ Component
 }
 .hero__top h1, .hero__top p {
   text-align: center;
-  color: #FFFFFF;
+  color: #1D0800;
+  padding: 0 10%;
 }
 .hero__top .btn-wrapper {
   text-align: center;
-  margin-top: 7%;
+  margin-top: 5%;
 }
 .hero__top .btn-wrapper a {
-  color: #FFFFFF;
+  color: #1D0800;
+}
+.hero__bottom {
+  position: relative;
 }
 .hero__bottom .desktop-image {
-  width: 100%;
+  height: 450px;
+  object-fit: cover;
 }
 @media (max-width: 700px) {
   .hero__bottom .desktop-image {

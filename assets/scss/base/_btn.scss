@@ -5,11 +5,11 @@
   transition: all 300ms;
   font-size: 1rem;
   line-height: 50px;
-  border: 1px solid $color-linen;
+  border: 1px solid $color-licorice;
   border-radius: 50px;
   &:hover {
-    background-color: $color-linen;
-    color: $color-red!important;
+    background-color: $color-licorice;
+    color: $color-linen!important;
     cursor: pointer;
   }
   &_1 {
