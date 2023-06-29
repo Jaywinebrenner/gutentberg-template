@@ -2,6 +2,7 @@
   "name": "hc-theme",
   "private": true,
   "dependencies": {
+    "@babel/core": "^7.22.5",
     "babel-loader": "^9.1.2",
     "babel-preset-env": "^1.7.0",
     "bi-app-sass": "^1.1.0"

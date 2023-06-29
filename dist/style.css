@@ -1,6 +1,10 @@
 /*!*****************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./assets/scss/style.scss ***!
   \*****************************************************************************************************************/
+@import url(https://fonts.googleapis.com/css2?family=Courier+Prime&family=Delicious+Handrawn&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Lilita+One&family=Oswald:wght@700&family=Staatliches&display=swap);
+/*!*********************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./assets/scss/style.scss (1) ***!
+  \*********************************************************************************************************************/
 /*!
 Theme Name: WP TEMPLATE DEFAULT
 Theme URI: N/A
@@ -26,149 +30,290 @@ Base
 --------------------------------------------------------------*/
 /* =Variables
 -------------------------------------------------------------- */
-/* =Typographical Mixins/Functions
--------------------------------------------------------------- */
-html {
-  font-size: calc(16px + (18 - 16) * ((100vw - 600px) / (1500 - 600)));
+html,
+button {
+  font-family: "Inter";
+  font-size: clamp(1px, 0.9vw, 19px);
+  color: #1D0800;
+}
+@media (max-width: 800px) {
+  html,
+  button {
+    font-size: clamp(14px, 1vw, 1000vw);
+  }
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   clear: both;
   float: none;
-  line-height: 1.25em;
   margin: 0;
+  font-family: "Inter";
 }
 
-h1, .h1 {
-  font-size: 2.4em;
-  font-family: "Helvetica", sans-serif;
-  letter-spacing: 2.5px;
+h1,
+.h1 {
+  font-style: normal;
+  font-size: 5rem;
+  line-height: 111%;
+  font-weight: 300;
+  margin-bottom: 1rem;
+}
+@media (max-width: 800px) {
+  h1,
+  .h1 {
+    font-size: 2.25rem;
+    margin-bottom: 2.5625rem;
+  }
+}
+h1.hero,
+.h1.hero {
+  font-size: 8.75rem;
+  line-height: 9.625rem;
+}
+@media (max-width: 800px) {
+  h1.hero,
+  .h1.hero {
+    font-size: 2.625rem;
+    line-height: 3rem;
+  }
+}
+
+h2,
+.h2 {
+  font-size: 4rem;
+  line-height: 4.25rem;
+  font-weight: 400;
+}
+@media (max-width: 800px) {
+  h2,
+  .h2 {
+    line-height: 2.375rem;
+    font-size: 1.75rem;
+  }
+}
+
+h3,
+.h3 {
+  font-weight: 300;
+  line-height: normal;
+  margin-bottom: 1.25rem;
+  font-size: 2.5rem;
+  font-family: "Inter";
+  line-height: 128%;
+}
+@media (max-width: 800px) {
+  h3,
+  .h3 {
+    font-size: 1.5rem;
+    line-height: normal;
+  }
+}
+
+h4,
+.h4 {
+  font-weight: 300;
+  margin-bottom: 20px;
+  font-size: 2rem;
+  font-family: "Inter";
+  line-height: 125.5%;
+}
+@media (max-width: 800px) {
+  h4,
+  .h4 {
+    font-size: 1.25rem;
+  }
+}
+
+h5,
+.h5 {
+  margin-bottom: 1.25rem;
+  font-size: 1.3125rem;
+  font-family: "Inter";
   font-weight: 500;
-  text-transform: uppercase;
+  line-height: 143.023%;
+}
+@media (max-width: 800px) {
+  h5,
+  .h5 {
+    font-size: 0.875rem;
+  }
 }
 
-h2, .h2 {
-  font-size: 1.8em;
-  font-family: "Helvetica", sans-serif;
+h6,
+.h6 {
+  font-size: 1rem;
+  font-family: "Inter";
+  font-weight: 700;
+  line-height: 135.023%;
+  letter-spacing: 0.045rem;
+  text-transform: uppercase;
+  color: #D64936;
+}
+@media (max-width: 800px) {
+  h6,
+  .h6 {
+    font-size: 0.875rem;
+  }
+}
+
+p,
+i,
+strong {
+  font-size: 1.25rem;
+  font-weight: 300;
+  line-height: 150%;
+}
+@media (max-width: 800px) {
+  p,
+  i,
+  strong {
+    font-size: 1rem;
+  }
+}
+
+p {
+  margin: 0;
+  margin-bottom: 18px;
+}
+p.major {
+  font-size: 1.813rem;
+  line-height: 150%;
+}
+@media (max-width: 800px) {
+  p.major {
+    font-size: 1.188rem;
+  }
+}
+p.minor {
+  font-size: 1rem;
+  font-family: "Inter";
+  line-height: 135.023%;
+  letter-spacing: 0.045rem;
+}
+@media (max-width: 800px) {
+  p.minor {
+    font-size: 0.875rem;
+  }
+}
+
+strong,
+b {
   font-weight: 500;
 }
 
-h3, .h3 {
-  font-size: 1.4em;
-  font-family: "Helvetica", sans-serif;
-  font-weight: 100;
-}
-
-h4, .h4 {
-  font-size: 0.7em;
-  font-family: "Helvetica", sans-serif;
-  text-transform: uppercase;
-}
-
-h5, .h5 {
-  font-size: 0.7em;
-  font-family: "Helvetica", sans-serif;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-}
-
-h6, .h6 {
-  font-size: 0.9em;
-  font-family: "Helvetica", sans-serif;
-}
-
-p, i, strong {
-  font-size: 0.9em;
-  font-family: "Helvetica", sans-serif;
-  line-height: 28px;
-}
-
-blockquote {
-  background-color: #f7f7f7;
-  font-style: italic;
-  padding: 20px;
-}
-
-cite {
-  font-style: italic;
-}
-
-strong, b {
-  color: #2a2a2a;
-  font-family: "Helvetica", sans-serif;
+button,
+a {
+  font-weight: 400;
+  text-decoration: none;
+  transition: all 100ms;
 }
 
 a {
-  color: #2a2a2a;
-  text-decoration: none;
-  font-size: 0.7em;
-  font-family: "Helvetica", sans-serif;
-  transition: all 400ms;
+  color: #1D0800;
 }
-li {
-  list-style: none;
-  font-size: 0.9em;
-  margin-bottom: 10px;
-  font-family: "Helvetica", sans-serif;
+
+a:not(.button):visited {
+  color: #1D0800;
 }
 
 ul {
-  padding: 0;
+  padding-left: 20px;
 }
 
-form {
-  display: flex;
-  flex-direction: column;
+li {
+  list-style-type: none;
+  font-weight: 300;
 }
 
-label {
-  font-size: 0.9em;
-  font-family: "Helvetica", sans-serif;
-  margin-bottom: 10px;
+li {
+  font-size: 1.375rem;
+  font-weight: 300;
+  line-height: 150%;
+  margin-bottom: 16px;
+}
+@media (max-width: 800px) {
+  li {
+    font-size: 1rem;
+  }
 }
 
-input, input::placeholder, textarea, textarea::placeholder {
-  font-size: 0.9em;
-  font-family: "Helvetica", sans-serif;
-  margin-bottom: 20px;
-  line-height: 28px;
-  font-weight: 100;
+ul {
+  margin: 0;
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid #182b3e;
+  opacity: 0.25;
+}
+
+.marker-underline {
+  display: inline;
+  white-space: nowrap;
+  position: relative;
+  z-index: 1;
+}
+.marker-underline:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: -1rem;
+  right: -1rem;
+  z-index: -1;
+  width: calc(100% + 2rem);
+  height: 3rem;
+  background-size: 100% 75%;
+  background-repeat: no-repeat;
+}
+@media (max-width: 800px) {
+  .marker-underline:before {
+    bottom: -1.2rem;
+  }
+}
+
+.btn, .btn_red, .btn_white {
   text-transform: uppercase;
-  color: #9a9a9a;
-}
-
-textarea, input, button {
-  outline: none;
-}
-
-textarea, input {
-  border: 1px solid #9a9a9a;
-  padding: 5px;
-  padding-left: 0;
-  padding-right: 0;
-}
-
-textarea:focus, input:focus {
-  border: 1px solid #2a2a2a;
-}
-
-.btn, .btn_1 {
-  text-transform: uppercase;
-  padding: 20px 30px;
+  padding: 0.5rem 1.3125rem;
   letter-spacing: 1.4px;
   transition: all 300ms;
-  font-size: 0.8rem;
+  font-size: 1rem;
   line-height: 50px;
+  border: 1px solid #1D0800;
+  border-radius: 50px;
 }
-.btn_1 {
-  color: #FFFFFF;
-  background-color: #2a2a2a;
-  border: 1px solid #2a2a2a;
-  font-weight: 100;
+@media (max-width: 800px) {
+  .btn, .btn_red, .btn_white {
+    font-size: 0.875rem;
+  }
 }
-.btn_1:hover {
-  opacity: 0.8;
-  color: #FFFFFF;
+.btn:hover, .btn_red:hover, .btn_white:hover {
+  background-color: #1D0800;
+  color: #F7F4F0 !important;
+  cursor: pointer;
+}
+.btn_white {
+  color: #F7F4F0 !important;
+  border: 1px solid #F7F4F0;
+}
+.btn_white:hover {
+  background-color: #F7F4F0;
+  color: #D64936 !important;
+  border: 1px solid #D64936;
+  cursor: pointer;
+}
+.btn_red {
+  color: #D64936 !important;
+  border: 1px solid #D64936;
+}
+.btn_red:hover {
+  background-color: #D64936;
+  color: #F7F4F0 !important;
+  border: 1px solid #D64936;
   cursor: pointer;
 }
 
@@ -364,15 +509,14 @@ body {
 }
 
 .container, .wp-block-columns {
-  width: 90%;
-  max-width: 1500px;
+  max-width: 1800px;
   margin: auto;
+  width: calc(100vw - 10%);
 }
-@media (max-width: 800px) {
-  .container, .wp-block-columns {
-    width: 100vw;
-    padding: 0 15px;
-  }
+.container--small {
+  max-width: 720px;
+  margin: auto;
+  width: calc(100vw - 15%);
 }
 
 .hidden {
@@ -414,6 +558,10 @@ body {
 
 .wp-block-columns:before, .wp-block-columns:after {
   content: none;
+}
+
+::selection {
+  background: rgba(214, 73, 54, 0.4); /* WebKit/Blink Browsers */
 }
 
 .wp-caption img {
@@ -465,11 +613,71 @@ body {
 /*--------------------------------------------------------------
 Component
 --------------------------------------------------------------*/
-.hc-hero {
-  padding: 32px;
+.hero {
+  position: relative;
+  background-color: #F7F4F0;
+}
+@media (min-width: 1200px) {
+  .hero .hero-container {
+    max-width: 1800px;
+    margin: auto;
+    width: calc(100vw - 10%);
+  }
+}
+@media (min-width: 1200px) {
+  .hero .monitor-white-bars {
+    position: absolute;
+    background-color: #FFFFFF;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 24%;
+  }
+}
+.hero__top {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 80px;
   padding-top: 200px;
-  padding-bottom: 200px;
-  background-size: cover;
+}
+@media (max-width: 700px) {
+  .hero__top {
+    height: unset;
+    padding: 20% 0;
+  }
+}
+.hero__top h1, .hero__top p {
+  text-align: center;
+  color: #1D0800;
+  padding: 0 10%;
+}
+.hero__top .btn-wrapper {
+  text-align: center;
+  margin-top: 5%;
+}
+.hero__top .btn-wrapper a {
+  color: #1D0800;
+}
+.hero__bottom {
+  position: relative;
+}
+.hero__bottom .desktop-image {
+  height: 450px;
+  object-fit: cover;
+  width: 100%;
+}
+@media (max-width: 700px) {
+  .hero__bottom .desktop-image {
+    display: none;
+  }
+}
+.hero__bottom .mobile-image {
+  width: 100%;
+}
+@media (min-width: 700px) {
+  .hero__bottom .mobile-image {
+    display: none;
+  }
 }
 
 .hc-icon-row .icons {
