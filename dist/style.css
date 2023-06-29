@@ -669,6 +669,11 @@ Component
 .banner .banner h4 {
   margin-bottom: 0;
 }
+@media (max-width: 800px) {
+  .banner .banner h4 {
+    text-align: center;
+  }
+}
 .banner .banner .right, .banner .banner .left {
   display: flex;
   flex-direction: column;
