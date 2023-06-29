@@ -2,8 +2,12 @@
 
 .three-card-row {
     &__top {
+        text-align: center;
         .title {
-            
         }
+    }
+    .cards-wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
     }
 }

@@ -472,6 +472,14 @@ Component
   background-size: cover;
 }
 
+.three-card-row__top {
+  text-align: center;
+}
+.three-card-row .cards-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
 .hc-icon-row .icons {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
