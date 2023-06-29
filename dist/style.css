@@ -671,11 +671,31 @@ Component
     display: none;
   }
 }
+@media (min-width: 1400px) {
+  .hero__bottom .desktop-image {
+    display: none;
+  }
+}
 .hero__bottom .mobile-image {
   width: 100%;
 }
 @media (min-width: 700px) {
   .hero__bottom .mobile-image {
+    display: none;
+  }
+}
+@media (max-width: 1400px) {
+  .hero__bottom .monitor-image-wrapper {
+    display: none;
+  }
+}
+.hero__bottom .monitor-image-wrapper .monitor-image {
+  height: 450px;
+  object-fit: cover;
+  width: 100%;
+}
+@media (max-width: 700px) {
+  .hero__bottom .monitor-image-wrapper {
     display: none;
   }
 }
