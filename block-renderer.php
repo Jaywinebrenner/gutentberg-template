@@ -7,20 +7,20 @@ function init_acf_fields()
     // check function exists
     if (function_exists('acf_register_block')) {
 
-        // register hero block
-        // acf_register_block(array(
-        //     'name'              => 'hero',
-        //     'title'             => __('Hero'),
-        //     'description'       => __('Custom Hero'),
-        //     'render_callback'   => 'block_renderer',
-        //     'category'          => 'formatting',
-        //     'icon'              => 'admin-comments',
-        //     'align'           => 'full',
-        //     'supports'        => array(
-        //         'align' => array('full'),
-        //     ),
-        //     'keywords'          => array('hero', 'masthead'),
-        // ));
+        //register three card row block
+        acf_register_block(array(
+            'name'              => 'three-card-row',
+            'title'             => __('Three Card Row'),
+            'description'       => __('Three Card Row'),
+            'render_callback'   => 'block_renderer',
+            'category'          => 'formatting',
+            'icon'              => 'admin-comments',
+            'align'           => 'full',
+            'supports'        => array(
+                'align' => array('full'),
+            ),
+            'keywords'          => array('Three Card Row',),
+        ));
     }
 }
 
