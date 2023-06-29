@@ -9,7 +9,11 @@
 
   &__cards {
     display: flex;
-    gap: 24px;
+    gap: 1.5rem;
+
+    @media(max-width: $bp-small) {
+      flex-direction: column;
+    }
   }
 
   &__card {

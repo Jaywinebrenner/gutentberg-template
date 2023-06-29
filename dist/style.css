@@ -696,7 +696,12 @@ Component
 }
 .info-cards__cards {
   display: flex;
-  gap: 24px;
+  gap: 1.5rem;
+}
+@media (max-width: 800px) {
+  .info-cards__cards {
+    flex-direction: column;
+  }
 }
 .info-cards__card {
   display: flex;
