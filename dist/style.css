@@ -705,11 +705,16 @@ Component
   background-color: #F7F4F0;
 }
 .three-card-row .cards-wrapper .card__top img {
-  height: 350px;
+  height: 21.875rem;
   object-fit: cover;
   width: 100%;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
+}
+@media (max-width: 800px) {
+  .three-card-row .cards-wrapper .card__top img {
+    height: 12.5rem;
+  }
 }
 .three-card-row .cards-wrapper .card__bottom {
   background-color: #F7F4F0;

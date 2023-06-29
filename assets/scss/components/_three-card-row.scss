@@ -4,8 +4,6 @@
     &__top {
         text-align: center;
         padding-top: 11.5rem;
-        .title {
-        }
     }
     .cards-wrapper {
         display: flex;
@@ -23,14 +21,14 @@
             &__top {
                 background-color: $color-linen;
                 img {
-                    height: 350px;
+                    height: 21.875rem;
                     object-fit: cover;
                     width: 100%;
                     border-top-left-radius: 10px;
                     border-top-right-radius: 10px;
                     @media(max-width: $bp-small){  
+                        height: 12.5rem;
                     }
-
                 }
             }
             &__bottom {
