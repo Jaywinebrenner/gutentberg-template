@@ -17,7 +17,7 @@
   }
   &_white {
     @extend .btn;
-    color: $color-linen;
+    color: $color-linen!important;
     border: 1px solid $color-linen;
     &:hover {
       background-color: $color-linen;
@@ -28,7 +28,7 @@
   }
   &_red {
     @extend .btn;
-    color: $color-red;
+    color: $color-red!important;
     border: 1px solid $color-red;
     &:hover {
       background-color: $color-red;

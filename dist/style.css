@@ -297,7 +297,7 @@ hr {
   cursor: pointer;
 }
 .btn_white {
-  color: #F7F4F0;
+  color: #F7F4F0 !important;
   border: 1px solid #F7F4F0;
 }
 .btn_white:hover {
@@ -307,7 +307,7 @@ hr {
   cursor: pointer;
 }
 .btn_red {
-  color: #D64936;
+  color: #D64936 !important;
   border: 1px solid #D64936;
 }
 .btn_red:hover {
