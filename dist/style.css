@@ -692,6 +692,7 @@ Component
 @media (max-width: 800px) {
   .three-card-row .cards-wrapper {
     display: block;
+    padding-top: 5rem;
   }
 }
 .three-card-row .cards-wrapper .card {
