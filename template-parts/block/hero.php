@@ -28,8 +28,7 @@ $id = 'hero-' . $block['id'];
         <?php endif; ?>
       </div>
     </div>
-    <a href="<?php echo esc_url( $button['url'] ); ?>" class="btn_white">TEST</a>
-    <a href="<?php echo esc_url( $button['url'] ); ?>" class="btn_red">TESTING ALL THE TIME</a>
+
     <div class="hero__bottom">
     <?php if( get_field('image') ): ?>
       <img class="desktop-image hide" src="<?php the_field('image'); ?>" />

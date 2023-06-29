@@ -64,7 +64,6 @@ body {
     position: absolute;
     top: 0;
     left :0;
-    // background-image: url('../img/tenant-carousel-bg.png');
     background-size: 100% auto;
   }
 }
@@ -76,4 +75,8 @@ body {
   &:before, &:after {
     content: none;
   }
+}
+
+::selection {
+  background: rgb(214, 73, 54, .4); /* WebKit/Blink Browsers */
 }

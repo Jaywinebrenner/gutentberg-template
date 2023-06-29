@@ -560,6 +560,10 @@ body {
   content: none;
 }
 
+::selection {
+  background: rgba(214, 73, 54, 0.4); /* WebKit/Blink Browsers */
+}
+
 .wp-caption img {
   margin-bottom: 0;
 }
@@ -612,7 +616,6 @@ Component
 .hero {
   position: relative;
   background-color: #F7F4F0;
-  background-color: lightblue;
 }
 @media (min-width: 1400px) {
   .hero .hero-container {
