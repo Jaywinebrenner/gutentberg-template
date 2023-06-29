@@ -303,7 +303,7 @@ hr {
 .btn_white:hover {
   background-color: #F7F4F0;
   color: #D64936 !important;
-  border: 1px solid #D64936;
+  border: 1px solid #FFFFFF;
   cursor: pointer;
 }
 .btn_red {
@@ -312,7 +312,7 @@ hr {
 }
 .btn_red:hover {
   background-color: #D64936;
-  color: #F7F4F0 !important;
+  color: #FFFFFF !important;
   border: 1px solid #D64936;
   cursor: pointer;
 }
@@ -613,6 +613,73 @@ body {
 /*--------------------------------------------------------------
 Component
 --------------------------------------------------------------*/
+.banner .no-image-banner {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  padding: 1.25rem;
+  grid-gap: 4rem;
+  border-radius: 10px;
+}
+@media (max-width: 800px) {
+  .banner .no-image-banner {
+    grid-template-columns: 1fr;
+    grid-gap: 1.25rem;
+  }
+}
+@media (max-width: 800px) {
+  .banner .no-image-banner .left img {
+    width: 100%;
+  }
+}
+.banner .no-image-banner .right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.banner .no-image-banner .right p {
+  font-size: 1.375rem;
+}
+.banner .no-image-banner .right .quote {
+  font-weight: 600;
+}
+.banner .no-image-banner .right .quoter {
+  margin-bottom: 0;
+  font-style: italic;
+}
+.banner .banner {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  padding: 40px;
+  grid-gap: 4rem;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+@media (max-width: 800px) {
+  .banner .banner {
+    grid-template-columns: 1fr;
+    grid-gap: 1.25rem;
+  }
+}
+.banner .banner:hover .btn_white {
+  background-color: #F7F4F0;
+  color: #D64936 !important;
+  border: 1px solid #FFFFFF;
+}
+.banner .banner h4 {
+  margin-bottom: 0;
+}
+.banner .banner .right, .banner .banner .left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+@media (max-width: 800px) {
+  .banner .banner .right, .banner .banner .left {
+    align-items: center;
+  }
+}
+
 .hero {
   position: relative;
   background-color: #F7F4F0;

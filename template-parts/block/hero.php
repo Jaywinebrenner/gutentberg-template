@@ -23,7 +23,6 @@ $id = 'hero-' . $block['id'];
         if( $button ): ?>
         <div class="btn-wrapper">
           <a href="<?php echo esc_url( $button['url'] ); ?>" class="btn"><?php echo $button['text']?></a>
-          
         </div>
         <?php endif; ?>
       </div>
