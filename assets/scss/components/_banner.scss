@@ -28,6 +28,10 @@
             display: flex;
             flex-direction: column;
             justify-content: center;
+            padding-right: 10%;
+            @media(max-width: $bp-small){
+                padding-right: unset;
+            }
             p {
                 font-size: 1.375rem;
             }

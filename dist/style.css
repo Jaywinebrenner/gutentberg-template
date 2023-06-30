@@ -645,6 +645,12 @@ Component
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding-right: 10%;
+}
+@media (max-width: 800px) {
+  .banner .has-image-banner .right {
+    padding-right: unset;
+  }
 }
 .banner .has-image-banner .right p {
   font-size: 1.375rem;
