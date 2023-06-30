@@ -21,6 +21,9 @@
                 height: 25.5rem;
                 object-fit: cover;
                 width: 100%;
+                @media(max-width: 600px){
+                    height: 18.25rem;
+                }
             }
 
         }

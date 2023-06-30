@@ -713,6 +713,11 @@ Component
   object-fit: cover;
   width: 100%;
 }
+@media (max-width: 600px) {
+  .card-grid .card__top img {
+    height: 18.25rem;
+  }
+}
 .card-grid .card__bottom {
   background-color: #F7F4F0;
   border-bottom-right-radius: 10px;
