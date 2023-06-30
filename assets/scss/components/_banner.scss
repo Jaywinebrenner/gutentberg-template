@@ -1,7 +1,7 @@
 
 
 .banner {
-    .no-image-banner {
+    .has-image-banner {
         display: grid;
         grid-template-columns: 1fr 4fr;
         padding: 1.25rem;
@@ -11,23 +11,24 @@
             grid-template-columns: 1fr;
             grid-gap: 1.25rem;
         }
-        &:hover {
-
-        }
         .left {
+            display: flex;
+            justify-content: center;
+            align-items: center;
             img {
+                object-fit: cover;
+                width: 100%;
+                max-width: 100%;
                 @media(max-width: $bp-small){
                     width: 100%;
                 }
             }
-
         }
         .right {
             display: flex;
             flex-direction: column;
             justify-content: center;
             p {
-                // color: $color-linen;
                 font-size: 1.375rem;
             }
             .quote {
@@ -42,7 +43,7 @@
     .banner {
         display: grid;
         grid-template-columns: 3fr 1fr;
-        padding: 40px;
+        padding: 50px;
         grid-gap: 4rem;
         border-radius: 10px;
         cursor: pointer;

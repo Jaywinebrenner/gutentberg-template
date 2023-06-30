@@ -16,9 +16,11 @@ $id = 'banner-' . $block['id'];
         <?php
         if( get_field('has_image') ) {
         ?>
-            <div class="no-image-banner" style="background-color:<?php the_field('background_color'); ?>">
+            <div class="has-image-banner" style="background-color:<?php the_field('background_color'); ?>">
                 <div class="left">
-
+                    <img 
+                    src="<?php the_field('image'); ?>" 
+                    />
                 </div>
                 <div class="right">
                     <p class="quote"><?php the_field('quote') ?></p>
