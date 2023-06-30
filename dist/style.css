@@ -686,6 +686,41 @@ Component
   column-gap: 32px;
 }
 
+.card-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1.5rem;
+  grid-auto-rows: 1fr;
+}
+@media (max-width: 800px) {
+  .card-grid {
+    grid-template-columns: 1fr;
+  }
+}
+.card-grid .card {
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  flex-basis: 1;
+}
+.card-grid .card__top {
+  background-color: #F7F4F0;
+}
+.card-grid .card__top img {
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  height: 25.5rem;
+  object-fit: cover;
+  width: 100%;
+}
+.card-grid .card__bottom {
+  background-color: #F7F4F0;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  padding: 1.5rem;
+  flex: 1;
+}
+
 /*--------------------------------------------------------------
 Views
 --------------------------------------------------------------*/

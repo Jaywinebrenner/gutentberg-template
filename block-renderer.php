@@ -37,6 +37,21 @@ function init_acf_fields()
             'keywords'          => array('banner', 'cta'),
         ));
 
+        // register card grid block
+        acf_register_block(array(
+            'name'              => 'card grid',
+            'title'             => __('Card Grid'),
+            'description'       => __('Card Grid'),
+            'render_callback'   => 'block_renderer',
+            'category'          => 'formatting',
+            'icon'              => 'admin-comments',
+            'align'           => 'full',
+            'supports'        => array(
+                'align' => array('full'),
+            ),
+            'keywords'          => array('Card Grid'),
+        ));
+
     }
 }
 
