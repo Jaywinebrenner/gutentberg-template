@@ -37,6 +37,21 @@ function init_acf_fields()
             'keywords'          => array('banner', 'cta'),
         ));
 
+        // register content quote with image
+        acf_register_block(array(
+            'name'              => 'content-quote-with-image',
+            'title'             => __('Content Quote With Image'),
+            'description'       => __('Content Quote With Image on Client Page'),
+            'render_callback'   => 'block_renderer',
+            'category'          => 'formatting',
+            'icon'              => 'admin-comments',
+            'align'           => 'full',
+            'supports'        => array(
+                'align' => array('full'),
+            ),
+            'keywords'          => array('Content Quote With Image', 'content'),
+        ));
+
     }
 }
 
