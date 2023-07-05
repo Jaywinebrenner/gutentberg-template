@@ -681,7 +681,6 @@ Component
   }
 }
 
-
 .three-card-row__top {
   text-align: center;
   padding-top: 11.5rem;
@@ -732,6 +731,7 @@ Component
 .three-card-row .btn-wrapper {
   text-align: center;
   padding: 5rem 0;
+}
 
 .quote-cards .cards-wrapper {
   display: grid;
@@ -769,6 +769,22 @@ Component
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   column-gap: 32px;
+}
+
+.two-column-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 5.3125rem;
+}
+@media (max-width: 800px) {
+  .two-column-content {
+    grid-template-columns: 1fr;
+  }
+}
+.two-column-content__right {
+  background-color: #FFFFFF;
+  padding: 1.875rem;
+  border-radius: 10px;
 }
 
 .content-quote-with-image {
