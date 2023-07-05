@@ -52,6 +52,21 @@ function init_acf_fields()
             'keywords'          => array('info cards', 'card'),
         ));
 
+        // register quote cards
+        acf_register_block(array(
+            'name'              => 'quote-cards',
+            'title'             => __('Quote Cards'),
+            'description'       => __('Quote Cards'),
+            'render_callback'   => 'block_renderer',
+            'category'          => 'formatting',
+            'icon'              => 'admin-comments',
+            'align'           => 'full',
+            'supports'        => array(
+                'align' => array('full'),
+            ),
+            'keywords'          => array('quote', 'cards'),
+        ));
+
     }
 }
 
