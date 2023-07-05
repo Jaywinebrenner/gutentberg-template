@@ -97,7 +97,7 @@ function init_acf_fields()
             'keywords'          => array('Content Quote With Image', 'content'),
         ));
 
-        // register banner block
+        // register two column block
         acf_register_block(array(
             'name'              => 'two-column-content',
             'title'             => __('Two Column Content'),
