@@ -684,6 +684,9 @@ Component
   text-align: center;
   padding-top: 11.5rem;
 }
+.three-card-row h2 {
+  margin-bottom: 24px;
+}
 .three-card-row .cards-wrapper {
   display: flex;
   width: 100%;
