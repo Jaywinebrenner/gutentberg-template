@@ -6,7 +6,7 @@
  * or disable the default devtool with "devtool: false".
  * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
  */
-/******/ (() => { // webpackBootstrap
+/******/ (function() { // webpackBootstrap
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
@@ -14,7 +14,7 @@
 /*!**************************!*\
   !*** ./assets/js/app.js ***!
   \**************************/
-/***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
+/***/ (function(__unused_webpack_module, __unused_webpack_exports, __webpack_require__) {
 
 eval("\n\nvar _test = __webpack_require__(/*! ./test */ \"./assets/js/test.js\");\nvar _test2 = _interopRequireDefault(_test);\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\n//# sourceURL=webpack://hc-theme/./assets/js/app.js?");
 
@@ -24,7 +24,7 @@ eval("\n\nvar _test = __webpack_require__(/*! ./test */ \"./assets/js/test.js\")
 /*!***************************!*\
   !*** ./assets/js/test.js ***!
   \***************************/
-/***/ ((__unused_webpack_module, exports) => {
+/***/ (function(__unused_webpack_module, exports) {
 
 eval("\n\nObject.defineProperty(exports, \"__esModule\", ({\n  value: true\n}));\nfunction test() {\n  alert('hello');\n}\nexports[\"default\"] = test;\n\n//# sourceURL=webpack://hc-theme/./assets/js/test.js?");
 

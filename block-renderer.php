@@ -22,6 +22,21 @@ function init_acf_fields()
             'keywords'          => array('hero', 'masthead'),
         ));
 
+        // register three card row block
+        acf_register_block(array(
+            'name'              => 'three-card-row',
+            'title'             => __('Three Card Row'),
+            'description'       => __('Three Card Row'),
+            'render_callback'   => 'block_renderer',
+            'category'          => 'formatting',
+            'icon'              => 'admin-comments',
+            'align'           => 'full',
+            'supports'        => array(
+                'align' => array('full'),
+            ),
+            'keywords'          => array('three', 'card', 'row'),
+        ));
+
         // register banner block
         acf_register_block(array(
             'name'              => 'banner',
@@ -52,6 +67,50 @@ function init_acf_fields()
             'keywords'          => array('quote', 'cards'),
         ));
 
+        // register content quote with image
+        acf_register_block(array(
+            'name'              => 'content-quote-with-image',
+            'title'             => __('Content Quote With Image'),
+            'description'       => __('Content Quote With Image on Client Page'),
+            'render_callback'   => 'block_renderer',
+            'category'          => 'formatting',
+            'icon'              => 'admin-comments',
+            'align'           => 'full',
+            'supports'        => array(
+                'align' => array('full'),
+            ),
+            'keywords'          => array('Content Quote With Image', 'content'),
+        ));
+
+        // register two column block
+        acf_register_block(array(
+            'name'              => 'two-column-content',
+            'title'             => __('Two Column Content'),
+            'description'       => __('Two Column Content'),
+            'render_callback'   => 'block_renderer',
+            'category'          => 'formatting',
+            'icon'              => 'admin-comments',
+            'align'           => 'full',
+            'supports'        => array(
+                'align' => array('full'),
+            ),
+            'keywords'          => array('Two Column Content'),
+        ));
+
+        // register card grid block
+        acf_register_block(array(
+            'name'              => 'card grid',
+            'title'             => __('Card Grid'),
+            'description'       => __('Card Grid'),
+            'render_callback'   => 'block_renderer',
+            'category'          => 'formatting',
+            'icon'              => 'admin-comments',
+            'align'           => 'full',
+            'supports'        => array(
+                'align' => array('full'),
+            ),
+            'keywords'          => array('Card Grid'),
+        ));
     }
 }
 

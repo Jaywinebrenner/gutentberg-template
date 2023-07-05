@@ -1,0 +1,52 @@
+
+
+.three-card-row {
+    &__top {
+        text-align: center;
+        padding-top: 11.5rem;
+    }
+    h2 {
+        margin-bottom: 24px;
+    }
+    .cards-wrapper {
+        display: flex;
+        width: 100%;
+        padding-top: 6.5625rem;
+        @media(max-width: 800px){
+            display: block;
+            padding-top: 5rem;
+        }
+        .three-card-row__card {
+            display: flex;
+            flex-direction: column;
+            flex-basis: 1;
+            flex: 1;
+            padding: 0.5rem;
+            &__top {
+                background-color: $color-linen;
+                img {
+                    height: 21.875rem;
+                    object-fit: cover;
+                    width: 100%;
+                    border-top-left-radius: 10px;
+                    border-top-right-radius: 10px;
+                    @media(max-width: $bp-small){
+                        height: 12.5rem;
+                    }
+                }
+            }
+            &__bottom {
+                background-color: $color-linen;
+                padding: 1.5rem;
+                border-bottom-left-radius: 10px;
+                border-bottom-right-radius: 10px;
+                // height: 332px;
+                flex: 1;
+            }
+        }
+    }
+    .btn-wrapper {
+        text-align: center;
+        padding: 5rem 0;
+    }
+}
