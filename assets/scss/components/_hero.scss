@@ -50,8 +50,8 @@
         display: none;
       }
       @media(min-width: 1200px){
-        -webkit-mask-image: url(http://localhost:8888/corsource/wp-content/uploads/2023/06/monitor-hero-mask.svg);
-        // -webkit-mask-image: url(/assets/images/hero/monitor-hero-mask.svg);
+        // -webkit-mask-image: url(http://localhost:8888/corsource/wp-content/uploads/2023/06/monitor-hero-mask.svg);
+        -webkit-mask-image: url(/assets/images/hero/monitor-hero-mask.svg);
         -webkit-mask-size: cover;
         -webkit-mask-repeat: round;
         -webkit-mask-position: unset;

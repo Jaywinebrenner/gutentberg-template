@@ -673,7 +673,7 @@ Component
 }
 @media (min-width: 1200px) {
   .hero__bottom .desktop-image {
-    -webkit-mask-image: url(http://localhost:8888/corsource/wp-content/uploads/2023/06/monitor-hero-mask.svg);
+    -webkit-mask-image: url(a856b5220ad12af315c2.svg);
     -webkit-mask-size: cover;
     -webkit-mask-repeat: round;
     -webkit-mask-position: unset;
