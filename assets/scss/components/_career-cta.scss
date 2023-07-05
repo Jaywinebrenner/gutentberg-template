@@ -6,7 +6,7 @@
     grid-gap: 8.125rem;
     @media(max-width: $bp-small){
         grid-template-columns: 1fr;
-        grid-gap: 6.125rem;
+        grid-gap: 3.125rem;
     }
     &__left {
         padding-right: 8%;

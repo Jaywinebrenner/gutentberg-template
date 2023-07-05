@@ -954,7 +954,7 @@ Component
 @media (max-width: 800px) {
   .career-cta {
     grid-template-columns: 1fr;
-    grid-gap: 6.125rem;
+    grid-gap: 3.125rem;
   }
 }
 .career-cta__left {
