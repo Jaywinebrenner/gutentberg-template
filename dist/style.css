@@ -666,9 +666,19 @@ Component
   align-items: center;
 }
 .banner .has-image-banner .left img {
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   width: 100%;
   max-width: 100%;
+  max-height: 10.75rem;
+  -webkit-mask-image: url(1b94464e09c0acdb6c15.svg);
+          mask-image: url(1b94464e09c0acdb6c15.svg);
+  -webkit-mask-size: cover;
+          mask-size: cover;
+  -webkit-mask-repeat: round;
+          mask-repeat: round;
+  -webkit-mask-position: unset;
+          mask-position: unset;
 }
 @media (max-width: 800px) {
   .banner .has-image-banner .left img {
