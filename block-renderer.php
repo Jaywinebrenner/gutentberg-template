@@ -97,6 +97,21 @@ function init_acf_fields()
             'keywords'          => array('Content Quote With Image', 'content'),
         ));
 
+        // register two column block
+        acf_register_block(array(
+            'name'              => 'two-column-content',
+            'title'             => __('Two Column Content'),
+            'description'       => __('Two Column Content'),
+            'render_callback'   => 'block_renderer',
+            'category'          => 'formatting',
+            'icon'              => 'admin-comments',
+            'align'           => 'full',
+            'supports'        => array(
+                'align' => array('full'),
+            ),
+            'keywords'          => array('Two Column Content'),
+        ));
+
         // register card grid block
         acf_register_block(array(
             'name'              => 'card grid',

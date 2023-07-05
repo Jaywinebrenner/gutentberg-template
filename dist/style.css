@@ -811,6 +811,22 @@ Component
   flex: 1;
 }
 
+.two-column-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 5.3125rem;
+}
+@media (max-width: 800px) {
+  .two-column-content {
+    grid-template-columns: 1fr;
+  }
+}
+.two-column-content__right {
+  background-color: #FFFFFF;
+  padding: 1.875rem;
+  border-radius: 10px;
+}
+
 .content-quote-with-image {
   display: grid;
   grid-template-columns: 1fr 1fr;
