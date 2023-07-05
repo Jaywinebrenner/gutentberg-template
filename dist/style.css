@@ -935,6 +935,84 @@ Component
   background: #FFFFFF;
 }
 
+.page-hero {
+  position: relative;
+}
+.page-hero .container, .page-hero .wp-block-columns {
+  padding-top: 14.375rem;
+}
+.page-hero .monitor-linen-bars {
+  position: absolute;
+  background-color: #F7F4F0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 8%;
+}
+.page-hero .page-hero-wrapper {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  grid-gap: 10.2rem;
+}
+@media (max-width: 800px) {
+  .page-hero .page-hero-wrapper {
+    grid-template-columns: 1fr;
+    grid-gap: 0;
+  }
+}
+.page-hero .page-hero-wrapper__left {
+  padding-right: 10%;
+}
+@media (max-width: 800px) {
+  .page-hero .page-hero-wrapper__left {
+    text-align: center;
+    padding-right: 0;
+  }
+}
+.page-hero .page-hero-wrapper__left .btn-wrapper {
+  margin-top: 5%;
+}
+@media (max-width: 800px) {
+  .page-hero .page-hero-wrapper__left .btn-wrapper {
+    margin: 3.75rem 0;
+  }
+}
+.page-hero .page-hero-wrapper__left .btn-wrapper a {
+  color: #1D0800;
+}
+.page-hero .page-hero-wrapper__right {
+  position: relative;
+  text-align: right;
+}
+.page-hero .page-hero-wrapper__right img {
+  border-radius: 10px;
+}
+.page-hero .page-hero-wrapper__right .desktop-image {
+  width: 420px;
+  height: 100%;
+  -webkit-mask-image: url(http://localhost:8888/corsource/wp-content/uploads/2023/07/page-single-desktop-mask.png);
+  -webkit-mask-size: cover;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: right;
+}
+@media (max-width: 800px) {
+  .page-hero .page-hero-wrapper__right .desktop-image {
+    display: none;
+  }
+}
+.page-hero .page-hero-wrapper__right .mobile-image {
+  width: 100%;
+  border-radius: 10px;
+  -webkit-mask-size: cover;
+  mask-image: url(http://localhost:8888/corsource/wp-content/uploads/2023/07/page-hero-mobile-mask.svg);
+  -webkit-mask-image: url(http://localhost:8888/corsource/wp-content/uploads/2023/07/page-hero-mobile-mask.svg);
+}
+@media (min-width: 800px) {
+  .page-hero .page-hero-wrapper__right .mobile-image {
+    display: none;
+  }
+}
+
 /*--------------------------------------------------------------
 Views
 --------------------------------------------------------------*/

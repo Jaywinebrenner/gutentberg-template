@@ -1,0 +1,69 @@
+
+.page-hero {
+    position: relative;
+    .container {
+        padding-top: 14.375rem;
+    }
+    .monitor-linen-bars {
+        position: absolute;
+        background-color: $color-linen;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 8%;
+    }
+    .page-hero-wrapper {
+        display: grid;
+        grid-template-columns: 1.5fr 1fr;
+        grid-gap: 10.2rem;
+        @media(max-width: $bp-small){
+            grid-template-columns: 1fr;
+            grid-gap: 0;
+        }
+        &__left {
+            padding-right: 10%;
+            @media(max-width: $bp-small){
+                text-align: center;
+                padding-right: 0;
+            }
+          .btn-wrapper {
+            margin-top: 5%;
+            @media(max-width: $bp-small){
+                margin: 3.75rem 0;
+            }
+            a {
+              color: $color-licorice;
+            }
+          }
+        }
+        &__right {
+          position: relative;
+          text-align: right;
+          img {
+            border-radius: 10px;
+          }
+          .desktop-image {
+                width: 420px;
+                height: 100%;
+                -webkit-mask-image: url(http://localhost:8888/corsource/wp-content/uploads/2023/07/page-single-desktop-mask.png);
+                // -webkit-mask-image: url(/assets/images/page-hero/page-hero-desktop-mask.svg);
+                -webkit-mask-size: cover;
+                -webkit-mask-repeat: no-repeat;
+                -webkit-mask-position: right;
+            @media(max-width: 800px){
+              display: none;
+            }
+          }
+          .mobile-image {
+            width:100%;
+            border-radius: 10px;;
+            -webkit-mask-size: cover;
+            mask-image: url(http://localhost:8888/corsource/wp-content/uploads/2023/07/page-hero-mobile-mask.svg);
+            -webkit-mask-image: url(http://localhost:8888/corsource/wp-content/uploads/2023/07/page-hero-mobile-mask.svg);
+            @media(min-width: 800px){
+              display: none;
+            }
+          }
+        }
+    }
+  }
