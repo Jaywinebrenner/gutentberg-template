@@ -4,15 +4,30 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 8.125rem;
+    @media(max-width: $bp-small){
+        grid-template-columns: 1fr;
+        grid-gap: 6.125rem;
+    }
     &__left {
+        padding-right: 8%;
+        @media(max-width: $bp-small){
+            padding-right: 0;
+            text-align: center;
+        }
+        h3 {
+            padding-right: 8%;
+            @media(max-width: $bp-small){
+                padding-right: 0;
+            }
+        }
         img {
             object-fit: cover;
             width: 100%;
             margin-bottom: 2rem;
             mask-image: url("../images/career-cta/career-cta-mask.svg");
             mask-size: cover;
-            mask-repeat: no-repeat;
-            mask-position: right;
+            mask-repeat: round;
+            mask-position: unset;
         }
     }
     &__right {

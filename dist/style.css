@@ -951,6 +951,29 @@ Component
   grid-template-columns: 1fr 1fr;
   grid-gap: 8.125rem;
 }
+@media (max-width: 800px) {
+  .career-cta {
+    grid-template-columns: 1fr;
+    grid-gap: 6.125rem;
+  }
+}
+.career-cta__left {
+  padding-right: 8%;
+}
+@media (max-width: 800px) {
+  .career-cta__left {
+    padding-right: 0;
+    text-align: center;
+  }
+}
+.career-cta__left h3 {
+  padding-right: 8%;
+}
+@media (max-width: 800px) {
+  .career-cta__left h3 {
+    padding-right: 0;
+  }
+}
 .career-cta__left img {
   -o-object-fit: cover;
      object-fit: cover;
@@ -960,10 +983,10 @@ Component
           mask-image: url(c2744794ba230111f061.svg);
   -webkit-mask-size: cover;
           mask-size: cover;
-  -webkit-mask-repeat: no-repeat;
-          mask-repeat: no-repeat;
-  -webkit-mask-position: right;
-          mask-position: right;
+  -webkit-mask-repeat: round;
+          mask-repeat: round;
+  -webkit-mask-position: unset;
+          mask-position: unset;
 }
 .career-cta__right .quote-card {
   background-color: #FFFFFF;
