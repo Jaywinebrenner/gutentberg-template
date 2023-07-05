@@ -126,6 +126,21 @@ function init_acf_fields()
             ),
             'keywords'          => array('Card Grid'),
         ));
+
+        // register career cta block
+        acf_register_block(array(
+            'name'              => 'career cta',
+            'title'             => __('Career Cta'),
+            'description'       => __('Career Cta'),
+            'render_callback'   => 'block_renderer',
+            'category'          => 'formatting',
+            'icon'              => 'admin-comments',
+            'align'           => 'full',
+            'supports'        => array(
+                'align' => array('full'),
+            ),
+            'keywords'          => array('Career Cta'),
+        ));
     }
 }
 

@@ -38,4 +38,16 @@
       cursor: pointer;
     }
   }
+  &_background-red {
+    @extend .btn;
+    color: $color-white!important;
+    border: 1px solid $color-white;
+    background-color: $color-red;
+    &:hover {
+      background-color: $color-white;
+      color: $color-red!important;
+      border: 1px solid $color-red;
+      cursor: pointer;
+    }
+  }
 }
