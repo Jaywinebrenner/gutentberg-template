@@ -146,6 +146,11 @@ p {
       font-size: 0.875rem;
     }
   }
+
+  &.italic {
+    font-style: italic;
+    opacity: 0.5;
+  }
 }
 
 strong,
