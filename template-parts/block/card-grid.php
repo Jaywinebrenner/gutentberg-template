@@ -14,7 +14,7 @@ $id = 'card-grid-' . $block['id'];
 
 
 <?php if( have_rows('cards') ): ?>
-    <?php while( have_rows('cards') ): the_row(); 
+    <?php while( have_rows('cards') ): the_row();
 
         // Get sub field values.
         $image = get_sub_field('image');
@@ -23,12 +23,12 @@ $id = 'card-grid-' . $block['id'];
 
         ?>
 
-        <div class="card">
-            <div class="card__top">
+        <div class="card-grid__card">
+            <div class="card-grid__card__top">
                 <img src="<?php echo $image; ?>" alt="" />
             </div>
 
-            <div class="card__bottom">
+            <div class="card-grid__card__bottom">
                 <h5><?php echo  $title; ?></h5>
                 <div><?php echo $content; ?></div>
             </div>

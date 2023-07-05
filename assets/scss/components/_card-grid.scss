@@ -8,7 +8,7 @@
     @media(max-width: $bp-small){
         grid-template-columns: 1fr;
     }
-    .card {
+    &__card {
         border-radius: 10px;
         display: flex;
         flex-direction: column;
