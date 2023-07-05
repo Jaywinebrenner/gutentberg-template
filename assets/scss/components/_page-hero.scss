@@ -21,7 +21,6 @@
             grid-gap: 0;
         }
         &__left {
-            padding-right: 10%;
             @media(max-width: $bp-small){
                 text-align: center;
                 padding-right: 0;
