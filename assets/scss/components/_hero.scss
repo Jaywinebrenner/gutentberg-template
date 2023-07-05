@@ -50,13 +50,10 @@
         display: none;
       }
       @media(min-width: 1200px){
-        // -webkit-mask-image: url(http://localhost:8888/corsource/wp-content/uploads/2023/06/monitor-hero-mask.svg);
-        -webkit-mask-image: url("../images/hero/monitor-hero-mask.svg");
-        
-        -webkit-mask-size: cover;
-        -webkit-mask-repeat: round;
-        -webkit-mask-position: unset;
-
+        mask-image: url("../images/hero/monitor-hero-mask.svg");
+        mask-size: cover;
+        mask-repeat: round;
+        mask-position: unset;
       }
     }
 
