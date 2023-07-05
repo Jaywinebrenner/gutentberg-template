@@ -13,7 +13,7 @@ function init_acf_fields()
             'title'             => __('Hero'),
             'description'       => __('Custom Hero'),
             'render_callback'   => 'block_renderer',
-            'category'          => 'formatting',
+            'category'          => 'text',
             'icon'              => 'admin-comments',
             'align'           => 'full',
             'supports'        => array(
@@ -28,7 +28,7 @@ function init_acf_fields()
             'title'             => __('Three Card Row'),
             'description'       => __('Three Card Row'),
             'render_callback'   => 'block_renderer',
-            'category'          => 'formatting',
+            'category'          => 'text',
             'icon'              => 'admin-comments',
             'align'           => 'full',
             'supports'        => array(
@@ -43,7 +43,7 @@ function init_acf_fields()
             'title'             => __('Banner'),
             'description'       => __('Banner with left column content and a button'),
             'render_callback'   => 'block_renderer',
-            'category'          => 'formatting',
+            'category'          => 'text',
             'icon'              => 'admin-comments',
             'align'           => 'full',
             'supports'        => array(
@@ -73,7 +73,7 @@ function init_acf_fields()
             'title'             => __('Quote Cards'),
             'description'       => __('Quote Cards'),
             'render_callback'   => 'block_renderer',
-            'category'          => 'formatting',
+            'category'          => 'text',
             'icon'              => 'admin-comments',
             'align'           => 'full',
             'supports'        => array(
@@ -88,7 +88,7 @@ function init_acf_fields()
             'title'             => __('Content Quote With Image'),
             'description'       => __('Content Quote With Image on Client Page'),
             'render_callback'   => 'block_renderer',
-            'category'          => 'formatting',
+            'category'          => 'text',
             'icon'              => 'admin-comments',
             'align'           => 'full',
             'supports'        => array(
@@ -103,7 +103,7 @@ function init_acf_fields()
             'title'             => __('Two Column Content'),
             'description'       => __('Two Column Content'),
             'render_callback'   => 'block_renderer',
-            'category'          => 'formatting',
+            'category'          => 'text',
             'icon'              => 'admin-comments',
             'align'           => 'full',
             'supports'        => array(
@@ -118,13 +118,28 @@ function init_acf_fields()
             'title'             => __('Card Grid'),
             'description'       => __('Card Grid'),
             'render_callback'   => 'block_renderer',
-            'category'          => 'formatting',
+            'category'          => 'text',
             'icon'              => 'admin-comments',
             'align'           => 'full',
             'supports'        => array(
                 'align' => array('full'),
             ),
             'keywords'          => array('Card Grid'),
+        ));
+
+        // register testimonial block
+        acf_register_block(array(
+            'name'              => 'testimonial',
+            'title'             => __('Testimonial Slider'),
+            'description'       => __('Horizontal slider displaying testimonials'),
+            'render_callback'   => 'block_renderer',
+            'category'          => 'text',
+            'icon'              => 'testimonial',
+            'align'           => 'full',
+            'supports'        => array(
+                'align' => array('full'),
+            ),
+            'keywords'          => array('testimonial', 'slider'),
         ));
     }
 }
