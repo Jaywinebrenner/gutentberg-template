@@ -22,6 +22,21 @@ function init_acf_fields()
             'keywords'          => array('hero', 'masthead'),
         ));
 
+        // register three card row block
+        acf_register_block(array(
+            'name'              => 'three-card-row',
+            'title'             => __('Three Card Row'),
+            'description'       => __('Three Card Row'),
+            'render_callback'   => 'block_renderer',
+            'category'          => 'formatting',
+            'icon'              => 'admin-comments',
+            'align'           => 'full',
+            'supports'        => array(
+                'align' => array('full'),
+            ),
+            'keywords'          => array('three', 'card', 'row'),
+        ));
+
         // register banner block
         acf_register_block(array(
             'name'              => 'banner',
@@ -37,21 +52,65 @@ function init_acf_fields()
             'keywords'          => array('banner', 'cta'),
         ));
 
-                // register banner block
-                acf_register_block(array(
-                    'name'              => 'two-column-content',
-                    'title'             => __('Two Column Content'),
-                    'description'       => __('Two Column Content'),
-                    'render_callback'   => 'block_renderer',
-                    'category'          => 'formatting',
-                    'icon'              => 'admin-comments',
-                    'align'           => 'full',
-                    'supports'        => array(
-                        'align' => array('full'),
-                    ),
-                    'keywords'          => array('Two Column Content'),
-                ));
+        // register info cards
+        acf_register_block(array(
+            'name'              => 'info-cards',
+            'title'             => __('Info Cards'),
+            'description'       => __('Row of cards with content and an optional cta'),
+            'render_callback'   => 'block_renderer',
+            'category'          => 'text',
+            'icon'              => 'columns',
+            'align'           => 'full',
+            'supports'        => array(
+                'align' => array('full'),
+            ),
+            'keywords'          => array('info cards', 'card'),
+        ));
 
+        // register quote cards
+        acf_register_block(array(
+            'name'              => 'quote-cards',
+            'title'             => __('Quote Cards'),
+            'description'       => __('Quote Cards'),
+            'render_callback'   => 'block_renderer',
+            'category'          => 'formatting',
+            'icon'              => 'admin-comments',
+            'align'           => 'full',
+            'supports'        => array(
+                'align' => array('full'),
+            ),
+            'keywords'          => array('quote', 'cards'),
+        ));
+
+        // register content quote with image
+        acf_register_block(array(
+            'name'              => 'content-quote-with-image',
+            'title'             => __('Content Quote With Image'),
+            'description'       => __('Content Quote With Image on Client Page'),
+            'render_callback'   => 'block_renderer',
+            'category'          => 'formatting',
+            'icon'              => 'admin-comments',
+            'align'           => 'full',
+            'supports'        => array(
+                'align' => array('full'),
+            ),
+            'keywords'          => array('Content Quote With Image', 'content'),
+        ));
+
+        // register banner block
+        acf_register_block(array(
+            'name'              => 'two-column-content',
+            'title'             => __('Two Column Content'),
+            'description'       => __('Two Column Content'),
+            'render_callback'   => 'block_renderer',
+            'category'          => 'formatting',
+            'icon'              => 'admin-comments',
+            'align'           => 'full',
+            'supports'        => array(
+                'align' => array('full'),
+            ),
+            'keywords'          => array('Two Column Content'),
+        ));
     }
 }
 
