@@ -648,8 +648,6 @@ body {
 Component
 --------------------------------------------------------------*/
 .hero {
-  -o-object-fit: contain;
-     object-fit: contain;
   position: relative;
   background-color: #F7F4F0;
 }
