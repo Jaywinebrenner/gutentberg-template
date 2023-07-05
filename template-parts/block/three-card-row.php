@@ -21,7 +21,7 @@ $id = 'three-card-row-' . $block['id'];
 
 
       <?php if( have_rows('card') ): ?>
-      <?php while( have_rows('card') ): the_row(); 
+      <?php while( have_rows('card') ): the_row();
 
         // Get sub field values.
         $title = get_sub_field('title');
@@ -29,11 +29,11 @@ $id = 'three-card-row-' . $block['id'];
         $image = get_sub_field('image');
 
         ?>
-          <div class="card">
-            <div class="card__top">
+          <div class="three-card-row__card">
+            <div class="three-card-row__card__top">
               <img src="<?php echo $image ?>"/>
             </div>
-            <div class="card__bottom">
+            <div class="three-card-row__card__bottom">
               <h5><?php echo $title ; ?></h5>
               <p class="minor"><?php echo $copy ; ?></p>
             </div>
