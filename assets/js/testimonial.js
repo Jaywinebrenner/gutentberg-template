@@ -1,6 +1,7 @@
 class Testimonials {
   constructor(slides) {
     this.slides = slides;
+    this.setFontSize = this.setFontSize.bind(this);
     this.init();
   }
 
@@ -15,7 +16,7 @@ class Testimonials {
     });
 
     this.setFontSize();
-    window.addEventListener('resize', setFontSize);
+    window.addEventListener('resize', this.setFontSize);
   }
 
   setFontSize() {
