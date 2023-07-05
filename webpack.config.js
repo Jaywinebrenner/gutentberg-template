@@ -40,6 +40,7 @@ module.exports = {
         use: [
           MiniCssExtractPlugin.loader,
           'css-loader',
+          'postcss-loader',
           'sass-loader',
         ],
       },
@@ -60,10 +61,6 @@ module.exports = {
         test: /\.js$/,
         loader: "babel-loader",
         exclude: /(node_modules)/
-      },
-      {
-        test: /\.(jpg|jpeg|png|gif|woff|woff2|eot|ttf|svg)$/i,
-        use: 'url-loader?limit=1024',
       },
     ]
   },
