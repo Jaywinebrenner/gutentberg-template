@@ -1,0 +1,22 @@
+
+
+.footer {
+    background-color: $color-licorice;
+    h4, h5, p {
+        color: $color-white;
+    }
+    &__top {
+        .left {
+
+        }
+        .right {
+            .social-wrapper {
+                
+            }
+
+        }
+    }
+    &__bottom {
+
+    }
+}

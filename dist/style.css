@@ -614,6 +614,12 @@ body {
 /*--------------------------------------------------------------
 Component
 --------------------------------------------------------------*/
+.footer {
+  background-color: #1D0800;
+}
+.footer h4, .footer h5, .footer p {
+  color: #FFFFFF;
+}
 .hero {
   position: relative;
   background-color: #F7F4F0;
@@ -897,6 +903,12 @@ Component
   background: #FFFFFF;
 }
 
+.footer {
+  background-color: #1D0800;
+}
+.footer h4, .footer h5, .footer p {
+  color: #FFFFFF;
+}
 /*--------------------------------------------------------------
 Views
 --------------------------------------------------------------*/
