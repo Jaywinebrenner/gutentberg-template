@@ -1,0 +1,30 @@
+.info-cards {
+  hr {
+    margin: 0;
+    border: 0;
+    opacity: 0.6000000238418579;
+    border-top: 1px solid #1D0800;
+    width: 100%;
+  }
+
+  &__cards {
+    display: flex;
+    gap: 1.5rem;
+
+    @media(max-width: $bp-small) {
+      flex-direction: column;
+    }
+  }
+
+  &__card {
+    display: flex;
+    padding: 1.5rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 3rem;
+    flex: 1 0 0;
+    align-self: stretch;
+    border-radius: 0.625rem;
+    background: $color-white;
+  }
+}
