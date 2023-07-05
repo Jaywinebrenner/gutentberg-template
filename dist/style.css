@@ -1,10 +1,10 @@
-/*!*****************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./assets/scss/style.scss ***!
-  \*****************************************************************************************************************/
+/*!***********************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./assets/scss/style.scss ***!
+  \***********************************************************************************************************************************************************/
 @import url(https://fonts.googleapis.com/css2?family=Courier+Prime&family=Delicious+Handrawn&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Lilita+One&family=Oswald:wght@700&family=Staatliches&display=swap);
-/*!*********************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./assets/scss/style.scss (1) ***!
-  \*********************************************************************************************************************/
+/*!***************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./assets/scss/style.scss (1) ***!
+  \***************************************************************************************************************************************************************/
 /*!
 Theme Name: WP TEMPLATE DEFAULT
 Theme URI: N/A
@@ -351,6 +351,34 @@ form .textarea-wrap label {
   content: none !important;
 }
 
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+  font-size: 0.9em;
+  font-family: "Helvetica", sans-serif;
+  margin-bottom: 20px;
+  padding: 7px;
+  line-height: 28px;
+  font-weight: 100;
+  color: #2a2a2a;
+  background-color: #FFFFFF;
+  -webkit-appearance: none;
+          appearance: none;
+  border-radius: 0;
+}
+
+input::-moz-placeholder, textarea::-moz-placeholder {
+  font-size: 0.9em;
+  font-family: "Helvetica", sans-serif;
+  margin-bottom: 20px;
+  padding: 7px;
+  line-height: 28px;
+  font-weight: 100;
+  color: #2a2a2a;
+  background-color: #FFFFFF;
+  -moz-appearance: none;
+       appearance: none;
+  border-radius: 0;
+}
+
 input,
 input::placeholder,
 textarea,
@@ -363,7 +391,9 @@ textarea::placeholder {
   font-weight: 100;
   color: #2a2a2a;
   background-color: #FFFFFF;
-  appearance: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
   border-radius: 0;
 }
 
@@ -403,7 +433,9 @@ textarea:focus {
 [type=radio]:not(:checked) {
   position: absolute;
   border: 0;
-  appearance: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
   height: 20px;
   margin: 0 !important;
 }
@@ -446,19 +478,16 @@ textarea:focus {
   top: 3px;
   left: 2px;
   border-radius: 100%;
-  -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
 }
 
 [type=radio]:not(:checked) + label:after {
   opacity: 0;
-  -webkit-transform: scale(0);
   transform: scale(0);
 }
 
 [type=radio]:checked + label:after {
   opacity: 1;
-  -webkit-transform: scale(1);
   transform: scale(1);
 }
 
@@ -561,6 +590,10 @@ body {
   content: none;
 }
 
+::-moz-selection {
+  background: rgba(214, 73, 54, 0.4); /* WebKit/Blink Browsers */
+}
+
 ::selection {
   background: rgba(214, 73, 54, 0.4); /* WebKit/Blink Browsers */
 }
@@ -615,6 +648,8 @@ body {
 Component
 --------------------------------------------------------------*/
 .hero {
+  -o-object-fit: contain;
+     object-fit: contain;
   position: relative;
   background-color: #F7F4F0;
 }
@@ -664,7 +699,8 @@ Component
 }
 .hero__bottom .desktop-image {
   height: 450px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   width: 100%;
 }
 @media (max-width: 700px) {
@@ -711,7 +747,8 @@ Component
 }
 .three-card-row .cards-wrapper .three-card-row__card__top img {
   height: 21.875rem;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   width: 100%;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
@@ -747,7 +784,8 @@ Component
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   height: 28.125rem;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   width: 100%;
 }
 .quote-cards .quotecard__top {
@@ -768,7 +806,8 @@ Component
 .hc-icon-row .icons {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  column-gap: 32px;
+  -moz-column-gap: 32px;
+       column-gap: 32px;
 }
 
 .card-grid {
@@ -795,7 +834,8 @@ Component
   border-top-right-radius: 10px;
   border-top-left-radius: 10px;
   height: 25.5rem;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   width: 100%;
 }
 @media (max-width: 600px) {
