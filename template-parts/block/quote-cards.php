@@ -17,11 +17,11 @@ $id = 'quote-cards-' . $block['id'];
         <?php
             $left = get_field('left_card');
             if( $left ): ?>
-                <div class="card">
-                    <div class="card__top">
-                        <img src="<?php echo esc_url( $left['image'] ); ?>" alt="<?php echo esc_attr( $left['image']['alt'] ); ?>" />
+                <div class="quotecard">
+                    <div class="quotecard__top">
+                        <img src="<?php echo esc_url( $left['image'] ); ?>"  />
                     </div>
-                    <div class="card__bottom">
+                    <div class="quotecard__bottom">
                         <h5><?php echo $left['quote']; ?><h5>
                         <p><?php echo $left['quoter']; ?></p>
                     </div>
@@ -34,11 +34,11 @@ $id = 'quote-cards-' . $block['id'];
         <?php
             $right = get_field('right_card');
             if( $right ): ?>
-                <div class="card">
-                    <div class="card__top">
-                        <img src="<?php echo esc_url( $right['image'] ); ?>" alt="<?php echo esc_attr( $right['image']['alt'] ); ?>" />
+                <div class="quotecard">
+                    <div class="quotecard__top">
+                        <img src="<?php echo esc_url( $right['image'] ); ?>"  />
                     </div>
-                    <div class="card__bottom">
+                    <div class="quotecard__bottom">
                         <h5><?php echo $right['quote']; ?><h5>
                         <p><?php echo $right['quoter']; ?></p>
                     </div>

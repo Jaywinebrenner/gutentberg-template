@@ -37,6 +37,21 @@ function init_acf_fields()
             'keywords'          => array('banner', 'cta'),
         ));
 
+        // register info cards
+        acf_register_block(array(
+            'name'              => 'info-cards',
+            'title'             => __('Info Cards'),
+            'description'       => __('Row of cards with content and an optional cta'),
+            'render_callback'   => 'block_renderer',
+            'category'          => 'text',
+            'icon'              => 'columns',
+            'align'           => 'full',
+            'supports'        => array(
+                'align' => array('full'),
+            ),
+            'keywords'          => array('info cards', 'card'),
+        ));
+
         // register quote cards
         acf_register_block(array(
             'name'              => 'quote-cards',

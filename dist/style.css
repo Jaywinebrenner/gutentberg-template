@@ -283,6 +283,7 @@ hr {
   transition: all 300ms;
   font-size: 1rem;
   line-height: 50px;
+  font-weight: 600;
   border: 1px solid #1D0800;
   border-radius: 50px;
 }
@@ -511,7 +512,7 @@ body {
 .container, .wp-block-columns {
   max-width: 1800px;
   margin: auto;
-  width: calc(100vw - 10%);
+  width: 90%;
 }
 .container--small {
   max-width: 720px;
@@ -621,7 +622,7 @@ Component
   .hero .hero-container {
     max-width: 1800px;
     margin: auto;
-    width: calc(100vw - 10%);
+    width: 90%;
   }
 }
 @media (min-width: 1200px) {
@@ -690,25 +691,25 @@ Component
     grid-template-columns: 1fr;
   }
 }
-.quote-cards .card img {
+.quote-cards .quotecard img {
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   height: 28.125rem;
   object-fit: cover;
   width: 100%;
 }
-.quote-cards .card__top {
+.quote-cards .quotecard__top {
   background-color: #FFFFFF;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
 }
-.quote-cards .card__bottom {
+.quote-cards .quotecard__bottom {
   background-color: #FFFFFF;
   padding: 1.5rem;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
 }
-.quote-cards .card p {
+.quote-cards .quotecard p {
   font-style: italic;
 }
 
@@ -716,6 +717,34 @@ Component
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   column-gap: 32px;
+}
+
+.info-cards hr {
+  margin: 0;
+  border: 0;
+  opacity: 0.6000000238;
+  border-top: 1px solid #1D0800;
+  width: 100%;
+}
+.info-cards__cards {
+  display: flex;
+  gap: 1.5rem;
+}
+@media (max-width: 800px) {
+  .info-cards__cards {
+    flex-direction: column;
+  }
+}
+.info-cards__card {
+  display: flex;
+  padding: 1.5rem;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 3rem;
+  flex: 1 0 0;
+  align-self: stretch;
+  border-radius: 0.625rem;
+  background: #FFFFFF;
 }
 
 /*--------------------------------------------------------------
