@@ -1766,6 +1766,11 @@ Component
   background: #D64936;
 }
 
+.source-aq-cta .source-aq-cta-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 6.875rem;
+}
 /*--------------------------------------------------------------
 Views
 --------------------------------------------------------------*/

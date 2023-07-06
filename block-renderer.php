@@ -224,6 +224,22 @@ function init_acf_fields()
                 );
             },
         ));
+
+        // register source aq cta block
+        acf_register_block(array(
+            'name'              => 'source aq cta',
+            'title'             => __('Source Aq Cta'),
+            'description'       => __('Source Aq Cta'),
+            'render_callback'   => 'block_renderer',
+            'category'          => 'formatting',
+            'icon'              => 'admin-comments',
+            'align'           => 'full',
+            'supports'        => array(
+                'align' => array('full'),
+            ),
+            'keywords'          => array('Source Aq Cta'),
+        ));
+
     }
 }
 
