@@ -23,6 +23,15 @@
     h3 {
       max-width: 67.5rem;
       margin: auto;
+
+      &:before {
+        content: '“';
+        color: $color-red;
+      }
+      &:after {
+        content: '”';
+        color: $color-red;
+      }
     }
     p {
       margin-top: 2.5rem;

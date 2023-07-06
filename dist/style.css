@@ -1741,6 +1741,14 @@ Component
   max-width: 67.5rem;
   margin: auto;
 }
+.testimonial__quote h3:before {
+  content: "“";
+  color: #D64936;
+}
+.testimonial__quote h3:after {
+  content: "”";
+  color: #D64936;
+}
 .testimonial__quote p {
   margin-top: 2.5rem;
   padding-bottom: 1.5rem;
