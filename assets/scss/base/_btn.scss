@@ -23,7 +23,7 @@
     &:hover {
       background-color: $color-linen;
       color: $color-red!important;
-      border: 1px solid $color-red;
+      border: 1px solid $color-white;
       cursor: pointer;
     }
   }
@@ -33,7 +33,19 @@
     border: 1px solid $color-red;
     &:hover {
       background-color: $color-red;
-      color: $color-linen!important;
+      color: $color-white!important;
+      border: 1px solid $color-red;
+      cursor: pointer;
+    }
+  }
+  &_background-red {
+    @extend .btn;
+    color: $color-white!important;
+    border: 1px solid $color-white;
+    background-color: $color-red;
+    &:hover {
+      background-color: $color-white;
+      color: $color-red!important;
       border: 1px solid $color-red;
       cursor: pointer;
     }

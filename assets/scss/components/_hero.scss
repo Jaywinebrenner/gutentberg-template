@@ -46,21 +46,16 @@
       height: 450px;
       object-fit: cover;
       width: 100%;
-      // mask-image: url(#hero-mask);
-      // -webkit-mask-box-image: url(#hero-mask);
       @media(max-width: 700px){
         display: none;
       }
+      @media(min-width: 1200px){
+        mask-image: url("../images/hero/monitor-hero-mask.svg");
+        mask-size: cover;
+        mask-repeat: round;
+        mask-position: unset;
+      }
     }
-    // #hero-mask {
-    //   display: none;
-    //   height: 450px;
-    //   object-fit: cover;
-    //   width: 100%;
-    //   @media(max-width: 700px){
-    //     display: none;
-    //   }
-    // }
 
 
     .mobile-image {
@@ -69,11 +64,5 @@
         display: none;
       }
     }
-    // .monitor-image-mask {
-    //   @media(max-width: 700px){
-    //     display: none;
-    //   }
-    // }
-
   }
 }

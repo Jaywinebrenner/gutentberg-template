@@ -30,9 +30,8 @@ $id = 'page-hero-' . $block['id'];
         <?php if (get_field('image')) : ?>
           <img class="desktop-image" src="<?php the_field('image'); ?>" />
         <?php endif; ?>
-        <?php if (get_field('mobile_image')) : ?>
-          <img class="mobile-image" src="<?php the_field('mobile_image'); ?>" />
-        <?php endif; ?>
+        <img class="mobile-image" src="<?php echo get_field('mobile_image') ? get_field('mobile_image') : get_field('image'); ?>" />
+
       </div>
     </div>
 
