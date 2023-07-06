@@ -37,19 +37,19 @@ function init_acf_fields()
             'keywords'          => array('three', 'card', 'row'),
         ));
 
-        // register banner block
+        // register info cards
         acf_register_block(array(
-            'name'              => 'banner',
-            'title'             => __('Banner'),
-            'description'       => __('Banner'),
+            'name'              => 'info-cards',
+            'title'             => __('Info Cards'),
+            'description'       => __('Row of cards with content and an optional cta'),
             'render_callback'   => 'block_renderer',
             'category'          => 'text',
-            'icon'              => 'admin-comments',
+            'icon'              => 'columns',
             'align'           => 'full',
             'supports'        => array(
                 'align' => array('full'),
             ),
-            'keywords'          => array('banner', 'cta'),
+            'keywords'          => array('info cards', 'card'),
         ));
 
         // register quote cards
@@ -148,6 +148,21 @@ function init_acf_fields()
                     22
                 );
             },
+        ));
+
+        // register banner block
+        acf_register_block(array(
+            'name'              => 'banner',
+            'title'             => __('Banner'),
+            'description'       => __('Banner'),
+            'render_callback'   => 'block_renderer',
+            'category'          => 'text',
+            'icon'              => 'admin-comments',
+            'align'           => 'full',
+            'supports'        => array(
+                'align' => array('full'),
+            ),
+            'keywords'          => array('banner', 'cta'),
         ));
     }
 }

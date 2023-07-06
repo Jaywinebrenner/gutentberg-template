@@ -22,7 +22,7 @@ $id = 'banner-' . $block['id'];
                     src="<?php the_field('image'); ?>"
                     />
                 </div>
-                <div class="right">
+                <div class="right" style="color:<?php echo (get_field('background_color') === '#D64936') ? "#FFF" : "#1D0800";?>">
                     <p class="quote"><?php the_field('quote') ?></p>
                     <p class="quoter"><?php the_field('quoter') ?></p>
                 </div>
@@ -31,14 +31,14 @@ $id = 'banner-' . $block['id'];
         } else { ?>
             <div class="banner" style="background-color:<?php the_field('background_color'); ?>">
                 <div class="left">
-                    <h4 style="color:<?php echo (get_field('background_color') === '#D64936') ? "#FFF" : "#1D0800";?>" class="quote"><?php the_field('title') ?></h4>
+                    <div style="color:<?php echo (get_field('background_color') === '#D64936') ? "#FFF" : "#1D0800";?>" class="quote"><?php the_field('title') ?></div>
                 </div>
                 <div class="right">
                 <?php
                     $button = get_field('button');
                     if( $button ): ?>
                     <div class="btn-wrapper">
-                        <a href="<?php echo esc_url( $button['url'] ); ?>" class="btn_white"><?php echo $button['text']?></a>
+                        <a href="<?php echo esc_url( $button['url'] ); ?>" class="<?php echo (get_field('background_color') === '#D64936') ? "btn_white" : "btn_red";?>"><?php echo $button['text']?></a>
                     </div>
                     <?php endif; ?>
                 </div>
