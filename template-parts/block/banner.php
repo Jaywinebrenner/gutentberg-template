@@ -10,7 +10,7 @@
 $id = 'banner-' . $block['id'];
 ?>
 
-<section id="<?php echo $id; ?>" class="banner">
+<section id="<?php echo $id; ?>" class="banner-wrapper">
 
     <div class="container">
         <?php
@@ -18,8 +18,8 @@ $id = 'banner-' . $block['id'];
         ?>
             <div class="has-image-banner" style="background-color:<?php the_field('background_color'); ?>">
                 <div class="left">
-                    <img 
-                    src="<?php the_field('image'); ?>" 
+                    <img
+                    src="<?php the_field('image'); ?>"
                     />
                 </div>
                 <div class="right">

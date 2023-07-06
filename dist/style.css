@@ -647,7 +647,7 @@ body {
 /*--------------------------------------------------------------
 Component
 --------------------------------------------------------------*/
-.banner .has-image-banner {
+.banner-wrapper .has-image-banner {
   display: grid;
   grid-template-columns: 1fr 4fr;
   padding: 1.25rem;
@@ -655,17 +655,17 @@ Component
   border-radius: 10px;
 }
 @media (max-width: 800px) {
-  .banner .has-image-banner {
+  .banner-wrapper .has-image-banner {
     grid-template-columns: 1fr;
     grid-gap: 1.25rem;
   }
 }
-.banner .has-image-banner .left {
+.banner-wrapper .has-image-banner .left {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.banner .has-image-banner .left img {
+.banner-wrapper .has-image-banner .left img {
   -o-object-fit: cover;
      object-fit: cover;
   width: 100%;
@@ -681,32 +681,32 @@ Component
           mask-position: unset;
 }
 @media (max-width: 800px) {
-  .banner .has-image-banner .left img {
+  .banner-wrapper .has-image-banner .left img {
     width: 100%;
   }
 }
-.banner .has-image-banner .right {
+.banner-wrapper .has-image-banner .right {
   display: flex;
   flex-direction: column;
   justify-content: center;
   padding-right: 10%;
 }
 @media (max-width: 800px) {
-  .banner .has-image-banner .right {
+  .banner-wrapper .has-image-banner .right {
     padding-right: unset;
   }
 }
-.banner .has-image-banner .right p {
+.banner-wrapper .has-image-banner .right p {
   font-size: 1.375rem;
 }
-.banner .has-image-banner .right .quote {
+.banner-wrapper .has-image-banner .right .quote {
   font-weight: 600;
 }
-.banner .has-image-banner .right .quoter {
+.banner-wrapper .has-image-banner .right .quoter {
   margin-bottom: 0;
   font-style: italic;
 }
-.banner .banner {
+.banner-wrapper .banner {
   display: grid;
   grid-template-columns: 3fr 1fr;
   padding: 50px;
@@ -716,31 +716,31 @@ Component
   transition: 0.3s;
 }
 @media (max-width: 800px) {
-  .banner .banner {
+  .banner-wrapper .banner {
     grid-template-columns: 1fr;
     grid-gap: 1.25rem;
   }
 }
-.banner .banner:hover .btn_white {
+.banner-wrapper .banner:hover .btn_white {
   background-color: #F7F4F0;
   color: #D64936 !important;
   border: 1px solid #FFFFFF;
 }
-.banner .banner h4 {
+.banner-wrapper .banner h4 {
   margin-bottom: 0;
 }
 @media (max-width: 800px) {
-  .banner .banner h4 {
+  .banner-wrapper .banner h4 {
     text-align: center;
   }
 }
-.banner .banner .right, .banner .banner .left {
+.banner-wrapper .banner .right, .banner-wrapper .banner .left {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 @media (max-width: 800px) {
-  .banner .banner .right, .banner .banner .left {
+  .banner-wrapper .banner .right, .banner-wrapper .banner .left {
     align-items: center;
   }
 }
