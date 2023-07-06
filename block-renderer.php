@@ -179,6 +179,21 @@ function init_acf_fields()
             ),
             'keywords'          => array('Career Cta'),
         ));
+
+        // register page hero block
+        acf_register_block(array(
+            'name'              => 'page hero',
+            'title'             => __('Page Hero'),
+            'description'       => __('Page Hero'),
+            'render_callback'   => 'block_renderer',
+            'category'          => 'formatting',
+            'icon'              => 'admin-comments',
+            'align'           => 'full',
+            'supports'        => array(
+                'align' => array('full'),
+            ),
+            'keywords'          => array('Page Hero'),
+        ));
     }
 }
 
