@@ -7,6 +7,7 @@ class OurServices {
     }
   
     init() {
+        // ACCORDION
         let $ = jQuery;
         $('.accordion-item__content').hide();
         $('.accordion-item__title').click(function() {
@@ -14,7 +15,11 @@ class OurServices {
             $(this).next('.accordion-item__content').slideToggle();
             $(this).parent('.accordion-item').toggleClass('active');
         });
-  
+
+        // CHEVRON
+        $('.accordion-item__title').click(function() {
+            $(this).find('.chevron').toggleClass('down');
+          });
 
     }
   }

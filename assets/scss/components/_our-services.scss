@@ -10,35 +10,69 @@
     &__top {
         text-align: center;
         padding: 5.75rem 0;
+        .image-wrapper {
+            @media(max-width: $bp-small){
+                display: none;
+            }
+            img {
+                padding-top: 8.75rem;
+                height: 450px;
+                object-fit: cover;
+                width: 100%;
+                mask-image: url("../images/our-services/our-services-mask.svg");
+                mask-size: cover;
+                mask-repeat: round;
+                mask-position: unset;
+            }
+        }
+        .mobile-image-wrapper {
+            margin-top: 3.75rem;
+            @media(min-width: $bp-small){
+                display: none;
+            }
+            img {
+                object-fit: cover;
+                mask-image: url("../images/our-services/our-services-mobile-mask.svg");
+                mask-size: cover;
+                mask-repeat: round;
+            }
 
+        }
         h2 {
             margin-bottom: 2.25rem;
         }
         p {
             margin-bottom: 0;
         }
-        img {
-            padding-top: 8.75rem;
-            height: 450px;
-            object-fit: cover;
-            width: 100%;
-            mask-image: url("../images/our-services/our-services-mask.svg");
-            mask-size: cover;
-            mask-repeat: round;
-            mask-position: unset;
-        }
     }
     &__bottom {
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-gap: 10rem;
+        @media(max-width: $bp-small){
+            grid-template-columns: 1fr;
+            grid-gap: 2.5rem;
+        }
         .left {
 
         }
         .right {
             .accordion-item {
+                border-bottom: 1px solid rgb(29, 8, 0, .2);
                 &__title {
                     cursor: pointer;
+                    display: flex;
+                    justify-content: space-between;
+                    .chevron {
+                        transition: transform 0.3s ease;
+                    }
+                    
+                    .chevron.down {
+                        transform: rotate(180deg);
+                    }
+                    img {
+                        width: 1.75rem;
+                    }
                     h4 {
                         margin: 0;
                         padding: 1.25rem 0;
