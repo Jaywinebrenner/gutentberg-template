@@ -1,2 +1,2 @@
 // All code in this file will be injected globally
-import test from './test';
+// import test from './test';
