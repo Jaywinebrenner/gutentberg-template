@@ -8,17 +8,30 @@
     "bi-app-sass": "^1.1.0"
   },
   "devDependencies": {
+    "autoprefixer": "^10.4.14",
     "browser-sync": "^2.29.3",
     "browser-sync-webpack-plugin": "^2.3.0",
     "css-loader": "^6.7.4",
     "file-loader": "^6.2.0",
     "mini-css-extract-plugin": "^2.7.6",
+    "postcss-loader": "^7.3.3",
+    "postcss-preset-env": "^9.0.0",
     "sass": "^1.62.1",
     "sass-loader": "^13.3.0",
     "url-loader": "^4.1.1",
     "webpack": "^5.83.1",
     "webpack-cli": "^5.1.1"
   },
+  "postcss": {
+    "plugins": {
+      "autoprefixer": {}
+    }
+  },
+  "browserslist": [
+    "last 2 version",
+    "not dead",
+    "iOS >= 9"
+  ],
   "scripts": {
     "build": "webpack --mode production",
     "dev": "webpack --mode development --watch"
