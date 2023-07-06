@@ -44,11 +44,10 @@
           .desktop-image {
                 width: 420px;
                 height: 100%;
-                -webkit-mask-image: url(http://localhost:8888/corsource/wp-content/uploads/2023/07/page-single-desktop-mask.png);
-                // -webkit-mask-image: url(/assets/images/page-hero/page-hero-desktop-mask.svg);
-                -webkit-mask-size: cover;
-                -webkit-mask-repeat: no-repeat;
-                -webkit-mask-position: right;
+                mask-image: url('../images/page-hero/page-hero-mask.svg');
+                mask-size: cover;
+                mask-repeat: no-repeat;
+                mask-position: right;
             @media(max-width: 800px){
               display: none;
             }
@@ -56,9 +55,8 @@
           .mobile-image {
             width:100%;
             border-radius: 10px;;
-            -webkit-mask-size: cover;
-            mask-image: url(http://localhost:8888/corsource/wp-content/uploads/2023/07/page-hero-mobile-mask.svg);
-            -webkit-mask-image: url(http://localhost:8888/corsource/wp-content/uploads/2023/07/page-hero-mobile-mask.svg);
+            mask-size: cover;
+            mask-image: url('../images/page-hero/page-hero-mobile-mask.svg');
             @media(min-width: 800px){
               display: none;
             }
