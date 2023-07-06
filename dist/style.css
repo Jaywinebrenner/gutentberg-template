@@ -1053,6 +1053,18 @@ Component
     display: none;
   }
 }
+@media (min-width: 1200px) {
+  .hero__bottom .desktop-image {
+    -webkit-mask-image: url(eafd52f7205a587c070f.svg);
+            mask-image: url(eafd52f7205a587c070f.svg);
+    -webkit-mask-size: cover;
+            mask-size: cover;
+    -webkit-mask-repeat: round;
+            mask-repeat: round;
+    -webkit-mask-position: unset;
+            mask-position: unset;
+  }
+}
 .hero__bottom .mobile-image {
   width: 100%;
 }
