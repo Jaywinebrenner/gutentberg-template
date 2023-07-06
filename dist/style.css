@@ -1222,12 +1222,26 @@ Component
 
 .our-services .our-services-wrapper {
   background-color: #FFFFFF;
-  border-radius: 10px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
   padding: 3.75rem;
+}
+@media (max-width: 800px) {
+  .our-services .our-services-wrapper {
+    padding: 0.8rem;
+  }
 }
 .our-services__top {
   text-align: center;
   padding: 5.75rem 0;
+}
+@media (max-width: 800px) {
+  .our-services__top {
+    padding: 5rem 0;
+  }
+}
+.our-services__top .image-wrapper {
+  padding-top: 8.75rem;
 }
 @media (max-width: 800px) {
   .our-services__top .image-wrapper {
@@ -1235,8 +1249,6 @@ Component
   }
 }
 .our-services__top .image-wrapper img {
-  padding-top: 8.75rem;
-  height: 450px;
   -o-object-fit: cover;
      object-fit: cover;
   width: 100%;
@@ -1260,8 +1272,8 @@ Component
 .our-services__top .mobile-image-wrapper img {
   -o-object-fit: cover;
      object-fit: cover;
-  -webkit-mask-image: url(33d0a4d2de563b8b8d6b.svg);
-          mask-image: url(33d0a4d2de563b8b8d6b.svg);
+  -webkit-mask-image: url(eb611025d04e1ca6e06d.svg);
+          mask-image: url(eb611025d04e1ca6e06d.svg);
   -webkit-mask-size: cover;
           mask-size: cover;
   -webkit-mask-repeat: round;
@@ -1304,6 +1316,11 @@ Component
 .our-services__bottom .right .accordion-item__title h4 {
   margin: 0;
   padding: 1.25rem 0;
+}
+@media (max-width: 800px) {
+  .our-services__bottom .right .accordion-item__title h4 {
+    padding: 2.6875rem 0;
+  }
 }
 .our-services__bottom .right .accordion-item__content {
   display: none;
