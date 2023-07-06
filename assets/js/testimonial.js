@@ -36,7 +36,7 @@ class Testimonials {
 document.addEventListener('DOMContentLoaded', initializeBlock)
 
 if (window.acf) {
-  window.acf.addAction('render_block_preview', initializeBlock);
+  window.acf.addAction('render_block_preview/type=testimonial', initializeBlock);
 }
 
 function initializeBlock() {
