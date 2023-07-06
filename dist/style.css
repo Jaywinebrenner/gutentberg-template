@@ -1255,6 +1255,13 @@ Component
   grid-template-columns: 1fr 1fr;
   grid-gap: 10rem;
 }
+.our-services__bottom .right .accordion-item__title {
+  cursor: pointer;
+}
+.our-services__bottom .right .accordion-item__title h4 {
+  margin: 0;
+  padding: 1.25rem 0;
+}
 .our-services__bottom .right .accordion-item__content {
   display: none;
 }

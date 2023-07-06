@@ -38,7 +38,11 @@
         .right {
             .accordion-item {
                 &__title {
-
+                    cursor: pointer;
+                    h4 {
+                        margin: 0;
+                        padding: 1.25rem 0;
+                    }
                 }
                 &__content {
 
