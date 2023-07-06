@@ -18,7 +18,8 @@ This theme, like WordPress, is licensed under the GPL.
 /*--------------------------------------------------------------
 Library
 --------------------------------------------------------------*/
-
+@import 'lib/slick';
+@import 'lib/slick-theme';
 
 /*--------------------------------------------------------------
 Base
@@ -48,6 +49,7 @@ Component
 @import 'components/two-column-content';
 @import 'components/content-quote-with-image';
 @import 'components/info-cards';
+@import 'components/testimonial';
 
 
 /*--------------------------------------------------------------
