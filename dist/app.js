@@ -26,7 +26,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _smo
   \***********************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _studio_freight_lenis__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @studio-freight/lenis */ \"./node_modules/@studio-freight/lenis/dist/lenis.modern.mjs\");\n\nvar lenis = new _studio_freight_lenis__WEBPACK_IMPORTED_MODULE_0__[\"default\"]();\nlenis.on('scroll', function (e) {\n  console.log(e);\n});\nfunction raf(time) {\n  lenis.raf(time);\n  requestAnimationFrame(raf);\n}\nrequestAnimationFrame(raf);\n\n//# sourceURL=webpack://hc-theme/./assets/js/smoothscroll.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _studio_freight_lenis__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @studio-freight/lenis */ \"./node_modules/@studio-freight/lenis/dist/lenis.modern.mjs\");\n\ndocument.addEventListener('DOMContentLoaded', function () {\n  //only load smooth scroll on front end\n  if (!document.body.classList.contains('wp-admin')) {\n    var raf = function raf(time) {\n      lenis.raf(time);\n      requestAnimationFrame(raf);\n    };\n    var lenis = new _studio_freight_lenis__WEBPACK_IMPORTED_MODULE_0__[\"default\"]();\n    lenis.on('scroll', function (e) {\n      console.log(e);\n    });\n    requestAnimationFrame(raf);\n  }\n});\n\n//# sourceURL=webpack://hc-theme/./assets/js/smoothscroll.js?");
 
 /***/ }),
 
