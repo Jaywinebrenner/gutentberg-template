@@ -524,7 +524,7 @@ hr {
   }
 }
 
-.btn, .btn_red, .btn_white {
+.btn, .btn_background-red, .btn_red, .btn_white {
   text-transform: uppercase;
   padding: 0.5rem 1.3125rem;
   letter-spacing: 1.4px;
@@ -536,11 +536,11 @@ hr {
   border-radius: 50px;
 }
 @media (max-width: 800px) {
-  .btn, .btn_red, .btn_white {
+  .btn, .btn_background-red, .btn_red, .btn_white {
     font-size: 0.875rem;
   }
 }
-.btn:hover, .btn_red:hover, .btn_white:hover {
+.btn:hover, .btn_background-red:hover, .btn_red:hover, .btn_white:hover {
   background-color: #1D0800;
   color: #F7F4F0 !important;
   cursor: pointer;
@@ -562,6 +562,17 @@ hr {
 .btn_red:hover {
   background-color: #D64936;
   color: #FFFFFF !important;
+  border: 1px solid #D64936;
+  cursor: pointer;
+}
+.btn_background-red {
+  color: #FFFFFF !important;
+  border: 1px solid #FFFFFF;
+  background-color: #D64936;
+}
+.btn_background-red:hover {
+  background-color: #FFFFFF;
+  color: #D64936 !important;
   border: 1px solid #D64936;
   cursor: pointer;
 }
@@ -1381,6 +1392,60 @@ Component
   align-self: stretch;
   border-radius: 0.625rem;
   background: #FFFFFF;
+}
+
+.career-cta {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 8.125rem;
+}
+@media (max-width: 800px) {
+  .career-cta {
+    grid-template-columns: 1fr;
+    grid-gap: 3.125rem;
+  }
+}
+@media (max-width: 800px) {
+  .career-cta__left {
+    padding-right: 0;
+    text-align: center;
+  }
+}
+.career-cta__left h3 {
+  padding-right: 8%;
+}
+@media (max-width: 800px) {
+  .career-cta__left h3 {
+    padding-right: 0;
+  }
+}
+.career-cta__left img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 18.75rem;
+  margin-bottom: 2rem;
+  -webkit-mask-image: url(c2744794ba230111f061.svg);
+          mask-image: url(c2744794ba230111f061.svg);
+  -webkit-mask-size: cover;
+          mask-size: cover;
+  -webkit-mask-repeat: no-repeat;
+          mask-repeat: no-repeat;
+  border-radius: 10px;
+  -webkit-mask-position: unset;
+          mask-position: unset;
+}
+.career-cta__right .quote-card {
+  background-color: #FFFFFF;
+  padding: 1.5rem;
+  margin-bottom: 1.75rem;
+  border-radius: 10px;
+}
+.career-cta__right .quote-card .quote {
+  font-weight: 600;
+}
+.career-cta__right .quote-card .quoter {
+  font-style: italic;
 }
 
 .footer {
