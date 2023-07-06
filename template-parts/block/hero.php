@@ -36,11 +36,17 @@ $id = 'hero-' . $block['id'];
       src="<?php the_field('image'); ?>" 
       />
 
+      <?php endif; ?>
 
-    <?php endif; ?>
-    <?php if( get_field('mobile_image') ): ?>
+    <?php if ( get_field('mobile_image') ) {?>
       <img class="mobile-image" src="<?php the_field('mobile_image'); ?>" />
-    <?php endif; ?>
+    <?php } else { ?>
+      <img 
+      class="mobile_image" 
+      src="<?php the_field('image'); ?>" 
+      />
+    <?php }?>
+
     </div>
 
   </div>
