@@ -964,9 +964,6 @@ Component
     padding: 1.6875rem;
   }
 }
-.capability-dropdowns .capability-dropdowns-wrapper__bottom .capability-dropdowns-column .column-top-wrapper {
-  background-color: lightblue;
-}
 .capability-dropdowns .capability-dropdowns-wrapper__bottom .capability-dropdowns-column .column-top-wrapper .italics {
   font-style: italic;
 }
@@ -989,6 +986,9 @@ Component
 }
 .capability-dropdowns .capability-dropdowns-wrapper__bottom .capability-dropdowns-column .accordion-wrapper .accordion-item {
   border-bottom: 1px solid rgba(29, 8, 0, 0.2);
+}
+.capability-dropdowns .capability-dropdowns-wrapper__bottom .capability-dropdowns-column .accordion-wrapper .accordion-item:first-of-type {
+  margin-top: 1.6875rem;
 }
 .capability-dropdowns .capability-dropdowns-wrapper__bottom .capability-dropdowns-column .accordion-wrapper .accordion-item__title {
   cursor: pointer;

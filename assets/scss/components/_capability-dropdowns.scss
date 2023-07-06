@@ -28,7 +28,7 @@
             }
             .capability-dropdowns-column {
                 .column-top-wrapper {
-                    background-color: lightblue;
+ 
                     .italics {
                         font-style: italic;
                     }
@@ -49,6 +49,9 @@
                 .accordion-wrapper {
                     .accordion-item {
                         border-bottom: 1px solid rgb(29, 8, 0, .2);
+                        &:first-of-type {
+                            margin-top: 1.6875rem;
+                        }
                         &__title {
                             cursor: pointer;
                             display: flex;
