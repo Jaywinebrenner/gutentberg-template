@@ -44,6 +44,13 @@
 
                 }
             }
+            .accordion-item__content {
+                display: none;
+              }
+            
+              .accordion-item.active .accordion-item__content {
+                display: block;
+              }
         }
     }
 }

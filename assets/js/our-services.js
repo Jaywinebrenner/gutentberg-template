@@ -7,11 +7,16 @@ class OurServices {
     }
   
     init() {
-        console.log("our Sevices")
+        let $ = jQuery;
+        $('.accordion-item__content').hide();
+        $('.accordion-item__title').click(function() {
+            console.log("hello")
+            $(this).next('.accordion-item__content').slideToggle();
+            $(this).parent('.accordion-item').toggleClass('active');
+        });
   
 
     }
-  
   }
   
   document.addEventListener('DOMContentLoaded', initializeBlock)
