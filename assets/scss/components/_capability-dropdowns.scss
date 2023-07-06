@@ -1,0 +1,15 @@
+
+
+.capability-dropdowns {
+    .capability-dropdowns-wrapper {
+        &__top {
+
+        }
+        &__bottom {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+
+        }
+    }
+
+}

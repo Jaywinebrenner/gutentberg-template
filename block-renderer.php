@@ -126,6 +126,21 @@ function init_acf_fields()
             ),
             'keywords'          => array('Card Grid'),
         ));
+
+        // register capability dropdowns block
+        acf_register_block(array(
+            'name'              => 'capability dropdowns',
+            'title'             => __('Capability Dropdowns'),
+            'description'       => __('Capability Dropdowns'),
+            'render_callback'   => 'block_renderer',
+            'category'          => 'formatting',
+            'icon'              => 'admin-comments',
+            'align'           => 'full',
+            'supports'        => array(
+                'align' => array('full'),
+            ),
+            'keywords'          => array('Capability Dropdowns'),
+        ));
     }
 }
 
