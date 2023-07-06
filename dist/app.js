@@ -16,7 +16,7 @@
   \**************************/
 /***/ (function() {
 
-eval("// All code in this file will be injected globally\n// import test from './test';\n\n\n//# sourceURL=webpack://hc-theme/./assets/js/app.js?");
+eval("// All code in this file will be injected globally\n\n\n//# sourceURL=webpack://hc-theme/./assets/js/app.js?");
 
 /***/ })
 
