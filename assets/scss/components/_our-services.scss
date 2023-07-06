@@ -1,0 +1,49 @@
+
+
+
+.our-services {
+    .our-services-wrapper {
+        background-color: $color-white;
+        border-radius: 10px;
+        padding: 3.75rem;
+    }
+    &__top {
+        text-align: center;
+        padding: 5.75rem 0;
+
+        h2 {
+            margin-bottom: 2.25rem;
+        }
+        p {
+            margin-bottom: 0;
+        }
+        img {
+            padding-top: 8.75rem;
+            height: 450px;
+            object-fit: cover;
+            width: 100%;
+            mask-image: url("../images/our-services/our-services-mask.svg");
+            mask-size: cover;
+            mask-repeat: round;
+            mask-position: unset;
+        }
+    }
+    &__bottom {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 10rem;
+        .left {
+
+        }
+        .right {
+            .accordion-item {
+                &__title {
+
+                }
+                &__content {
+
+                }
+            }
+        }
+    }
+}

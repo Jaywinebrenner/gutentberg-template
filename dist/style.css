@@ -1220,6 +1220,41 @@ Component
   background: #D64936;
 }
 
+.our-services .our-services-wrapper {
+  background-color: #FFFFFF;
+  border-radius: 10px;
+  padding: 3.75rem;
+}
+.our-services__top {
+  text-align: center;
+  padding: 5.75rem 0;
+}
+.our-services__top h2 {
+  margin-bottom: 2.25rem;
+}
+.our-services__top p {
+  margin-bottom: 0;
+}
+.our-services__top img {
+  padding-top: 8.75rem;
+  height: 450px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  -webkit-mask-image: url(eafd52f7205a587c070f.svg);
+          mask-image: url(eafd52f7205a587c070f.svg);
+  -webkit-mask-size: cover;
+          mask-size: cover;
+  -webkit-mask-repeat: round;
+          mask-repeat: round;
+  -webkit-mask-position: unset;
+          mask-position: unset;
+}
+.our-services__bottom {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10rem;
+}
 /*--------------------------------------------------------------
 Views
 --------------------------------------------------------------*/
