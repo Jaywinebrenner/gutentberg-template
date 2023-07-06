@@ -37,21 +37,6 @@ function init_acf_fields()
             'keywords'          => array('three', 'card', 'row'),
         ));
 
-        // register banner block
-        acf_register_block(array(
-            'name'              => 'banner',
-            'title'             => __('Banner'),
-            'description'       => __('Banner with left column content and a button'),
-            'render_callback'   => 'block_renderer',
-            'category'          => 'text',
-            'icon'              => 'admin-comments',
-            'align'           => 'full',
-            'supports'        => array(
-                'align' => array('full'),
-            ),
-            'keywords'          => array('banner', 'cta'),
-        ));
-
         // register info cards
         acf_register_block(array(
             'name'              => 'info-cards',
@@ -163,6 +148,21 @@ function init_acf_fields()
                     22
                 );
             },
+        ));
+
+        // register banner block
+        acf_register_block(array(
+            'name'              => 'banner',
+            'title'             => __('Banner'),
+            'description'       => __('Banner'),
+            'render_callback'   => 'block_renderer',
+            'category'          => 'text',
+            'icon'              => 'admin-comments',
+            'align'           => 'full',
+            'supports'        => array(
+                'align' => array('full'),
+            ),
+            'keywords'          => array('banner', 'cta'),
         ));
     }
 }
