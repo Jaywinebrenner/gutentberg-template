@@ -60,6 +60,30 @@
             "button_label": "",
             "sub_fields": [
                 {
+                    "key": "field_64a5f96101581",
+                    "label": "Image",
+                    "name": "image",
+                    "type": "image",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "url",
+                    "preview_size": "medium",
+                    "library": "all",
+                    "min_width": "",
+                    "min_height": "",
+                    "min_size": "",
+                    "max_width": "",
+                    "max_height": "",
+                    "max_size": "",
+                    "mime_types": ""
+                },
+                {
                     "key": "field_64a5f858cd3bd",
                     "label": "Title",
                     "name": "title",
@@ -176,10 +200,10 @@
                     ]
                 },
                 {
-                    "key": "field_64a5f96101581",
-                    "label": "Image",
-                    "name": "image",
-                    "type": "image",
+                    "key": "field_64a6e5db6fa52",
+                    "label": "Quote",
+                    "name": "quote",
+                    "type": "textarea",
                     "instructions": "",
                     "required": 0,
                     "conditional_logic": 0,
@@ -188,16 +212,30 @@
                         "class": "",
                         "id": ""
                     },
-                    "return_format": "url",
-                    "preview_size": "medium",
-                    "library": "all",
-                    "min_width": "",
-                    "min_height": "",
-                    "min_size": "",
-                    "max_width": "",
-                    "max_height": "",
-                    "max_size": "",
-                    "mime_types": ""
+                    "default_value": "",
+                    "placeholder": "",
+                    "maxlength": "",
+                    "rows": "",
+                    "new_lines": ""
+                },
+                {
+                    "key": "field_64a6e5e56fa53",
+                    "label": "Quoter",
+                    "name": "quoter",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
                 }
             ]
         }
@@ -219,5 +257,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1688599802
+    "modified": 1688659435
 }

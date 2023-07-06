@@ -26,32 +26,45 @@ $id = 'capability-dropdowns-' . $block['id'];
                         $title = get_sub_field('title');
                         $subtitle = get_sub_field('subtitle');
                         $italics = get_sub_field('italics');
+                        $quote = get_sub_field('quote');
+                        $quoter = get_sub_field('quoter');
                         ?>
-                    <div class="capability-dropdowns-column">
-                        <img src="<?php echo $image?>"/>
-                        <h5><?php echo $title?></h5>
-                        <p class="minor"><?php echo $subtitle?></p>
-                        <p class="minor italics"><?php echo $italics?></p>
-                        <div class="accordion-wrapper">
-                            <?php
-                            if( have_rows('dropdown') ):
-                                while( have_rows('dropdown') ) : the_row();
-                                $title = get_sub_field('title');
-                                $content = get_sub_field('content');
-                                ?>
-                                <div class="accordion-item">
-                                    <div class="accordion-item__title">
-                                        <p><?php echo $title?></p>
-                                    </div>
-                                    <div class="accordion-item__content">
-                                        <p><?php echo $content?></p>
-                                    </div>
+                        <div class="capability-dropdowns-column">
+                            <div class="column-top-wrapper">
+                                <div class="column-top">
+                                    <img src="<?php echo $image?>"/>
                                 </div>
+                                <div class="column-bottom">
+                                    <h5><?php echo $title?></h5>
+                                    <p class="minor col-subtitle"><?php echo $subtitle?></p>
+                                    <p class="minor italics"><?php echo $italics?></p>
+                                </div>
+                            </div>
+                            <div class="accordion-wrapper">
                                 <?php
-                                endwhile;
-                            endif;
-                            ?>
-                        </div>
+                                if( have_rows('dropdown') ):
+                                    while( have_rows('dropdown') ) : the_row();
+                                    $title = get_sub_field('title');
+                                    $content = get_sub_field('content');
+                                    ?>
+                                    <div class="accordion-item">
+                                        <div class="accordion-item__title">
+                                            <p class="bold"><?php echo $title?></p>
+                                            <img class="chevron" src="<?php echo get_stylesheet_directory_uri();?>/assets/images/capability-dropdowns/chevron.svg"/>
+                                        </div>
+                                        <div class="accordion-item__content">
+                                            <p class="content"><?php echo $content?></p>
+                                        </div>
+                                    </div>
+                                    <?php
+                                    endwhile;
+                                endif;
+                                ?>
+                            </div>
+                            <div class="quote-wrapper">
+                                <p class="minor quote"><?php echo $quote?></p>
+                                <p class="quoter"><?php echo $quoter?></p>
+                            </div>
 
                 </div>
                 <?php
