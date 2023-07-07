@@ -25,5 +25,62 @@
 <div id="page" class="hfeed site">
 
 
+	<div class="navigation">
+		<div class="container">
+			<div class="navigation-wrapper">
+				<div class="navigation-wrapper__left">
+					<a href="<?php echo site_url('/'); ?>">
+						<img src="<?php echo get_stylesheet_directory_uri();?>/assets/images/navigation/logo.svg"/>
+					</a>
+				</div>
+				<div class="navigation-wrapper__right">
+
+					<div class="navigation-wrapper__link-with-submenu" href="#">
+						<p class="minor">Why CorSource</p>
+						<div class="submenu">
+							<a class="submenu__item" href="#">
+								<p class="minor">For Clients</p>
+							</a>
+							<a class="submenu__item" href="#">
+								<p class="minor">Consultants</p>
+							</a>
+						</div>
+					</div>
+
+					<a class="navigation-wrapper__link" href="<?php echo site_url('/services'); ?>">
+						<p class="minor">Services</p>
+					</a>
+
+					<div class="navigation-wrapper__link-with-submenu" href="#">
+						<p class="minor">Solutions</p>
+						<div class="submenu">
+							<a class="submenu__item" href="#">
+								<p class="minor">Solutions Submenu</p>
+							</a>
+							<a class="submenu__item" href="#">
+								<p class="minor">Solutions Submenu Two</p>
+							</a>
+						</div>
+					</div>
+
+
+					<a class="navigation-wrapper__link" href="#">
+						<p class="minor">Meet CorSource</p>
+						<div class="submenu">
+
+						</div>
+					</a>
+					<a class="navigation-wrapper__link" href="#">
+						<p class="minor">The Source AQ</p>
+					</a>
+					<a class="navigation-wrapper__link btn_red" href="#">
+						<p class="minor">Job Seekers</p>
+					</a>
+				</div>
+			</div>
+
+		</div>
+	</div>
+
 		<main id="main" class="site-main wrap" role="main">
 

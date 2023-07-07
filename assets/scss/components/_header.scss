@@ -1,0 +1,80 @@
+
+
+.wp-block-navigation__container {
+    display: none;
+}
+
+.page {
+    position: relative;
+}
+
+.navigation {
+    padding: 5.625rem 0;
+    z-index: 1000;
+    position: absolute;
+    .btn_red p {
+        &:hover {
+            color: $color-linen!important;
+        }
+    }
+    .navigation-wrapper {
+        display: grid;
+        grid-template-columns: 1fr 8fr;
+        &__left {
+            width: 22.625rem;
+            margin-right: 3.5rem;
+            img {
+                width: 300px;
+            }
+        }
+        &__right {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        &__link-with-submenu {
+            position: relative;
+            p {
+                transition: .3s;
+                cursor: pointer;
+                &:hover {
+                    color: $color-red;
+                }
+                &:hover ~ .submenu {
+                    // background-color: blue;
+                    // opacity: 1;
+                    transition: .3s;
+                }
+                margin-bottom: 0;
+            }
+ 
+            .submenu {
+                background-color: $color-white;
+                position: absolute;
+                padding: 1.5625rem 1.5625rem 0 1.5625rem;
+                display: none;
+                // opacity: 0;
+                &__item {
+
+                    p {
+                        margin-bottom: 1.5625rem;
+                    }
+                    
+
+                }
+            }
+        }
+        &__link {
+            position: relative;
+            p {
+                transition: .3s;
+                &:hover {
+                    color: $color-red;
+                }
+                margin-bottom: 0;
+            }
+
+        }
+
+    }
+}
