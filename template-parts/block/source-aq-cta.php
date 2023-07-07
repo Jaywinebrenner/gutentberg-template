@@ -16,10 +16,8 @@ $content = get_field('content');
         <div class="source-aq-cta-wrapper">
             <div class="source-aq-cta-wrapper__left">
                 <div class="content-wrapper">
-                    <?php the_field('content'); ?> 
+                    <?php the_field('left_column_content'); ?> 
                 </div>
-
-
                 <?php
                 $button = get_field('button');
                 if ($button) : ?>
@@ -30,7 +28,9 @@ $content = get_field('content');
 
             </div>
             <div class="source-aq-cta-wrapper__right">
-                
+                <?php if (get_field('image')) : ?>
+                <img class="desktop-image" src="<?php the_field('image'); ?>" />
+                <?php endif; ?>
             </div>
 
         </div>

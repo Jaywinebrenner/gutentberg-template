@@ -1770,7 +1770,34 @@ Component
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 6.875rem;
+  background-color: #FFFFFF;
+  padding: 8rem 4.125rem;
+  border-radius: 10px;
+  align-items: center;
 }
+@media (max-width: 800px) {
+  .source-aq-cta .source-aq-cta-wrapper {
+    grid-template-columns: 1fr;
+    padding: 3rem 1.5rem;
+    text-align: center;
+    grid-gap: 3.8125rem;
+  }
+}
+.source-aq-cta .source-aq-cta-wrapper__right img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  -webkit-mask-image: url(33d0a4d2de563b8b8d6b.svg);
+          mask-image: url(33d0a4d2de563b8b8d6b.svg);
+  -webkit-mask-size: cover;
+          mask-size: cover;
+  -webkit-mask-repeat: no-repeat;
+          mask-repeat: no-repeat;
+  border-radius: 10px;
+  -webkit-mask-position: unset;
+          mask-position: unset;
+}
+
 /*--------------------------------------------------------------
 Views
 --------------------------------------------------------------*/
