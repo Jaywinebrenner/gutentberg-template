@@ -7,30 +7,55 @@ import './smoothscroll';
 // Navigation
 class Navigation {
     constructor() {
-        this.submenuHover = this.submenuHover.bind(this);
+        this.hamburger = this.hamburger.bind(this);
+        this.mobileMenuAccordion = this.mobileMenuAccordion.bind(this);
         this.init();
     }
   
     init() {
         let $ = jQuery;
         console.log("Navigation")
-        this.submenuHover()
+        this.hamburger();
+        this.mobileMenuAccordion();
     }
 
-    submenuHover() {
-        // Get the parent list item with submenu
-        var menuItems = document.querySelector('.navigation-wrapper__link-with-submenu');
-        console.log("menuitems", menuItems);
-        var submenu = menuItems.querySelector('.submenu');
-        console.log("submenus", submenu);
-        menuItems.addEventListener('mouseover', function() {
-        submenu.style.display = 'block';
-        });
-        menuItems.addEventListener('mouseout', function() {
-            submenu.style.display = 'none';
+    hamburger() {
+        // Transform Burger to X and make Mobile Menu active
+        let open;
+        var hamburger = document.querySelector('.hamburger');
+        var menuTop = document.querySelector('.navigation-mobile-wrapper-top')
+        var menu = document.querySelector(".navigation-mobile-wrapper-bottom")
+        hamburger.addEventListener('click', function() {
+            this.classList.toggle('open');
+            console.log("OPEN", open)
+            open = hamburger.classList.contains("open");
+            if(open){
+                menu.style.display = "block"
+                menuTop.style.backgroundColor = "#FFF"
+            } else {
+                menu.style.display = "none"
+                menuTop.style.backgroundColor = "transparent"
+            }
         });
 
     }
+
+    mobileMenuAccordion () {
+
+        // OPEN CLOSE ACCORDION
+        let $ = jQuery;
+        $('.mobile-link').click(function() {
+            var submenu = $(this).next('.nav-submenu');
+            submenu.slideToggle();
+        });
+
+        // ROTATE CHEVRON
+        $('.has-submenu').click(function() {
+            var chevron = $(this).find('.chevron');
+            chevron.toggleClass('rotate');
+        });
+    }
+
 }
   
   document.addEventListener('DOMContentLoaded', initializeBlock)

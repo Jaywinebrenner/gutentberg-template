@@ -910,6 +910,10 @@ Component
   display: none;
 }
 
+.wp-block-navigation {
+  display: none !important;
+}
+
 .page {
   position: relative;
 }
@@ -918,6 +922,11 @@ Component
   padding: 5.625rem 0;
   z-index: 1000;
   position: absolute;
+}
+@media (max-width: 800px) {
+  .navigation {
+    display: none;
+  }
 }
 .navigation .btn_red p:hover {
   color: #F7F4F0 !important;
@@ -941,6 +950,19 @@ Component
 .navigation .navigation-wrapper__link-with-submenu {
   position: relative;
 }
+.navigation .navigation-wrapper__link-with-submenu .submenu {
+  background-color: #FFFFFF;
+  position: absolute;
+  padding: 1.5625rem 1.5625rem 0 1.5625rem;
+  display: none;
+  width: 167px;
+}
+.navigation .navigation-wrapper__link-with-submenu .submenu:hover {
+  display: block;
+}
+.navigation .navigation-wrapper__link-with-submenu .submenu__item p {
+  margin-bottom: 1.5625rem;
+}
 .navigation .navigation-wrapper__link-with-submenu p {
   transition: 0.3s;
   cursor: pointer;
@@ -951,15 +973,7 @@ Component
 }
 .navigation .navigation-wrapper__link-with-submenu p:hover ~ .submenu {
   transition: 0.3s;
-}
-.navigation .navigation-wrapper__link-with-submenu .submenu {
-  background-color: #FFFFFF;
-  position: absolute;
-  padding: 1.5625rem 1.5625rem 0 1.5625rem;
-  display: none;
-}
-.navigation .navigation-wrapper__link-with-submenu .submenu__item p {
-  margin-bottom: 1.5625rem;
+  display: block;
 }
 .navigation .navigation-wrapper__link {
   position: relative;
@@ -970,6 +984,119 @@ Component
 }
 .navigation .navigation-wrapper__link p:hover {
   color: #D64936;
+}
+
+.navigation-mobile {
+  padding-bottom: 5.625rem;
+  z-index: 1000;
+  position: absolute;
+  width: 100%;
+  top: 3.875rem;
+}
+@media (min-width: 800px) {
+  .navigation-mobile {
+    display: none;
+  }
+}
+.navigation-mobile p {
+  transition: 0.3s;
+  cursor: pointer;
+  padding: 0.8125rem 0;
+}
+.navigation-mobile p:hover {
+  color: #D64936;
+}
+.navigation-mobile .navigation-mobile-wrapper-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.625rem;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+.navigation-mobile .navigation-mobile-wrapper-top img {
+  width: 12.5rem;
+}
+.navigation-mobile .navigation-mobile-wrapper-bottom {
+  display: none;
+  background-color: #FFFFFF;
+  padding: 1.625rem;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+.navigation-mobile .navigation-mobile-wrapper-bottom p {
+  margin-bottom: 0;
+}
+.navigation-mobile .navigation-mobile-wrapper-bottom .title {
+  border-top: 1px solid rgba(29, 8, 0, 0.2);
+}
+.navigation-mobile .navigation-mobile-wrapper-bottom .nav-submenu {
+  display: none;
+}
+.navigation-mobile .navigation-mobile-wrapper-bottom .has-submenu {
+  position: relative;
+}
+.navigation-mobile .navigation-mobile-wrapper-bottom .has-submenu:first-of-type p {
+  border-top: none;
+}
+.navigation-mobile .navigation-mobile-wrapper-bottom .has-submenu img {
+  position: absolute;
+  right: 6px;
+  top: 12px;
+}
+.navigation-mobile .navigation-mobile-wrapper-bottom .has-submenu .chevron {
+  transition: transform 0.3s ease;
+}
+.navigation-mobile .navigation-mobile-wrapper-bottom .has-submenu .chevron.rotate {
+  transform: rotate(180deg);
+}
+.navigation-mobile .navigation-mobile-wrapper-bottom .nav-submenu.open {
+  display: block;
+}
+.navigation-mobile .hamburger {
+  width: 30px;
+  height: 22.5px;
+  position: relative;
+  transform: rotate(0deg);
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+}
+.navigation-mobile .hamburger span {
+  display: block;
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  background: #1D0800;
+  border-radius: 2px;
+  opacity: 1;
+  left: 0;
+  transform: rotate(0deg);
+  transition: 0.25s ease-in-out;
+}
+.navigation-mobile .hamburger span:nth-child(1) {
+  top: 0px;
+}
+.navigation-mobile .hamburger span:nth-child(2), .navigation-mobile .hamburger span:nth-child(3) {
+  top: 9px;
+}
+.navigation-mobile .hamburger span:nth-child(4) {
+  top: 18px;
+}
+.navigation-mobile .hamburger.open span:nth-child(1) {
+  top: 9px;
+  width: 0%;
+  left: 50%;
+}
+.navigation-mobile .hamburger.open span:nth-child(2) {
+  transform: rotate(45deg);
+}
+.navigation-mobile .hamburger.open span:nth-child(3) {
+  transform: rotate(-45deg);
+}
+.navigation-mobile .hamburger.open span:nth-child(4) {
+  top: 9px;
+  width: 0%;
+  left: 50%;
 }
 
 .footer {
