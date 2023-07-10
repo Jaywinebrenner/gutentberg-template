@@ -1795,6 +1795,8 @@ Component
   }
 }
 .our-services__top .image-wrapper img {
+  height: 26vw;
+  min-height: 28.125rem;
   -o-object-fit: cover;
      object-fit: cover;
   width: 100%;

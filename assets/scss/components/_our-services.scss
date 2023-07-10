@@ -23,8 +23,9 @@
                 display: none;
             }
             img {
-  
-                // height: 450px;
+
+                height: 26vw;
+                min-height: 28.125rem;
                 object-fit: cover;
                 width: 100%;
                 mask-image: url("../images/our-services/our-services-mask.svg");
@@ -74,7 +75,7 @@
                     .chevron {
                         transition: transform 0.3s ease;
                     }
-                    
+
                     .chevron.down {
                         transform: rotate(180deg);
                     }
@@ -96,7 +97,7 @@
             .accordion-item__content {
                 display: none;
               }
-            
+
               .accordion-item.active .accordion-item__content {
                 display: block;
               }
