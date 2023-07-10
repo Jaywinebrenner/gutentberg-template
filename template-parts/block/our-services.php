@@ -64,6 +64,7 @@ $id = 'our-services-' . $block['id'];
 
                 </div>
             </div>
+            <InnerBlocks />
         </div>
     </div>
 

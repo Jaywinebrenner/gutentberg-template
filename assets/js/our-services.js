@@ -1,38 +1,34 @@
-
-
 class OurServices {
-    constructor() {
-
-      this.init();
-    }
-  
-    init() {
-        // ACCORDION
-        let $ = jQuery;
-        $('.accordion-item__content').hide();
-        $('.accordion-item__title').click(function() {
-            console.log("hello")
-            $(this).next('.accordion-item__content').slideToggle();
-            $(this).parent('.accordion-item').toggleClass('active');
-        });
-
-        // CHEVRON
-        $('.accordion-item__title').click(function() {
-            $(this).find('.chevron').toggleClass('down');
-          });
-
-    }
+  constructor(el) {
+    this.el = el;
+    this.init();
   }
-  
-  document.addEventListener('DOMContentLoaded', initializeBlock)
-  
-  if (window.acf) {
-    window.acf.addAction('render_block_preview', initializeBlock);
+
+  init() {
+    // ACCORDION
+    let $ = jQuery;
+    $(this.el).find('.accordion-item__content').hide();
+    $(this.el).find('.accordion-item__title').click(function () {
+      $(this).next('.accordion-item__content').slideToggle();
+      $(this).parent('.accordion-item').toggleClass('active');
+    });
+
+    // CHEVRON
+    $(this.el).find('.accordion-item__title').click(function () {
+      $(this).find('.chevron').toggleClass('down');
+    });
+
   }
-  
-  function initializeBlock() {
-    [...document.querySelectorAll('.our-services')].forEach((el) => {
-      new OurServices(el);
-    })
-  }
-  
+}
+
+document.addEventListener('DOMContentLoaded', initializeBlock)
+
+if (window.acf) {
+  window.acf.addAction('render_block_preview/type=our-services', initializeBlock);
+}
+
+function initializeBlock() {
+  [...document.querySelectorAll('.our-services')].forEach((el) => {
+    new OurServices(el);
+  })
+}

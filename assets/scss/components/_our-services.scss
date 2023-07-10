@@ -4,8 +4,7 @@
 .our-services {
     .our-services-wrapper {
         background-color: $color-white;
-        border-top-left-radius: 10px;
-        border-top-right-radius: 10px;
+        border-radius: 10px;
         padding: 3.75rem;
         @media(max-width: $bp-small){
             padding: .8rem;
