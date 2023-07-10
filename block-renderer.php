@@ -226,6 +226,20 @@ function init_acf_fields()
                 );
             },
         ));
+                // register page our services block
+                acf_register_block(array(
+                    'name'              => 'our services',
+                    'title'             => __('Our Services'),
+                    'description'       => __('Our Services'),
+                    'render_callback'   => 'block_renderer',
+                    'category'          => 'formatting',
+                    'icon'              => 'admin-comments',
+                    'align'           => 'full',
+                    'supports'        => array(
+                        'align' => array('full'),
+                    ),
+                    'keywords'          => array('Our Services'),
+                ));
     }
 }
 
