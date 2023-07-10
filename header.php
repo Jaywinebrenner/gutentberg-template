@@ -105,7 +105,7 @@
 
 				<div class="has-submenu" href="#">
 					<img class="chevron" src="<?php echo get_stylesheet_directory_uri();?>/assets/images/navigation/chevron.svg"/>
-					<p class="title mobile-link minor">Why CorSource</p>
+					<h4 class="title mobile-link minor">Why CorSource</h4>
 					<div class="nav-submenu">
 						<a class="submenu__item" href="#">
 							<p class="minor">For Clients</p>
@@ -117,12 +117,12 @@
 				</div>
 
 				<a class="navigation-mobile-wrapper__link" href="<?php echo site_url('/services'); ?>">
-					<p class="title minor">Services</p>
+					<h4 class="title minor">Services</h4>
 				</a>
 
 				<div class="has-submenu" href="#">
 					<img class="chevron" src="<?php echo get_stylesheet_directory_uri();?>/assets/images/navigation/chevron.svg"/>
-					<p class="title mobile-link minor">Solutions</p>
+					<h4 class="title mobile-link minor">Solutions</h4>
 					<div class="nav-submenu">
 						<a class="submenu__item" href="#">
 							<p class="minor">For Clients</p>
@@ -135,7 +135,7 @@
 
 				<div class="has-submenu" href="#">
 					<img class="chevron" src="<?php echo get_stylesheet_directory_uri();?>/assets/images/navigation/chevron.svg"/>
-					<p class="title mobile-link minor">Meet CorSource</p>
+					<h4 class="title mobile-link minor">Meet CorSource</h4>
 					<div class="nav-submenu">
 						<a class="submenu__item" href="#">
 							<p class="minor">Submenu</p>
@@ -147,7 +147,7 @@
 				</div>
 
 				<a class="navigation-mobile-wrapper__link" href="#">
-					<p class="title minor">The Source AQ</p>
+					<h4 class="title minor">The Source AQ</h4>
 				</a>
 				<a class="btn_red" href="#">
 					Job Seekers

@@ -775,6 +775,10 @@ html {
   padding-bottom: 100px;
 }
 
+#wpadminbar {
+  display: none;
+}
+
 html {
   min-height: 100%;
   position: relative;
@@ -918,6 +922,10 @@ Component
   position: relative;
 }
 
+#page {
+  position: relative;
+}
+
 .navigation {
   padding: 5.625rem 0;
   z-index: 1000;
@@ -955,7 +963,7 @@ Component
   position: absolute;
   padding: 1.5625rem 1.5625rem 0 1.5625rem;
   display: none;
-  width: 167px;
+  width: 13.4375rem;
 }
 .navigation .navigation-wrapper__link-with-submenu .submenu:hover {
   display: block;
@@ -987,7 +995,6 @@ Component
 }
 
 .navigation-mobile {
-  padding-bottom: 5.625rem;
   z-index: 1000;
   position: absolute;
   width: 100%;
@@ -1023,15 +1030,25 @@ Component
   padding: 1.625rem;
   border-bottom-right-radius: 10px;
   border-bottom-left-radius: 10px;
+  padding-bottom: 20%;
+}
+.navigation-mobile .navigation-mobile-wrapper-bottom h4 {
+  margin-bottom: 0;
+  padding: 1.625rem 0;
 }
 .navigation-mobile .navigation-mobile-wrapper-bottom p {
   margin-bottom: 0;
+  padding: 0.7813rem 0;
+  font-weight: 400;
 }
 .navigation-mobile .navigation-mobile-wrapper-bottom .title {
   border-top: 1px solid rgba(29, 8, 0, 0.2);
 }
 .navigation-mobile .navigation-mobile-wrapper-bottom .nav-submenu {
   display: none;
+}
+.navigation-mobile .navigation-mobile-wrapper-bottom .nav-submenu a:last-of-type p {
+  margin-bottom: 1.625rem;
 }
 .navigation-mobile .navigation-mobile-wrapper-bottom .has-submenu {
   position: relative;
@@ -1042,7 +1059,7 @@ Component
 .navigation-mobile .navigation-mobile-wrapper-bottom .has-submenu img {
   position: absolute;
   right: 6px;
-  top: 12px;
+  top: 27px;
 }
 .navigation-mobile .navigation-mobile-wrapper-bottom .has-submenu .chevron {
   transition: transform 0.3s ease;
@@ -1312,12 +1329,12 @@ Component
   display: flex;
   flex-direction: column;
   padding-bottom: 80px;
-  padding-top: 200px;
+  padding-top: 12.5rem;
 }
 @media (max-width: 700px) {
   .hero__top {
     height: unset;
-    padding: 20% 0;
+    padding: 13.75rem 0;
   }
 }
 .hero__top h1, .hero__top p {
