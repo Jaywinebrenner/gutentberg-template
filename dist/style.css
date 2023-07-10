@@ -857,6 +857,12 @@ body {
   background: rgba(214, 73, 54, 0.4); /* WebKit/Blink Browsers */
 }
 
+.alignwide {
+  max-width: 56.25rem;
+  width: 100%;
+  margin: auto;
+}
+
 .wp-caption img {
   margin-bottom: 0;
 }
@@ -1768,8 +1774,7 @@ Component
 
 .our-services .our-services-wrapper {
   background-color: #FFFFFF;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
+  border-radius: 10px;
   padding: 3.75rem;
 }
 @media (max-width: 800px) {

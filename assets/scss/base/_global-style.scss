@@ -80,3 +80,10 @@ body {
 ::selection {
   background: rgb(214, 73, 54, .4); /* WebKit/Blink Browsers */
 }
+
+// Gutenberg default block stlying
+.alignwide {
+  max-width: 56.25rem;
+  width: 100%;
+  margin: auto;
+}

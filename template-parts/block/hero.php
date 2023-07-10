@@ -20,31 +20,23 @@ $id = 'hero-' . $block['id'];
         <p><?php the_field('subtitle'); ?></p>
         <?php
         $button = get_field('button');
-        if( $button ): ?>
-        <div class="btn-wrapper">
-          <a href="<?php echo esc_url( $button['url'] ); ?>" class="btn"><?php echo $button['text']?></a>
-        </div>
+        if ($button) : ?>
+          <div class="btn-wrapper">
+            <a href="<?php echo esc_url($button['url']); ?>" class="btn"><?php echo $button['text'] ?></a>
+          </div>
         <?php endif; ?>
       </div>
     </div>
 
     <div class="hero__bottom">
-    <?php if( get_field('image') ): ?>
-      <img 
-      class="desktop-image" 
-      src="<?php the_field('image'); ?>" 
-      />
+      <?php if (get_field('image')) : ?>
+        <img class="desktop-image" src="<?php the_field('image'); ?>" />
 
       <?php endif; ?>
 
-    <?php if ( get_field('mobile_image') ) {?>
-      <img class="mobile-image" src="<?php the_field('mobile_image'); ?>" />
-    <?php } else { ?>
-      <img 
-      class="mobile_image" 
-      src="<?php the_field('image'); ?>" 
-      />
-    <?php }?>
+      <?php if (get_field('mobile_image')) { ?>
+        <img class="mobile-image" src="<?php the_field('mobile_image'); ?>" />
+      <?php } ?>
 
     </div>
 
