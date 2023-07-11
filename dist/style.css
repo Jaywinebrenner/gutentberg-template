@@ -1563,7 +1563,7 @@ Component
   height: 37vw;
   min-height: 31.25rem;
   background-size: cover;
-  background-attachment: fixed;
+  background-repeat: no-repeat;
   background-position: center;
   -webkit-mask-image: url(b2264a1c7c6c86f8f45b.svg);
           mask-image: url(b2264a1c7c6c86f8f45b.svg);
