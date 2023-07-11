@@ -15,19 +15,17 @@ $id = 'our-services-' . $block['id'];
         <div class="our-services-wrapper">
 
             <div class="our-services__top">
-                <h2><?php the_field('main_title'); ?></h2>
-                <p><?php the_field('main_subtitle'); ?></p>
+                <h2 class="reveal-text"><?php the_field('main_title'); ?></h2>
+                <p class="reveal-text"><?php the_field('main_subtitle'); ?></p>
                 <?php if (get_field('image')) : ?>
                     <div class="image-wrapper">
-                        <img class="image" src="<?php the_field('image'); ?>" />
+                        <div class="image" style="background-image:url('<?php the_field('image'); ?>');" ></div>
                     </div>
                 <?php endif; ?>
 
-                <?php if (get_field('mobile_image')): ?>
                     <div class="mobile-image-wrapper">
-                        <img class="mobile-image" src="<?php the_field('mobile_image'); ?>" />
+                        <div class="mobile-image" style="background-image:url(' <?php echo get_field('mobile_image') ? get_field('mobile_image') : get_field('image'); ?>?>');" ></div>
                     </div>
-                <?php endif; ?>
 
 
             </div>

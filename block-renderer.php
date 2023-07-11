@@ -275,6 +275,22 @@ function init_acf_fields()
                 );
             },
         ));
+
+        // register animated text block
+        acf_register_block(array(
+            'name'              => 'animated-text',
+            'title'             => __('Animated Text'),
+            'description'       => __('Wrapper that center aligns and animates text'),
+            'render_callback'   => 'block_renderer',
+            'category'          => 'text',
+            'icon'              => 'admin-comments',
+            'align'           => 'full',
+            'supports'        => array(
+                'align' => array('full'),
+                'jsx'             => true,
+            ),
+            'keywords'          => array('text'),
+        ));
     }
 }
 

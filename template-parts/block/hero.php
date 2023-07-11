@@ -30,12 +30,11 @@ $id = 'hero-' . $block['id'];
 
     <div class="hero__bottom">
       <?php if (get_field('image')) : ?>
-        <img class="desktop-image" src="<?php the_field('image'); ?>" />
-
+        <div class="desktop-image" style="background-image:url('<?php the_field('image'); ?>');" ></div>
       <?php endif; ?>
 
       <?php if (get_field('mobile_image')) { ?>
-        <img class="mobile-image" src="<?php the_field('mobile_image'); ?>" />
+        <div class="mobile-image" style="background-image:url('<?php the_field('mobile_image'); ?>');" ></div>
       <?php } ?>
 
     </div>

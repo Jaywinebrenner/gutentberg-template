@@ -21,12 +21,13 @@
             @media(max-width: $bp-small){
                 display: none;
             }
-            img {
+            .image {
 
                 height: 26vw;
                 min-height: 28.125rem;
-                object-fit: cover;
-                width: 100%;
+                background-size: cover;
+                background-attachment: fixed;
+                background-position: center;
                 mask-image: url("../images/our-services/our-services-mask.svg");
                 mask-size: cover;
                 mask-repeat: round;
@@ -38,8 +39,12 @@
             @media(min-width: $bp-small){
                 display: none;
             }
-            img {
-                object-fit: cover;
+            .mobile-image {
+                width: 100%;
+                height: 19.625rem;
+                background-size: cover;
+                background-attachment: fixed;
+                background-position: center;
                 mask-image: url("../images/our-services/our-services-mobile-mask.svg");
                 mask-size: cover;
                 mask-repeat: round;
