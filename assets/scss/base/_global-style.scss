@@ -95,3 +95,15 @@ html :where(.is-reusable),
 html :where(.is-reusable) :where(.wp-block) {
   max-width: none;
 }
+
+.reveal-text {
+  visibility: hidden;
+}
+
+.reveal-line {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
