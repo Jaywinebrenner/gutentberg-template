@@ -1091,7 +1091,6 @@ Component
   transform: rotate(180deg);
 }
 .navigation-menu-wrapper-mobile .navigation-menu .sub-menu {
-  display: none;
   padding-left: 0;
 }
 .navigation-menu-wrapper-mobile .navigation-menu .sub-menu .menu-item {
