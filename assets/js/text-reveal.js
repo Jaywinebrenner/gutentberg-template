@@ -1,7 +1,18 @@
 import { gsap, Power3 } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
+
+function injectTextAnimationClass() {
+  [...document.querySelectorAll('.animated-text .container')].forEach((el) => {
+    [...el.children].forEach((child) => {
+      child.classList.add('reveal-text');
+    })
+  })
+}
+
 document.addEventListener("DOMContentLoaded", function () {
+  injectTextAnimationClass();
+
   let splitWords = function (selector) {
     var elements = document.querySelectorAll(selector);
 
