@@ -1220,9 +1220,6 @@ Component
   flex: 1;
   padding: 0.5rem;
 }
-.three-card-row .cards-wrapper .three-card-row__card__top {
-  background-color: #F7F4F0;
-}
 .three-card-row .cards-wrapper .three-card-row__card__top img {
   height: 21.875rem;
   -o-object-fit: cover;
@@ -1237,7 +1234,6 @@ Component
   }
 }
 .three-card-row .cards-wrapper .three-card-row__card__bottom {
-  background-color: #F7F4F0;
   padding: 1.5rem;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
@@ -1611,6 +1607,15 @@ Component
     padding-right: 0;
     text-align: center;
   }
+}
+.career-cta__left h3, .career-cta__left p {
+  margin-bottom: 0;
+}
+.career-cta__left p {
+  padding: 2.5rem 0;
+}
+.career-cta__left .btn_background-red {
+  line-height: 0;
 }
 .career-cta__left h3 {
   padding-right: 8%;

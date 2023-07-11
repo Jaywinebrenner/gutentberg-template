@@ -19,6 +19,7 @@ $id = 'career-cta-' . $block['id'];
         if( $left_column ): ?>
             <img src="<?php echo esc_url( $left_column['image']); ?>" alt="" />
             <h3><?php echo $left_column['title']; ?></h3>
+            <p><?php echo $left_column['subtitle']; ?></p>
             <a href="<?php echo $left_column['button_url']; ?>" class="btn_background-red"><?php echo $left_column['button_text']; ?></a>
         <?php endif; ?>
 
