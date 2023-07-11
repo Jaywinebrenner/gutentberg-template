@@ -10,32 +10,24 @@ class Navigation {
         this.mobileMenuAccordion = this.mobileMenuAccordion.bind(this);
         this.init();
         this.ensureSiteIsScrollable = this.ensureSiteIsScrollable.bind(this);
-        this.changeZIndexOfMobile = this.changeZIndexOfMobile.bind(this);
     }
     init() {
-        this.changeZIndexOfMobile();   
         this.ensureSiteIsScrollable(); 
         this.hamburger();
         this.mobileMenuAccordion();
     }
-    changeZIndexOfMobile() {
-        let $ = jQuery;
-        let mobileWrapper = $(".navigation-menu-wrapper-mobile .navigation-menu");
-    }
-    
+
     ensureSiteIsScrollable() {
         // This ensures scrollability if one were to open the hamburger and change from mobile view to desktop view
-        // let $ = jQuery;
-        // $(window).on('resize', function(){
-        //     console.log("WHIE")
-        //     if (screen.width > 800) { 
-        //         $("body").css("overflow", "none");
-        //         $("body").css("height", "unset");
-        //         $(":root").css("overflow", "none");
-        //         $(":root").css("height", "unset");
-        //     }
-
-        // });
+        let $ = jQuery;
+        $(window).on('resize', function(){
+            if (screen.width > 800) { 
+                $("body").css("overflow", "none");
+                $("body").css("height", "unset");
+                $(":root").css("overflow", "none");
+                $(":root").css("height", "unset");
+            }
+        });
     }
     hamburger() {
         // Transform Burger to X and make Mobile Menu active
@@ -46,13 +38,24 @@ class Navigation {
         hamburger.addEventListener('click', function() {
             this.classList.toggle('open');
             open = hamburger.classList.contains("open");
-            let mobileWrapper = $(".navigation-menu-wrapper-mobile .navigation-menu");
+            let mobileWrapper = $(".navigation-menu-wrapper-mobile");
+            let navigationMenu = $(".navigation-menu-wrapper-mobile .navigation-menu");
             if(open && $( window ).width() < 800){
-                mobileWrapper.css({"display": "block"});
+                navigationMenu.css({"display": "block"});
+                mobileWrapper.css({"z-index": "1000"})
                 $(".mobile-container").css({"background-color": "white"});
+                $(":root").css("overflow", "hidden");
+                $(":root").css("height", "100%");
+                $("body").css("overflow", "hidden");
+                $("body").css("height", "100%");
             } else {
-                mobileWrapper.css({"display": "none"});
+                navigationMenu.css({"display": "none"});
                 $(".mobile-container").css({"background-color": "transparent"});  
+                mobileWrapper.css({"z-index": "unset"})
+                $(":root").css("overflow", "none");
+                $(":root").css("height", "unset");
+                $("body").css("overflow", "none");
+                $("body").css("height", "unset");
             }
         });
 
@@ -76,10 +79,10 @@ class Navigation {
             let submenu = $(this).find('.sub-menu');
             console.log("submenu", submenu)
             submenu.slideToggle();
-            $(this).parent().toggleClass('active');
+            $(this).toggleClass('active');
             let subMenuATags = $('.sub-menu a');
             console.log("subMenuATags", subMenuATags)
-            $('.sub-menu a').click(function(e) {
+            subMenuATags.click(function(e) {
                 e.stopPropagation();
             });
           });
@@ -95,8 +98,7 @@ class Navigation {
 
 
         // Make Title of Accordion red when active
-
-        $('.menu-item-has-children').click(function() {
+        hasChildren.click(function() {
             let title = $(this).find('a:first');
             let container = $('.menu-item-has-children')
 

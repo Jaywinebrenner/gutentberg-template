@@ -1029,7 +1029,6 @@ Component
   border-radius: 10px;
   padding: 1.25rem;
   position: relative;
-  z-index: 1000;
   padding-bottom: 20%;
   min-height: calc(100vh - 52px);
 }
@@ -1088,8 +1087,9 @@ Component
   float: right;
   transition: transform 0.3s ease;
 }
-.navigation-menu-wrapper-mobile .navigation-menu .menu-item-has-children .menu-item-has-children.active > a::after {
-  transform: rotate(90deg);
+.navigation-menu-wrapper-mobile .navigation-menu .menu-item-has-children.active a:after {
+  transform: rotate(180deg);
+  color: blue;
 }
 .navigation-menu-wrapper-mobile .navigation-menu .sub-menu {
   display: none;
@@ -1121,6 +1121,8 @@ Component
   align-items: center;
   justify-content: space-between;
   margin-bottom: 6.5625rem;
+  position: relative;
+  z-index: 1000;
 }
 .navigation-menu-wrapper-mobile .hamburger-and-image-wrapper img {
   width: 12.5rem;

@@ -123,7 +123,7 @@
         border-radius: 10px;
         padding: 1.25rem;
         position: relative;
-        z-index: 1000;
+        // z-index: 1000;
         padding-bottom: 20%;
         min-height: calc(100vh - 52px);
     }
@@ -187,10 +187,11 @@
                 float: right;
                 transition: transform 0.3s ease;
             }
-            .menu-item-has-children.active > a::after {
-                transform: rotate(90deg);
-              }
         }
+        .menu-item-has-children.active a:after {
+            transform: rotate(180deg);
+            color: blue;
+          }
         .sub-menu {
             display: none;
             padding-left: 0;
@@ -225,6 +226,10 @@
         align-items: center;
         justify-content: space-between;
         margin-bottom: 6.5625rem;
+
+        position: relative;
+        z-index: 1000;
+
         img {
             width: 12.5rem;
         }
