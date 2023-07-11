@@ -15,8 +15,8 @@ $id = 'our-services-' . $block['id'];
         <div class="our-services-wrapper">
 
             <div class="our-services__top">
-                <h2 class="reveal-text"><?php the_field('main_title'); ?></h2>
-                <p class="reveal-text"><?php the_field('main_subtitle'); ?></p>
+                <h2 class="<?php echo is_admin() ? '' : 'reveal-text'?>"><?php the_field('main_title'); ?></h2>
+                <p class="<?php echo is_admin() ? '' : 'reveal-text'?>"><?php the_field('main_subtitle'); ?></p>
                 <?php if (get_field('image')) : ?>
                     <div class="image-wrapper">
                         <div class="image" style="background-image:url('<?php the_field('image'); ?>');" ></div>
@@ -24,7 +24,7 @@ $id = 'our-services-' . $block['id'];
                 <?php endif; ?>
 
                     <div class="mobile-image-wrapper">
-                        <div class="mobile-image" style="background-image:url(' <?php echo get_field('mobile_image') ? get_field('mobile_image') : get_field('image'); ?>?>');" ></div>
+                        <div class="mobile-image" style="background-image:url(' <?php echo get_field('mobile_image') ? get_field('mobile_image') : get_field('image'); ?>');" ></div>
                     </div>
 
 
