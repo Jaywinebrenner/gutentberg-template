@@ -863,6 +863,10 @@ body {
   margin: auto;
 }
 
+.has-linen-background-color {
+  background-color: #F7F4F0;
+}
+
 .wp-caption img {
   margin-bottom: 0;
 }
