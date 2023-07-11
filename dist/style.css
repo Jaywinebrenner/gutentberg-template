@@ -867,7 +867,8 @@ body {
   background-color: #F7F4F0;
 }
 
-html :where(.wp-block) {
+html :where(.is-reusable),
+html :where(.is-reusable) :where(.wp-block) {
   max-width: none;
 }
 
