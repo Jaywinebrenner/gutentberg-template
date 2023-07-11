@@ -14,8 +14,8 @@ $id = 'three-card-row-' . $block['id'];
   <div class="container">
 
     <div class="three-card-row__top">
-      <h2 class="title reveal-text"><?php the_field('title'); ?></h2>
-      <p class="title reveal-text"><?php the_field('subtitle'); ?></p>
+      <h2 class="title <?php echo is_admin() ? '' : 'reveal-text'?>"><?php the_field('title'); ?></h2>
+      <p class="title <?php echo is_admin() ? '' : 'reveal-text'?>"><?php the_field('subtitle'); ?></p>
     </div>
     <div class="cards-wrapper">
 
