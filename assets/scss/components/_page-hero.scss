@@ -45,7 +45,8 @@
         height: 37vw;
         min-height: 31.25rem;
         background-size: cover;
-        background-attachment: fixed;
+        // background-attachment: fixed;
+        background-repeat: no-repeat;
         background-position: center;
         mask-image: url("../images/page-hero-mask.svg");
         mask-size: cover;
