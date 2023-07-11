@@ -872,18 +872,6 @@ html :where(.is-reusable) :where(.wp-block) {
   max-width: none;
 }
 
-.reveal-text {
-  visibility: hidden;
-}
-
-.reveal-line {
-  position: relative;
-  overflow: hidden;
-  display: flex;
-  justify-content: center;
-  text-align: center;
-}
-
 .wp-caption img {
   margin-bottom: 0;
 }
@@ -1171,8 +1159,9 @@ Component
 }
 .hero__bottom .desktop-image {
   height: 450px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
   width: 100%;
 }
 @media (max-width: 700px) {
@@ -1193,6 +1182,11 @@ Component
   }
 }
 .hero__bottom .mobile-image {
+  width: 100%;
+  height: 18.75rem;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
   width: 100%;
 }
 @media (min-width: 700px) {
@@ -1568,8 +1562,9 @@ Component
   width: 100%;
   height: 37vw;
   min-height: 31.25rem;
-  -o-object-fit: cover;
-     object-fit: cover;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
   -webkit-mask-image: url(b2264a1c7c6c86f8f45b.svg);
           mask-image: url(b2264a1c7c6c86f8f45b.svg);
   -webkit-mask-size: cover;
@@ -1585,8 +1580,9 @@ Component
 .page-hero .page-hero-wrapper__right .mobile-image {
   width: 100%;
   height: 20.25rem;
-  -o-object-fit: cover;
-     object-fit: cover;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
   border-radius: 10px;
   -webkit-mask-size: cover;
           mask-size: cover;
@@ -1820,12 +1816,12 @@ Component
     display: none;
   }
 }
-.our-services__top .image-wrapper img {
+.our-services__top .image-wrapper .image {
   height: 26vw;
   min-height: 28.125rem;
-  -o-object-fit: cover;
-     object-fit: cover;
-  width: 100%;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
   -webkit-mask-image: url(eafd52f7205a587c070f.svg);
           mask-image: url(eafd52f7205a587c070f.svg);
   -webkit-mask-size: cover;
@@ -1843,9 +1839,12 @@ Component
     display: none;
   }
 }
-.our-services__top .mobile-image-wrapper img {
-  -o-object-fit: cover;
-     object-fit: cover;
+.our-services__top .mobile-image-wrapper .mobile-image {
+  width: 100%;
+  height: 19.625rem;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
   -webkit-mask-image: url(eb611025d04e1ca6e06d.svg);
           mask-image: url(eb611025d04e1ca6e06d.svg);
   -webkit-mask-size: cover;
@@ -1933,6 +1932,26 @@ Component
   border-radius: 10px;
   -webkit-mask-position: unset;
           mask-position: unset;
+}
+
+.reveal-text {
+  visibility: hidden;
+}
+
+.reveal-line {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.animated-text {
+  text-align: center;
+}
+.animated-text .container *, .animated-text .wp-block-columns * {
+  max-width: 56.25rem;
+  margin: auto;
 }
 
 /*--------------------------------------------------------------
