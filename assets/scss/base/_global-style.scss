@@ -91,3 +91,7 @@ body {
 .has-linen-background-color {
   background-color: $color-linen;
 }
+
+html :where(.wp-block) {
+  max-width: none;
+}

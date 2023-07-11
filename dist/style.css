@@ -867,6 +867,10 @@ body {
   background-color: #F7F4F0;
 }
 
+html :where(.wp-block) {
+  max-width: none;
+}
+
 .wp-caption img {
   margin-bottom: 0;
 }
