@@ -18,7 +18,7 @@ class Navigation {
     }
 
     ensureSiteIsScrollable() {
-        // This ensures scrollability if one were to open the hamburger and change from mobile view to desktop view
+        // This ensures scrollability if one were to open the hamburger and change from mobile view to desktop view in browser
         let $ = jQuery;
         $(window).on('resize', function(){
             if (screen.width > 800) { 
@@ -41,7 +41,7 @@ class Navigation {
             let mobileWrapper = $(".navigation-menu-wrapper-mobile");
             let navigationMenu = $(".navigation-menu-wrapper-mobile .navigation-menu");
             if(open && $( window ).width() < 800){
-                navigationMenu.css({"display": "block"});
+                navigationMenu.fadeIn();
                 mobileWrapper.css({"z-index": "1000"})
                 $(".mobile-container").css({"background-color": "white"});
                 $(":root").css("overflow", "hidden");
@@ -71,13 +71,11 @@ class Navigation {
         //     submenu.slideToggle();
         //     $(this).toggleClass('active');
         //   });
+
         let hasChildren = $(".navigation-menu-wrapper-mobile .navigation-menu .menu-item-has-children");
-        console.log("has children", hasChildren)
         $('.menu-item-has-children').click(function(e) {
-            console.log("click")
             e.preventDefault();
             let submenu = $(this).find('.sub-menu');
-            console.log("submenu", submenu)
             submenu.slideToggle();
             $(this).toggleClass('active');
             let subMenuATags = $('.sub-menu a');

@@ -139,9 +139,6 @@
     @media(min-width:$bp-small){
         display: none;
     }
-    .menu-navigation-container {
-
-    }
 
     .navigation-menu {
         display: none;
@@ -155,7 +152,6 @@
             padding: 20px 0;
             border-bottom: 1px solid rgb(29, 8, 0, .2);
             &:hover a {
-                // color: $color-red;
                 cursor: pointer;
             }
             &:hover {
@@ -190,7 +186,6 @@
         }
         .menu-item-has-children.active a:after {
             transform: rotate(180deg);
-            color: blue;
           }
         .sub-menu {
             display: none;
