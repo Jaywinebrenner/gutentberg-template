@@ -24,7 +24,55 @@
 
 <div id="page" class="hfeed site">
 
+<!-- TESTING BELOW -->
+
+<!-- NEW MOBILE -->
+<div class="navigation-menu-wrapper-mobile">
+	<div class="mobile-container">
+		<div class="hamburger-and-image-wrapper">
+			<a href="<?php echo site_url('/'); ?>">
+				<img src="<?php echo get_stylesheet_directory_uri();?>/assets/images/navigation/logo.svg"/>
+			</a>
+			<div id="myBtn" class="hamburger">
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+		</div>
+		<?php
+		wp_nav_menu(array(
+			'theme_location' => 'navigation',
+			'menu_class' => 'navigation-menu',
+			'sort_order' => 'DESC' 
+		));
+		?>
+
+	</div>
+</div>
+
+<!-- NEW DESKTOP -->
+<div class="navigation-menu-wrapper">
+		<a href="<?php echo site_url('/'); ?>">
+			<img src="<?php echo get_stylesheet_directory_uri();?>/assets/images/navigation/logo.svg"/>
+		</a>
+		<?php
+		wp_nav_menu(array(
+			'theme_location' => 'navigation',
+			'menu_class' => 'navigation-menu',
+			'sort_order' => 'DESC' 
+		));
+		?>
+
+</div>
+
+
+
+
+<!-- TESTING ABOVE -->
+
 	<div class="navigation">
+
 		<div class="container">
 			<div class="navigation-wrapper">
 				<div class="navigation-wrapper__left">
@@ -54,10 +102,22 @@
 						<p class="minor">Solutions</p>
 						<div class="submenu">
 							<a class="submenu__item" href="#">
-								<p class="minor">Solutions Submenu</p>
+								<p class="minor">Overview</p>
 							</a>
 							<a class="submenu__item" href="#">
-								<p class="minor">Solutions Submenu Two</p>
+								<p class="minor">Application Modernization</p>
+							</a>
+							<a class="submenu__item" href="#">
+								<p class="minor">Cloud Migration & Optimization</p>
+							</a>
+							<a class="submenu__item" href="#">
+								<p class="minor">Data Management & Analysis</p>
+							</a>
+							<a class="submenu__item" href="#">
+								<p class="minor">Software Development</p>
+							</a>
+							<a class="submenu__item" href="#">
+								<p class="minor">Operational Excellence</p>
 							</a>
 						</div>
 					</div>
@@ -83,7 +143,6 @@
 					</a>
 				</div>
 			</div>
-
 		</div>
 	</div>
 
@@ -125,10 +184,22 @@
 					<h4 class="title mobile-link minor">Solutions</h4>
 					<div class="nav-submenu">
 						<a class="submenu__item" href="#">
-							<p class="minor">For Clients</p>
+							<p class="minor">Overview</p>
 						</a>
 						<a class="submenu__item" href="#">
-							<p class="minor">Consultants</p>
+							<p class="minor">Application Modernization</p>
+						</a>
+						<a class="submenu__item" href="#">
+							<p class="minor">Cloud Migration & Optimization</p>
+						</a>
+						<a class="submenu__item" href="#">
+							<p class="minor">Data Management & Analysis</p>
+						</a>
+						<a class="submenu__item" href="#">
+							<p class="minor">Software Development</p>
+						</a>
+						<a class="submenu__item" href="#">
+							<p class="minor">Operational Excellence</p>
 						</a>
 					</div>
 				</div>
@@ -157,6 +228,30 @@
 
 		</div>
 	</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 	<main id="main" class="site-main wrap" role="main">
 

@@ -22,7 +22,8 @@
     display: flex;
     flex-direction: column;
     padding-bottom: 80px;
-    padding-top: 12.5rem;
+    padding-top: 15.5rem;
+    position: relative;
     @media(max-width: 700px){
       height: unset;
       padding: 13.75rem 0;
@@ -39,6 +40,9 @@
         color: $color-licorice;
       }
     }
+  }
+  &__content {
+    z-index: 5;
   }
   &__bottom {
     position: relative;
