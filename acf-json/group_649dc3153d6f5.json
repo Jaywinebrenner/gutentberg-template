@@ -41,6 +41,31 @@
             "maxlength": ""
         },
         {
+            "key": "field_64add200f7cc8",
+            "label": "Card Background Color",
+            "name": "card_background_color",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "#F7F4F0": "Linen",
+                "#FFFFFF": "White"
+            },
+            "default_value": [],
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "return_format": "value",
+            "ajax": 0,
+            "placeholder": ""
+        },
+        {
             "key": "field_649dc31f91493",
             "label": "Card",
             "name": "card",
@@ -223,5 +248,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1688069618
+    "modified": 1689113248
 }

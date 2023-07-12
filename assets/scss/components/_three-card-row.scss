@@ -23,7 +23,6 @@
             flex: 1;
             padding: 0.5rem;
             &__top {
-                background-color: $color-linen;
                 img {
                     height: 21.875rem;
                     object-fit: cover;
@@ -36,11 +35,9 @@
                 }
             }
             &__bottom {
-                background-color: $color-linen;
                 padding: 1.5rem;
                 border-bottom-left-radius: 10px;
                 border-bottom-right-radius: 10px;
-                // height: 332px;
                 flex: 1;
             }
         }
