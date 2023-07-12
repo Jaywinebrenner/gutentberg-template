@@ -3,3 +3,4 @@
 //smooth scroll
 import './smoothscroll';
 import './text-reveal';
+import './image-parallax';

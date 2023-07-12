@@ -73,26 +73,26 @@ document.addEventListener("DOMContentLoaded", function () {
     return lines;
   };
 
-  splitLines(".reveal-text");
+  setTimeout(() => {
+    splitLines(".reveal-text");
+    let revealText = document.querySelectorAll(".reveal-text");
+    gsap.registerPlugin(ScrollTrigger);
+    let revealLines = revealText.forEach((element) => {
+      const lines = element.querySelectorAll(".words");
 
-  let revealText = document.querySelectorAll(".reveal-text");
-
-  gsap.registerPlugin(ScrollTrigger);
-  let revealLines = revealText.forEach((element) => {
-    const lines = element.querySelectorAll(".words");
-
-    let tl = gsap.timeline({
-      scrollTrigger: {
-        trigger: element,
-        toggleActions: "restart none none reset"
-      }
+      let tl = gsap.timeline({
+        scrollTrigger: {
+          trigger: element,
+          toggleActions: "restart none none reset"
+        }
+      });
+      tl.set(element, { autoAlpha: 1 });
+      tl.from(lines, 1, {
+        yPercent: 100,
+        ease: Power3.out,
+        stagger: 0.25,
+        delay: 0.1
+      });
     });
-    tl.set(element, { autoAlpha: 1 });
-    tl.from(lines, 1, {
-      yPercent: 100,
-      ease: Power3.out,
-      stagger: 0.25,
-      delay: 0.2
-    });
-  });
+  }, 100);
 });

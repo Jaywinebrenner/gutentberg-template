@@ -28,10 +28,13 @@ $id = 'page-hero-' . $block['id'];
 
       <div class="page-hero-wrapper__right">
         <?php if (get_field('image')) : ?>
-          <div class="desktop-image" style="background-image:url('<?php the_field('image'); ?>');"></div>
+          <div class="desktop-image parallax-wrapper">
+            <img src="<?php the_field('image'); ?>" alt="">
+          </div>
         <?php endif; ?>
-        <div class="mobile-image" style="background-image:url('<?php echo get_field('mobile_image') ? get_field('mobile_image') : get_field('image'); ?>');"></div>
-
+        <div class="mobile-image parallax-wrapper">
+          <img src="<?php echo get_field('mobile_image') ? get_field('mobile_image') : get_field('image'); ?>" alt="">
+        </div>
       </div>
     </div>
 
