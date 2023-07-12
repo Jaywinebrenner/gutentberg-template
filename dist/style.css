@@ -1970,7 +1970,8 @@ Component
 }
 .animated-text .container *, .animated-text .wp-block-columns * {
   max-width: 56.25rem;
-  margin: auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /*--------------------------------------------------------------
