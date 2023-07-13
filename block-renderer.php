@@ -291,6 +291,21 @@ function init_acf_fields()
             ),
             'keywords'          => array('text'),
         ));
+        // register page image content block
+        acf_register_block(array(
+            'name'              => 'image-content',
+            'title'             => __('Image Content'),
+            'description'       => __('Image Content'),
+            'render_callback'   => 'block_renderer',
+            'category'          => 'formatting',
+            'icon'              => 'admin-comments',
+            'align'           => 'full',
+            'supports'        => array(
+                'align' => array('full'),
+                'jsx'             => true,
+            ),
+            'keywords'          => array('Image Content')
+        ));
     }
 }
 
