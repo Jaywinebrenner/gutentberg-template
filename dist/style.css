@@ -953,21 +953,21 @@ Component
 .navigation-menu-wrapper .menu-navigation-container .navigation-menu .menu-item {
   position: relative;
 }
+.navigation-menu-wrapper .menu-navigation-container .navigation-menu .menu-item:hover .sub-menu {
+  transition: 0.3s;
+  display: block;
+  background-color: #FFFFFF;
+}
 .navigation-menu-wrapper .menu-navigation-container .navigation-menu .menu-item a {
   transition: 0.3s;
 }
 .navigation-menu-wrapper .menu-navigation-container .navigation-menu .menu-item a:hover {
   color: #D64936;
 }
-.navigation-menu-wrapper .menu-navigation-container .navigation-menu .menu-item a:hover ~ .sub-menu {
-  transition: 0.3s;
-  display: block;
-  background-color: #FFFFFF;
-}
 .navigation-menu-wrapper .menu-navigation-container .navigation-menu .menu-item-has-children a {
   padding-bottom: 10px;
 }
-.navigation-menu-wrapper .menu-navigation-container .navigation-menu .menu-item-has-children a:active {
+.navigation-menu-wrapper .menu-navigation-container .navigation-menu .menu-item-has-children > a:first-child {
   pointer-events: none;
 }
 .navigation-menu-wrapper .menu-navigation-container .navigation-menu .sub-menu {
@@ -1024,13 +1024,13 @@ Component
 }
 
 .navigation-menu-wrapper-mobile {
+  position: absolute;
   width: 100%;
   top: 0.875rem;
   padding-bottom: 20%;
   min-height: calc(100vh - 139px);
   padding: 1.625rem;
   z-index: 1;
-  position: fixed;
 }
 .navigation-menu-wrapper-mobile .mobile-container {
   border-radius: 10px;
