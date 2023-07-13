@@ -49,7 +49,17 @@
                         transition: .3s;
                         display: block;
                         background-color: $color-white;
+
                     }
+                }
+            }
+            .menu-item-has-children {
+                a {
+                    padding-bottom: 10px;
+                }
+
+                a:active {
+                    pointer-events: none;
                 }
             }
             .sub-menu {
@@ -113,12 +123,14 @@
 }
 // NEW MOBILE 
 .navigation-menu-wrapper-mobile {
-    position: absolute;
+    // position: absolute;
     width: 100%;
     top: 0.875rem;
     padding-bottom: 20%;
     min-height: calc(100vh - 139px);
     padding: 1.625rem;
+    z-index: 1;
+        position: fixed;
     .mobile-container {
         border-radius: 10px;
         padding: 1.25rem;
@@ -173,9 +185,6 @@
             cursor: pointer;
             a:hover {
                 color: $color-red;
-            }
-            a:active {
-                pointer-events: none;
             }
             a:after { 
                 content:url('../images/navigation/chevron.svg');
