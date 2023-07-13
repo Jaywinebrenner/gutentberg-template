@@ -1,0 +1,31 @@
+
+
+
+
+.inline-hero {
+    position: relative;
+    .desktop-image {
+        height: 450px;
+        width: 100%;
+        mask-image: url("../images/hero/monitor-hero-mask.svg");
+        mask-size: cover;
+        mask-repeat: round;
+        mask-position: unset;
+        @media(max-width:800px){
+            display: none;
+ 
+        }
+    }
+    .mobile-image {
+        height: 28.125rem;
+        width: 100%;
+        mask-image: url("../images/inline-hero/inline-hero-mobile-mask.svg");
+        mask-size: cover;
+        mask-repeat: round;
+        mask-position: unset;
+        @media(min-width:800px){
+            display: none;
+
+        }
+    }
+}
