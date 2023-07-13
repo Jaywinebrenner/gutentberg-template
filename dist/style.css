@@ -1822,6 +1822,9 @@ Component
 .our-services__top {
   text-align: center;
   padding: 5.75rem 0;
+}
+.our-services__top h2,
+.our-services__top p {
   max-width: 56.25rem;
   margin-left: auto;
   margin-right: auto;
