@@ -224,23 +224,6 @@ function init_acf_fields()
                 );
             },
         ));
-
-        // register page header background color
-        acf_register_block(array(
-            'name'              => 'header background color',
-            'title'             => __('Header Background Color'),
-            'description'       => __('Header Background Color'),
-            'render_callback'   => 'block_renderer',
-            'category'          => 'formatting',
-            'icon'              => 'admin-comments',
-            'align'           => 'full',
-            'supports'        => array(
-                'align' => array('full'),
-            ),
-            'keywords'          => array('Header Background Color'),
-        ));
-        
-
         
     }
 }
