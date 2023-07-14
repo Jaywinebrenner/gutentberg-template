@@ -39,8 +39,13 @@ if (window.acf) {
   window.acf.addAction('render_block_preview/type=testimonial', initializeBlock);
 }
 
-function initializeBlock() {
-  [...document.querySelectorAll('.testimonial__slides')].forEach((el) => {
-    new Testimonials(el);
-  })
+function initializeBlock($block) {
+  if ($block[0]) {
+    const slides = jQuery($block[0]).find('.testimonial__slides');
+    new Testimonials(slides[0]);
+  } else {
+    [...document.querySelectorAll('.testimonial__slides')].forEach((el) => {
+      new Testimonials(el);
+    })
+  }
 }

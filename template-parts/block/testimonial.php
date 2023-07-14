@@ -14,8 +14,8 @@ $id = 'testimonial-' . $block['id'];
     <div class="container">
         <p class="minor testimonial__title"><?php the_field('title'); ?></p>
 
-        <?php if (have_rows('testimonials')) : ?>
-            <div class="testimonial__slides">
+        <div class="testimonial__slides">
+            <?php if (have_rows('testimonials')) : ?>
                 <?php while (have_rows('testimonials')) : the_row();
                 ?>
                     <div class="testimonial__quote">
@@ -23,8 +23,8 @@ $id = 'testimonial-' . $block['id'];
                         <p class="italic"><?php the_sub_field('name'); ?></p>
                     </div>
                 <?php endwhile; ?>
-            </div>
-        <?php endif; ?>
+            <?php endif; ?>
+        </div>
 
         <?php $button = get_field('button'); ?>
         <?php if ($button['url']) : ?>

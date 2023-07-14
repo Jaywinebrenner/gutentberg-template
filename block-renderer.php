@@ -99,7 +99,7 @@ function init_acf_fields()
 
         // register card grid block
         acf_register_block(array(
-            'name'              => 'card grid',
+            'name'              => 'card-grid',
             'title'             => __('Card Grid'),
             'description'       => __('Card Grid'),
             'render_callback'   => 'block_renderer',
@@ -167,7 +167,7 @@ function init_acf_fields()
 
         // register career cta block
         acf_register_block(array(
-            'name'              => 'career cta',
+            'name'              => 'career-cta',
             'title'             => __('Career Cta'),
             'description'       => __('Career Cta'),
             'render_callback'   => 'block_renderer',
@@ -182,7 +182,7 @@ function init_acf_fields()
 
         // register page hero block
         acf_register_block(array(
-            'name'              => 'page hero',
+            'name'              => 'page-hero',
             'title'             => __('Page Hero'),
             'description'       => __('Page Hero'),
             'render_callback'   => 'block_renderer',
@@ -197,7 +197,7 @@ function init_acf_fields()
 
         // register capability dropdowns block
         acf_register_block(array(
-            'name'              => 'capability dropdowns',
+            'name'              => 'capability-dropdowns',
             'title'             => __('Capability Dropdowns'),
             'description'       => __('Capability Dropdowns'),
             'render_callback'   => 'block_renderer',
@@ -213,10 +213,12 @@ function init_acf_fields()
                     'jquery',
                     'https://code.jquery.com/jquery-3.7.0.min.js"
                             integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=',
+
                     ['wp-blocks', 'wp-element', 'wp-components', 'wp-i18n'],
                     22
                 );
                 wp_enqueue_script(
+
                     'capability-dropdowns-script',
                     get_template_directory_uri() . '/assets/js/capability-dropdowns.js',
                     ['wp-blocks', 'wp-element', 'wp-components', 'wp-i18n'],
@@ -225,6 +227,71 @@ function init_acf_fields()
             },
         ));
         
+        // register source aq cta block
+        acf_register_block(array(
+            'name'              => 'source-aq-cta',
+            'title'             => __('Source Aq Cta'),
+            'description'       => __('Source Aq Cta'),
+            'render_callback'   => 'block_renderer',
+            'category'          => 'formatting',
+            'icon'              => 'admin-comments',
+            'align'           => 'full',
+            'supports'        => array(
+                'align' => array('full'),
+            ),
+
+            'keywords'          => array('Source Aq Cta'),
+        ));
+
+        // register page our services block
+        acf_register_block(array(
+            'name'              => 'our-services',
+            'title'             => __('Our Services'),
+            'description'       => __('Our Services'),
+            'render_callback'   => 'block_renderer',
+            'category'          => 'formatting',
+            'icon'              => 'admin-comments',
+            'align'           => 'full',
+            'supports'        => array(
+                'align' => array('full'),
+                'jsx'             => true,
+
+            ),
+            'keywords'          => array('Our Services'),
+            'enqueue_assets' => function () {
+                wp_enqueue_script(
+                    'jquery',
+                    'https://code.jquery.com/jquery-3.7.0.min.js"
+                            integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=',
+
+                    ['wp-blocks', 'wp-element', 'wp-components', 'wp-i18n'],
+                    22
+                );
+                wp_enqueue_script(
+
+                    'our-services-script',
+                    get_template_directory_uri() . '/assets/js/our-services.js',
+                    ['wp-blocks', 'wp-element', 'wp-components', 'wp-i18n'],
+                    22
+                );
+            },
+        ));
+
+        // register animated text block
+        acf_register_block(array(
+            'name'              => 'animated-text',
+            'title'             => __('Animated Text'),
+            'description'       => __('Wrapper that center aligns and animates text'),
+            'render_callback'   => 'block_renderer',
+            'category'          => 'text',
+            'icon'              => 'admin-comments',
+            'align'           => 'full',
+            'supports'        => array(
+                'align' => array('full'),
+                'jsx'             => true,
+            ),
+            'keywords'          => array('text'),
+        ));
     }
 }
 

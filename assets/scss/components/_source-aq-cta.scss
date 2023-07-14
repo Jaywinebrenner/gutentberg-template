@@ -1,0 +1,30 @@
+
+
+.source-aq-cta {
+    .source-aq-cta-wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 6.875rem;
+        background-color: $color-white;
+        padding: 8rem 4.125rem;
+        border-radius: 10px;
+        align-items: center;
+        @media(max-width: $bp-small){
+            grid-template-columns: 1fr;
+            padding: 3rem 1.5rem;
+            text-align: center;
+            grid-gap: 3.8125rem;
+        }
+        &__right {
+            img {
+                object-fit: cover;
+                width: 100%;
+                mask-image: url("../images/source-aq-cta/source-aq-cta-mask-desktop.svg");
+                mask-size: cover;
+                mask-repeat: no-repeat;
+                border-radius: 10px;
+                mask-position: unset;
+            }
+        }
+    }
+}

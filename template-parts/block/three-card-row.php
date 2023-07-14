@@ -14,8 +14,8 @@ $id = 'three-card-row-' . $block['id'];
   <div class="container">
 
     <div class="three-card-row__top">
-      <h2 class="title"><?php the_field('title'); ?></h2>
-      <p class="title"><?php the_field('subtitle'); ?></p>
+      <h2 class="title <?php echo is_admin() ? '' : 'reveal-text'?>"><?php the_field('title'); ?></h2>
+      <p class="title <?php echo is_admin() ? '' : 'reveal-text'?>"><?php the_field('subtitle'); ?></p>
     </div>
     <div class="cards-wrapper">
 
@@ -27,13 +27,14 @@ $id = 'three-card-row-' . $block['id'];
         $title = get_sub_field('title');
         $copy = get_sub_field('copy');
         $image = get_sub_field('image');
+        $background_color = get_sub_field('card_background_color');
 
         ?>
           <div class="three-card-row__card">
-            <div class="three-card-row__card__top">
+            <div class="three-card-row__card__top" style="background-color: <?php the_field('card_background_color'); ?>">
               <img src="<?php echo $image ?>"/>
             </div>
-            <div class="three-card-row__card__bottom">
+            <div class="three-card-row__card__bottom" style="background-color: <?php the_field('card_background_color'); ?>">
               <h5><?php echo $title ; ?></h5>
               <p class="minor"><?php echo $copy ; ?></p>
             </div>
