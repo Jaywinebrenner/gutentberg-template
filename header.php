@@ -7,8 +7,6 @@
 <html <?php language_attributes(); ?>>
 
 <head>
-
-
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -21,32 +19,26 @@
 
 <body <?php body_class(); ?> >
 
-<?php 
-
-?>
-
 
 <!-- DESKTOP -->
-<div class="width-container">
-	<div class="navigation-menu-wrapper">
-		<div 
-		class="background-color-band"
-		style="<?php echo is_front_page() ? 'background-color: #F7F4F0;' : 'background-color:#FFF'; ?>"
-		></div>
-		<a href="<?php echo site_url('/'); ?>">
-			<img src="<?php echo get_stylesheet_directory_uri();?>/assets/images/navigation/logo.svg"/>
-		</a>
-		<?php
-		wp_nav_menu(array(
-			'theme_location' => 'navigation',
-			'menu_class' => 'navigation-menu',
-			'sort_order' => 'DESC' 
-		));
-		?>
-	</div>
+<div class="navigation-menu-wrapper">
+	<div 
+	class="background-color-band"
+	style="<?php echo is_front_page() ? 'background-color: #F7F4F0;' : 'background-color:#FFF'; ?>"
+	></div>
+	<a href="<?php echo site_url('/'); ?>">
+		<img src="<?php echo get_stylesheet_directory_uri();?>/assets/images/navigation/logo.svg"/>
+	</a>
+	<?php
+	wp_nav_menu(array(
+		'theme_location' => 'navigation',
+		'menu_class' => 'navigation-menu',
+		'sort_order' => 'DESC' 
+	));
+	?>
 </div>
 
-<!-- NEW MOBILE -->
+<!-- MOBILE -->
 <div class="navigation-menu-wrapper-mobile">
 	<div 
 	class="background-color-band-mobile"
@@ -71,212 +63,10 @@
 			'sort_order' => 'DESC' 
 		));
 		?>
-
 	</div>
 </div>
 
-
 <div id="page" class="hfeed site">
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-	<div class="navigation">
-
-		<div class="container">
-			<div class="navigation-wrapper">
-				<div class="navigation-wrapper__left">
-					<a href="<?php echo site_url('/'); ?>">
-						<img src="<?php echo get_stylesheet_directory_uri();?>/assets/images/navigation/logo.svg"/>
-					</a>
-				</div>
-				<div class="navigation-wrapper__right">
-
-					<div class="navigation-wrapper__link-with-submenu" href="#">
-						<p class="minor">Why CorSource</p>
-						<div class="submenu">
-							<a class="submenu__item" href="#">
-								<p class="minor">For Clients</p>
-							</a>
-							<a class="submenu__item" href="#">
-								<p class="minor">Consultants</p>
-							</a>
-						</div>
-					</div>
-
-					<a class="navigation-wrapper__link" href="<?php echo site_url('/services'); ?>">
-						<p class="minor">Services</p>
-					</a>
-
-					<div class="navigation-wrapper__link-with-submenu" href="#">
-						<p class="minor">Solutions</p>
-						<div class="submenu">
-							<a class="submenu__item" href="#">
-								<p class="minor">Overview</p>
-							</a>
-							<a class="submenu__item" href="#">
-								<p class="minor">Application Modernization</p>
-							</a>
-							<a class="submenu__item" href="#">
-								<p class="minor">Cloud Migration & Optimization</p>
-							</a>
-							<a class="submenu__item" href="#">
-								<p class="minor">Data Management & Analysis</p>
-							</a>
-							<a class="submenu__item" href="#">
-								<p class="minor">Software Development</p>
-							</a>
-							<a class="submenu__item" href="#">
-								<p class="minor">Operational Excellence</p>
-							</a>
-						</div>
-					</div>
-
-					<div class="navigation-wrapper__link-with-submenu" href="#">
-						<p class="minor">Meet CorSource</p>
-						<div class="submenu">
-							<a class="submenu__item" href="#">
-								<p class="minor">Submenu</p>
-							</a>
-							<a class="submenu__item" href="#">
-								<p class="minor">Longer Submenu</p>
-							</a>
-						</div>
-					</div>
-
-
-					<a class="navigation-wrapper__link" href="#">
-						<p class="minor">The Source AQ</p>
-					</a>
-					<a class="navigation-wrapper__link btn_red" href="#">
-						<p class="minor">Job Seekers</p>
-					</a>
-				</div>
-			</div>
-		</div>
-	</div>
-
-
-	<div class="navigation-mobile">
-		<div class="container">
-			<div class="navigation-mobile-wrapper-top">
-				<a href="<?php echo site_url('/'); ?>">
-					<img src="<?php echo get_stylesheet_directory_uri();?>/assets/images/navigation/logo.svg"/>
-				</a>
-				<div id="myBtn" class="hamburger">
-					<span></span>
-					<span></span>
-					<span></span>
-					<span></span>
-				</div>
-			</div>
-			<div class="navigation-mobile-wrapper-bottom">
-
-				<div class="has-submenu" href="#">
-					<img class="chevron" src="<?php echo get_stylesheet_directory_uri();?>/assets/images/navigation/chevron.svg"/>
-					<h4 class="title mobile-link minor">Why CorSource</h4>
-					<div class="nav-submenu">
-						<a class="submenu__item" href="#">
-							<p class="minor">For Clients</p>
-						</a>
-						<a class="submenu__item" href="#">
-							<p class="minor">Consultants</p>
-						</a>
-					</div>
-				</div>
-
-				<a class="navigation-mobile-wrapper__link" href="<?php echo site_url('/services'); ?>">
-					<h4 class="title minor">Services</h4>
-				</a>
-
-				<div class="has-submenu" href="#">
-					<img class="chevron" src="<?php echo get_stylesheet_directory_uri();?>/assets/images/navigation/chevron.svg"/>
-					<h4 class="title mobile-link minor">Solutions</h4>
-					<div class="nav-submenu">
-						<a class="submenu__item" href="#">
-							<p class="minor">Overview</p>
-						</a>
-						<a class="submenu__item" href="#">
-							<p class="minor">Application Modernization</p>
-						</a>
-						<a class="submenu__item" href="#">
-							<p class="minor">Cloud Migration & Optimization</p>
-						</a>
-						<a class="submenu__item" href="#">
-							<p class="minor">Data Management & Analysis</p>
-						</a>
-						<a class="submenu__item" href="#">
-							<p class="minor">Software Development</p>
-						</a>
-						<a class="submenu__item" href="#">
-							<p class="minor">Operational Excellence</p>
-						</a>
-					</div>
-				</div>
-
-				<div class="has-submenu" href="#">
-					<img class="chevron" src="<?php echo get_stylesheet_directory_uri();?>/assets/images/navigation/chevron.svg"/>
-					<h4 class="title mobile-link minor">Meet CorSource</h4>
-					<div class="nav-submenu">
-						<a class="submenu__item" href="#">
-							<p class="minor">Submenu</p>
-						</a>
-						<a class="submenu__item" href="#">
-							<p class="minor">Longer Submenu</p>
-						</a>
-					</div>
-				</div>
-
-				<a class="navigation-mobile-wrapper__link" href="#">
-					<h4 class="title minor">The Source AQ</h4>
-				</a>
-				<a class="btn_red" href="#">
-					Job Seekers
-				</a>
-
-			</div>
-
-		</div>
-	</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 	<main id="main" class="site-main wrap" role="main">
 

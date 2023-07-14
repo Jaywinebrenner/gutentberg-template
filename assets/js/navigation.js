@@ -42,20 +42,14 @@ export default class Navigation {
             let mobileContainer = $(".navigation-menu-wrapper-mobile .mobile-container");
             hamburger.addEventListener('click', function() {
 
-                //Toggle Menu
-                hamburger.classList.toggle('open');
-                open = hamburger.classList.contains("open");
+            //Toggle Menu
+            hamburger.classList.toggle('open');
+            open = hamburger.classList.contains("open");
 
-                console.log("Open", open)
                 if(open){
-
                     // These styles need to be injected in order to make the opened menu scrollable. These styles can't be on the style sheet as they interfere with the clickability of elements on the site. 
                     mobileWrapper.addClass( "add-100-vh" );
                     mobileContainer.addClass("add-padding-and-min-height");
-                    // mobileWrapper.css({"height": "100vh;"});
-                    // mobileContainer.css({"padding-bottom": "20%;"});
-                    // mobileContainer.css({"min-height": "calc(100vh - 52px);"});
-
 
                     // CSS necessary to open the Nav Menu
                     navigationMenu.fadeIn();
@@ -72,11 +66,6 @@ export default class Navigation {
                     // Remove these styles added to make the content on the site clickable after the mobile nav has been closed.
                     mobileWrapper.removeClass( "add-100-vh" );
                     mobileContainer.removeClass("add-padding-and-min-height");
-                    // mobileWrapper.css({"z-index": "1"});
-                    // mobileWrapper.css({"height": "auto;"});
-                    // mobileContainer.css({"padding-bottom": "0"});
-                    // mobileContainer.css({"min-height": "auto;"});
-
 
                     // CSS necessary to close menu
                     navigationMenu.css({"display": "none"});
@@ -93,7 +82,6 @@ export default class Navigation {
         }
 
         mobileMenuAccordion () {
-
             // OPEN CLOSE ACCORDION
             let $ = jQuery;
             let hasChildren = $(".navigation-menu-wrapper-mobile .navigation-menu .menu-item-has-children");
@@ -103,9 +91,7 @@ export default class Navigation {
                 submenu.slideToggle();
                 $(this).toggleClass('active');
                 let subMenuATags = $(".sub-menu *")
-                console.log("subMenuATags", subMenuATags)
                 subMenuATags.click(function(e) {
-                    console.log("propagation")
                     e.stopPropagation();
                 });
             });
