@@ -1,0 +1,43 @@
+
+
+
+.meet-cta-block {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12.5rem;
+    @media(max-width: 800px){
+        display: block;
+    }
+    &__left {
+        .desktop-image {
+            height: 300px;
+            @media(max-width: 800px){
+                display: none;
+            }
+            img {
+                mask-image: url("../images/meet-cta-block/meet-desktop-mask.svg");
+                mask-size: cover;
+                mask-repeat: round;
+                mask-position: unset;
+                width: 100%;
+            }
+        }
+        .mobile-image {
+            @media(min-width: 800px){
+                display: none;
+            }
+            img {
+                mask-image: url("../images/meet-cta-block/meet-mobile-mask.svg");
+                mask-size: cover;
+                mask-repeat: round;
+                mask-position: unset;
+                width: 100%;
+            }
+        }
+    }
+    &__right {
+        @media(max-width: 800px){
+            text-align: center;
+        }
+    }
+}

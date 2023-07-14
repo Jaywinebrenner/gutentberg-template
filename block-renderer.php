@@ -291,6 +291,21 @@ function init_acf_fields()
             ),
             'keywords'          => array('text'),
         ));
+
+        // register source meet cta block
+        acf_register_block(array(
+            'name'              => 'meet-cta-block',
+            'title'             => __('Meet Cta Block'),
+            'description'       => __('Meet Cta Block'),
+            'render_callback'   => 'block_renderer',
+            'category'          => 'formatting',
+            'icon'              => 'admin-comments',
+            'align'           => 'full',
+            'supports'        => array(
+                'align' => array('full'),
+            ),
+            'keywords'          => array('Meet Cta Block'),
+        ));
     }
 }
 

@@ -1981,6 +1981,57 @@ Component
   margin-right: auto;
 }
 
+.meet-cta-block {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12.5rem;
+}
+@media (max-width: 800px) {
+  .meet-cta-block {
+    display: block;
+  }
+}
+.meet-cta-block__left .desktop-image {
+  height: 300px;
+}
+@media (max-width: 800px) {
+  .meet-cta-block__left .desktop-image {
+    display: none;
+  }
+}
+.meet-cta-block__left .desktop-image img {
+  -webkit-mask-image: url(c2744794ba230111f061.svg);
+          mask-image: url(c2744794ba230111f061.svg);
+  -webkit-mask-size: cover;
+          mask-size: cover;
+  -webkit-mask-repeat: round;
+          mask-repeat: round;
+  -webkit-mask-position: unset;
+          mask-position: unset;
+  width: 100%;
+}
+@media (min-width: 800px) {
+  .meet-cta-block__left .mobile-image {
+    display: none;
+  }
+}
+.meet-cta-block__left .mobile-image img {
+  -webkit-mask-image: url(c2744794ba230111f061.svg);
+          mask-image: url(c2744794ba230111f061.svg);
+  -webkit-mask-size: cover;
+          mask-size: cover;
+  -webkit-mask-repeat: round;
+          mask-repeat: round;
+  -webkit-mask-position: unset;
+          mask-position: unset;
+  width: 100%;
+}
+@media (max-width: 800px) {
+  .meet-cta-block__right {
+    text-align: center;
+  }
+}
+
 /*--------------------------------------------------------------
 Views
 --------------------------------------------------------------*/
