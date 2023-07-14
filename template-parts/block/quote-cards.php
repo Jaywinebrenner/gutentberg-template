@@ -13,40 +13,37 @@ $id = 'quote-cards-' . $block['id'];
 <section id="<?php echo $id; ?>" class="quote-cards container">
     <p><?php the_field('subtitle'); ?></p>
     <div class="cards-wrapper">
-        <div class="left">
         <?php
-            $left = get_field('left_card');
-            if( $left ): ?>
-                <div class="quotecard">
-                    <div class="quotecard__top">
-                        <img src="<?php echo esc_url( $left['image'] ); ?>"  />
+        if( have_rows('card') ):
+            while( have_rows('card') ) : the_row();
+                $image = get_sub_field('image');
+                $title = get_sub_field('title');
+                $quote = get_sub_field('quote');
+                $add_a_quote = get_sub_field('add_a_quote');
+                $title = get_sub_field('title');
+                $card_color = get_sub_field('card_color');
+                ?>
+                    <div class="quotecard">
+                        <div 
+                        class="quotecard__top"
+                        style='background-color: <?php echo $card_color ?>'>
+                            <img src="<?php echo $image; ?>"  />
+                        </div>
+                        <div 
+                        class="quotecard__bottom"
+                        style='background-color: <?php echo $card_color ?>'
+                        >
+                        <h5><?php echo $title; ?></h5>
+                        <?php
+                        if(get_sub_field('quoter'))
+                        {
+                            echo '<p>' . get_sub_field('quoter') . '</p>';
+                        }?>
+                        </div>
                     </div>
-                    <div class="quotecard__bottom">
-                        <h5><?php echo $left['quote']; ?><h5>
-                        <p><?php echo $left['quoter']; ?></p>
-                    </div>
-                </div>
-        <?php endif; ?>
-
-        </div>
-
-        <div class="right">
-        <?php
-            $right = get_field('right_card');
-            if( $right ): ?>
-                <div class="quotecard">
-                    <div class="quotecard__top">
-                        <img src="<?php echo esc_url( $right['image'] ); ?>"  />
-                    </div>
-                    <div class="quotecard__bottom">
-                        <h5><?php echo $right['quote']; ?><h5>
-                        <p><?php echo $right['quoter']; ?></p>
-                    </div>
-                </div>
-        <?php endif; ?>
-
-        </div>
-
+                <?php
+            endwhile;
+        endif;
+        ?>
     </div>
-
 </section>

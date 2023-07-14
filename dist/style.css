@@ -1266,12 +1266,22 @@ Component
 
 .quote-cards .cards-wrapper {
   display: grid;
-  grid-template-columns: 1fr 1fr;
   grid-gap: 1.25rem;
+  display: flex;
 }
 @media (max-width: 800px) {
   .quote-cards .cards-wrapper {
-    grid-template-columns: 1fr;
+    display: block;
+    padding-bottom: 20px;
+  }
+}
+.quote-cards .quotecard {
+  flex-grow: 1;
+  flex-basis: 0;
+}
+@media (max-width: 800px) {
+  .quote-cards .quotecard {
+    padding-bottom: 1.25rem;
   }
 }
 .quote-cards .quotecard img {
