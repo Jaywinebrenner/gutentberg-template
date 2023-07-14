@@ -1978,11 +1978,13 @@ Component
   display: flex;
   gap: 10.875rem;
   min-height: 209px;
+  padding: 4rem 0;
 }
 @media (max-width: 800px) {
   .image-content {
     flex-direction: column-reverse;
     gap: 2.5rem;
+    padding: 1.5rem 0;
   }
 }
 .image-content__right {
