@@ -2,13 +2,6 @@
 
 add_theme_support('align-wide');
 
-// wp_nav_menu( array(
-// 	'menu'           => 'Project Nav', // Do not fall back to first non-empty menu.
-// 	'theme_location' => '__no_such_location',
-// 	'fallback_cb'    => false // Do not fall back to wp_page_menu()
-// ) );
-
-// add_theme_support('menus');
 
 function register_my_menu() {
     register_nav_menu('navigation', 'Navigation');

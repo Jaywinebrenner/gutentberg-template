@@ -21,13 +21,37 @@
 
 <body <?php body_class(); ?> >
 
+<?php 
 
-<div id="page" class="hfeed site">
+?>
 
-<!-- TESTING BELOW -->
+
+<!-- DESKTOP -->
+<div class="width-container">
+	<div class="navigation-menu-wrapper">
+		<div 
+		class="background-color-band"
+		style="<?php echo is_front_page() ? 'background-color: #F7F4F0;' : 'background-color:#FFF'; ?>"
+		></div>
+		<a href="<?php echo site_url('/'); ?>">
+			<img src="<?php echo get_stylesheet_directory_uri();?>/assets/images/navigation/logo.svg"/>
+		</a>
+		<?php
+		wp_nav_menu(array(
+			'theme_location' => 'navigation',
+			'menu_class' => 'navigation-menu',
+			'sort_order' => 'DESC' 
+		));
+		?>
+	</div>
+</div>
 
 <!-- NEW MOBILE -->
 <div class="navigation-menu-wrapper-mobile">
+	<div 
+	class="background-color-band-mobile"
+	style="<?php echo is_front_page() ? 'background-color: #F7F4F0;' : 'background-color:#FFF'; ?>"
+	></div>
 	<div class="mobile-container">
 		<div class="hamburger-and-image-wrapper">
 			<a href="<?php echo site_url('/'); ?>">
@@ -51,25 +75,26 @@
 	</div>
 </div>
 
-<!-- NEW DESKTOP -->
-<div class="navigation-menu-wrapper">
-		<a href="<?php echo site_url('/'); ?>">
-			<img src="<?php echo get_stylesheet_directory_uri();?>/assets/images/navigation/logo.svg"/>
-		</a>
-		<?php
-		wp_nav_menu(array(
-			'theme_location' => 'navigation',
-			'menu_class' => 'navigation-menu',
-			'sort_order' => 'DESC' 
-		));
-		?>
 
-</div>
+<div id="page" class="hfeed site">
 
 
 
 
-<!-- TESTING ABOVE -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 	<div class="navigation">
 
