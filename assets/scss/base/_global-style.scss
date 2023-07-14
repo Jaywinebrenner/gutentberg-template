@@ -1,10 +1,11 @@
+
 #wpadminbar {
   display: none;
 }
 
-html{
-  min-height:100%;
-  position:relative;
+html {
+  min-height: 100%;
+  position: relative;
   margin: 0px;
   padding: 0px;
   overflow-x: hidden;
@@ -17,11 +18,10 @@ html :where(.wp-block) {
 body {
   margin: 0px;
   padding: 0px;
-  @media(max-width: 800px){
+  @media (max-width: 800px) {
     overflow-x: hidden;
   }
 }
-
 
 .container {
   max-width: 1800px;
@@ -62,25 +62,62 @@ body {
 .texture {
   position: relative;
   &:before {
-    content: '';
+    content: "";
     width: 100%;
     height: 100%;
     position: absolute;
     top: 0;
-    left :0;
+    left: 0;
     background-size: 100% auto;
   }
 }
 
-
 .wp-block-columns {
   @extend .container;
 
-  &:before, &:after {
+  &:before,
+  &:after {
     content: none;
   }
 }
 
 ::selection {
-  background: rgb(214, 73, 54, .4); /* WebKit/Blink Browsers */
+  background: rgb(214, 73, 54, 0.4); /* WebKit/Blink Browsers */
+}
+
+// Gutenberg default block stlying
+.alignwide {
+  max-width: 56.25rem;
+  width: 100%;
+  margin: auto;
+}
+
+.has-linen-background-color {
+  background-color: $color-linen;
+}
+
+html :where(.is-reusable),
+html :where(.is-reusable) :where(.wp-block) {
+  max-width: none;
+}
+
+.parallax-wrapper {
+  overflow: hidden;
+  display: flex;
+	align-items: flex-end;
+	transform-style: preserve-3d;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    margin: 0;
+    transform: translateZ(0);
+    transform: translate3d(0, 0, 0);
+    transform: rotate(0.0001deg);
+    perspective: 1000;
+    backface-visibility: hidden;
+    will-change: transform;
+  }
 }

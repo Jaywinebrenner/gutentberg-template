@@ -16,7 +16,7 @@ $id = 'info-cards-' . $block['id'];
     <div class="info-cards__cards">
       <?php while (have_rows('cards')) : the_row(); ?>
         <div class="info-cards__card" style="background-color: <?php the_field('card_color'); ?>">
-          <img src="<?php echo get_template_directory_uri() . '/assets/images/card-asterisk.svg' ?>" alt="">
+          <img src="<?php the_sub_field('icon'); ?>" alt="">
           <div class="info-cards__content">
             <h5><?php the_sub_field('title'); ?></h5>
             <p class="minor"><?php the_sub_field('copy') ?></p>

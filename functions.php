@@ -48,3 +48,23 @@ add_action('enqueue_block_assets', 'hc_enqueue_assets');
 
 //render blocks
 include(get_theme_file_path("/block-renderer.php"));
+
+//update default color palette
+function my_theme_add_new_features() {
+    // The new colors we are going to add
+    $newColorPalette = [
+        [
+            'name' => esc_attr__('Red', 'default'),
+            'slug' => 'red',
+            'color' => '#D64936',
+        ],
+        [
+            'name' => esc_attr__('Linen', 'default'),
+            'slug' => 'linen',
+            'color' => '#F7F4F0',
+        ],
+    ];
+    // Apply the color palette containing the original colors and 2 new colors:
+    add_theme_support( 'editor-color-palette', $newColorPalette);
+}
+add_action( 'after_setup_theme', 'my_theme_add_new_features' );
