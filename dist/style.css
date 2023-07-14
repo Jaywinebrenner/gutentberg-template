@@ -2029,6 +2029,7 @@ Component
 @media (max-width: 800px) {
   .meet-cta-block__right {
     text-align: center;
+    padding-top: 1.875rem;
   }
 }
 

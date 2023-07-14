@@ -19,9 +19,7 @@ $id = 'meet-cta-block-' . $block['id'];
         <?php endif; ?>
 
         <div class="mobile-image">
-            <div class="mobile-image parallax-wrapper" >
-                <img src="<?php echo get_field('mobile_image') ? get_field('mobile_image') : get_field('image'); ?>" alt="">
-            </div>
+            <img src="<?php echo get_field('mobile_image') ? get_field('mobile_image') : get_field('image'); ?>" alt="">
         </div>
 
     </div>
