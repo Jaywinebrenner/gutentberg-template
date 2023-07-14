@@ -952,7 +952,7 @@ Component
 .navigation-menu-wrapper .background-color-band {
   position: absolute;
   width: 3223px;
-  height: 11rem;
+  height: 100%;
   top: 0;
   left: -661px;
   right: 0;

@@ -31,6 +31,7 @@
 	</a>
 	<?php
 	wp_nav_menu(array(
+		'menu' => 'navigation',
 		'theme_location' => 'navigation',
 		'menu_class' => 'navigation-menu',
 		'sort_order' => 'DESC' 
@@ -58,6 +59,7 @@
 		</div>
 		<?php
 		wp_nav_menu(array(
+			'menu' => 'navigation',
 			'theme_location' => 'navigation',
 			'menu_class' => 'navigation-menu',
 			'sort_order' => 'DESC' 
