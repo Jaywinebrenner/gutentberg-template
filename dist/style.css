@@ -1219,6 +1219,11 @@ Component
   text-align: center;
   padding-top: 11.5rem;
 }
+@media (max-width: 800px) {
+  .three-card-row__top {
+    padding-top: 0;
+  }
+}
 .three-card-row h2 {
   margin-bottom: 24px;
 }
