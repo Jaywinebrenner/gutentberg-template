@@ -940,6 +940,15 @@ html :where(.is-reusable) :where(.wp-block) {
   }
 }
 
+.wp-block-columns {
+  gap: 6.875rem;
+}
+@media (max-width: 800px) {
+  .wp-block-columns {
+    gap: 0;
+  }
+}
+
 /*--------------------------------------------------------------
 Component
 --------------------------------------------------------------*/
