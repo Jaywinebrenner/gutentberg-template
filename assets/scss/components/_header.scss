@@ -133,31 +133,35 @@
 
 }
 // NEW MOBILE 
+
+// The below class is appended when the mobile nav is open. These styles can't exist when the menu is closed at it interferes with clickability of elements on site
+.add-100-vh {
+    height: 100vh;
+}
 .navigation-menu-wrapper-mobile {
     position: fixed;
     width: 100%;
-    min-height: calc(100vh - 139px);
-    padding: 1.625rem;
+    padding: 1.625rem 1.625rem 0 1.625rem;
     z-index: 1;
     overflow: auto;
-    height: 100vh;
     .background-color-band-mobile {
         position: absolute;
-        background-color: lightblue!important;
         width: 1982px;
         height: 15.2rem;
         top: -112px;
         right: 0;
         z-index: 1;
     }
-
-    .mobile-container {
-        border-radius: 10px;
-        padding: 1.25rem;
-        position: relative;
-        z-index: 1000;
+    // The below class is appended when the mobile nav is open. These styles can't exist when the menu is closed at it interferes with clickability of elements on site
+    .add-padding-and-min-height {
         padding-bottom: 20%;
         min-height: calc(100vh - 52px);
+    }
+    .mobile-container {
+        border-radius: 10px;
+        padding: 1.25rem 1.25rem 0 1.25rem;
+        position: relative;
+        z-index: 1000;
     }
     h4 {
         margin-bottom: 0;

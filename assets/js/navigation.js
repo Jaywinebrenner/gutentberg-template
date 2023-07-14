@@ -29,28 +29,35 @@ export default class Navigation {
                 }
             });
         }
-        hamburger() {
-            // Transform Burger to X and make Mobile Menu active
+
+        hamburger = () => {
             let open;
             let $ = jQuery;
-            let hamburger = document.querySelector('.hamburger');
 
+            //Elements
+            let hamburger = document.querySelector('.hamburger');
+            let mobileColorBand = $('.background-color-band-mobile');
+            let navigationMenu = $(".navigation-menu-wrapper-mobile .navigation-menu");
+            let mobileWrapper = $(".navigation-menu-wrapper-mobile");
+            let mobileContainer = $(".navigation-menu-wrapper-mobile .mobile-container");
             hamburger.addEventListener('click', function() {
 
-                let mobileColorBand = $('.background-color-band-mobile');
-                let navigationMenu = $(".navigation-menu-wrapper-mobile .navigation-menu");
-                let mobileWrapper = $(".navigation-menu-wrapper-mobile");
-                let mobileContainer = $(".navigation-menu-wrapper-mobile .mobile-container");
-                // Ensure these style props are added to squash a nasty z-index bug
-                console.log("add css")
-                // mobileWrapper.css({"height": "100vh;"});
-                // mobileContainer.css({"padding-bottom": "20%;"});
-                // mobileContainer.css({"min-height": "calc(100vh - 52px);"});
-                this.classList.toggle('open');
+                //Toggle Menu
+                hamburger.classList.toggle('open');
                 open = hamburger.classList.contains("open");
-                console.log("open", open)
-                if(open && $( window ).width() < 800){
 
+                console.log("Open", open)
+                if(open){
+
+                    // These styles need to be injected in order to make the opened menu scrollable. These styles can't be on the style sheet as they interfere with the clickability of elements on the site. 
+                    mobileWrapper.addClass( "add-100-vh" );
+                    mobileContainer.addClass("add-padding-and-min-height");
+                    // mobileWrapper.css({"height": "100vh;"});
+                    // mobileContainer.css({"padding-bottom": "20%;"});
+                    // mobileContainer.css({"min-height": "calc(100vh - 52px);"});
+
+
+                    // CSS necessary to open the Nav Menu
                     navigationMenu.fadeIn();
                     mobileWrapper.css({"background-color": "#F7F4F0"})
                     mobileWrapper.css({"z-index": "1000"})
@@ -60,16 +67,20 @@ export default class Navigation {
                     $(":root").css("height", "100%");
                     $("body").css("overflow", "hidden");
                     $("body").css("height", "100%");
-                } else {
-
+                }
+                if(!open){
+                    // Remove these styles added to make the content on the site clickable after the mobile nav has been closed.
+                    mobileWrapper.removeClass( "add-100-vh" );
+                    mobileContainer.removeClass("add-padding-and-min-height");
                     // mobileWrapper.css({"z-index": "1"});
                     // mobileWrapper.css({"height": "auto;"});
                     // mobileContainer.css({"padding-bottom": "0"});
                     // mobileContainer.css({"min-height": "auto;"});
 
+
+                    // CSS necessary to close menu
                     navigationMenu.css({"display": "none"});
                     $(".mobile-container").css({"background-color": "transparent"});  
-                    console.log("z INDEX 1")
                     mobileWrapper.css({"z-index": "1"})
                     mobileWrapper.css({"background-color": "transparent"})
                     mobileColorBand.css({"display": "block"})
@@ -77,17 +88,8 @@ export default class Navigation {
                     $(":root").css("height", "unset");
                     $("body").css("overflow", "none");
                     $("body").css("height", "unset");
-                    console.log("remove css")
-                }
-                if(!open && $( window ).width() < 800){
-                    mobileWrapper.css({"z-index": "1"});
-
-                    // mobileWrapper.css({"height": "auto;"});
-                    // mobileContainer.css({"padding-bottom": "0"});
-                    // mobileContainer.css({"min-height": "auto;"});
                 }
             });
-
         }
 
         mobileMenuAccordion () {
