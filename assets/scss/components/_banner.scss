@@ -36,6 +36,7 @@
             flex-direction: column;
             justify-content: center;
             padding-right: 10%;
+            // align-items: center;
             @media(max-width: $bp-small){
                 padding-right: unset;
             }
@@ -84,7 +85,9 @@
                 align-items: center;
             }
         }
-
+        .right {
+            align-items: center;
+        }
 
     }
 }
