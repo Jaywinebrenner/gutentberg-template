@@ -7,6 +7,7 @@ class CapabilityDropdowns {
   init() {
     let $ = jQuery;
     // ACCORDION
+    $(this.el).find('.accordion-item__content').hide();
     $(this.el).find('.accordion-item__title').click(function () {
       const accordionItem = $(this).closest('.accordion-item');
       const accordionContent = accordionItem.find('.accordion-item__content');
@@ -17,20 +18,18 @@ class CapabilityDropdowns {
         // Close the currently open accordion item
         accordionContent.slideUp();
         accordionItem.removeClass('active');
+        $(this).find('.chevron').removeClass('down'); // Remove the 'down' class
       } else {
         // Close other open accordion items
         otherAccordionContents.slideUp();
         otherAccordionItems.removeClass('active');
+        otherAccordionItems.find('.chevron').removeClass('down'); // Remove the 'down' class from other chevrons
 
         // Open the clicked accordion item
         accordionContent.slideDown();
         accordionItem.addClass('active');
+        $(this).find('.chevron').addClass('down'); // Add the 'down' class
       }
-    });
-
-    // CHEVRON
-    $(this.el).find('.accordion-item__title').click(function () {
-      $(this).find('.chevron').toggleClass('down');
     });
 
     this.setColumnsHeight();
