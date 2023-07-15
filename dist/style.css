@@ -1988,6 +1988,17 @@ Component
   margin-right: auto;
 }
 
+.error-404 {
+  background-color: #F7F4F0;
+  padding-top: 20%;
+  position: relative;
+  z-index: 1;
+  height: 70vh;
+}
+.error-404 .error-404-wrapper {
+  text-align: center;
+}
+
 /*--------------------------------------------------------------
 Views
 --------------------------------------------------------------*/

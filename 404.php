@@ -9,9 +9,13 @@ get_header(); ?>
 
 	<div id="primary" class="content-area">
 
-		<section class="error-404 not-found container" style="padding-top: 200px; margin-bottom: 200px;position: relative; z-index: 1;">
-			<h1>This page could not be found</h1>
-			<a href="<?php echo home_url(); ?>" class="btn_1">home</a>
+		<section class="error-404 not-found" >
+			<div class="error-404-wrapper container">
+				<h1>404</h1>
+				<h3>Oops! Looks like the page you’re looking for isn’t here. </h3>
+				<p>Redirecting you in [<span class="count">10</span>] seconds.</p>
+				<a href="<?php echo home_url(); ?>" class="btn_1">home</a>
+			</div>
 		</section><!-- .error-404 -->
 
 	</div><!-- #primary -->
