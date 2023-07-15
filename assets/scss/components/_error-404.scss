@@ -1,11 +1,11 @@
 
 
 .error-404 {
-    background-color: $color-linen;
-    padding-top: 20%; 
-    position: relative; 
+    background-color: #F7F4F0;
+    position: relative;
     z-index: 1;
     height: 70vh;
+    display: flex;
     .error-404-wrapper {
         text-align: center;
     }

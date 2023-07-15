@@ -4,7 +4,7 @@ class Error {
       this.init();
     }
     init() {
-        var el = document.querySelector('.count'),
+        let el = document.querySelector('.count'),
         total = el.innerHTML,
         timeinterval = setInterval(function () {
             total = --total;
