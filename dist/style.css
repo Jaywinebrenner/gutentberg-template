@@ -468,10 +468,6 @@ a:not(.button):visited {
   color: #1D0800;
 }
 
-ul {
-  padding-left: 20px;
-}
-
 li {
   font-weight: 300;
 }
@@ -494,7 +490,8 @@ li, .wp-block li, .wp-block-list-item {
   list-style-type: none;
 }
 
-ul, .block-editor-block-list__block {
+ul, .wp-block-list {
+  padding-left: 20px;
   margin: 0;
 }
 
