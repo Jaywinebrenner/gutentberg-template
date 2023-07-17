@@ -4,6 +4,10 @@ document.addEventListener("DOMContentLoaded", () => {
   }, 230);
 
   [...document.querySelectorAll('a')].forEach((el) => {
-    el.addEventListener('click', () => document.body.classList.add('fade'));
+    if(el.href !== '#') {
+      el.addEventListener('click', () => {
+        document.body.classList.add('fade')
+      });
+    }
   })
 });
