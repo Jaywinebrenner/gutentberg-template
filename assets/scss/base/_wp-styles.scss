@@ -38,3 +38,10 @@
     margin: auto;
   }
 }
+
+.wp-block-columns {
+  gap: 6.875rem;
+  @media(max-width:800px){
+    gap: 0;
+  }
+}

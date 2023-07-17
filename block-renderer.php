@@ -239,6 +239,7 @@ function init_acf_fields()
             'supports'        => array(
                 'align' => array('full'),
             ),
+
             'keywords'          => array('Source Aq Cta'),
         ));
 
@@ -290,6 +291,36 @@ function init_acf_fields()
                 'jsx'             => true,
             ),
             'keywords'          => array('text'),
+        ));
+        // register inline hero
+        acf_register_block(array(
+            'name'              => 'inline hero',
+            'title'             => __('Inline Hero'),
+            'description'       => __('This is an image hero with parallax'),
+            'render_callback'   => 'block_renderer',
+            'category'          => 'text',
+            'icon'              => 'admin-comments',
+            'align'           => 'full',
+            'supports'        => array(
+                'align' => array('full'),
+            ),
+            'keywords'          => array('inline hero', 'masthead'),
+        ));
+
+        // register page image content block
+        acf_register_block(array(
+            'name'              => 'image-content',
+            'title'             => __('Image Content'),
+            'description'       => __('Image Content'),
+            'render_callback'   => 'block_renderer',
+            'category'          => 'formatting',
+            'icon'              => 'admin-comments',
+            'align'           => 'full',
+            'supports'        => array(
+                'align' => array('full'),
+                'jsx'             => true,
+            ),
+            'keywords'          => array('Image Content')
         ));
 
         // register source meet cta block
