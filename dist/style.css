@@ -478,7 +478,8 @@ li {
   font-weight: 300;
 }
 
-.navigation-menu-wrapper li {
+.navigation-menu-wrapper li,
+.menu-navigation-container li {
   list-style-type: none;
 }
 

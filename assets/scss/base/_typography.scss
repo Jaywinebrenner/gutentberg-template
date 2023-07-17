@@ -106,8 +106,7 @@ h5,
 }
 
 h6,
-.editor-styles-wrapper h6
-.h6 {
+.editor-styles-wrapper h6 .h6 {
   font-size: 1rem;
   font-family: "Inter";
   font-weight: 700;
@@ -191,7 +190,8 @@ li {
   font-weight: $regular;
 }
 
-.navigation-menu-wrapper li {
+.navigation-menu-wrapper li,
+.menu-navigation-container li {
   list-style-type: none;
 }
 
@@ -240,5 +240,3 @@ hr {
     }
   }
 }
-
-
