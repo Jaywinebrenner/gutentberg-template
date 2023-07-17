@@ -190,11 +190,11 @@ li {
 }
 
 .navigation-menu-wrapper li,
-.menu-navigation-container li {
+.menu-navigation-container li, wp-admin li {
   list-style-type: none;
 }
 
-li {
+li, .wp-block li {
   font-size: 1.375rem;
   font-weight: $regular;
   line-height: 150%;
