@@ -2,6 +2,9 @@
     &__top {
         text-align: center;
         padding-top: 11.5rem;
+        max-width: 56.25rem;
+        margin-left: auto;
+        margin-right: auto;
         @media (max-width: 800px) {
             padding-top: 5rem;
         }
@@ -24,10 +27,6 @@
             flex: 1;
             padding: 0.5rem;
             &__top {
-                max-width: 56.25rem;
-                margin-left: auto;
-                margin-right: auto;
-
                 img {
                     height: 21.875rem;
                     object-fit: cover;
