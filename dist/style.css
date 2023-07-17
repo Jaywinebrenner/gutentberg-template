@@ -2467,6 +2467,17 @@ Component
   margin-right: auto;
 }
 
+.error-404 {
+  background-color: #F7F4F0;
+  position: relative;
+  z-index: 1;
+  height: 70vh;
+  display: flex;
+}
+.error-404 .error-404-wrapper {
+  text-align: center;
+}
+
 .meet-cta-block {
   display: grid;
   grid-template-columns: 1fr 1fr;
