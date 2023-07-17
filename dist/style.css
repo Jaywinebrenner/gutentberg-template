@@ -475,8 +475,11 @@ ul {
 }
 
 li {
-  list-style-type: none;
   font-weight: 300;
+}
+
+.navigation-menu-wrapper li {
+  list-style-type: none;
 }
 
 li {

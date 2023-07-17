@@ -188,8 +188,11 @@ ul {
 }
 
 li {
-  list-style-type: none;
   font-weight: $regular;
+}
+
+.navigation-menu-wrapper li {
+  list-style-type: none;
 }
 
 li {
