@@ -1585,20 +1585,25 @@ Component
   border: 1px solid #FFFFFF;
 }
 .banner-wrapper .banner h4 {
-  margin-bottom: 1.5rem;
+  margin-bottom: 0;
 }
 @media (max-width: 800px) {
   .banner-wrapper .banner h4 {
     text-align: center;
   }
 }
-.banner-wrapper .banner .right, .banner-wrapper .banner .left {
+.banner-wrapper .banner p {
+  margin-top: 1.5rem;
+}
+.banner-wrapper .banner .right,
+.banner-wrapper .banner .left {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 @media (max-width: 800px) {
-  .banner-wrapper .banner .right, .banner-wrapper .banner .left {
+  .banner-wrapper .banner .right,
+  .banner-wrapper .banner .left {
     align-items: center;
   }
 }
