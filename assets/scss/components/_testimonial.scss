@@ -3,6 +3,10 @@
   padding-top: 11.5rem;
   padding-bottom: 11.5rem;
 
+  .slick-dotted.slick-slider {
+    margin-bottom: 4.0625rem;
+  }
+
   @media(max-width: $bp-small) {
     padding-top: 5rem;
     padding-bottom: 5rem;
