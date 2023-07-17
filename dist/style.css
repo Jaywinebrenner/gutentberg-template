@@ -1628,16 +1628,18 @@ Component
   display: flex;
   flex-direction: column;
   padding-bottom: 80px;
-  padding-top: 15.5rem;
+  padding-top: 4.5rem;
   position: relative;
 }
 @media (max-width: 700px) {
   .hero__top {
     height: unset;
-    padding: 13.75rem 0;
+    padding: 3.5rem 0;
+    padding-top: 1rem;
   }
 }
-.hero__top h1, .hero__top p {
+.hero__top h1,
+.hero__top p {
   text-align: center;
   color: #1D0800;
   padding: 0 10%;
