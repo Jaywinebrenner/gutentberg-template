@@ -407,16 +407,14 @@ h6,
 }
 
 p,
-i,
-strong {
+i {
   font-size: 1.25rem;
   font-weight: 300;
   line-height: 150%;
 }
 @media (max-width: 800px) {
   p,
-  i,
-  strong {
+  i {
     font-size: 1rem;
   }
 }
@@ -445,7 +443,7 @@ p.minor {
     font-size: 0.875rem;
   }
 }
-p.italic {
+p.italic, p i {
   font-style: italic;
   opacity: 0.5;
 }
