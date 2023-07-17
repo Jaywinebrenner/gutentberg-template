@@ -1582,7 +1582,7 @@ Component
   border: 1px solid #FFFFFF;
 }
 .banner-wrapper .banner h4 {
-  margin-bottom: 0;
+  margin-bottom: 1.5rem;
 }
 @media (max-width: 800px) {
   .banner-wrapper .banner h4 {

@@ -71,7 +71,7 @@
         }
 
         h4 {
-            margin-bottom: 0;
+            margin-bottom: $spacing-small;
             @media(max-width: $bp-small){
                 text-align: center;
             }
