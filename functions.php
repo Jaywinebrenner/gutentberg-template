@@ -2,6 +2,14 @@
 
 add_theme_support('align-wide');
 
+
+function register_my_menu() {
+    register_nav_menu('navigation', 'Navigation');
+  }
+  add_action('after_setup_theme', 'register_my_menu');
+
+
+
 function cc_mime_types( $mimes ){
     $mimes['svg'] = 'image/svg+xml';
     return $mimes;
