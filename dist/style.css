@@ -2654,7 +2654,7 @@ Component
   position: relative;
 }
 .inline-hero .desktop-image {
-  height: 450px;
+  height: 28.125rem;
   width: 100%;
   -webkit-mask-image: url(eafd52f7205a587c070f.svg);
           mask-image: url(eafd52f7205a587c070f.svg);
@@ -2672,6 +2672,7 @@ Component
 }
 .inline-hero .mobile-image {
   width: 100%;
+  height: 25rem;
   -webkit-mask-image: url(eb611025d04e1ca6e06d.svg);
           mask-image: url(eb611025d04e1ca6e06d.svg);
   -webkit-mask-size: cover;
