@@ -2672,7 +2672,7 @@ Component
 }
 .inline-hero .mobile-image {
   width: 100%;
-  height: 25rem;
+  height: 15rem;
   -webkit-mask-image: url(eb611025d04e1ca6e06d.svg);
           mask-image: url(eb611025d04e1ca6e06d.svg);
   -webkit-mask-size: cover;
