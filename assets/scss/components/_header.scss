@@ -22,9 +22,9 @@
     grid-template-columns: 1fr 4fr;
     padding: 3rem 0;
     z-index: 1000;
-    position: fixed;
-    left: 0; 
-    right: 0; 
+    position: absolute;
+    left: 0;
+    right: 0;
     max-width: 1800px;
     margin: auto;
     width: 85%;
@@ -129,14 +129,14 @@
     }
 
 }
-// NEW MOBILE 
+// NEW MOBILE
 
 // The below class is appended when the mobile nav is open. These styles can't exist when the menu is closed at it interferes with clickability of elements on site
 .add-100-vh {
     height: 100vh;
 }
 .navigation-menu-wrapper-mobile {
-    position: fixed;
+    position: absolute;
     width: 100%;
     padding: 1.625rem 1.625rem 0 1.625rem;
     z-index: 1;
@@ -207,7 +207,7 @@
             a:hover {
                 color: $color-red;
             }
-            a:after { 
+            a:after {
                 content:url('../images/navigation/chevron.svg');
                 color: $color-red;
                 float: right;
@@ -240,7 +240,7 @@
                 }
             }
         }
-   
+
         .active.sub-menu {
             display: block;
         }
@@ -309,7 +309,7 @@
         a {
             &:hover {
                 color: $color-red;
-            }   
+            }
         }
         li {
             margin-bottom: 0;
@@ -351,10 +351,10 @@
     padding: 5.625rem 0;
     z-index: 1000;
     position: absolute;
-    left: 0; 
-    right: 0; 
-    margin-left: auto; 
-    margin-right: auto; 
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
 
     display: none;
     @media(max-width:$bp-small){
@@ -501,7 +501,7 @@
             .chevron {
                 transition: transform 0.3s ease;
             }
-            
+
             .chevron.rotate {
                 transform: rotate(180deg);
             }
