@@ -318,7 +318,7 @@ h2,
 .editor-styles-wrapper h2,
 .h2 {
   font-size: 4rem;
-  line-height: 4.25rem;
+  line-height: 120%;
   font-weight: 400;
   margin-top: 0;
   margin-bottom: 1.25rem;
