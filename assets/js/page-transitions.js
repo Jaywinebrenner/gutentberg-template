@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }, 230);
 
   [...document.querySelectorAll('a')].forEach((el) => {
-    if(el.href !== '#') {
+    if(el.href != '#') {
       el.addEventListener('click', () => {
         document.body.classList.add('fade')
       });
