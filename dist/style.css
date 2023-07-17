@@ -2457,6 +2457,11 @@ Component
   -webkit-mask-position: unset;
           mask-position: unset;
 }
+@media (max-width: 800px) {
+  .source-aq-cta .source-aq-cta-wrapper__right .desktop-image {
+    min-height: 16rem;
+  }
+}
 .source-aq-cta .source-aq-cta-wrapper__right img {
   -o-object-fit: cover;
      object-fit: cover;
