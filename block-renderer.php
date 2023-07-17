@@ -226,7 +226,7 @@ function init_acf_fields()
                 );
             },
         ));
-
+        
         // register source aq cta block
         acf_register_block(array(
             'name'              => 'source-aq-cta',
@@ -239,6 +239,7 @@ function init_acf_fields()
             'supports'        => array(
                 'align' => array('full'),
             ),
+
             'keywords'          => array('Source Aq Cta'),
         ));
 
