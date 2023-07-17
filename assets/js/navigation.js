@@ -12,7 +12,7 @@ export default class Navigation {
             this.ensureSiteIsScrollable = this.ensureSiteIsScrollable.bind(this);
         }
         init() {
-            this.ensureSiteIsScrollable(); 
+            this.ensureSiteIsScrollable();
             this.hamburger();
             this.mobileMenuAccordion();
         }
@@ -21,7 +21,7 @@ export default class Navigation {
             // This ensures scrollability if one were to open the hamburger and change from mobile view to desktop view in browser
             let $ = jQuery;
             $(window).on('resize', function(){
-                if (screen.width > 800) { 
+                if (screen.width > 800) {
                     $("body").css("overflow", "none");
                     $("body").css("height", "unset");
                     $(":root").css("overflow", "none");
@@ -47,7 +47,7 @@ export default class Navigation {
             open = hamburger.classList.contains("open");
 
                 if(open){
-                    // These styles need to be injected in order to make the opened menu scrollable. These styles can't be on the style sheet as they interfere with the clickability of elements on the site. 
+                    // These styles need to be injected in order to make the opened menu scrollable. These styles can't be on the style sheet as they interfere with the clickability of elements on the site.
                     mobileWrapper.addClass( "add-100-vh" );
                     mobileContainer.addClass("add-padding-and-min-height");
 
@@ -69,13 +69,13 @@ export default class Navigation {
 
                     // CSS necessary to close menu
                     navigationMenu.css({"display": "none"});
-                    $(".mobile-container").css({"background-color": "transparent"});  
+                    $(".mobile-container").css({"background-color": "transparent"});
                     mobileWrapper.css({"z-index": "1"})
                     mobileWrapper.css({"background-color": "transparent"})
                     mobileColorBand.css({"display": "block"})
-                    $(":root").css("overflow", "none");
+                    $(":root").css("overflow", "visible");
                     $(":root").css("height", "unset");
-                    $("body").css("overflow", "none");
+                    $("body").css("overflow", "visible");
                     $("body").css("height", "unset");
                 }
             });
@@ -97,7 +97,7 @@ export default class Navigation {
             });
 
 
-            // Make Title of Accordion red when active and 
+            // Make Title of Accordion red when active and
             hasChildren.click(function() {
                 let title = $(this).find('a:first');
                 let container = $('.menu-item-has-children')
