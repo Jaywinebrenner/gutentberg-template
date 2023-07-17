@@ -798,7 +798,7 @@ body {
 }
 
 .container, .wp-block-columns {
-  max-width: 1800px;
+  max-width: 1400px;
   margin: auto;
   width: 90%;
 }
@@ -1137,7 +1137,7 @@ Component
 }
 @media (min-width: 1200px) {
   .hero .hero-container {
-    max-width: 1800px;
+    max-width: 1400px;
     margin: auto;
     width: 90%;
   }
@@ -1975,15 +1975,15 @@ Component
 }
 
 .image-content {
-  display: flex;
-  gap: 10.875rem;
-  min-height: 209px;
+  display: grid;
+  grid-template-columns: 2fr 1.5fr;
+  -moz-column-gap: 6.875rem;
+       column-gap: 6.875rem;
   padding: 4rem 0;
 }
 @media (max-width: 800px) {
   .image-content {
     flex-direction: column-reverse;
-    gap: 2.5rem;
     padding: 1.5rem 0;
   }
 }
@@ -1996,7 +1996,7 @@ Component
     flex: unset;
   }
 }
-.image-content__right .image-wrapper-desktop {
+.image-content__right .image-wrapper {
   -webkit-mask-image: url(c2744794ba230111f061.svg);
           mask-image: url(c2744794ba230111f061.svg);
   -webkit-mask-size: cover;
@@ -2005,18 +2005,17 @@ Component
           mask-repeat: round;
   -webkit-mask-position: unset;
           mask-position: unset;
-  height: 295px;
+  height: 22rem;
   width: 100%;
   position: absolute;
-  width: 100%;
-  top: -45px;
+  top: -2.8125rem;
 }
 @media (max-width: 800px) {
-  .image-content__right .image-wrapper-desktop {
+  .image-content__right .image-wrapper {
     display: none;
   }
 }
-.image-content__right .image-wrapper-desktop img {
+.image-content__right .image-wrapper img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
@@ -2043,11 +2042,17 @@ Component
   -webkit-mask-position: unset;
           mask-position: unset;
 }
-
 @media (max-width: 800px) {
-  .flip-on-mobile {
-    flex-direction: column;
+  .image-content {
+    display: flex;
+    flex-direction: column-reverse;
   }
-} /*--------------------------------------------------------------
+}
+.image-content.flip-on-mobile {
+  flex-direction: column;
+  grid-template-columns: 1.5fr 2fr;
+}
+
+/*--------------------------------------------------------------
 Views
 --------------------------------------------------------------*/

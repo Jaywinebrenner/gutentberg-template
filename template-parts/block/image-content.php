@@ -12,28 +12,20 @@ $id = 'image-content-' . $block['id'];
 
 ?>
 
-<section 
-id="<?php echo $id; ?>" 
-class="image-content container <?php echo get_field('reverse_columns') ? "flip-on-mobile" : "" ?>"
->
-    <div 
-    class="image-content__left"
-    style='order: <?php echo the_field('reverse_columns') ? "1" : "" ?>'
-    >
+<section id="<?php echo $id; ?>" class="image-content container <?php echo get_field('reverse_columns') ? "flip-on-mobile" : "" ?>">
+    <div class="image-content__left" style='order: <?php echo the_field('reverse_columns') ? "1" : "" ?>'>
         <InnerBlocks />
     </div>
 
     <div class="image-content__right">
         <?php if (get_field('right_column')) : ?>
-            <div class="image-wrapper-desktop parallax-wrapper">
+            <div class="image-wrapper parallax-wrapper">
                 <img src="<?php the_field('right_column'); ?>" alt="">
             </div>
         <?php endif; ?>
-        <?php if (get_field('mobile_image')) { ?>
         <div class="image-wrapper-mobile">
-          <img src="<?php the_field('mobile_image'); ?>" alt="">
+            <img src="<?php echo get_field('mobile_image') ? get_field('mobile_image') : get_field('right_column'); ?>" alt="">
         </div>
-      <?php } ?>
     </div>
 
 </section>
