@@ -1729,6 +1729,11 @@ Component
   flex: 1;
   padding: 0.5rem;
 }
+.three-card-row .cards-wrapper .three-card-row__card__top {
+  max-width: 56.25rem;
+  margin-left: auto;
+  margin-right: auto;
+}
 .three-card-row .cards-wrapper .three-card-row__card__top img {
   height: 21.875rem;
   -o-object-fit: cover;
