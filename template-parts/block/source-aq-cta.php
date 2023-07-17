@@ -16,20 +16,22 @@ $content = get_field('content');
         <div class="source-aq-cta-wrapper">
             <div class="source-aq-cta-wrapper__left">
                 <div class="content-wrapper">
-                    <?php the_field('left_column_content'); ?> 
+                    <?php the_field('left_column_content'); ?>
                 </div>
                 <?php
                 $button = get_field('button');
                 if ($button) : ?>
-                <div class="btn-wrapper">
-                    <a href="<?php echo esc_url($button['url']); ?>" class="btn_red"><?php echo $button['text'] ?></a>
-                </div>
+                    <div class="btn-wrapper">
+                        <a href="<?php echo esc_url($button['url']); ?>" class="btn_red"><?php echo $button['text'] ?></a>
+                    </div>
                 <?php endif; ?>
 
             </div>
             <div class="source-aq-cta-wrapper__right">
                 <?php if (get_field('image')) : ?>
-                <img class="desktop-image" src="<?php the_field('image'); ?>" />
+                    <div class="parallax-wrapper desktop-image">
+                        <img src="<?php the_field('image'); ?>" />
+                    </div>
                 <?php endif; ?>
             </div>
 
