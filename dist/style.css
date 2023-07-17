@@ -2448,6 +2448,43 @@ Component
   margin-right: auto;
 }
 
+.inline-hero {
+  position: relative;
+}
+.inline-hero .desktop-image {
+  height: 450px;
+  width: 100%;
+  -webkit-mask-image: url(eafd52f7205a587c070f.svg);
+          mask-image: url(eafd52f7205a587c070f.svg);
+  -webkit-mask-size: cover;
+          mask-size: cover;
+  -webkit-mask-repeat: round;
+          mask-repeat: round;
+  -webkit-mask-position: unset;
+          mask-position: unset;
+}
+@media (max-width: 800px) {
+  .inline-hero .desktop-image {
+    display: none;
+  }
+}
+.inline-hero .mobile-image {
+  width: 100%;
+  -webkit-mask-image: url(eb611025d04e1ca6e06d.svg);
+          mask-image: url(eb611025d04e1ca6e06d.svg);
+  -webkit-mask-size: cover;
+          mask-size: cover;
+  -webkit-mask-repeat: round;
+          mask-repeat: round;
+  -webkit-mask-position: unset;
+          mask-position: unset;
+}
+@media (min-width: 800px) {
+  .inline-hero .mobile-image {
+    display: none;
+  }
+}
+
 /*--------------------------------------------------------------
 Views
 --------------------------------------------------------------*/

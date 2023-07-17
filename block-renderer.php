@@ -292,6 +292,20 @@ function init_acf_fields()
             ),
             'keywords'          => array('text'),
         ));
+        // register inline hero
+        acf_register_block(array(
+            'name'              => 'inline hero',
+            'title'             => __('Inline Hero'),
+            'description'       => __('This is an image hero with parallax'),
+            'render_callback'   => 'block_renderer',
+            'category'          => 'text',
+            'icon'              => 'admin-comments',
+            'align'           => 'full',
+            'supports'        => array(
+                'align' => array('full'),
+            ),
+            'keywords'          => array('inline hero', 'masthead'),
+        ));
     }
 }
 
