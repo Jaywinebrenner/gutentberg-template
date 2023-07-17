@@ -185,7 +185,7 @@ li {
   font-weight: $regular;
 }
 
-li, .wp-block li, .wp-block-list li {
+li, .wp-block li, .wp-block-list.wp-block-list li {
   font-size: 1.25rem;
   font-weight: $regular;
   line-height: 150%;
