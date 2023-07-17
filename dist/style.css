@@ -1014,7 +1014,7 @@ Component
   transition: 0.3s;
   opacity: 1;
   pointer-events: all;
-  background-color: #FFFFFF;
+  background-color: #F7F4F0;
 }
 .navigation-menu-wrapper .menu-navigation-container .navigation-menu .menu-item a {
   transition: 0.3s;
@@ -1031,7 +1031,7 @@ Component
 .navigation-menu-wrapper .menu-navigation-container .navigation-menu .sub-menu {
   opacity: 0;
   pointer-events: none;
-  background-color: transparent;
+  background-color: #F7F4F0;
   position: absolute;
   top: 2rem;
   left: 0;
@@ -1049,7 +1049,7 @@ Component
 }
 .navigation-menu-wrapper .menu-navigation-container .navigation-menu .sub-menu:hover {
   display: block;
-  background-color: #FFFFFF;
+  background-color: #F7F4F0;
 }
 .navigation-menu-wrapper .menu-navigation-container .navigation-menu .sub-menu__item p {
   margin-bottom: 1.7625rem;
@@ -1417,6 +1417,12 @@ Component
 
 .linen-bg {
   background-color: #F7F4F0 !important;
+}
+.linen-bg .sub-menu {
+  background-color: #FFFFFF !important;
+}
+.linen-bg .sub-menu:hover {
+  background-color: #FFFFFF !important;
 }
 
 .footer {

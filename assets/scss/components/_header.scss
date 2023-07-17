@@ -54,7 +54,7 @@
                     transition: 0.3s;
                     opacity: 1;
                     pointer-events: all;
-                    background-color: $color-white;
+                    background-color: $color-linen;
                 }
                 a {
                     transition: 0.3s;
@@ -74,7 +74,7 @@
             .sub-menu {
                 opacity: 0;
                 pointer-events: none;
-                background-color: transparent;
+                background-color: $color-linen;
                 position: absolute;
                 top: 2rem;
                 left: 0;
@@ -91,7 +91,7 @@
                 }
                 &:hover {
                     display: block;
-                    background-color: $color-white;
+                    background-color: $color-linen;
                 }
                 &__item {
                     p {
@@ -566,4 +566,12 @@
 
 .linen-bg {
     background-color: $color-linen !important;
+
+    .sub-menu {
+        background-color: $color-white !important;
+
+        &:hover {
+            background-color: $color-white !important;
+        }
+    }
 }
