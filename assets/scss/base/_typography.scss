@@ -189,11 +189,6 @@ li {
   font-weight: $regular;
 }
 
-.navigation-menu-wrapper li,
-.menu-navigation-container li, wp-admin li {
-  list-style-type: none;
-}
-
 li, .wp-block li {
   font-size: 1.375rem;
   font-weight: $regular;
@@ -203,6 +198,11 @@ li, .wp-block li {
   @media (max-width: $bp-small) {
     font-size: 1rem;
   }
+}
+
+.navigation-menu-wrapper li,
+.menu-navigation-container li, wp-admin li {
+  list-style-type: none;
 }
 
 ul {
