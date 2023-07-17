@@ -1,4 +1,3 @@
-
 #wpadminbar {
   display: none;
 }
@@ -18,6 +17,14 @@ html :where(.wp-block) {
 body {
   margin: 0px;
   padding: 0px;
+  opacity: 1;
+  transition-duration: 0.3s;
+  transition-property: opacity;
+
+  &.fade {
+    opacity: 0;
+  }
+
   @media (max-width: 800px) {
     overflow-x: hidden;
   }
@@ -104,8 +111,8 @@ html :where(.is-reusable) :where(.wp-block) {
 .parallax-wrapper {
   overflow: hidden;
   display: flex;
-	align-items: flex-end;
-	transform-style: preserve-3d;
+  align-items: flex-end;
+  transform-style: preserve-3d;
 
   img {
     width: 100%;
