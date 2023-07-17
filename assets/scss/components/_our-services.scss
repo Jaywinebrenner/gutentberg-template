@@ -1,28 +1,30 @@
-
-
-
 .our-services {
     .our-services-wrapper {
         background-color: $color-white;
         border-radius: 10px;
         padding: 3.75rem;
-        @media(max-width: $bp-small){
-            padding: .8rem;
+        @media (max-width: $bp-small) {
+            padding: 0.8rem;
         }
     }
     &__top {
         text-align: center;
         padding: 5.75rem 0;
-        @media(max-width: $bp-small){
+        h2,
+        p {
+            max-width: 56.25rem;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        @media (max-width: $bp-small) {
             padding: 5rem 0;
         }
         .image-wrapper {
             padding-top: 8.75rem;
-            @media(max-width: $bp-small){
+            @media (max-width: $bp-small) {
                 display: none;
             }
             .image {
-
                 height: 26vw;
                 min-height: 28.125rem;
                 background-size: cover;
@@ -36,7 +38,7 @@
         }
         .mobile-image-wrapper {
             margin-top: 3.75rem;
-            @media(min-width: $bp-small){
+            @media (min-width: $bp-small) {
                 display: none;
             }
             .mobile-image {
@@ -49,7 +51,6 @@
                 mask-size: cover;
                 mask-repeat: round;
             }
-
         }
         h2 {
             margin-bottom: 2.25rem;
@@ -62,16 +63,15 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-gap: 10rem;
-        @media(max-width: $bp-small){
+        @media (max-width: $bp-small) {
             grid-template-columns: 1fr;
             grid-gap: 2.5rem;
         }
         .left {
-
         }
         .right {
             .accordion-item {
-                border-bottom: 1px solid rgb(29, 8, 0, .2);
+                border-bottom: 1px solid rgb(29, 8, 0, 0.2);
                 &__title {
                     cursor: pointer;
                     display: flex;
@@ -89,22 +89,21 @@
                     h4 {
                         margin: 0;
                         padding: 1.25rem 0;
-                        @media(max-width: $bp-small){
+                        @media (max-width: $bp-small) {
                             padding: 2.6875rem 0;
                         }
                     }
                 }
                 &__content {
-
                 }
             }
             .accordion-item__content {
                 display: none;
-              }
+            }
 
-              .accordion-item.active .accordion-item__content {
+            .accordion-item.active .accordion-item__content {
                 display: block;
-              }
+            }
         }
     }
 }

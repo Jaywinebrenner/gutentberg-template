@@ -4,6 +4,9 @@
     &__top {
         text-align: center;
         padding-top: 11.5rem;
+        @media(max-width: 800px){
+            padding-top: 0;
+        }
     }
     h2 {
         margin-bottom: 24px;
