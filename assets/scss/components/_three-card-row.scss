@@ -5,7 +5,7 @@
         text-align: center;
         padding-top: 11.5rem;
         @media(max-width: 800px){
-            padding-top: 0;
+            padding-top: 5rem;
         }
     }
     h2 {
@@ -17,7 +17,7 @@
         padding-top: 6.5625rem;
         @media(max-width: 800px){
             display: block;
-            padding-top: 5rem;
+            padding-top: 1rem;
         }
         .three-card-row__card {
             display: flex;

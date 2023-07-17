@@ -1705,7 +1705,7 @@ Component
 }
 @media (max-width: 800px) {
   .three-card-row__top {
-    padding-top: 0;
+    padding-top: 5rem;
   }
 }
 .three-card-row h2 {
@@ -1719,7 +1719,7 @@ Component
 @media (max-width: 800px) {
   .three-card-row .cards-wrapper {
     display: block;
-    padding-top: 5rem;
+    padding-top: 1rem;
   }
 }
 .three-card-row .cards-wrapper .three-card-row__card {
