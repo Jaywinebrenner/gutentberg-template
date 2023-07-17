@@ -13,7 +13,7 @@ $id = 'meet-cta-block-' . $block['id'];
 <section id="<?php echo $id; ?>" class="meet-cta-block container">
     <div class="meet-cta-block__left">
         <?php if (get_field('image')) : ?>
-            <div class="desktop-image">
+            <div class="desktop-image parallax-wrapper">
             <img src="<?php the_field('image'); ?>" alt="">
             </div>
         <?php endif; ?>
