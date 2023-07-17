@@ -1,7 +1,10 @@
 .page-hero {
   position: relative;
   .container {
-    padding-top: 14.375rem;
+    padding-top: 5rem;
+    @media (max-width: $bp-small) {
+      padding-top: 1rem;
+    }
   }
   .monitor-linen-bars {
     position: absolute;

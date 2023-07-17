@@ -2028,7 +2028,12 @@ Component
   position: relative;
 }
 .page-hero .container, .page-hero .wp-block-columns {
-  padding-top: 14.375rem;
+  padding-top: 5rem;
+}
+@media (max-width: 800px) {
+  .page-hero .container, .page-hero .wp-block-columns {
+    padding-top: 1rem;
+  }
 }
 .page-hero .monitor-linen-bars {
   position: absolute;
