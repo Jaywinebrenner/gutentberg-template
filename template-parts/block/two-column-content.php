@@ -8,6 +8,10 @@
 
 // create id attribute for specific styling
 $id = 'two-column-content-' . $block['id'];
+if (isset($block['data']['preview_image'])) : ?>
+    <img src="<?php echo get_template_directory_uri() . '/assets/images/block-previews/two-column-content.png' ?>" alt="">
+<?php return;
+endif;
 ?>
 
 <section id="<?php echo $id; ?>" class="two-column-content container">

@@ -9,6 +9,10 @@
 // create id attribute for specific styling
 $id = 'source-aq-cta-' . $block['id'];
 $content = get_field('content');
+if (isset($block['data']['preview_image'])) : ?>
+    <img src="<?php echo get_template_directory_uri() . '/assets/images/block-previews/source-aq-cta.png' ?>" alt="">
+<?php return;
+endif;
 ?>
 
 <section id="<?php echo $id; ?>" class="source-aq-cta">

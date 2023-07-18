@@ -14,12 +14,21 @@ function init_acf_fields()
             'description'       => __('Custom Hero'),
             'render_callback'   => 'block_renderer',
             'category'          => 'text',
-            'icon'              => 'admin-comments',
+            'icon'              => 'cover-image',
             'align'           => 'full',
             'supports'        => array(
                 'align' => array('full'),
             ),
             'keywords'          => array('hero', 'masthead'),
+            'example'  => array(
+                'attributes' => array(
+                    'mode' => 'preview',
+                    'data' => array(
+                        'preview_image' => [],
+                    )
+                )
+            )
+
         ));
 
         // register three card row block
@@ -29,12 +38,20 @@ function init_acf_fields()
             'description'       => __('Three Card Row'),
             'render_callback'   => 'block_renderer',
             'category'          => 'text',
-            'icon'              => 'admin-comments',
+            'icon'              => 'admin-page',
             'align'           => 'full',
             'supports'        => array(
                 'align' => array('full'),
             ),
             'keywords'          => array('three', 'card', 'row'),
+            'example'  => array(
+                'attributes' => array(
+                    'mode' => 'preview',
+                    'data' => array(
+                        'preview_image' => [],
+                    )
+                )
+            )
         ));
 
         // register info cards
@@ -50,6 +67,14 @@ function init_acf_fields()
                 'align' => array('full'),
             ),
             'keywords'          => array('info cards', 'card'),
+            'example'  => array(
+                'attributes' => array(
+                    'mode' => 'preview',
+                    'data' => array(
+                        'preview_image' => [],
+                    )
+                )
+            )
         ));
 
         // register quote cards
@@ -59,12 +84,20 @@ function init_acf_fields()
             'description'       => __('Quote Cards'),
             'render_callback'   => 'block_renderer',
             'category'          => 'text',
-            'icon'              => 'admin-comments',
+            'icon'              => 'columns',
             'align'           => 'full',
             'supports'        => array(
                 'align' => array('full'),
             ),
             'keywords'          => array('quote', 'cards'),
+            'example'  => array(
+                'attributes' => array(
+                    'mode' => 'preview',
+                    'data' => array(
+                        'preview_image' => [],
+                    )
+                )
+            )
         ));
 
         // register content quote with image
@@ -74,12 +107,20 @@ function init_acf_fields()
             'description'       => __('Content Quote With Image on Client Page'),
             'render_callback'   => 'block_renderer',
             'category'          => 'text',
-            'icon'              => 'admin-comments',
+            'icon'              => 'format-quote',
             'align'           => 'full',
             'supports'        => array(
                 'align' => array('full'),
             ),
             'keywords'          => array('Content Quote With Image', 'content'),
+            'example'  => array(
+                'attributes' => array(
+                    'mode' => 'preview',
+                    'data' => array(
+                        'preview_image' => [],
+                    )
+                )
+            )
         ));
 
         // register two column block
@@ -89,12 +130,20 @@ function init_acf_fields()
             'description'       => __('Two Column Content'),
             'render_callback'   => 'block_renderer',
             'category'          => 'text',
-            'icon'              => 'admin-comments',
+            'icon'              => 'columns',
             'align'           => 'full',
             'supports'        => array(
                 'align' => array('full'),
             ),
             'keywords'          => array('Two Column Content'),
+            'example'  => array(
+                'attributes' => array(
+                    'mode' => 'preview',
+                    'data' => array(
+                        'preview_image' => [],
+                    )
+                )
+            )
         ));
 
         // register card grid block
@@ -104,12 +153,20 @@ function init_acf_fields()
             'description'       => __('Card Grid'),
             'render_callback'   => 'block_renderer',
             'category'          => 'text',
-            'icon'              => 'admin-comments',
+            'icon'              => 'images-alt',
             'align'           => 'full',
             'supports'        => array(
                 'align' => array('full'),
             ),
             'keywords'          => array('Card Grid'),
+            'example'  => array(
+                'attributes' => array(
+                    'mode' => 'preview',
+                    'data' => array(
+                        'preview_image' => [],
+                    )
+                )
+            )
         ));
 
         // register testimonial block
@@ -148,6 +205,14 @@ function init_acf_fields()
                     22
                 );
             },
+            'example'  => array(
+                'attributes' => array(
+                    'mode' => 'preview',
+                    'data' => array(
+                        'preview_image' => [],
+                    )
+                )
+            )
         ));
 
         // register banner block
@@ -157,12 +222,20 @@ function init_acf_fields()
             'description'       => __('Banner'),
             'render_callback'   => 'block_renderer',
             'category'          => 'text',
-            'icon'              => 'admin-comments',
+            'icon'              => 'button',
             'align'           => 'full',
             'supports'        => array(
                 'align' => array('full'),
             ),
             'keywords'          => array('banner', 'cta'),
+            'example'  => array(
+                'attributes' => array(
+                    'mode' => 'preview',
+                    'data' => array(
+                        'preview_image' => [],
+                    )
+                )
+            )
         ));
 
         // register career cta block
@@ -178,6 +251,14 @@ function init_acf_fields()
                 'align' => array('full'),
             ),
             'keywords'          => array('Career Cta'),
+            'example'  => array(
+                'attributes' => array(
+                    'mode' => 'preview',
+                    'data' => array(
+                        'preview_image' => [],
+                    )
+                )
+            )
         ));
 
         // register page hero block
@@ -186,13 +267,21 @@ function init_acf_fields()
             'title'             => __('Page Hero'),
             'description'       => __('Page Hero'),
             'render_callback'   => 'block_renderer',
-            'category'          => 'formatting',
-            'icon'              => 'admin-comments',
+            'category'          => 'text',
+            'icon'              => 'cover-image',
             'align'           => 'full',
             'supports'        => array(
                 'align' => array('full'),
             ),
             'keywords'          => array('Page Hero'),
+            'example'  => array(
+                'attributes' => array(
+                    'mode' => 'preview',
+                    'data' => array(
+                        'preview_image' => [],
+                    )
+                )
+            )
         ));
 
         // register capability dropdowns block
@@ -241,6 +330,14 @@ function init_acf_fields()
             ),
 
             'keywords'          => array('Source Aq Cta'),
+            'example'  => array(
+                'attributes' => array(
+                    'mode' => 'preview',
+                    'data' => array(
+                        'preview_image' => [],
+                    )
+                )
+            )
         ));
 
         // register page our services block
@@ -299,12 +396,20 @@ function init_acf_fields()
             'description'       => __('This is an image hero with parallax'),
             'render_callback'   => 'block_renderer',
             'category'          => 'text',
-            'icon'              => 'admin-comments',
+            'icon'              => 'cover-image',
             'align'           => 'full',
             'supports'        => array(
                 'align' => array('full'),
             ),
             'keywords'          => array('inline hero', 'masthead'),
+            'example'  => array(
+                'attributes' => array(
+                    'mode' => 'preview',
+                    'data' => array(
+                        'preview_image' => [],
+                    )
+                )
+            )
         ));
 
         // register page image content block
@@ -314,13 +419,21 @@ function init_acf_fields()
             'description'       => __('Image Content'),
             'render_callback'   => 'block_renderer',
             'category'          => 'formatting',
-            'icon'              => 'admin-comments',
+            'icon'              => 'images-alt',
             'align'           => 'full',
             'supports'        => array(
                 'align' => array('full'),
                 'jsx'             => true,
             ),
-            'keywords'          => array('Image Content')
+            'keywords'          => array('Image Content'),
+            'example'  => array(
+                'attributes' => array(
+                    'mode' => 'preview',
+                    'data' => array(
+                        'preview_image' => [],
+                    )
+                )
+            )
         ));
 
         // register source meet cta block
@@ -336,6 +449,14 @@ function init_acf_fields()
                 'align' => array('full'),
             ),
             'keywords'          => array('Meet Cta Block'),
+            'example'  => array(
+                'attributes' => array(
+                    'mode' => 'preview',
+                    'data' => array(
+                        'preview_image' => [],
+                    )
+                )
+            )
         ));
     }
 }

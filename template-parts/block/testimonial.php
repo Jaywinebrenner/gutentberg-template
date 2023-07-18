@@ -8,6 +8,10 @@
 
 // create id attribute for specific styling
 $id = 'testimonial-' . $block['id'];
+if (isset($block['data']['preview_image'])) : ?>
+    <img src="<?php echo get_template_directory_uri() . '/assets/images/block-previews/testimonial.png' ?>" alt="">
+<?php return;
+endif;
 ?>
 
 <section id="<?php echo $id; ?>" class="testimonial" style="background-color: <?php the_field('background'); ?>">

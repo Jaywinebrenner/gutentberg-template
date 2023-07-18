@@ -8,8 +8,10 @@
 
 // create id attribute for specific styling
 $id = 'image-content-' . $block['id'];
-
-
+if (isset($block['data']['preview_image'])) : ?>
+    <img src="<?php echo get_template_directory_uri() . '/assets/images/block-previews/image-content.png' ?>" alt="">
+<?php return;
+endif;
 ?>
 
 <section id="<?php echo $id; ?>" class="image-content container <?php echo get_field('reverse_columns') ? "flip-on-mobile" : "" ?>">

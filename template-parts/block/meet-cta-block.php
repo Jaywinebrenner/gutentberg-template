@@ -8,13 +8,17 @@
 
 // create id attribute for specific styling
 $id = 'meet-cta-block-' . $block['id'];
+if (isset($block['data']['preview_image'])) : ?>
+    <img src="<?php echo get_template_directory_uri() . '/assets/images/block-previews/meet-cta.png' ?>" alt="">
+<?php return;
+endif;
 ?>
 
 <section id="<?php echo $id; ?>" class="meet-cta-block container">
     <div class="meet-cta-block__left">
         <?php if (get_field('image')) : ?>
             <div class="desktop-image parallax-wrapper">
-            <img src="<?php the_field('image'); ?>" alt="">
+                <img src="<?php the_field('image'); ?>" alt="">
             </div>
         <?php endif; ?>
 
@@ -29,9 +33,9 @@ $id = 'meet-cta-block-' . $block['id'];
 
         <?php
         $button = get_field('button');
-        if( $button ): ?>
+        if ($button) : ?>
             <div class="button-wrapper">
-                <a class="btn_background-red" href="<?php echo esc_url( $button['url'] ); ?>"><?php echo esc_html( $button['text'] ); ?></a>
+                <a class="btn_background-red" href="<?php echo esc_url($button['url']); ?>"><?php echo esc_html($button['text']); ?></a>
             </div>
         <?php endif; ?>
     </div>

@@ -8,7 +8,11 @@
 
 // create id attribute for specific styling
 $id = 'hero-' . $block['id'];
+if (isset($block['data']['preview_image'])) : ?>
+  <img src="<?php echo get_template_directory_uri() . '/assets/images/block-previews/hero.png' ?>" alt="">
+<?php return; endif;
 ?>
+
 
 <section id="<?php echo $id; ?>" class="hero">
   <div class="hero-container">

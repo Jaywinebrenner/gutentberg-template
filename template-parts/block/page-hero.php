@@ -8,6 +8,10 @@
 
 // create id attribute for specific styling
 $id = 'page-hero-' . $block['id'];
+if (isset($block['data']['preview_image'])) : ?>
+  <img src="<?php echo get_template_directory_uri() . '/assets/images/block-previews/page-hero.png' ?>" alt="">
+<?php return;
+endif;
 ?>
 
 <section id="<?php echo $id; ?>" class="page-hero">

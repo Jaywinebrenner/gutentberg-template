@@ -8,6 +8,9 @@
 
 // create id attribute for specific styling
 $id = 'info-cards-' . $block['id'];
+if (isset($block['data']['preview_image'])) : ?>
+  <img src="<?php echo get_template_directory_uri() . '/assets/images/block-previews/info-cards.png' ?>" alt="">
+<?php return; endif;
 ?>
 
 <section id="<?php echo $id; ?>" class="info-cards container">
