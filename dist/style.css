@@ -398,6 +398,7 @@ h6,
   text-transform: uppercase;
   color: #D64936;
   margin-top: 0;
+  margin-bottom: 1rem;
 }
 @media (max-width: 800px) {
   h6,
