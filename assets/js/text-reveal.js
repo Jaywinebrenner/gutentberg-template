@@ -87,10 +87,10 @@ document.addEventListener("DOMContentLoaded", function () {
         }
       });
       tl.set(element, { autoAlpha: 1 });
-      tl.from(lines, 1, {
+      tl.from(lines, .6, {
         yPercent: 100,
         ease: Power3.out,
-        stagger: 0.25,
+        stagger: 0.1,
         delay: 0.1
       });
     });

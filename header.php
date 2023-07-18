@@ -20,7 +20,6 @@
 
 <body <?php body_class('fade'); ?>>
 
-
 	<!-- DESKTOP -->
 	<div class="background-color-band <?php echo is_front_page() ? 'linen-bg' : ''; ?>">
 		<div class="navigation-menu-wrapper">
