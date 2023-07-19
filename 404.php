@@ -15,6 +15,9 @@ get_header(); ?>
 				<h3>Oops! Looks like the page you’re looking for isn’t here. </h3>
 				<p>Redirecting you in [<span class="count">10</span>] seconds.</p>
 			</div>
+			<div class="error-404__img-wrapper">
+				<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/error/error.png" />
+			</div>
 		</section><!-- .error-404 -->
 
 	</div><!-- #primary -->

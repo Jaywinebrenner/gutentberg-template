@@ -128,3 +128,11 @@ html :where(.is-reusable) :where(.wp-block) {
     will-change: transform;
   }
 }
+
+.error404 {
+  background-color: $color-linen;
+}
+.error404 footer {
+  background-color: red;
+  display: none!important;
+}

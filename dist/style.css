@@ -907,6 +907,15 @@ html :where(.is-reusable) :where(.wp-block) {
   will-change: transform;
 }
 
+.error404 {
+  background-color: #F7F4F0;
+}
+
+.error404 footer {
+  background-color: red;
+  display: none !important;
+}
+
 .wp-caption img {
   margin-bottom: 0;
 }
@@ -2098,9 +2107,6 @@ Component
     grid-gap: 0;
   }
 }
-.page-hero .page-hero-wrapper__left {
-  padding-bottom: 15%;
-}
 @media (max-width: 800px) {
   .page-hero .page-hero-wrapper__left {
     text-align: center;
@@ -2557,11 +2563,19 @@ Component
   background-color: #F7F4F0;
   position: relative;
   z-index: 1;
-  height: 70vh;
   display: flex;
+  flex-direction: column;
+  height: calc(100vh - 8rem);
 }
 .error-404 .error-404-wrapper {
   text-align: center;
+  height: 45vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.error-404__img-wrapper img {
+  width: 100%;
 }
 
 .meet-cta-block {
