@@ -37,6 +37,11 @@
           color: $color-licorice;
         }
       }
+      h1 {
+        @media (max-width: 1050px) and (min-width: 800px)  {
+          font-size: 4rem;
+        }
+      }
     }
     &__right {
       position: relative;
@@ -49,14 +54,8 @@
         mask-size: cover;
         border-radius: 10px;
         mask-repeat: no-repeat;
-        @media (max-width: 1000px) and (min-width: 800px)  {
-     
-        }
         @media (max-width: 800px) {
           display: none;
-        }
-        @media (max-width: 2000px) and (min-width: 1300px)  {
-     
         }
       }
       .mobile-image {
