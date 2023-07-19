@@ -2567,6 +2567,11 @@ Component
   flex-direction: column;
   height: calc(100vh - 8rem);
 }
+@media (max-width: 800px) {
+  .error-404 {
+    height: calc(100vh - 6rem);
+  }
+}
 .error-404 .error-404-wrapper {
   text-align: center;
   height: 45vh;
