@@ -926,6 +926,12 @@ html :where(.is-reusable) :where(.wp-block) {
   min-height: 51vh !important;
 }
 
+.wp-block-separator {
+  height: 1px;
+  background-color: #1D0800;
+  border: none;
+}
+
 .wp-caption img {
   margin-bottom: 0;
 }

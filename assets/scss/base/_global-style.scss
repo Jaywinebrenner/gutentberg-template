@@ -143,3 +143,10 @@ html :where(.is-reusable) :where(.wp-block) {
   // max-height: 45vh;
   min-height: 51vh!important;
 }
+
+
+.wp-block-separator {
+  height: 1px;
+  background-color: $color-licorice;
+  border: none;
+} 
