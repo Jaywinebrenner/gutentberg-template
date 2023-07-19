@@ -2606,17 +2606,31 @@ Component
 @media (max-width: 800px) {
   .error-404 {
     height: calc(100vh - 6rem);
+    overflow: hidden;
   }
 }
 .error-404 .error-404-wrapper {
   text-align: center;
-  height: 45vh;
+  min-height: 45vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
+@media (max-width: 800px) {
+  .error-404__img-wrapper {
+    height: 30%;
+  }
+}
 .error-404__img-wrapper img {
   width: 100%;
+}
+@media (max-width: 800px) {
+  .error-404__img-wrapper img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
 }
 
 .meet-cta-block {
