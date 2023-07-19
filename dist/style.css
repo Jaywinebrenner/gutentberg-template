@@ -2038,7 +2038,7 @@ Component
 }
 .capability-dropdowns .capability-dropdowns-wrapper__top {
   text-align: center;
-  padding: 4rem 23%;
+  padding: 0 23% 8.4375rem 23%;
 }
 @media (max-width: 800px) {
   .capability-dropdowns .capability-dropdowns-wrapper__top {
