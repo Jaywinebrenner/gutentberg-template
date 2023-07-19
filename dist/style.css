@@ -1989,6 +1989,14 @@ Component
   border-radius: 0.625rem;
   background: #FFFFFF;
 }
+.info-cards__cta-wrapper .btn_red {
+  font-size: 0.8rem;
+}
+@media only screen and (max-width: 850px) and (min-width: 800px) {
+  .info-cards__cta-wrapper .btn_red {
+    font-size: 0.7rem;
+  }
+}
 
 .capability-dropdowns .capability-dropdowns-wrapper .bold {
   font-weight: 600;
