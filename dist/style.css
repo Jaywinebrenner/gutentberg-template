@@ -1625,7 +1625,7 @@ Component
 }
 .banner-wrapper .banner {
   display: grid;
-  grid-template-columns: 3fr 1fr;
+  grid-template-columns: 3fr 1.5fr;
   padding: 50px;
   grid-gap: 4rem;
   border-radius: 10px;
@@ -1651,6 +1651,11 @@ Component
     text-align: center;
   }
 }
+@media (min-width: 1300px) {
+  .banner-wrapper .banner h4 {
+    font-size: 1.7rem;
+  }
+}
 .banner-wrapper .banner p {
   margin-top: 1.5rem;
 }
@@ -1668,6 +1673,11 @@ Component
 }
 .banner-wrapper .banner .right {
   align-items: center;
+}
+@media (max-width: 900px) {
+  .banner-wrapper .banner .right .btn-wrapper a {
+    font-size: 0.8rem;
+  }
 }
 
 .hero {
@@ -1988,6 +1998,17 @@ Component
   align-self: stretch;
   border-radius: 0.625rem;
   background: #FFFFFF;
+}
+.info-cards__content h5 {
+  font-size: 1rem;
+}
+.info-cards__cta-wrapper .btn_red {
+  font-size: 0.8rem;
+}
+@media only screen and (max-width: 850px) and (min-width: 800px) {
+  .info-cards__cta-wrapper .btn_red {
+    font-size: 0.7rem;
+  }
 }
 
 .capability-dropdowns .capability-dropdowns-wrapper .bold {

@@ -35,7 +35,7 @@ endif;
         $button = get_field('button');
         if ($button) : ?>
             <div class="button-wrapper">
-                <a class="btn_background-red" href="<?php echo esc_url($button['url']); ?>"><?php echo esc_html($button['text']); ?></a>
+                <a class="btn_red" href="<?php echo esc_url($button['url']); ?>"><?php echo esc_html($button['text']); ?></a>
             </div>
         <?php endif; ?>
     </div>
