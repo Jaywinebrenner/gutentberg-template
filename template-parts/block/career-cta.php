@@ -30,7 +30,7 @@ endif;
                                                                 echo null;
                                                             }
                                                                 ?>
-            <a href="<?php echo $left_column['button_url']; ?>" class="btn_background-red"><?php echo $left_column['button_text']; ?></a>
+            <a href="<?php echo $left_column['button_url']; ?>" class="btn_red"><?php echo $left_column['button_text']; ?></a>
         <?php endif; ?>
 
     </div>
