@@ -1638,6 +1638,7 @@ Component
   margin-top: 0;
   margin-bottom: 0;
   font-style: italic;
+  opacity: 0.5;
 }
 .banner-wrapper .banner {
   display: grid;
