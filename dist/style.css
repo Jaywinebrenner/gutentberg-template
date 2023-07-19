@@ -299,6 +299,13 @@ h1,
     margin-bottom: 2.5625rem;
   }
 }
+@media (min-width: 1400px) {
+  h1,
+  .editor-styles-wrapper h1:not(.wp-block-post-title),
+  .h1 {
+    font-size: clamp(4.3rem, 4.3rem + 0vw, 4.3rem);
+  }
+}
 h1.hero,
 .editor-styles-wrapper h1:not(.wp-block-post-title).hero,
 .h1.hero {
@@ -2106,6 +2113,9 @@ Component
     grid-template-columns: 1fr;
     grid-gap: 0;
   }
+}
+.page-hero .page-hero-wrapper__left {
+  padding-bottom: 15%;
 }
 @media (max-width: 800px) {
   .page-hero .page-hero-wrapper__left {
