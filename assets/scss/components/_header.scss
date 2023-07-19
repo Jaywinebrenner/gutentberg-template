@@ -18,7 +18,7 @@
 
 .navigation-menu-wrapper {
     display: grid;
-    grid-template-columns: 1fr 4fr 0.9fr;
+    grid-template-columns: 1fr 4fr 0.7fr;
     padding: 3rem 0;
     z-index: 1000;
     // position: absolute;
@@ -26,9 +26,25 @@
     right: 0;
     max-width: 1800px;
     margin: auto;
-    width: 85%;
+    width: 89%;
     // grid-gap: 5.5rem;
     align-items: center;
+    @media (max-width: 1000px) and (min-width: 800px)  {
+        grid-template-columns: 1.5fr 5fr 1.2fr;
+    }
+    .nav-icon {
+        display: flex;
+    }
+    .nav-button {
+        font-family: "Inter";
+        line-height: 135.023%;
+        letter-spacing: 0.045rem;
+        font-size: 0.875rem;
+        padding: 0.5rem 0rem;
+        @media (max-width: 1000px) and (min-width: 800px)  {
+            padding: 0.5rem .2rem;
+        }
+    }
     @media (max-width: $bp-small) {
         display: none;
     }
