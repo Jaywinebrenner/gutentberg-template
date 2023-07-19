@@ -17,7 +17,7 @@ class Error {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-    if (document.querySelector('.error-404')) {
+    if (document.querySelector('.error404')) {
         new Error()
     }
 });
