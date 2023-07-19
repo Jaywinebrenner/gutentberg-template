@@ -135,3 +135,11 @@ html :where(.is-reusable) :where(.wp-block) {
 .error404 footer {
   display: none!important;
 }
+
+
+//Tweak Page Hero for Meet Page
+.page-id-626 #page #main .content .page-hero .desktop-image {
+  // height: unset; 
+  // max-height: 45vh;
+  min-height: 51vh!important;
+}

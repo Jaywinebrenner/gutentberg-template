@@ -536,7 +536,7 @@ hr {
 .btn, .btn_background-red, .btn_red, .btn_white {
   text-transform: uppercase;
   padding: 0.5rem 1.3125rem;
-  letter-spacing: 1.4px;
+  letter-spacing: 0.63px;
   transition: all 300ms;
   font-size: 1rem;
   display: inline-block;
@@ -919,8 +919,11 @@ html :where(.is-reusable) :where(.wp-block) {
 }
 
 .error404 footer {
-  background-color: red;
   display: none !important;
+}
+
+.page-id-626 #page #main .content .page-hero .desktop-image {
+  min-height: 51vh !important;
 }
 
 .wp-caption img {
@@ -2435,7 +2438,7 @@ Component
 }
 @media (max-width: 800px) {
   .our-services__top {
-    padding: 5rem 0;
+    padding: 5rem 1.2rem;
   }
 }
 .our-services__top .image-wrapper {
@@ -2497,6 +2500,7 @@ Component
   .our-services__bottom {
     grid-template-columns: 1fr;
     grid-gap: 2.5rem;
+    padding: 5rem 1.2rem;
   }
 }
 .our-services__bottom .right .accordion-item {
@@ -2509,6 +2513,7 @@ Component
 }
 .our-services__bottom .right .accordion-item__title .chevron {
   transition: transform 0.3s ease;
+  padding-right: 10px;
 }
 .our-services__bottom .right .accordion-item__title .chevron.down {
   transform: rotate(180deg);
