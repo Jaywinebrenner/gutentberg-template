@@ -133,6 +133,20 @@ html :where(.is-reusable) :where(.wp-block) {
   background-color: $color-linen;
 }
 .error404 footer {
-  background-color: red;
   display: none!important;
 }
+
+
+//Tweak Page Hero for Meet Page
+.page-id-626 #page #main .content .page-hero .desktop-image {
+  // height: unset; 
+  // max-height: 45vh;
+  min-height: 51vh!important;
+}
+
+
+.wp-block-separator {
+  height: 1px;
+  background-color: $color-licorice;
+  border: none;
+} 
