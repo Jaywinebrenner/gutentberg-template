@@ -23,6 +23,7 @@
       grid-gap: 0;
     }
     &__left {
+      padding-bottom: 15%;
       @media (max-width: $bp-small) {
         text-align: center;
         padding-right: 0;
@@ -34,6 +35,11 @@
         }
         a {
           color: $color-licorice;
+        }
+      }
+      h1 {
+        @media (max-width: 1050px) and (min-width: 800px)  {
+          font-size: 4rem;
         }
       }
     }

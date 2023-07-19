@@ -38,6 +38,16 @@
                 @media(max-width: $bp-small){
                     text-align: left;
                 }
+                .phone {
+                    font-size: 1rem;
+                    font-family: "Inter";
+                    line-height: 135.023%;
+                    letter-spacing: 0.045rem;
+                    color: $color-white!important;
+                    @media (max-width: $bp-small) {
+                      font-size: 0.875rem;
+                    }
+                }
                 .social-wrapper {
                     .social {
                         width: 1.35rem;

@@ -17,39 +17,36 @@ endif;
 <section id="<?php echo $id; ?>" class="banner-wrapper">
 
     <div class="container">
-        <?php
-        if (get_field('has_image')) {
-        ?>
-            <div class="has-image-banner" style="background-color:<?php the_field('background_color'); ?>">
-                <div class="left">
-                    <img src="<?php the_field('image'); ?>" />
+            <?php
+            if (get_field('has_image')) {
+            ?>
+                <div class="has-image-banner" style="background-color:<?php the_field('background_color'); ?>">
+                    <div class="left">
+                        <img src="<?php the_field('image'); ?>" />
+                    </div>
+                    <div class="right" style="color:<?php echo (get_field('background_color') === '#D64936') ? "#FFF" : "#1D0800"; ?>">
+                        <p class="quote"><?php the_field('quote') ?></p>
+                        <p class="quoter"><?php the_field('quoter') ?></p>
+                    </div>
                 </div>
-                <div class="right" style="color:<?php echo (get_field('background_color') === '#D64936') ? "#FFF" : "#1D0800"; ?>">
-                    <p class="quote"><?php the_field('quote') ?></p>
-                    <p class="quoter"><?php the_field('quoter') ?></p>
+            <?php
+            } else { ?>
+                <div class="banner" style="background-color:<?php the_field('background_color'); ?>">
+                    <div class="left">
+                        <div style="color:<?php echo (get_field('background_color') === '#D64936') ? "#FFF" : "#1D0800"; ?>" class="quote"><?php the_field('title') ?></div>
+                    </div>
+                    <div class="right">
+                        <?php
+                        $button = get_field('button');
+                        if ($button) : ?>
+                            <div class="btn-wrapper">
+                                <a href="<?php echo esc_url($button['url']); ?>" class="<?php echo (get_field('background_color') === '#D64936') ? "btn_white" : "btn_red"; ?>"><?php echo $button['text'] ?></a>
+                            </div>
+                        <?php endif; ?>
+                    </div>
                 </div>
-            </div>
-        <?php
-        } else { ?>
-            <div class="banner" style="background-color:<?php the_field('background_color'); ?>">
-                <div class="left">
-                    <div style="color:<?php echo (get_field('background_color') === '#D64936') ? "#FFF" : "#1D0800"; ?>" class="quote"><?php the_field('title') ?></div>
-                </div>
-                <div class="right">
-                    <?php
-                    $button = get_field('button');
-                    if ($button) : ?>
-                        <div class="btn-wrapper">
-                            <a href="<?php echo esc_url($button['url']); ?>" class="<?php echo (get_field('background_color') === '#D64936') ? "btn_white" : "btn_red"; ?>"><?php echo $button['text'] ?></a>
-                        </div>
-                    <?php endif; ?>
-                </div>
-            </div>
 
 
-        <?php } ?>
-
-
-
+            <?php } ?>
     </div>
 </section>

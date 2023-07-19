@@ -23,7 +23,7 @@
 	<!-- DESKTOP -->
 	<div class="background-color-band <?php echo is_front_page() ? 'linen-bg' : ''; ?>">
 		<div class="navigation-menu-wrapper">
-			<a href="<?php echo site_url('/'); ?>">
+			<a class="nav-icon" href="<?php echo site_url('/'); ?>">
 				<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/navigation/logo.svg" />
 			</a>
 			<?php
@@ -34,7 +34,7 @@
 				'sort_order' => 'DESC'
 			));
 			?>
-			<a href="<?php echo home_url() . '/employee-login'; ?>" class="btn_red">Employee Login</a>
+			<a href="<?php echo home_url() . '/employee-login'; ?>" class="btn_red nav-button">Employee Login</a>
 		</div>
 	</div>
 

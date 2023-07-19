@@ -4,9 +4,23 @@
     background-color: #F7F4F0;
     position: relative;
     z-index: 1;
-    height: 70vh;
+    // height: 55vh;
     display: flex;
+    flex-direction: column;
+    height: calc(100vh - 8rem);
+    @media(max-width: $bp-small){
+        height: calc(100vh - 6rem);
+    }
     .error-404-wrapper {
         text-align: center;
+        height: 45vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    &__img-wrapper {
+        img {
+            width: 100%;
+        }
     }
 }
