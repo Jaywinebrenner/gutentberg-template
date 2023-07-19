@@ -52,7 +52,7 @@
     }
     .banner {
         display: grid;
-        grid-template-columns: 3fr 1fr;
+        grid-template-columns: 3fr 1.5fr;
         padding: 50px;
         grid-gap: 4rem;
         border-radius: 10px;
@@ -73,6 +73,9 @@
             @media (max-width: $bp-small) {
                 text-align: center;
             }
+            @media (min-width: 1300px) {
+                font-size: 1.7rem;
+            }
         }
 
         p {
@@ -90,6 +93,13 @@
         }
         .right {
             align-items: center;
+            .btn-wrapper {
+                a {
+                    @media(max-width: 900px){
+                        font-size: .8rem;
+                    }
+                }
+            }
         }
     }
 }
