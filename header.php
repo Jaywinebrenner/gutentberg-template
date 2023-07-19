@@ -34,7 +34,6 @@
 				'sort_order' => 'DESC'
 			));
 			?>
-			<a href="<?php echo home_url() . '/employee-login'; ?>" class="btn_red">Employee Login</a>
 		</div>
 	</div>
 

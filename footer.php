@@ -13,10 +13,12 @@
 				<div class="right">
 					<div class="headquarters">
 						<h5>Headquarters</h5>
-						<p class="minor bold">Portland, Oregon</p>
-						<p class="minor address">9115 SW Oleson Rd, Ste 105</p>
-						<p class="minor">Portland, OR 97223</p>
-						<p class="minor">503.726.4545</p>
+						<a target="_blank" href="http://maps.google.com/?q=9115 SW Oleson Rd, Ste 105, Portland, OR 97223">
+							<p class="minor bold">Portland, Oregon</p>
+							<p class="minor address">9115 SW Oleson Rd, Ste 105</p>
+							<p class="minor">Portland, OR 97223</p>
+						</a>
+						<a class="phone" href="tel:5037264545">503.726.4545</a>
 
 					</div>
 					<div class="explore">
