@@ -938,6 +938,12 @@ html :where(.is-reusable) :where(.wp-block) {
   border: none;
 }
 
+@media (max-width: 800px) {
+  .text-align-center {
+    text-align: center;
+  }
+}
+
 .wp-caption img {
   margin-bottom: 0;
 }
@@ -1360,7 +1366,7 @@ Component
 }
 @media (max-width: 800px) {
   .navigation-menu-wrapper-mobile .btn_red {
-    margin-top: 25px;
+    margin-top: 26px;
   }
 }
 
