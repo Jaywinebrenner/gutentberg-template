@@ -21,7 +21,10 @@
 <body <?php body_class('fade'); ?>>
 
 	<!-- DESKTOP -->
-	<div class="background-color-band <?php echo is_front_page() ? 'linen-bg' : ''; ?>">
+	<div 
+	class="background-color-band"
+	style="background-color: <?php the_field('header_background_color') ?>"
+	>
 		<div class="navigation-menu-wrapper">
 			<a class="nav-icon" href="<?php echo site_url('/'); ?>">
 				<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/navigation/logo.svg" />
