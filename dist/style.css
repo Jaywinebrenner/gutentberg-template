@@ -2533,7 +2533,8 @@ Component
 }
 .our-services__top .mobile-image-wrapper .mobile-image {
   width: 100%;
-  height: 19.625rem;
+  height: 45vw;
+  min-height: 10rem;
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
