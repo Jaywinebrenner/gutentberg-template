@@ -6,13 +6,17 @@
     grid-gap: 1.5rem;
     grid-auto-rows: 1fr;
     @media(max-width: $bp-small){
-        grid-template-columns: 1fr;
+        // grid-template-columns: 1fr;
+        display: block;
     }
     &__card {
         border-radius: 10px;
         display: flex;
         flex-direction: column;
         flex-basis: 1;
+        @media(max-width: $bp-small){
+            margin-bottom: 1.25rem;
+        }
         &__top {
             background-color: $color-linen;
             img {

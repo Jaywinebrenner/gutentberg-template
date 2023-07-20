@@ -27,14 +27,20 @@
       @media (max-width: $bp-small) {
         text-align: center;
         padding-right: 0;
+        padding-bottom: 0;
       }
       .btn-wrapper {
         margin-top: 5%;
         @media (max-width: $bp-small) {
-          margin: 3.75rem 0;
+          margin: 3.8125rem 0;
         }
         a {
           color: $color-licorice;
+        }
+        p {
+          @media (max-width: $bp-small) {
+            margin-bottom: 0;
+          }
         }
       }
       h1 {
