@@ -2577,7 +2577,8 @@ Component
 }
 .our-services__bottom .right .accordion-item__title .chevron {
   transition: transform 0.3s ease;
-  padding-right: 10px;
+  margin-right: 10px;
+  width: 1rem;
 }
 .our-services__bottom .right .accordion-item__title .chevron.down {
   transform: rotate(180deg);

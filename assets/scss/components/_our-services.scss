@@ -83,7 +83,8 @@
                     justify-content: space-between;
                     .chevron {
                         transition: transform 0.3s ease;
-                        padding-right: 10px;
+                        margin-right: 10px;
+                        width: 1rem;
                     }
 
                     .chevron.down {
