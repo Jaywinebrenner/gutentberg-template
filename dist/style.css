@@ -1907,6 +1907,7 @@ Component
 }
 .quote-cards .quotecard p {
   font-style: italic;
+  opacity: 0.5;
 }
 
 .hc-icon-row .icons {
@@ -2018,6 +2019,7 @@ Component
 .content-quote-with-image__right .bottom .quoter {
   font-style: italic;
   margin-bottom: 0;
+  opacity: 0.5;
 }
 
 .info-cards hr {
@@ -2093,6 +2095,7 @@ Component
 }
 .capability-dropdowns .capability-dropdowns-wrapper__bottom .capability-dropdowns-column .column-top-wrapper .italics {
   font-style: italic;
+  opacity: 0.5;
 }
 .capability-dropdowns .capability-dropdowns-wrapper__bottom .capability-dropdowns-column .column-top-wrapper .col-subtitle {
   font-weight: 400;
@@ -2154,6 +2157,7 @@ Component
 }
 .capability-dropdowns .capability-dropdowns-wrapper__bottom .capability-dropdowns-column .quote-wrapper .quoter {
   font-style: italic;
+  opacity: 0.5;
 }
 
 .page-hero {
@@ -2314,6 +2318,7 @@ Component
 }
 .career-cta__right .quote-card .quoter {
   font-style: italic;
+  opacity: 0.5;
 }
 .footer {
   background-color: #1D0800;
