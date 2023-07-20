@@ -28,7 +28,7 @@ if (isset($block['data']['preview_image'])) : ?>
             <hr>
             <div class="info-cards__cta-wrapper">
               <?php $cta_data = get_sub_field('cta'); ?>
-              <p class="minor"><strong>
+              <p class="minor quote"><strong>
                   <?php echo $cta_data['quote']; ?>
                 </strong></p>
               <p class="minor italic">
