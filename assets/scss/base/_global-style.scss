@@ -154,3 +154,9 @@ html :where(.is-reusable) :where(.wp-block) {
   background-color: $color-licorice;
   border: none;
 } 
+
+.text-align-center {
+  @media(max-width: 800px){
+    text-align: center;
+  }
+}

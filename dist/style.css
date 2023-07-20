@@ -938,6 +938,12 @@ html :where(.is-reusable) :where(.wp-block) {
   border: none;
 }
 
+@media (max-width: 800px) {
+  .text-align-center {
+    text-align: center;
+  }
+}
+
 .wp-caption img {
   margin-bottom: 0;
 }
@@ -1217,7 +1223,7 @@ Component
   font-style: normal;
   font-weight: 400;
   line-height: 143.023%;
-  padding: 20px 0;
+  padding: 26px 0;
   border-bottom: 1px solid rgba(29, 8, 0, 0.2);
 }
 .navigation-menu-wrapper-mobile .navigation-menu .menu-item:hover a {
@@ -1360,7 +1366,7 @@ Component
 }
 @media (max-width: 800px) {
   .navigation-menu-wrapper-mobile .btn_red {
-    margin-top: 20px;
+    margin-top: 26px;
   }
 }
 
@@ -2577,7 +2583,8 @@ Component
 }
 .our-services__bottom .right .accordion-item__title .chevron {
   transition: transform 0.3s ease;
-  padding-right: 10px;
+  margin-right: 10px;
+  width: 1rem;
 }
 .our-services__bottom .right .accordion-item__title .chevron.down {
   transform: rotate(180deg);
