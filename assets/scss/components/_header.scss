@@ -81,7 +81,6 @@
                     transition: 0.3s;
                     opacity: 1;
                     pointer-events: all;
-                    background-color: $color-linen;
                     background-color: $color-white;
                 }
                 a {
@@ -264,7 +263,6 @@
             display: none;
             padding-left: 0;
             background-color: $color-white;
-            background-color: red;
             .menu-item {
                 font-family: Inter;
                 font-size: 14px;
