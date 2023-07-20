@@ -26,6 +26,9 @@
     align-self: stretch;
     border-radius: 0.625rem;
     background: $color-white;
+    img {
+      width: 6.25rem;
+    }
   }
   &__content {
     h5 {

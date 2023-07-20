@@ -2047,6 +2047,9 @@ Component
   border-radius: 0.625rem;
   background: #FFFFFF;
 }
+.info-cards__card img {
+  width: 6.25rem;
+}
 .info-cards__content h5 {
   font-size: 1rem;
 }
