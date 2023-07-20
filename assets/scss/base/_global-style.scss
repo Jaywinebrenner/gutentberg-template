@@ -160,3 +160,8 @@ html :where(.is-reusable) :where(.wp-block) {
     text-align: center;
   }
 }
+.robust-agreements {
+  @media(max-width: 800px){
+    margin-top: 48px;
+  }
+}
