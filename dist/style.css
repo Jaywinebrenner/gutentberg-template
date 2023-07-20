@@ -2190,6 +2190,7 @@ Component
   .page-hero .page-hero-wrapper__left {
     text-align: center;
     padding-right: 0;
+    padding-bottom: 0;
   }
 }
 .page-hero .page-hero-wrapper__left .btn-wrapper {
@@ -2197,11 +2198,16 @@ Component
 }
 @media (max-width: 800px) {
   .page-hero .page-hero-wrapper__left .btn-wrapper {
-    margin: 3.75rem 0;
+    margin: 3.8125rem 0;
   }
 }
 .page-hero .page-hero-wrapper__left .btn-wrapper a {
   color: #1D0800;
+}
+@media (max-width: 800px) {
+  .page-hero .page-hero-wrapper__left .btn-wrapper p {
+    margin-bottom: 0;
+  }
 }
 @media (max-width: 1050px) and (min-width: 800px) {
   .page-hero .page-hero-wrapper__left h1 {
