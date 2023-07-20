@@ -31,6 +31,7 @@
     }
   }
   &__content {
+    flex: 1;
     h5 {
       @media(max-width: $bp-small){
         font-size: 21px;
