@@ -944,6 +944,12 @@ html :where(.is-reusable) :where(.wp-block) {
   }
 }
 
+@media (max-width: 800px) {
+  .robust-agreements {
+    margin-top: 48px;
+  }
+}
+
 .wp-caption img {
   margin-bottom: 0;
 }
