@@ -1909,7 +1909,7 @@ Component
 }
 @media (max-width: 800px) {
   .card-grid {
-    grid-template-columns: 1fr;
+    display: block;
   }
 }
 .card-grid__card {
@@ -1917,6 +1917,11 @@ Component
   display: flex;
   flex-direction: column;
   flex-basis: 1;
+}
+@media (max-width: 800px) {
+  .card-grid__card {
+    margin-bottom: 1.25rem;
+  }
 }
 .card-grid__card__top {
   background-color: #F7F4F0;
