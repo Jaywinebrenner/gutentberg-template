@@ -1989,6 +1989,11 @@ Component
   padding: 1.875rem;
   border-radius: 10px;
 }
+@media (max-width: 800px) {
+  .two-column-content__left {
+    text-align: center;
+  }
+}
 
 .content-quote-with-image {
   display: grid;
