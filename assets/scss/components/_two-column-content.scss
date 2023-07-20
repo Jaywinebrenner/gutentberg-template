@@ -12,4 +12,9 @@
         padding: 1.875rem;
         border-radius: 10px;
     }
+    &__left {
+        @media(max-width: $bp-small){
+            text-align: center;
+        }
+    }
 }
