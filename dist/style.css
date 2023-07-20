@@ -2233,6 +2233,11 @@ Component
   -webkit-mask-repeat: no-repeat;
           mask-repeat: no-repeat;
 }
+@media (min-width: 1900px) {
+  .page-hero .page-hero-wrapper__right .desktop-image {
+    max-height: 31.25rem;
+  }
+}
 @media (max-width: 800px) {
   .page-hero .page-hero-wrapper__right .desktop-image {
     display: none;
@@ -2240,7 +2245,7 @@ Component
 }
 .page-hero .page-hero-wrapper__right .mobile-image {
   width: 100%;
-  height: 20.25rem;
+  height: 60vw;
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
@@ -2714,7 +2719,7 @@ Component
 .meet-cta-block__left .desktop-image {
   width: 100%;
   height: 29vw;
-  min-height: 25rem;
+  max-height: 25rem;
   -webkit-mask-image: url(ecf49d13e651dfd3dfdb.svg);
           mask-image: url(ecf49d13e651dfd3dfdb.svg);
   -webkit-mask-size: cover;
@@ -2786,10 +2791,9 @@ Component
           mask-repeat: round;
   -webkit-mask-position: unset;
           mask-position: unset;
-  height: 22rem;
+  height: 19vw;
+  max-height: 16rem;
   width: 100%;
-  position: absolute;
-  top: -2.8125rem;
 }
 @media (max-width: 800px) {
   .image-content__right .image-wrapper {

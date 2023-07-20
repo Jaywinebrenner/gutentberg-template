@@ -36,7 +36,7 @@ function ParallaxMaskImg(params) {
 document.addEventListener('DOMContentLoaded', () => {
   document.querySelectorAll(".parallax-wrapper").forEach(item => {
     new ParallaxMaskImg({
-      speed: 1.3,
+      speed: 1.2,
       el: item,
       img: item.querySelector('img')
     });
