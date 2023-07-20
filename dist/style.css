@@ -944,6 +944,12 @@ html :where(.is-reusable) :where(.wp-block) {
   }
 }
 
+@media (max-width: 800px) {
+  .robust-agreements {
+    margin-top: 48px;
+  }
+}
+
 .wp-caption img {
   margin-bottom: 0;
 }
@@ -2058,8 +2064,15 @@ Component
 .info-cards__card img {
   width: 6.25rem;
 }
-.info-cards__content h5 {
-  font-size: 1rem;
+@media (max-width: 800px) {
+  .info-cards__content h5 {
+    font-size: 21px;
+  }
+}
+@media only screen and (max-width: 900px) and (min-width: 800px) {
+  .info-cards__content h5 {
+    font-size: 1.1rem;
+  }
 }
 .info-cards__cta-wrapper .btn_red {
   font-size: 0.8rem;
