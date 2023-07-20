@@ -1058,9 +1058,24 @@ Component
   justify-content: flex-end;
   align-items: center;
 }
+@media (max-width: 1400px) and (min-width: 800px) {
+  .navigation-menu-wrapper .menu-navigation-container .navigation-menu li a {
+    font-size: 1.2rem;
+  }
+}
+@media (max-width: 950px) and (min-width: 800px) {
+  .navigation-menu-wrapper .menu-navigation-container .navigation-menu li a {
+    font-size: 12px;
+  }
+}
 .navigation-menu-wrapper .menu-navigation-container .navigation-menu .menu-item {
   position: relative;
   margin-right: 4rem;
+}
+@media (max-width: 950px) and (min-width: 800px) {
+  .navigation-menu-wrapper .menu-navigation-container .navigation-menu .menu-item {
+    margin-right: 3rem;
+  }
 }
 .navigation-menu-wrapper .menu-navigation-container .navigation-menu .menu-item:hover .sub-menu {
   transition: 0.3s;
