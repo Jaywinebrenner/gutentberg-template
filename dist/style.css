@@ -194,7 +194,7 @@ Library
 
 .slick-dots {
   position: absolute;
-  bottom: -25px;
+  bottom: -15px !important;
   list-style: none;
   display: block;
   text-align: center;
@@ -205,11 +205,13 @@ Library
 .slick-dots li {
   position: relative;
   display: inline-block;
-  height: 20px;
-  width: 20px;
+  width: 28px !important;
+  height: 28px !important;
   margin: 0 5px;
   padding: 0;
   cursor: pointer;
+  padding: 10px !important;
+  margin: 0 !important;
 }
 .slick-dots li button {
   border: 0;
