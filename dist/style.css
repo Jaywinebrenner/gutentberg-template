@@ -1217,7 +1217,7 @@ Component
   font-style: normal;
   font-weight: 400;
   line-height: 143.023%;
-  padding: 20px 0;
+  padding: 26px 0;
   border-bottom: 1px solid rgba(29, 8, 0, 0.2);
 }
 .navigation-menu-wrapper-mobile .navigation-menu .menu-item:hover a {
@@ -1360,7 +1360,7 @@ Component
 }
 @media (max-width: 800px) {
   .navigation-menu-wrapper-mobile .btn_red {
-    margin-top: 20px;
+    margin-top: 25px;
   }
 }
 

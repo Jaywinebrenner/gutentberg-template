@@ -224,7 +224,7 @@
             font-style: normal;
             font-weight: 400;
             line-height: 143.023%;
-            padding: 20px 0;
+            padding: 26px 0;
             border-bottom: 1px solid rgb(29, 8, 0, 0.2);
             &:hover a {
                 cursor: pointer;
@@ -381,7 +381,7 @@
     }
     .btn_red {
         @media(max-width:$bp-small){
-            margin-top: 20px;
+            margin-top: 25px;
         }
     }
 }
