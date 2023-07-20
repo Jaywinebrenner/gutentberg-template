@@ -2094,6 +2094,17 @@ Component
     font-size: 0.7rem;
   }
 }
+.info-cards__cta-wrapper .quote {
+  margin-bottom: 6px;
+}
+@media (max-width: 800px) {
+  .info-cards__cta-wrapper .quote {
+    font-size: 16px;
+  }
+}
+.info-cards__cta-wrapper .italic {
+  margin-bottom: 40px;
+}
 
 .capability-dropdowns .capability-dropdowns-wrapper .bold {
   font-weight: 600;
