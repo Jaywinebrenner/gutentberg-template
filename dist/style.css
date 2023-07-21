@@ -1826,13 +1826,15 @@ Component
   max-width: 65rem;
   margin-left: auto;
   margin-right: auto;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
 }
 @media (max-width: 800px) {
   .three-card-row__top {
     padding-top: 5rem;
   }
+}
+.three-card-row__card__top {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
 .three-card-row h2 {
   margin-bottom: 24px;
