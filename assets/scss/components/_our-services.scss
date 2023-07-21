@@ -10,6 +10,9 @@
     &__top {
         text-align: center;
         padding: 5.75rem 0;
+        @media (min-width: 1400px) {
+            padding-top: 3.75rem;
+        }
         h2,
         p {
             max-width: 56.25rem;
