@@ -28,16 +28,30 @@
                 padding-right: 0;
             }
         }
-        img {
-            object-fit: cover;
+        .image-wrapper {
             width: 100%;
-            height: 18.75rem;
-            margin-bottom: 2rem;
+            // height: 37vw;
+            // min-height: 31.25rem;
             mask-image: url("../images/career-cta/career-cta-mask.svg");
             mask-size: cover;
-            mask-repeat: no-repeat;
             border-radius: 10px;
-            mask-position: unset;
+            mask-repeat: round;
+        }
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+            margin: 0;
+            // object-fit: cover;
+            // width: 100%;
+            // height: 18.75rem;
+            // margin-bottom: 2rem;
+            // mask-image: url("../images/career-cta/career-cta-mask.svg");
+            // mask-size: cover;
+            // mask-repeat: no-repeat;
+            // mask-position: unset;
+            // border-radius: 10px;
         }
     }
     &__right {

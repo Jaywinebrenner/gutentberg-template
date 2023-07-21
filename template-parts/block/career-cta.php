@@ -21,7 +21,9 @@ endif;
         <?php
         $left_column = get_field('left_column');
         if ($left_column) : ?>
-            <img src="<?php echo esc_url($left_column['image']); ?>" alt="" />
+            <div class="image-wrapper">
+                <img src="<?php echo esc_url($left_column['image']); ?>" alt="" />
+            </div>
             <h3><?php echo $left_column['title']; ?></h3>
             <?php
             if ($left_column['subtitle']) {
