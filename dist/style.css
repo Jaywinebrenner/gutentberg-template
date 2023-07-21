@@ -2771,6 +2771,7 @@ Component
 }
 .error-404__img-wrapper img {
   width: 100%;
+  display: block;
 }
 @media (max-width: 800px) {
   .error-404__img-wrapper img {
