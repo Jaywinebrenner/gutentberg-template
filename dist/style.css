@@ -2338,21 +2338,23 @@ Component
     padding-right: 0;
   }
 }
-.career-cta__left img {
-  -o-object-fit: cover;
-     object-fit: cover;
+.career-cta__left .image-wrapper {
   width: 100%;
-  height: 18.75rem;
-  margin-bottom: 2rem;
   -webkit-mask-image: url(c2744794ba230111f061.svg);
           mask-image: url(c2744794ba230111f061.svg);
   -webkit-mask-size: cover;
           mask-size: cover;
-  -webkit-mask-repeat: no-repeat;
-          mask-repeat: no-repeat;
   border-radius: 10px;
-  -webkit-mask-position: unset;
-          mask-position: unset;
+  -webkit-mask-repeat: round;
+          mask-repeat: round;
+}
+.career-cta__left img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: block;
+  margin: 0;
 }
 .career-cta__right .quote-card {
   background-color: #FFFFFF;
