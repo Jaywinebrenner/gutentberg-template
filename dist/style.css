@@ -2536,6 +2536,11 @@ Component
   text-align: center;
   padding: 5.75rem 0;
 }
+@media (min-width: 1400px) {
+  .our-services__top {
+    padding-top: 3.75rem;
+  }
+}
 .our-services__top h2,
 .our-services__top p {
   max-width: 56.25rem;
