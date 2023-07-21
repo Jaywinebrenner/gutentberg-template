@@ -8,5 +8,4 @@ import './image-parallax';
 import './error-404';
 import './page-transitions';
 import './banner';
-import './info-cards'
 
