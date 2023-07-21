@@ -24,6 +24,7 @@
         }
         img {
             width: 100%;
+            display: block;
             @media(max-width: $bp-small){
                 width: 100%;
                 height: 100%;
