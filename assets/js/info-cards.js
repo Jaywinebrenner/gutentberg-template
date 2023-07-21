@@ -30,7 +30,6 @@ class InfoCards {
         });
   }
 }
-
 document.addEventListener('DOMContentLoaded', () => {
   if (document.querySelector('.info-cards')) {
       new InfoCards()
