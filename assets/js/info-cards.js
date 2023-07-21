@@ -5,22 +5,28 @@ class InfoCards {
     }
     init() {
         this.addPaddingIfOneLine();
+        const h5Elements = document.querySelectorAll('.info-cards__content h5');
+        const characterLimit = 20; // Adjust this value to set the character limit
+      
+        h5Elements.forEach(h5 => {
+          const h5Text = h5.textContent.trim();
+          const characterCount = h5Text.length;
+          if (characterCount < characterLimit) {
+            const paddingAmount = 1.7; // You can adjust this value as needed
+            h5.style.paddingBottom = `${paddingAmount}rem`;
+          }
+        });
     }
     addPaddingIfOneLine () {
         $(window).resize(function() {
-            const h5Elements = document.querySelectorAll('.info-cards__content h5');
-            // h5Elements.forEach(h5 => {
-            //     const h5Height = h5.offsetHeight;
-            //     console.log("h5height", h5Height)
-            //     const lineHeight = parseInt(window.getComputedStyle(h5).lineHeight);
-            //     console.log("lineHeight", lineHeight)
-            //     if (h5Height === lineHeight) {
-            //         console.log("h5 bigger than line height")
-            //       const paddingAmount = 20; 
-            //       h5.style.paddingBottom = `${paddingAmount}px`;
-            //       h5.style.backgroundColor = "red";
-            //     }
-            //   });
+            h5Elements.forEach(h5 => {
+                const h5Text = h5.textContent.trim();
+                const characterCount = h5Text.length;
+                if (characterCount < characterLimit) {
+                  const paddingAmount = 1.7; // You can adjust this value as needed
+                  h5.style.paddingBottom = `${paddingAmount}rem`;
+                }
+              });
           });
     }
     
