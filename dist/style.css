@@ -1826,6 +1826,8 @@ Component
   max-width: 65rem;
   margin-left: auto;
   margin-right: auto;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
 @media (max-width: 800px) {
   .three-card-row__top {
