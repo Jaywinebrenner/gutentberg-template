@@ -38,9 +38,6 @@
 			));
 			?>
 			<a href="<?php echo home_url() . '/employee-login'; ?>" class="btn_red nav-button">Employee Login</a>
-			<div class="modal-trigger">
-				<a data-modal="modal-one"><h1>Open Modal</h1></a>
-			</div>
 		</div>
 
 	</div>
@@ -74,12 +71,12 @@
 	</div>
 
 	<div id="page" class="hfeed site">
-				<!-- MODAL -->
-				<div class="modal" id="modal-one">
+		<!-- MODAL -->
+		<div class="modal" id="modal-one">
 			<div class="modal-bg modal-exit"></div>
 			<div class="modal-container">
 				<h3>CONTACT US</h3>
-				<p>Tell us a little bit about yourself and what you would like to discuss.</p>
+				<p class="subtitle">Tell us a little bit about yourself and what you would like to discuss.</p>
 				<p>CONTENT CONTENT</p>
 				<p>CONTENT CONTENT</p>
 				<p>CONTENT CONTENT</p>

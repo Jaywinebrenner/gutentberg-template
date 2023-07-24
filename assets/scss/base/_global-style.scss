@@ -167,7 +167,7 @@ html :where(.is-reusable) :where(.wp-block) {
 }
 
 
-//modal
+// //modal
 .modal {
   position: fixed;
   width: 100vw;
@@ -180,7 +180,7 @@ html :where(.is-reusable) :where(.wp-block) {
   display: flex;
   align-items: center;
   justify-content: center;
-  z-index: 999;
+  z-index: 2000;
   &.open {
     visibility: visible;
     opacity: 1;
@@ -188,7 +188,7 @@ html :where(.is-reusable) :where(.wp-block) {
   }
   &-bg {
     position: absolute;
-    background: rgb(0,0,0,.1);
+    background-color: rgb(29, 8, 0, .35);
     width: 100%;
     height: 100%;
   }
@@ -197,6 +197,18 @@ html :where(.is-reusable) :where(.wp-block) {
     background: #fff;
     position: relative;
     padding: 53px;
+    width: 89vw;
+    height: 65vh;
+    max-width: 1800px;
+    @media(max-width: $bp-small){
+      height: 100vh;
+      width: 100vw;
+      border-radius: 0;
+      transform: translatey(100px);
+    }
+    .subtitle {
+      margin-bottom: 2.25rem;
+    }
   }
   &-close {
     position: absolute;
@@ -204,7 +216,6 @@ html :where(.is-reusable) :where(.wp-block) {
     top: 50px;
     outline: none;
     appearance: none;
-    color: red;
     background: none;
     border: 0px;
     font-weight: bold;
@@ -212,6 +223,4 @@ html :where(.is-reusable) :where(.wp-block) {
   }
 }
 
-.modal-trigger {
-  background-color: red;
-}
+

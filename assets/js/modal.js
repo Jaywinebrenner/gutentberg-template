@@ -1,42 +1,62 @@
 class Modal {
     constructor() {
-        this.init();
+      this.init();
     }
+  
     init() {
-
-        console.log("modal");
-        const modals = document.querySelectorAll('[data-modal]');
-
-        modals.forEach(function (trigger) {
-        trigger.addEventListener('click', function (event) {
-            console.log("click")
+      const modalHash = window.location.hash;
+      if (modalHash === "#contact-modal") {
+        const modal = document.querySelector('.modal');
+        modal.classList.add('open');
+        this.disableScroll();
+  
+        const modalContainer = document.querySelector('.modal-container');
+        modalContainer.addEventListener('click', (event) => {
+          // Stop event propagation if clicking inside the modal container
+          event.stopPropagation();
+        });
+        
+        // Close when clicking outside of modal container
+        modal.addEventListener('click', (event) => {
+          if (event.target.classList.contains('modal-exit')) {
             event.preventDefault();
-            const modal = document.getElementById(trigger.dataset.modal);
-            modal.classList.add('open');
-            const exits = modal.querySelectorAll('.modal-exit');
-
-            $(":root").css("overflow", "hidden");
-            $(":root").css("height", "100%");
-            $("body").css("overflow", "hidden");
-            $("body").css("height", "100%");
-
-            exits.forEach(function (exit) {
-            exit.addEventListener('click', function (event) {
-                event.preventDefault();
-                modal.classList.remove('open');
-                $(":root").css("overflow", "auto");
-                $(":root").css("height", "auto");
-                $("body").css("overflow", "auto");
-                $("body").css("height", "auto");
-            });
-            });
+            this.closeModal(modal);
+          }
         });
+
+        // Close when clicking X
+        let xButton = document.querySelector(".modal-close");
+        xButton.addEventListener('click', (event) => {
+            event.preventDefault();
+            this.closeModal(modal);
         });
+
+
+      }
     }
-}
-
-document.addEventListener('DOMContentLoaded', () => {
+  
+    closeModal(modal) {
+      modal.classList.remove('open');
+      this.enableScroll();
+    }
+  
+    disableScroll() {
+      document.body.style.overflow = 'hidden';
+      document.body.style.height = '100%';
+      document.documentElement.style.overflow = 'hidden';
+      document.documentElement.style.height = '100%';
+    }
+  
+    enableScroll() {
+      document.body.style.overflow = 'auto';
+      document.body.style.height = 'auto';
+      document.documentElement.style.overflow = 'auto';
+      document.documentElement.style.height = 'auto';
+    }
+  }
+  
+  document.addEventListener('DOMContentLoaded', () => {
     if (document.querySelector('.modal')) {
-        new Modal()
+      new Modal();
     }
-});
+  });
