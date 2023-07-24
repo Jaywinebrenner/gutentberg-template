@@ -2090,6 +2090,11 @@ Component
     font-size: 16px;
   }
 }
+@media (min-width: 1400px) {
+  .info-cards__content .minor {
+    font-size: 0.9rem;
+  }
+}
 .info-cards__cta-wrapper .btn_red {
   font-size: 0.8rem;
 }
