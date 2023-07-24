@@ -2284,6 +2284,8 @@ Component
           mask-image: url(b2264a1c7c6c86f8f45b.svg);
   -webkit-mask-size: cover;
           mask-size: cover;
+  -webkit-mask-position: top right;
+          mask-position: top right;
   border-radius: 10px;
   -webkit-mask-repeat: no-repeat;
           mask-repeat: no-repeat;

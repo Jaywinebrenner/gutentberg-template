@@ -58,6 +58,7 @@
         min-height: 31.25rem;
         mask-image: url("../images/page-hero-mask.svg");
         mask-size: cover;
+        mask-position: top right;
         border-radius: 10px;
         mask-repeat: no-repeat;
         @media (min-width: $bp-xlarge) {
