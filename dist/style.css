@@ -2710,12 +2710,18 @@ Component
   -webkit-mask-repeat: no-repeat;
           mask-repeat: no-repeat;
   border-radius: 10px;
-  -webkit-mask-position: unset;
-          mask-position: unset;
+  max-height: 27rem;
+  -webkit-mask-position: top right;
+          mask-position: top right;
 }
 @media (max-width: 800px) {
   .source-aq-cta .source-aq-cta-wrapper__right .desktop-image {
     min-height: 16rem;
+  }
+}
+@media (min-width: 1400px) {
+  .source-aq-cta .source-aq-cta-wrapper__right .desktop-image {
+    max-height: 27rem;
   }
 }
 .source-aq-cta .source-aq-cta-wrapper__right img {
