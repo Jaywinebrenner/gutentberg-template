@@ -22,10 +22,14 @@
                 mask-size: cover;
                 mask-repeat: no-repeat;
                 border-radius: 10px;
-                mask-position: unset;
+                max-height: 27rem;
+                mask-position: top right;
 
                 @media (max-width: $bp-small) {
                     min-height: 16rem;
+                }
+                @media (min-width: 1400px) {
+                    max-height: 27rem;
                 }
             }
             img {

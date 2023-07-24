@@ -2,7 +2,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 12.5rem;
-    align-items: center;
+    // align-items: center;
 
     @media(max-width: 800px){
         display: block;
@@ -40,6 +40,9 @@
         @media(max-width: 800px){
             text-align: center;
             padding-top: 1.875rem;
+        }
+        @media(min-width: 1300px){
+            transform: translatey(-5.625rem);
         }
     }
 }
