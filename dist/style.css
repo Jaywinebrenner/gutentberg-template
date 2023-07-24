@@ -2661,6 +2661,11 @@ Component
     padding: 3rem 0;
   }
 }
+@media (min-width: 2300px) {
+  .our-services__top .image-wrapper {
+    padding: 0;
+  }
+}
 .our-services__top .image-wrapper .image {
   height: 26vw;
   min-height: 28.125rem;
