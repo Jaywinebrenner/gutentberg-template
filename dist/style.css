@@ -2798,7 +2798,6 @@ Component
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 12.5rem;
-  align-items: center;
 }
 @media (max-width: 800px) {
   .meet-cta-block {
