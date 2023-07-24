@@ -63,7 +63,7 @@ $id = 'capability-dropdowns-' . $block['id'];
                             </div>
                             <div class="quote-wrapper">
                                 <p class="minor quote"><?php echo $quote?></p>
-                                <p class="quoter"><?php echo $quoter?></p>
+                                <p class="minor quoter"><?php echo $quoter?></p>
                             </div>
 
                 </div>
