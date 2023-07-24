@@ -582,3 +582,7 @@
 .echojobs_plugin {
   @extend .container;
 }
+
+.echojobs-search-wrapper label {
+  display: flex;
+}

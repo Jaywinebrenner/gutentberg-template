@@ -535,7 +535,7 @@ hr {
   }
 }
 
-.btn, .btn_background-red, .search-jobs-button_background-red, .login-button_background-red, .btn_red, .search-jobs-button_red, .login-button_red, .btn_white, .search-jobs-button_white, .login-button_white, .search-jobs-button, .login-button {
+.btn, .btn_background-red, .search-jobs-button_background-red, .login-button_background-red, .echojobs-job button_background-red, .btn_red, .search-jobs-button_red, .login-button_red, .echojobs-job button_red, .btn_white, .search-jobs-button_white, .login-button_white, .echojobs-job button_white, .search-jobs-button, .login-button, .echojobs-job button {
   text-transform: uppercase;
   padding: 0.5rem 1.3125rem;
   letter-spacing: 0.63px;
@@ -548,41 +548,41 @@ hr {
   border-radius: 50px;
 }
 @media (max-width: 800px) {
-  .btn, .btn_background-red, .search-jobs-button_background-red, .login-button_background-red, .btn_red, .search-jobs-button_red, .login-button_red, .btn_white, .search-jobs-button_white, .login-button_white, .search-jobs-button, .login-button {
+  .btn, .btn_background-red, .search-jobs-button_background-red, .login-button_background-red, .echojobs-job button_background-red, .btn_red, .search-jobs-button_red, .login-button_red, .echojobs-job button_red, .btn_white, .search-jobs-button_white, .login-button_white, .echojobs-job button_white, .search-jobs-button, .login-button, .echojobs-job button {
     font-size: 0.875rem;
   }
 }
-.btn:hover, .btn_background-red:hover, .search-jobs-button_background-red:hover, .login-button_background-red:hover, .btn_red:hover, .search-jobs-button_red:hover, .login-button_red:hover, .btn_white:hover, .search-jobs-button_white:hover, .login-button_white:hover, .search-jobs-button:hover, .login-button:hover {
+.btn:hover, .btn_background-red:hover, .search-jobs-button_background-red:hover, .login-button_background-red:hover, .echojobs-job button_background-red:hover, .btn_red:hover, .search-jobs-button_red:hover, .login-button_red:hover, .echojobs-job button_red:hover, .btn_white:hover, .search-jobs-button_white:hover, .login-button_white:hover, .echojobs-job button_white:hover, .search-jobs-button:hover, .login-button:hover, .echojobs-job button:hover {
   background-color: #1D0800;
   color: #F7F4F0 !important;
   cursor: pointer;
 }
-.btn_white, .search-jobs-button_white, .login-button_white {
+.btn_white, .search-jobs-button_white, .login-button_white, .echojobs-job button_white {
   color: #F7F4F0 !important;
   border: 1px solid #F7F4F0;
 }
-.btn_white:hover, .search-jobs-button_white:hover, .login-button_white:hover {
+.btn_white:hover, .search-jobs-button_white:hover, .login-button_white:hover, .echojobs-job button_white:hover {
   background-color: #F7F4F0;
   color: #D64936 !important;
   border: 1px solid #FFFFFF;
   cursor: pointer;
 }
-.btn_red, .search-jobs-button_red, .login-button_red {
+.btn_red, .search-jobs-button_red, .login-button_red, .echojobs-job button_red {
   color: #D64936 !important;
   border: 1px solid #D64936;
 }
-.btn_red:hover, .search-jobs-button_red:hover, .login-button_red:hover {
+.btn_red:hover, .search-jobs-button_red:hover, .login-button_red:hover, .echojobs-job button_red:hover {
   background-color: #D64936;
   color: #FFFFFF !important;
   border: 1px solid #D64936;
   cursor: pointer;
 }
-.btn_background-red, .search-jobs-button_background-red, .login-button_background-red {
+.btn_background-red, .search-jobs-button_background-red, .login-button_background-red, .echojobs-job button_background-red {
   color: #FFFFFF !important;
   border: 1px solid #FFFFFF;
   background-color: #D64936;
 }
-.btn_background-red:hover, .search-jobs-button_background-red:hover, .login-button_background-red:hover {
+.btn_background-red:hover, .search-jobs-button_background-red:hover, .login-button_background-red:hover, .echojobs-job button_background-red:hover {
   background-color: #FFFFFF;
   color: #D64936 !important;
   border: 1px solid #D64936;
@@ -3592,6 +3592,10 @@ Component
 
 .single-echojobs #single-post #login_options button {
   margin-top: 15px;
+}
+
+.echojobs-search-wrapper label {
+  display: flex;
 }
 
 /*--------------------------------------------------------------
