@@ -14,10 +14,20 @@ class Modal {
             const modal = document.getElementById(trigger.dataset.modal);
             modal.classList.add('open');
             const exits = modal.querySelectorAll('.modal-exit');
+
+            $(":root").css("overflow", "hidden");
+            $(":root").css("height", "100%");
+            $("body").css("overflow", "hidden");
+            $("body").css("height", "100%");
+
             exits.forEach(function (exit) {
             exit.addEventListener('click', function (event) {
                 event.preventDefault();
                 modal.classList.remove('open');
+                $(":root").css("overflow", "auto");
+                $(":root").css("height", "auto");
+                $("body").css("overflow", "auto");
+                $("body").css("height", "auto");
             });
             });
         });
