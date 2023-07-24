@@ -31,14 +31,13 @@
             mask-size: cover;
             border-radius: 10px;
             mask-repeat: round;
-            transform: translateY(-29px);
+            transform: translateY(-33px);
             @media(min-width: 800px) and (max-width:1100px ){
                 transform: translateY(-18px);
             }
             @media(max-width: $bp-small){
                 transform: translateY(0px);
             }
-
         }
         img {
             width: 100%;
@@ -46,6 +45,7 @@
             object-fit: cover;
             display: block;
             margin: 0;
+            max-height: 520px;
         }
     }
     &__right {
