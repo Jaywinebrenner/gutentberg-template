@@ -2345,7 +2345,7 @@ Component
 @media (max-width: 800px) {
   .career-cta__left h3 {
     padding-right: 0;
-    margin-top: 0;
+    margin-top: 1.875rem;
   }
 }
 .career-cta__left .image-wrapper {
