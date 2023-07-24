@@ -2075,9 +2075,20 @@ Component
 .info-cards__content {
   flex: 1;
 }
+.info-cards__content img {
+  margin-bottom: 2.5rem;
+}
+.info-cards__content .subtitle {
+  margin-bottom: 0;
+}
 @media (max-width: 800px) {
   .info-cards__content h5 {
     font-size: 21px;
+  }
+}
+@media (min-width: 1975px) {
+  .info-cards__content h5 {
+    font-size: 1.1125rem;
   }
 }
 @media only screen and (max-width: 900px) and (min-width: 800px) {
