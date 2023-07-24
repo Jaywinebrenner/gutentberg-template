@@ -32,9 +32,18 @@
   }
   &__content {
     flex: 1;
+    img{
+      margin-bottom: 2.5rem;
+    }
+    .subtitle {
+      margin-bottom: 0;
+    }
     h5 {
       @media(max-width: $bp-small){
         font-size: 21px;
+      }
+      @media(min-width: 1975px){
+        font-size: 1.1125rem;
       }
       @media only screen and (max-width: 900px) and (min-width: 800px)  {
         font-size: 1.1rem;
