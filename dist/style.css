@@ -2849,12 +2849,6 @@ Component
     padding-top: 1.875rem;
   }
 }
-@media (min-width: 1300px) {
-  .meet-cta-block__right {
-    transform: translatey(-5.625rem);
-  }
-}
-
 .image-content {
   display: grid;
   grid-template-columns: 2fr 1.5fr;
