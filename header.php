@@ -38,7 +38,11 @@
 			));
 			?>
 			<a href="<?php echo home_url() . '/employee-login'; ?>" class="btn_red nav-button">Employee Login</a>
+			<div class="modal-trigger">
+				<a data-modal="modal-one"><h1>Open Modal</h1></a>
+			</div>
 		</div>
+
 	</div>
 
 	<!-- MOBILE -->
@@ -64,10 +68,28 @@
 				));
 				?>
 				<a href="<?php echo home_url() . '/employee-login'; ?>" class="btn_red">Employee Login</a>
+
 			</div>
 		</div>
 	</div>
 
 	<div id="page" class="hfeed site">
+				<!-- MODAL -->
+				<div class="modal" id="modal-one">
+			<div class="modal-bg modal-exit"></div>
+			<div class="modal-container">
+				<h3>CONTACT US</h3>
+				<p>Tell us a little bit about yourself and what you would like to discuss.</p>
+				<p>CONTENT CONTENT</p>
+				<p>CONTENT CONTENT</p>
+				<p>CONTENT CONTENT</p>
+				<p>CONTENT CONTENT</p>
+				<p>CONTENT CONTENT</p>
+				<p>CONTENT CONTENT</p>
+				<p>CONTENT CONTENT</p><p>CONTENT CONTENT</p>
+				<button class="modal-close modal-exit">					<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/modal/modal-x.svg" /></button>
+			</div>
+		</div>
+		<!-- END MODAL -->
 
 		<main id="main" class="site-main wrap" role="main">
