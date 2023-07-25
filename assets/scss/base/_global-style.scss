@@ -200,7 +200,7 @@ html :where(.is-reusable) :where(.wp-block) {
     max-width: 1800px;
     overflow: auto;
     @media(max-width: 1400px) and (min-width: 800px){
-      height: 60vh;
+      // height: 60vh;
     }
     @media(max-width: $bp-small){
       height: 100vh;
@@ -210,9 +210,9 @@ html :where(.is-reusable) :where(.wp-block) {
       overflow: auto;
       padding:  53px 20px 20px 20px;
     }
-    @media(min-width: 1200px){
-      max-height: 70vh;
-    }
+    // @media(min-width: 1200px){
+    //   max-height: 70vh;
+    // }
     // @media(min-width: 1600px){
     //   height: 80vh;
     // }

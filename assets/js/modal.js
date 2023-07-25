@@ -41,7 +41,7 @@ class Modal {
             });
 
             // Disable scrolling again when the browser is resized
-            window.addEventListener('resize', this.disableScroll);
+            // window.addEventListener('resize', this.disableScroll);
         }
     }
 
@@ -49,7 +49,7 @@ class Modal {
         modal.classList.remove('open');
         this.enableScroll();
         // Remove the resize event listener when the modal is closed
-        window.removeEventListener('resize', this.disableScroll);
+        // window.removeEventListener('resize', this.disableScroll);
     }
 
     disableScroll() {

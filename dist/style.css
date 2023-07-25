@@ -1257,11 +1257,6 @@ html :where(.is-reusable) :where(.wp-block) {
   max-width: 1800px;
   overflow: auto;
 }
-@media (max-width: 1400px) and (min-width: 800px) {
-  .modal-container {
-    height: 60vh;
-  }
-}
 @media (max-width: 800px) {
   .modal-container {
     height: 100vh;
@@ -1270,11 +1265,6 @@ html :where(.is-reusable) :where(.wp-block) {
     transform: translatey(100px);
     overflow: auto;
     padding: 53px 20px 20px 20px;
-  }
-}
-@media (min-width: 1200px) {
-  .modal-container {
-    max-height: 70vh;
   }
 }
 .modal-container__top h3 {
