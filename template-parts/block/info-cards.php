@@ -22,7 +22,7 @@ if (isset($block['data']['preview_image'])) : ?>
           <div class="info-cards__content">
             <img src="<?php the_sub_field('icon'); ?>" alt="">
             <h5><?php the_sub_field('title'); ?></h5>
-            <p class="minor subtitle"><?php the_sub_field('copy') ?></p>
+            <p class="minor"><?php the_sub_field('copy') ?></p>
           </div>
           <?php if (get_sub_field('add_cta_button')) : ?>
             <hr>
