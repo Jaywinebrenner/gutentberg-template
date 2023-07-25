@@ -31,7 +31,10 @@ class Modal {
             this.closeModal(modal);
         });
 
-
+        // Change Replaced with asterisk
+        $('.gfield_required_text').html(function(index, html){
+            return html.replace('(Required)', "*");
+        });
       }
     }
   
