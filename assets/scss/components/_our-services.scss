@@ -48,6 +48,9 @@
                 mask-size: cover;
                 mask-repeat: round;
                 mask-position: unset;
+                @media(min-height: 2400px){
+
+                }
             }
         }
         .mobile-image-wrapper {
@@ -77,7 +80,7 @@
     &__bottom {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-gap: 10rem;
+        grid-gap: 14rem;
         @media (max-width: $bp-small) {
             grid-template-columns: 1fr;
             grid-gap: 0;
@@ -97,7 +100,7 @@
             }
         }
         .right {
-            transform: translatey(-1.25rem);
+            transform: translatey(-1rem);
             .accordion-item {
                 border-bottom: 1px solid rgb(29, 8, 0, 0.2);
                 &__title {
