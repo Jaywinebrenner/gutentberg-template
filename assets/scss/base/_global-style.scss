@@ -199,9 +199,6 @@ html :where(.is-reusable) :where(.wp-block) {
     height: 80vh;
     max-width: 1800px;
     overflow: auto;
-    // @media(max-height: 750px){
-    //   overflow-y: scroll;
-    // }
     @media(max-width: 1400px) and (min-width: 800px){
       height: 60vh;
     }
