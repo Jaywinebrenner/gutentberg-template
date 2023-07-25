@@ -2724,7 +2724,7 @@ Component
 .our-services__bottom {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-gap: 10rem;
+  grid-gap: 14rem;
 }
 @media (max-width: 800px) {
   .our-services__bottom {
@@ -2744,7 +2744,7 @@ Component
   }
 }
 .our-services__bottom .right {
-  transform: translatey(-1.25rem);
+  transform: translatey(-1rem);
 }
 .our-services__bottom .right .accordion-item {
   border-bottom: 1px solid rgba(29, 8, 0, 0.2);
