@@ -43,7 +43,9 @@
 	</div>
 
 	<!-- MOBILE -->
-	<div class="navigation-menu-wrapper-mobile <?php echo is_front_page() ? 'linen-bg' : ''; ?>">
+	<div 
+	class="navigation-menu-wrapper-mobile"
+	style="background-color: <?php the_field('header_background_color') ?>!important">
 		<div class="mobile-container">
 			<div class="hamburger-and-image-wrapper">
 				<a href="<?php echo site_url('/'); ?>">
@@ -75,16 +77,20 @@
 		<div class="modal" id="modal-one">
 			<div class="modal-bg modal-exit"></div>
 			<div class="modal-container">
-				<h3>CONTACT US</h3>
-				<p class="subtitle">Tell us a little bit about yourself and what you would like to discuss.</p>
-				<p>CONTENT CONTENT</p>
-				<p>CONTENT CONTENT</p>
-				<p>CONTENT CONTENT</p>
-				<p>CONTENT CONTENT</p>
-				<p>CONTENT CONTENT</p>
-				<p>CONTENT CONTENT</p>
-				<p>CONTENT CONTENT</p><p>CONTENT CONTENT</p>
-				<button class="modal-close modal-exit">					<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/modal/modal-x.svg" /></button>
+				<div class="modal-container__top">
+					<h3>CONTACT US</h3>
+					<p class="subtitle">Tell us a little bit about yourself and what you would like to discuss.</p>
+				</div>
+				<div class="modal-container__body">
+					<?php
+					echo do_shortcode('[gravityform id="1" title="false" ajax="true"]');
+					?>
+					<p class="modal-in-touch minor">We will be in touch within one business day.</p>
+				</div>
+
+				<button class="modal-close modal-exit">					
+					<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/modal/modal-x.svg" />
+				</button>
 			</div>
 		</div>
 		<!-- END MODAL -->
