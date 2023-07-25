@@ -600,7 +600,7 @@ form .field-wrap {
   position: relative;
 }
 form .active-label {
-  background-color: #2a2a2a;
+  background-color: #1D0800;
   color: #FFFFFF;
   font-size: 0.6rem;
   padding: 5px !important;
@@ -624,9 +624,8 @@ form .textarea-wrap label {
 
 input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
   font-size: 0.9em;
-  font-family: "Helvetica", sans-serif;
+  font-family: Inter;
   margin-bottom: 20px;
-  padding: 7px;
   line-height: 28px;
   font-weight: 100;
   color: rgba(29, 8, 0, 0.5) !important;
@@ -638,9 +637,8 @@ input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
 
 input::-moz-placeholder, textarea::-moz-placeholder {
   font-size: 0.9em;
-  font-family: "Helvetica", sans-serif;
+  font-family: Inter;
   margin-bottom: 20px;
-  padding: 7px;
   line-height: 28px;
   font-weight: 100;
   color: rgba(29, 8, 0, 0.5) !important;
@@ -655,9 +653,8 @@ input::placeholder,
 textarea,
 textarea::placeholder {
   font-size: 0.9em;
-  font-family: "Helvetica", sans-serif;
+  font-family: Inter;
   margin-bottom: 20px;
-  padding: 7px;
   line-height: 28px;
   font-weight: 100;
   color: rgba(29, 8, 0, 0.5) !important;
@@ -666,6 +663,18 @@ textarea::placeholder {
      -moz-appearance: none;
           appearance: none;
   border-radius: 0;
+}
+
+textarea::-webkit-input-placeholder {
+  transform: translateY(-6px);
+}
+
+textarea::-moz-placeholder {
+  transform: translateY(-6px);
+}
+
+textarea::placeholder {
+  transform: translateY(-6px);
 }
 
 button,
@@ -686,7 +695,7 @@ textarea {
 
 input:focus,
 textarea:focus {
-  border-color: #2a2a2a !important;
+  border-color: rgba(29, 8, 0, 0.5);
 }
 
 .nf-form-fields-required,
@@ -696,7 +705,7 @@ textarea:focus {
 }
 
 .nf-error-msg {
-  font-family: "Helvetica", sans-serif;
+  font-family: Inter;
   font-size: 0.8rem;
 }
 
@@ -813,6 +822,10 @@ textarea:focus {
 .modal #gform_1 .gform_body input {
   margin-bottom: 10px;
 }
+.modal #gform_1 .gform_body input[type=text], .modal #gform_1 .gform_body input[type=text] {
+  font-family: Inter;
+  font-size: 1rem !important;
+}
 .modal #gform_1 .gform_body .gfield_required {
   color: rgba(29, 8, 0, 0.5) !important;
   margin-left: 0 !important;
@@ -824,9 +837,6 @@ textarea:focus {
   .modal #gform_1 .gform_body #field_1_6 {
     padding-right: 0;
   }
-}
-.modal #gform_1 .gform_body .gform_footer {
-  display: flex;
 }
 .modal #gform_1 .gform_body li {
   margin-bottom: 0;
@@ -910,6 +920,7 @@ textarea:focus {
     font-size: 0.875rem;
     margin-left: unset;
     width: auto;
+    transform: translateY(12px);
   }
 }
 .modal #gform_1 .gform_footer .gform_button:hover {
@@ -1140,7 +1151,11 @@ html :where(.is-reusable) :where(.wp-block) {
   width: 89vw;
   height: 89vh;
   max-width: 1800px;
-  overflow-y: scroll;
+}
+@media (max-height: 750px) {
+  .modal-container {
+    overflow-y: scroll;
+  }
 }
 @media (max-width: 800px) {
   .modal-container {
@@ -1154,6 +1169,8 @@ html :where(.is-reusable) :where(.wp-block) {
 }
 .modal-container__top h3 {
   margin-bottom: 32px;
+  font-weight: 400;
+  color: #1D0800;
 }
 .modal-container__body {
   position: relative;
@@ -1167,6 +1184,8 @@ html :where(.is-reusable) :where(.wp-block) {
 @media (max-width: 800px) {
   .modal-container__body .modal-in-touch {
     margin-left: unset;
+    margin-top: 130px;
+    margin-bottom: 69px;
   }
 }
 .modal-container .subtitle {
