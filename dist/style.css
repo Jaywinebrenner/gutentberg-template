@@ -762,15 +762,15 @@ textarea:focus {
   transform: scale(1);
 }
 
-#gform_1 .validation_error {
+.modal #gform_1 .validation_error {
   display: none !important;
 }
 
-#gform_1 .gform_heading {
+.modal #gform_1 .gform_heading {
   display: none !important;
 }
 
-#gform_1 .gform_body input::-webkit-input-placeholder {
+.modal #gform_1 .gform_body input::-webkit-input-placeholder {
   font-family: Inter;
   font-size: 1rem !important;
   font-style: normal;
@@ -779,7 +779,7 @@ textarea:focus {
   color: rgba(29, 8, 0, 0.5);
 }
 
-#gform_1 .gform_body input::-moz-placeholder {
+.modal #gform_1 .gform_body input::-moz-placeholder {
   font-family: Inter;
   font-size: 1rem !important;
   font-style: normal;
@@ -788,7 +788,7 @@ textarea:focus {
   color: rgba(29, 8, 0, 0.5);
 }
 
-#gform_1 .gform_body .gfield_label, #gform_1 .gform_body input::placeholder {
+.modal #gform_1 .gform_body .gfield_label, .modal #gform_1 .gform_body input::placeholder {
   font-family: Inter;
   font-size: 1rem !important;
   font-style: normal;
@@ -797,88 +797,94 @@ textarea:focus {
   color: rgba(29, 8, 0, 0.5);
 }
 @media (max-width: 800px) {
-  #gform_1 .gform_body input::-webkit-input-placeholder {
+  .modal #gform_1 .gform_body input::-webkit-input-placeholder {
     font-size: 0.875rem;
   }
-  #gform_1 .gform_body input::-moz-placeholder {
+  .modal #gform_1 .gform_body input::-moz-placeholder {
     font-size: 0.875rem;
   }
-  #gform_1 .gform_body .gfield_label, #gform_1 .gform_body input::placeholder {
+  .modal #gform_1 .gform_body .gfield_label, .modal #gform_1 .gform_body input::placeholder {
     font-size: 0.875rem;
   }
 }
-#gform_1 .gform_body input {
+.modal #gform_1 .gform_body input {
   margin-bottom: 10px;
 }
-#gform_1 .gform_body .gfield_required {
+.modal #gform_1 .gform_body .gfield_required {
   color: rgba(29, 8, 0, 0.5) !important;
   margin-left: 0 !important;
 }
-#gform_1 .gform_body #field_1_6 {
+.modal #gform_1 .gform_body #field_1_6 {
   padding-right: 4px;
 }
 @media (max-width: 800px) {
-  #gform_1 .gform_body #field_1_6 {
+  .modal #gform_1 .gform_body #field_1_6 {
     padding-right: 0;
   }
 }
-#gform_1 .gform_body .gform_footer {
+.modal #gform_1 .gform_body .gform_footer {
   display: flex;
 }
-#gform_1 .gform_body li {
+.modal #gform_1 .gform_body li {
   margin-bottom: 0;
 }
-#gform_1 .gform_body li:nth-child(odd) {
+.modal #gform_1 .gform_body li:nth-child(-n+4) {
+  display: inline-block;
+  vertical-align: top;
+  width: 50%;
+  padding-right: 16px;
+  float: left;
   padding-right: 63px;
 }
 @media (max-width: 800px) {
-  #gform_1 .gform_body li:nth-child(odd) {
+  .modal #gform_1 .gform_body li:nth-child(-n+4) {
+    width: 100%;
     padding-right: 0;
   }
 }
-#gform_1 .gform_body .ginput_container_textarea {
+.modal #gform_1 .gform_body li:nth-child(n+5) {
+  display: inline-block;
+  vertical-align: top;
+  width: 50%;
+  padding-right: 16px;
+  float: none;
+}
+@media (max-width: 800px) {
+  .modal #gform_1 .gform_body li:nth-child(n+5) {
+    width: 100%;
+    padding-right: 0;
+  }
+}
+.modal #gform_1 .gform_body .ginput_container_textarea {
   padding-right: 12px;
 }
 @media (max-width: 800px) {
-  #gform_1 .gform_body .ginput_container_textarea {
+  .modal #gform_1 .gform_body .ginput_container_textarea {
     padding-right: 0;
   }
 }
-#gform_1 .gform_body .left {
-  display: inline-block;
-  vertical-align: top;
-  width: 50%;
-  padding-right: 16px;
-  float: none;
-}
 @media (max-width: 800px) {
-  #gform_1 .gform_body .left {
+  .modal #gform_1 .gform_body .left {
     width: 100%;
     padding-right: 0;
   }
 }
-#gform_1 .gform_body .left input {
+.modal #gform_1 .gform_body .left input {
   width: 100%;
 }
-#gform_1 .gform_body .right {
-  display: inline-block;
-  vertical-align: top;
-  width: 50%;
-  padding-right: 16px;
-  float: none;
-}
 @media (max-width: 800px) {
-  #gform_1 .gform_body .right {
+  .modal #gform_1 .gform_body .right {
     width: 100%;
     padding-right: 0;
   }
 }
-#gform_1 .gform_body .right input {
+.modal #gform_1 .gform_body .right input {
   width: 100%;
 }
-#gform_1 .gform_footer .gform_button {
+
+.modal #gform_1 .gform_footer .gform_button {
   text-transform: uppercase;
-  padding: 0.5rem 1.3125rem;
+  padding: 0 1.3125rem;
   letter-spacing: 0.63px;
   transition: all 300ms;
   font-size: 1rem;
@@ -893,13 +899,13 @@ textarea:focus {
   margin-bottom: 160px;
 }
 @media (max-width: 800px) {
-  #gform_1 .gform_footer .gform_button {
+  .modal #gform_1 .gform_footer .gform_button {
     font-size: 0.875rem;
     margin-left: unset;
     width: auto;
   }
 }
-#gform_1 .gform_footer .gform_button:hover {
+.modal #gform_1 .gform_footer .gform_button:hover {
   background-color: #D64936;
   color: #FFFFFF !important;
   border: 1px solid #D64936;
@@ -1140,6 +1146,20 @@ html :where(.is-reusable) :where(.wp-block) {
 .modal-container__top h3 {
   margin-bottom: 32px;
 }
+.modal-container__body {
+  position: relative;
+}
+.modal-container__body .modal-in-touch {
+  font-style: italic;
+  color: rgba(29, 8, 0, 0.5);
+  margin-left: 50%;
+  transform: translateY(-138px);
+}
+@media (max-width: 800px) {
+  .modal-container__body .modal-in-touch {
+    margin-left: unset;
+  }
+}
 .modal-container .subtitle {
   margin-bottom: 2.25rem;
 }
@@ -1155,6 +1175,12 @@ html :where(.is-reusable) :where(.wp-block) {
   border: 0px;
   font-weight: bold;
   cursor: pointer;
+}
+@media (max-width: 800px) {
+  .modal-close {
+    right: 25px;
+    top: 25px;
+  }
 }
 
 .wp-caption img {

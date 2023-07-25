@@ -83,6 +83,7 @@
 					<?php
 					echo do_shortcode('[gravityform id="1" title="false"]');
 					?>
+					<p class="modal-in-touch minor">We will be in touch within one business day.</p>
 				</div>
 
 				<button class="modal-close modal-exit">					

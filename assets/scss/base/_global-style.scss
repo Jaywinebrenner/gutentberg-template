@@ -214,7 +214,16 @@ html :where(.is-reusable) :where(.wp-block) {
       }
     }
     &__body {
-
+      position: relative;
+      .modal-in-touch {
+        font-style: italic;
+        color: rgb(29, 8, 0, .5);
+        margin-left: 50%;
+        transform: translateY(-138px);
+        @media(max-width: $bp-small){
+          margin-left: unset;
+        }
+      }
     }
     .subtitle {
       margin-bottom: 2.25rem;
@@ -230,6 +239,10 @@ html :where(.is-reusable) :where(.wp-block) {
     border: 0px;
     font-weight: bold;
     cursor: pointer;
+    @media(max-width: $bp-small){
+      right: 25px;
+      top: 25px;
+    }
   }
 }
 

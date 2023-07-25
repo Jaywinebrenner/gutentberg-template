@@ -92,7 +92,6 @@ textarea:focus {
 [type="radio"]:checked,
 [type="radio"]:not(:checked) {
     position: absolute;
-    // left: -9999px;
     border: 0;
     appearance: none;
     height: 20px;
@@ -151,18 +150,17 @@ textarea:focus {
 }
 
 
+
+
+
 // CONTACT FORM SPECIFIC STYLES
-#gform_1 .validation_error {
+.modal #gform_1 .validation_error {
   display: none!important;
 }
-#gform_1 .gform_heading {
+.modal #gform_1 .gform_heading {
   display: none!important;
 }
-#gform_1 .gform_body{
-
-  input::placeholder {
-
-}
+.modal #gform_1 .gform_body {
 
   .gfield_label, input::placeholder {
     font-family: Inter;
@@ -199,9 +197,28 @@ textarea:focus {
   li {
     margin-bottom: 0;
   }
-  li:nth-child( odd ) {
+  //LEFT COL
+  li:nth-child( -n + 4 ) {
+    display: inline-block;
+    vertical-align: top;
+    width: 50%;
+    padding-right: 16px;
+    float: left;
     padding-right: 63px;
     @media(max-width: $bp-small){
+      width: 100%;
+      padding-right: 0;
+    }
+  }
+  // RIGHT COL
+  li:nth-child( n + 5 ) {
+    display: inline-block;
+    vertical-align: top;
+    width: 50%;
+    padding-right: 16px;
+    float: none;
+    @media(max-width: $bp-small){
+      width: 100%;
       padding-right: 0;
     }
   }
@@ -212,11 +229,6 @@ textarea:focus {
     }
   }
   .left {
-    display: inline-block;
-    vertical-align: top;
-    width: 50%;
-    padding-right: 16px;
-    float: none;
     @media(max-width: $bp-small){
       width: 100%;
       padding-right: 0;
@@ -226,11 +238,6 @@ textarea:focus {
     }
   }
   .right {
-    display: inline-block;
-    vertical-align: top;
-    width: 50%;
-    padding-right: 16px;
-    float: none;
     @media(max-width: $bp-small){
       width: 100%;
       padding-right: 0;
@@ -239,15 +246,12 @@ textarea:focus {
       width: 100%;
     }
   }
-  .gf_left_half {
-
-  }
 }
 
-#gform_1 .gform_footer{
+.modal #gform_1 .gform_footer{
   .gform_button {
     text-transform: uppercase;
-    padding: 0.5rem 1.3125rem;
+    padding: 0 1.3125rem;
     letter-spacing: 0.63px;
     transition: all 300ms;
     font-size: 1rem;
@@ -273,4 +277,4 @@ textarea:focus {
     }
   }
 }
-    // End contact specific styles
+    // End Contact Form specific styles
