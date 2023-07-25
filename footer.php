@@ -14,7 +14,6 @@
 					<div class="headquarters">
 						<h5>Headquarters</h5>
 						<a target="_blank" href="http://maps.google.com/?q=9115 SW Oleson Rd, Ste 105, Portland, OR 97223">
-							<p class="minor bold">Portland, Oregon</p>
 							<p class="minor address">9115 SW Oleson Rd, Ste 105</p>
 							<p class="minor">Portland, OR 97223</p>
 						</a>
@@ -23,13 +22,13 @@
 					</div>
 					<div class="explore">
 						<h5>Explore Mode</h5>
-						<a href="#"><p class="minor bold">Contact Us</p></a>
-						<a href="#"><p class="minor bold">Employee Login</p></a>
+						<a href="<?php echo home_url() . '/contact-us';?>"><p class="minor bold">Contact Us</p></a>
+						<a href="<?php echo home_url() . '/employee-login';?>"><p class="minor bold">Employee Login</p></a>
 						<div class="social-wrapper">
-							<a target="_blank" href="https://linkedin.com"><img class="social" src="<?php echo get_stylesheet_directory_uri();?>/assets/images/footer/linkedin.svg"/></a>
-							<a target="_blank" href="https://twitter.com"><img class="social" src="<?php echo get_stylesheet_directory_uri();?>/assets/images/footer/twitter.svg"/></a>
-							<a target="_blank" href="https://facebook.com"><img class="social" src="<?php echo get_stylesheet_directory_uri();?>/assets/images/footer/facebook.svg"/></a>
-							<a target="_blank" href="https://youtube.com"><img class="social" src="<?php echo get_stylesheet_directory_uri();?>/assets/images/footer/youtube.svg"/></a>
+							<a target="_blank" href="https://www.linkedin.com/company/corsource-technology-group/"><img class="social" src="<?php echo get_stylesheet_directory_uri();?>/assets/images/footer/linkedin.svg"/></a>
+							<a target="_blank" href="https://twitter.com/CorSource"><img class="social" src="<?php echo get_stylesheet_directory_uri();?>/assets/images/footer/twitter.svg"/></a>
+							<a target="_blank" href="https://www.facebook.com/CorSourceTech/"><img class="social" src="<?php echo get_stylesheet_directory_uri();?>/assets/images/footer/facebook.svg"/></a>
+							<a target="_blank" href="https://www.youtube.com/@CorSource"><img class="social" src="<?php echo get_stylesheet_directory_uri();?>/assets/images/footer/youtube.svg"/></a>
 						</div>
 
 					</div>
@@ -42,7 +41,7 @@
 				</div>
 				<div class="bottom-right">
 					<p class="minor">© 2023 CorSource Technology Group LLC</p>
-					<a href="#"><p class="privacy minor">Privacy</p></a>
+					<a href="<?php echo home_url() . '/privacy';?>"><p class="privacy minor">Privacy</p></a>
 
 				</div>
 			</div>

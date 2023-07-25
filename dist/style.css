@@ -494,7 +494,6 @@ li, .wp-block li, .wp-block-list.wp-block-list li {
   font-weight: 300;
   line-height: 150%;
   margin-bottom: 16px;
-  list-style-type: disc;
 }
 @media (max-width: 800px) {
   li, .wp-block li, .wp-block-list.wp-block-list li {
@@ -503,13 +502,20 @@ li, .wp-block li, .wp-block-list.wp-block-list li {
 }
 
 .navigation-menu-wrapper li,
-.menu-navigation-container li, .wp-admin li {
+.menu-navigation-container li, .wp-admin li:not(.wp-block-list-item) {
   list-style-type: none;
 }
 
-ul, .wp-block-list {
+ul {
   padding-left: 20px;
   margin: 0;
+}
+ul li {
+  list-style-type: disc;
+}
+
+ol li {
+  list-style-type: numeric;
 }
 
 hr {
@@ -2326,7 +2332,7 @@ Component
   margin: 0;
   border: 0;
   opacity: 0.6000000238;
-  border-top: 1px solid #1D0800;
+  border-top: 1px solid #1d0800;
   width: 100%;
 }
 .info-cards__cards {
@@ -2358,9 +2364,6 @@ Component
 .info-cards__content img {
   margin-bottom: 2rem;
 }
-.info-cards__content .subtitle {
-  margin-bottom: 0;
-}
 @media (max-width: 800px) {
   .info-cards__content h5 {
     font-size: 21px;
@@ -2380,6 +2383,9 @@ Component
   .info-cards__content p {
     font-size: 16px;
   }
+}
+.info-cards__content .minor {
+  margin-bottom: 0;
 }
 @media (min-width: 1400px) {
   .info-cards__content .minor {
@@ -3241,7 +3247,7 @@ Component
   position: relative;
 }
 .inline-hero .desktop-image {
-  height: 28.125rem;
+  height: 32rem;
   width: 100%;
   -webkit-mask-image: url(eafd52f7205a587c070f.svg);
           mask-image: url(eafd52f7205a587c070f.svg);

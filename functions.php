@@ -1,23 +1,26 @@
 <?php
 
 add_theme_support('align-wide');
-function remove_admin_login_header() {
+function remove_admin_login_header()
+{
     remove_action('wp_head', '_admin_bar_bump_cb');
 }
 add_action('get_header', 'remove_admin_login_header');
 
-function register_my_menu() {
+function register_my_menu()
+{
     register_nav_menu('navigation', 'Navigation');
-  }
-  add_action('after_setup_theme', 'register_my_menu');
+}
+add_action('after_setup_theme', 'register_my_menu');
 
 
 
-function cc_mime_types( $mimes ){
+function cc_mime_types($mimes)
+{
     $mimes['svg'] = 'image/svg+xml';
     return $mimes;
-  }
-  add_filter( 'upload_mimes', 'cc_mime_types' );
+}
+add_filter('upload_mimes', 'cc_mime_types');
 
 function hc_enqueue_assets()
 {
@@ -53,7 +56,8 @@ add_action('enqueue_block_assets', 'hc_enqueue_assets');
 include(get_theme_file_path("/block-renderer.php"));
 
 //update default color palette
-function my_theme_add_new_features() {
+function my_theme_add_new_features()
+{
     // The new colors we are going to add
     $newColorPalette = [
         [
@@ -68,6 +72,24 @@ function my_theme_add_new_features() {
         ],
     ];
     // Apply the color palette containing the original colors and 2 new colors:
-    add_theme_support( 'editor-color-palette', $newColorPalette);
+    add_theme_support('editor-color-palette', $newColorPalette);
 }
-add_action( 'after_setup_theme', 'my_theme_add_new_features' );
+add_action('after_setup_theme', 'my_theme_add_new_features');
+
+//override login logo
+function my_login_logo()
+{ ?>
+    <style type="text/css">
+        #login h1 a,
+        .login h1 a {
+            background-image: url('<?php echo get_stylesheet_directory_uri(); ?>/assets/images/navigation/logo.svg');
+            height: 65px;
+            width: 320px;
+            background-size: contain;
+            background-repeat: no-repeat;
+            padding-top: 30px;
+            display: block;
+        }
+    </style>
+<?php }
+add_action('login_enqueue_scripts', 'my_login_logo');
