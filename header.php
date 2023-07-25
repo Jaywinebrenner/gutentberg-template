@@ -45,7 +45,7 @@
 	<!-- MOBILE -->
 	<div 
 	class="navigation-menu-wrapper-mobile"
-	style="background-color: <?php the_field('header_background_color') ?>">
+	style="background-color: <?php the_field('header_background_color') ?>!important">
 		<div class="mobile-container">
 			<div class="hamburger-and-image-wrapper">
 				<a href="<?php echo site_url('/'); ?>">

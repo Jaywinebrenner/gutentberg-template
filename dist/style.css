@@ -779,6 +779,20 @@ textarea:focus {
   display: none !important;
 }
 
+.modal #gform_1 .gform_body li.gfield.gfield_error, .modal #gform_1 .gform_body .gform_wrapper li.gfield.gfield_error.gfield_contains_required.gfield_creditcard_warning {
+  background-color: transparent;
+  margin-bottom: 6px !important;
+  border-top: none;
+  border-bottom: none;
+  box-sizing: border-box;
+}
+.modal #gform_1 .gform_body .validation_message {
+  color: #D64936;
+  padding-top: 0;
+}
+.modal #gform_1 .gform_body li.gfield_error input:not([type=radio]):not([type=checkbox]):not([type=submit]):not([type=button]):not([type=image]):not([type=file]), .modal #gform_1 .gform_body .gform_wrapper li.gfield_error textarea {
+  border: 1px solid #D64936 !important;
+}
 .modal #gform_1 .gform_body input::-webkit-input-placeholder {
   font-family: Inter;
   font-size: 1rem !important;
@@ -787,7 +801,6 @@ textarea:focus {
   line-height: 135.023%;
   color: rgba(29, 8, 0, 0.5);
 }
-
 .modal #gform_1 .gform_body input::-moz-placeholder {
   font-family: Inter;
   font-size: 1rem !important;
@@ -796,7 +809,6 @@ textarea:focus {
   line-height: 135.023%;
   color: rgba(29, 8, 0, 0.5);
 }
-
 .modal #gform_1 .gform_body .gfield_label, .modal #gform_1 .gform_body input::placeholder {
   font-family: Inter;
   font-size: 1rem !important;
