@@ -168,6 +168,10 @@ textarea:focus {
 
 .modal #gform_1 .gform_body {
 
+  .gfield_required {
+    padding-left: 0;
+  }
+
   .gfield_required_text {
     font-family: Inter;
     font-size: 1rem !important;

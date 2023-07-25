@@ -796,6 +796,9 @@ textarea:focus {
   display: none;
 }
 
+.modal #gform_1 .gform_body .gfield_required {
+  padding-left: 0;
+}
 .modal #gform_1 .gform_body .gfield_required_text {
   font-family: Inter;
   font-size: 1rem !important;
