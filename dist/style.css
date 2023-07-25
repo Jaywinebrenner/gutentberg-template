@@ -807,6 +807,9 @@ textarea:focus {
     font-size: 0.875rem;
   }
 }
+.modal #gform_1 .gform_body .textarea {
+  height: 96px;
+}
 .modal #gform_1 .gform_body input {
   margin-bottom: 10px;
 }
@@ -882,6 +885,9 @@ textarea:focus {
   width: 100%;
 }
 
+.modal #gform_1 .gform_footer {
+  position: relative;
+}
 .modal #gform_1 .gform_footer .gform_button {
   text-transform: uppercase;
   padding: 0 1.3125rem;
@@ -896,7 +902,8 @@ textarea:focus {
   color: #D64936 !important;
   border: 1px solid #D64936;
   margin-left: 50%;
-  margin-bottom: 160px;
+  position: absolute;
+  transform: translateY(-103px);
 }
 @media (max-width: 800px) {
   .modal #gform_1 .gform_footer .gform_button {
@@ -1155,7 +1162,7 @@ html :where(.is-reusable) :where(.wp-block) {
   font-style: italic;
   color: rgba(29, 8, 0, 0.5);
   margin-left: 50%;
-  transform: translateY(-138px);
+  transform: translateY(-73px);
 }
 @media (max-width: 800px) {
   .modal-container__body .modal-in-touch {

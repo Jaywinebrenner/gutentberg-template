@@ -222,7 +222,7 @@ html :where(.is-reusable) :where(.wp-block) {
         font-style: italic;
         color: rgb(29, 8, 0, .5);
         margin-left: 50%;
-        transform: translateY(-138px);
+        transform: translateY(-73px);
         @media(max-width: $bp-small){
           margin-left: unset;
         }
