@@ -2,11 +2,9 @@
 form {
   display: flex;
   flex-direction: column;
-
   input[type="button"] {
     line-height: normal;
   }
-
 
   .field-wrap {
     position: relative;
@@ -51,7 +49,7 @@ textarea::placeholder {
   padding: 7px;
   line-height: 28px;
   font-weight: 100;
-  color: $black;
+  color: rgb(29, 8, 0, .5)!important;
   background-color: $white;
   appearance: none;
   border-radius: 0;
@@ -65,7 +63,7 @@ textarea {
 
 input,
 textarea {
-  border: 1px solid $grey;
+  border: 1px solid rgb(29, 8, 0, .5);
 }
 
 textarea {
@@ -151,3 +149,128 @@ textarea:focus {
     -webkit-transform: scale(1);
     transform: scale(1);
 }
+
+
+// CONTACT FORM SPECIFIC STYLES
+#gform_1 .validation_error {
+  display: none!important;
+}
+#gform_1 .gform_heading {
+  display: none!important;
+}
+#gform_1 .gform_body{
+
+  input::placeholder {
+
+}
+
+  .gfield_label, input::placeholder {
+    font-family: Inter;
+    font-size: 1rem!important;
+    font-style: normal;
+    font-weight: 400!important;
+    line-height: 135.023%; 
+    color: rgb(29, 8, 0, .5);
+    @media (max-width: $bp-small) {
+      font-size: 0.875rem;
+    }
+  }
+
+  input {
+    margin-bottom: 10px;
+  }
+  .gfield_required {
+    color: rgb(29, 8, 0, .5)!important;
+    margin-left: 0!important;
+  }
+  #field_1_6 {
+    padding-right: 4px;
+    @media(max-width: $bp-small){
+      padding-right: 0;
+    }
+  }
+  
+  .gform_footer {
+    display: flex;
+  }
+    .gform_page_footer {
+    
+  }
+  li {
+    margin-bottom: 0;
+  }
+  li:nth-child( odd ) {
+    padding-right: 63px;
+    @media(max-width: $bp-small){
+      padding-right: 0;
+    }
+  }
+  .ginput_container_textarea {
+    padding-right: 12px;
+    @media(max-width: $bp-small){
+      padding-right: 0;
+    }
+  }
+  .left {
+    display: inline-block;
+    vertical-align: top;
+    width: 50%;
+    padding-right: 16px;
+    float: none;
+    @media(max-width: $bp-small){
+      width: 100%;
+      padding-right: 0;
+    }
+    input {
+      width: 100%;
+    }
+  }
+  .right {
+    display: inline-block;
+    vertical-align: top;
+    width: 50%;
+    padding-right: 16px;
+    float: none;
+    @media(max-width: $bp-small){
+      width: 100%;
+      padding-right: 0;
+    }
+    input {
+      width: 100%;
+    }
+  }
+  .gf_left_half {
+
+  }
+}
+
+#gform_1 .gform_footer{
+  .gform_button {
+    text-transform: uppercase;
+    padding: 0.5rem 1.3125rem;
+    letter-spacing: 0.63px;
+    transition: all 300ms;
+    font-size: 1rem;
+    display: inline-block;
+    text-align: center;
+    font-weight: 600;
+    border: 1px solid $color-licorice;
+    border-radius: 50px;
+    color: $color-red!important;
+    border: 1px solid $color-red;
+    margin-left: 50%;
+    margin-bottom: 160px;
+    @media(max-width: $bp-small){
+      font-size: 0.875rem;
+      margin-left: unset;
+      width: auto;
+    }
+    &:hover {
+      background-color: $color-red;
+      color: $color-white!important;
+      border: 1px solid $color-red;
+      cursor: pointer;
+    }
+  }
+}
+    // End contact specific styles
