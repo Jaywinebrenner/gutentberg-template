@@ -13,6 +13,15 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="http://gmpg.org/xfn/11">
 	<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
+	<!-- favicon -->
+	<link rel="apple-touch-icon" sizes="180x180" href="<?php echo get_template_directory_uri();?>/favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="<?php echo get_template_directory_uri();?>/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="<?php echo get_template_directory_uri();?>/favicon/favicon-16x16.png">
+	<link rel="manifest" href="<?php echo get_template_directory_uri();?>/favicon/site.webmanifest">
+	<link rel="mask-icon" href="<?php echo get_template_directory_uri();?>/favicon/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="theme-color" content="#ffffff">
+	<!-- end favicon -->
 	<link rel="stylesheet" href="<?php echo get_template_directory_uri() . '/assets/css/style.css' ?>">
 	<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
 	<?php wp_head(); ?>
@@ -21,10 +30,7 @@
 <body <?php body_class('fade'); ?>>
 
 	<!-- DESKTOP -->
-	<div 
-	class="background-color-band"
-	style="background-color: <?php the_field('header_background_color') ?>"
-	>
+	<div class="background-color-band" style="background-color: <?php the_field('header_background_color') ?>">
 		<div class="navigation-menu-wrapper">
 			<a class="nav-icon" href="<?php echo site_url('/'); ?>">
 				<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/navigation/logo.svg" />
@@ -43,9 +49,7 @@
 	</div>
 
 	<!-- MOBILE -->
-	<div 
-	class="navigation-menu-wrapper-mobile"
-	style="background-color: <?php the_field('header_background_color') ?>!important">
+	<div class="navigation-menu-wrapper-mobile" style="background-color: <?php the_field('header_background_color') ?>!important">
 		<div class="mobile-container">
 			<div class="hamburger-and-image-wrapper">
 				<a href="<?php echo site_url('/'); ?>">
@@ -88,7 +92,7 @@
 					<p class="modal-in-touch minor">We will be in touch within one business day.</p>
 				</div>
 
-				<button class="modal-close modal-exit">					
+				<button class="modal-close modal-exit">
 					<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/modal/modal-x.svg" />
 				</button>
 			</div>
