@@ -43,7 +43,9 @@
 	</div>
 
 	<!-- MOBILE -->
-	<div class="navigation-menu-wrapper-mobile <?php echo is_front_page() ? 'linen-bg' : ''; ?>">
+	<div 
+	class="navigation-menu-wrapper-mobile"
+	style="background-color: <?php the_field('header_background_color') ?>">
 		<div class="mobile-container">
 			<div class="hamburger-and-image-wrapper">
 				<a href="<?php echo site_url('/'); ?>">

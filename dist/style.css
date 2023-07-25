@@ -1131,7 +1131,9 @@ html :where(.is-reusable) :where(.wp-block) {
   position: relative;
   padding: 53px 80px;
   width: 89vw;
+  height: 89vh;
   max-width: 1800px;
+  overflow-y: scroll;
 }
 @media (max-width: 800px) {
   .modal-container {
