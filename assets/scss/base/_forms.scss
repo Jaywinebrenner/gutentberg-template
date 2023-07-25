@@ -168,6 +168,15 @@ textarea:focus {
 
 .modal #gform_1 .gform_body {
 
+  .gfield_required_text {
+    font-family: Inter;
+    font-size: 1rem !important;
+    font-style: normal;
+    font-weight: 400 !important;
+    line-height: 135.023%;
+    color: rgba(29, 8, 0, 0.5);
+  }
+
   .gform_fields  {
     @media(max-width: $bp-small){
       display: block;
@@ -183,7 +192,7 @@ textarea:focus {
   .ginput_container_textarea {
     padding-right: 0!important;
   }
-  #field_1_9 {
+  #field_1_4 {
     margin-top: -42px;
     @media(max-width: $bp-small){
       margin-top: 0;

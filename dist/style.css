@@ -796,6 +796,14 @@ textarea:focus {
   display: none;
 }
 
+.modal #gform_1 .gform_body .gfield_required_text {
+  font-family: Inter;
+  font-size: 1rem !important;
+  font-style: normal;
+  font-weight: 400 !important;
+  line-height: 135.023%;
+  color: rgba(29, 8, 0, 0.5);
+}
 @media (max-width: 800px) {
   .modal #gform_1 .gform_body .gform_fields {
     display: block;
@@ -809,11 +817,11 @@ textarea:focus {
 .modal #gform_1 .gform_body .ginput_container_textarea {
   padding-right: 0 !important;
 }
-.modal #gform_1 .gform_body #field_1_9 {
+.modal #gform_1 .gform_body #field_1_4 {
   margin-top: -42px;
 }
 @media (max-width: 800px) {
-  .modal #gform_1 .gform_body #field_1_9 {
+  .modal #gform_1 .gform_body #field_1_4 {
     margin-top: 0;
   }
 }
