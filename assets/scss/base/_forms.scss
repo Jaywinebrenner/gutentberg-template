@@ -192,7 +192,8 @@ textarea:focus {
   .ginput_container_textarea {
     padding-right: 0!important;
   }
-  #field_1_4 {
+
+  .gfield--type-email {
     margin-top: -42px;
     @media(max-width: $bp-small){
       margin-top: 0;

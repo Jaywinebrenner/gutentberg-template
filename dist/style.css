@@ -817,11 +817,11 @@ textarea:focus {
 .modal #gform_1 .gform_body .ginput_container_textarea {
   padding-right: 0 !important;
 }
-.modal #gform_1 .gform_body #field_1_4 {
+.modal #gform_1 .gform_body .gfield--type-email {
   margin-top: -42px;
 }
 @media (max-width: 800px) {
-  .modal #gform_1 .gform_body #field_1_4 {
+  .modal #gform_1 .gform_body .gfield--type-email {
     margin-top: 0;
   }
 }
