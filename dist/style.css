@@ -792,19 +792,45 @@ textarea:focus {
   display: none !important;
 }
 
-.modal #gform_1 .gform_body li.gfield.gfield_error, .modal #gform_1 .gform_body .gform_wrapper li.gfield.gfield_error.gfield_contains_required.gfield_creditcard_warning {
-  background-color: transparent;
-  margin-bottom: 6px !important;
-  border-top: none;
-  border-bottom: none;
-  box-sizing: border-box;
+.gform_wrapper.gravity-theme .gform_validation_errors {
+  display: none;
+}
+
+@media (max-width: 800px) {
+  .modal #gform_1 .gform_body .gform_fields {
+    display: block;
+  }
+}
+@media (max-width: 800px) {
+  .modal #gform_1 .gform_body .ginput_container {
+    width: 100% !important;
+  }
+}
+.modal #gform_1 .gform_body .ginput_container_textarea {
+  padding-right: 0 !important;
+}
+.modal #gform_1 .gform_body #field_1_9 {
+  margin-top: -42px;
+}
+@media (max-width: 800px) {
+  .modal #gform_1 .gform_body #field_1_9 {
+    margin-top: 0;
+  }
+}
+@media (max-width: 800px) {
+  .modal #gform_1 .gform_body .gfield {
+    margin-bottom: 32px;
+  }
+}
+.modal #gform_1 .gform_body .ginput_container {
+  width: 95%;
 }
 .modal #gform_1 .gform_body .validation_message {
-  color: #D64936;
+  background: transparent;
+  border: none;
+  padding-left: 0;
+  margin-top: 0;
   padding-top: 0;
-}
-.modal #gform_1 .gform_body li.gfield_error input:not([type=radio]):not([type=checkbox]):not([type=submit]):not([type=button]):not([type=image]):not([type=file]), .modal #gform_1 .gform_body .gform_wrapper li.gfield_error textarea {
-  border: 1px solid #D64936 !important;
 }
 .modal #gform_1 .gform_body input::-webkit-input-placeholder {
   font-family: Inter;
@@ -938,14 +964,14 @@ textarea:focus {
   border: 1px solid #D64936;
   margin-left: 50%;
   position: absolute;
-  transform: translateY(-103px);
+  transform: translate(14px, -60px);
 }
 @media (max-width: 800px) {
   .modal #gform_1 .gform_footer .gform_button {
     font-size: 0.875rem;
     margin-left: unset;
     width: auto;
-    transform: translateY(12px);
+    transform: translateY(68px);
   }
 }
 .modal #gform_1 .gform_footer .gform_button:hover {
@@ -1204,13 +1230,14 @@ html :where(.is-reusable) :where(.wp-block) {
   font-style: italic;
   color: rgba(29, 8, 0, 0.5);
   margin-left: 50%;
-  transform: translateY(-73px);
+  transform: translate(14px, -51px);
 }
 @media (max-width: 800px) {
   .modal-container__body .modal-in-touch {
     margin-left: unset;
     margin-top: 130px;
     margin-bottom: 69px;
+    transform: translate(2px, -51px);
   }
 }
 .modal-container .subtitle {

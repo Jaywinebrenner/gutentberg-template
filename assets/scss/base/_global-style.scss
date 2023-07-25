@@ -218,15 +218,17 @@ html :where(.is-reusable) :where(.wp-block) {
     }
     &__body {
       position: relative;
+
       .modal-in-touch {
         font-style: italic;
         color: rgb(29, 8, 0, .5);
         margin-left: 50%;
-        transform: translateY(-73px);
+        transform: translate(14px, -51px);
         @media(max-width: $bp-small){
           margin-left: unset;
           margin-top: 130px;
           margin-bottom: 69px;
+          transform: translate(2px, -51px);
         }
       }
     }
