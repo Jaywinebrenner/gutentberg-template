@@ -143,8 +143,6 @@ html :where(.is-reusable) :where(.wp-block) {
 
 //Tweak Page Hero for Meet Page
 .page-id-626 #page #main .content .page-hero .desktop-image {
-  // height: unset; 
-  // max-height: 45vh;
   min-height: 51vh!important;
 }
 
@@ -167,7 +165,7 @@ html :where(.is-reusable) :where(.wp-block) {
 }
 
 
-// //modal
+// Contact Modal
 .modal {
   position: fixed;
   width: 100vw;
@@ -196,15 +194,41 @@ html :where(.is-reusable) :where(.wp-block) {
     border-radius: 10px;
     background: #fff;
     position: relative;
-    padding: 53px;
+    padding: 53px 80px;
     width: 89vw;
-    height: 65vh;
+    height: 89vh;
     max-width: 1800px;
+    @media(max-height: 750px){
+      overflow-y: scroll;
+    }
     @media(max-width: $bp-small){
       height: 100vh;
       width: 100vw;
       border-radius: 0;
       transform: translatey(100px);
+      overflow: auto;
+      padding:  53px 20px 20px 20px;
+    }
+    &__top {
+      h3 {
+        margin-bottom: 32px;
+        font-weight: 400;
+        color: $color-licorice;
+      }
+    }
+    &__body {
+      position: relative;
+      .modal-in-touch {
+        font-style: italic;
+        color: rgb(29, 8, 0, .5);
+        margin-left: 50%;
+        transform: translateY(-73px);
+        @media(max-width: $bp-small){
+          margin-left: unset;
+          margin-top: 130px;
+          margin-bottom: 69px;
+        }
+      }
     }
     .subtitle {
       margin-bottom: 2.25rem;
@@ -220,7 +244,12 @@ html :where(.is-reusable) :where(.wp-block) {
     border: 0px;
     font-weight: bold;
     cursor: pointer;
+    @media(max-width: $bp-small){
+      right: 25px;
+      top: 25px;
+    }
   }
 }
+
 
 

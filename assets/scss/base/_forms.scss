@@ -2,18 +2,16 @@
 form {
   display: flex;
   flex-direction: column;
-
   input[type="button"] {
     line-height: normal;
   }
-
 
   .field-wrap {
     position: relative;
   }
 
   .active-label {
-    background-color: $brand;
+    background-color: $color-licorice;
     color: $white;
     font-size: .6rem;
     padding: 5px !important;
@@ -46,15 +44,17 @@ input::placeholder,
 textarea,
 textarea::placeholder {
   font-size: 0.9em;
-  font-family: $sans;
+  font-family: Inter;
   margin-bottom: 20px;
-  padding: 7px;
   line-height: 28px;
   font-weight: 100;
-  color: $black;
+  color: rgb(29, 8, 0, .5)!important;
   background-color: $white;
   appearance: none;
   border-radius: 0;
+}
+textarea::placeholder {
+  transform: translateY(-6px)
 }
 
 button,
@@ -65,7 +65,7 @@ textarea {
 
 input,
 textarea {
-  border: 1px solid $grey;
+  border: 1px solid rgb(29, 8, 0, .5);
 }
 
 textarea {
@@ -75,7 +75,7 @@ textarea {
 
 input:focus,
 textarea:focus {
-  border-color: $brand !important;
+  border-color: rgb(29, 8, 0, .5);
 }
 
 .nf-form-fields-required,
@@ -85,7 +85,7 @@ textarea:focus {
 }
 
 .nf-error-msg {
-  font-family: $sans;
+  font-family: Inter;
   font-size: 0.8rem;
 }
 
@@ -94,7 +94,6 @@ textarea:focus {
 [type="radio"]:checked,
 [type="radio"]:not(:checked) {
     position: absolute;
-    // left: -9999px;
     border: 0;
     appearance: none;
     height: 20px;
@@ -151,3 +150,156 @@ textarea:focus {
     -webkit-transform: scale(1);
     transform: scale(1);
 }
+
+
+
+
+
+// CONTACT FORM SPECIFIC STYLES
+.modal #gform_1 .validation_error {
+  display: none!important;
+}
+.modal #gform_1 .gform_heading {
+  display: none!important;
+}
+.modal #gform_1 .gform_body {
+
+  // ERROR STYLES
+  li.gfield.gfield_error, .gform_wrapper li.gfield.gfield_error.gfield_contains_required.gfield_creditcard_warning {
+    background-color: transparent;
+    margin-bottom: 6px!important;
+    border-top: none;
+    border-bottom: none;
+    // padding-bottom: 6px;
+    // padding-top: 8px;
+    box-sizing: border-box;
+  }
+  .validation_message {
+    color: $color-red;
+    padding-top: 0;
+  }
+  li.gfield_error input:not([type=radio]):not([type=checkbox]):not([type=submit]):not([type=button]):not([type=image]):not([type=file]), .gform_wrapper li.gfield_error textarea {
+    border: 1px solid $color-red!important;
+  }
+
+  .gfield_label, input::placeholder {
+    font-family: Inter;
+    font-size: 1rem!important;
+    font-style: normal;
+    font-weight: 400!important;
+    line-height: 135.023%; 
+    color: rgb(29, 8, 0, .5);
+    @media (max-width: $bp-small) {
+      font-size: 0.875rem;
+    }
+  }
+
+  .textarea {
+    height: 96px;
+  }
+
+  input {
+    margin-bottom: 10px;
+  }
+  input[type=text], input[type=text] {
+    font-family: Inter;
+    font-size: 1rem !important;
+  }
+  .gfield_required {
+    color: rgb(29, 8, 0, .5)!important;
+    margin-left: 0!important;
+  }
+  #field_1_6 {
+    padding-right: 4px;
+    @media(max-width: $bp-small){
+      padding-right: 0;
+    }
+  }
+  
+  li {
+    margin-bottom: 0;
+  }
+  //LEFT COL
+  li:nth-child( -n + 4 ) {
+    display: inline-block;
+    vertical-align: top;
+    width: 50%;
+    padding-right: 16px;
+    float: left;
+    padding-right: 63px;
+    @media(max-width: $bp-small){
+      width: 100%;
+      padding-right: 0;
+    }
+  }
+  // RIGHT COL
+  li:nth-child( n + 5 ) {
+    display: inline-block;
+    vertical-align: top;
+    width: 50%;
+    padding-right: 16px;
+    float: none;
+    @media(max-width: $bp-small){
+      width: 100%;
+      padding-right: 0;
+    }
+  }
+  .ginput_container_textarea {
+    padding-right: 12px;
+    @media(max-width: $bp-small){
+      padding-right: 0;
+    }
+  }
+  .left {
+    @media(max-width: $bp-small){
+      width: 100%;
+      padding-right: 0;
+    }
+    input {
+      width: 100%;
+    }
+  }
+  .right {
+    @media(max-width: $bp-small){
+      width: 100%;
+      padding-right: 0;
+    }
+    input {
+      width: 100%;
+    }
+  }
+}
+
+.modal #gform_1 .gform_footer{
+  position: relative;
+  .gform_button {
+    text-transform: uppercase;
+    padding: 0 1.3125rem;
+    letter-spacing: 0.63px;
+    transition: all 300ms;
+    font-size: 1rem;
+    display: inline-block;
+    text-align: center;
+    font-weight: 600;
+    border: 1px solid $color-licorice;
+    border-radius: 50px;
+    color: $color-red!important;
+    border: 1px solid $color-red;
+    margin-left: 50%;
+    position: absolute;
+    transform: translateY(-103px);
+    @media(max-width: $bp-small){
+      font-size: 0.875rem;
+      margin-left: unset;
+      width: auto;
+      transform: translateY(12px);
+    }
+    &:hover {
+      background-color: $color-red;
+      color: $color-white!important;
+      border: 1px solid $color-red;
+      cursor: pointer;
+    }
+  }
+}
+    // End Contact Form specific styles

@@ -26,6 +26,9 @@
             @media (max-width: $bp-small) {
                 display: none;
             }
+            @media (min-width: 800px) and (max-width: 950px){
+                padding: 4rem 0;
+            }
             @media (min-width: 1700px) {
                 padding: 7rem 0;
             }
@@ -45,6 +48,9 @@
                 mask-size: cover;
                 mask-repeat: round;
                 mask-position: unset;
+                @media(min-height: 2400px){
+
+                }
             }
         }
         .mobile-image-wrapper {
@@ -74,7 +80,7 @@
     &__bottom {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-gap: 10rem;
+        grid-gap: 14rem;
         @media (max-width: $bp-small) {
             grid-template-columns: 1fr;
             grid-gap: 0;
@@ -82,17 +88,29 @@
             padding-top: 0;
         }
         .left {
-            @media(max-width: $bp-small){
-                text-align: center;
+            // @media(max-width: $bp-small){
+            //     text-align: center;
+            // }
+            h3 {
+                padding-right: 17%;
+                @media(max-width: $bp-small){
+                    padding-right: 0;
+                    font-size: 1.6rem;
+                }
             }
         }
         .right {
+            transform: translatey(-1rem);
             .accordion-item {
                 border-bottom: 1px solid rgb(29, 8, 0, 0.2);
                 &__title {
                     cursor: pointer;
                     display: flex;
                     justify-content: space-between;
+                    // h4 {
+                    //     padding-top: 0!important;
+                    // }
+
                     .chevron {
                         transition: transform 0.3s ease;
                         margin-right: 10px;
@@ -109,7 +127,7 @@
                         margin: 0;
                         padding: 1.25rem 0;
                         @media (max-width: $bp-small) {
-                            padding: 2.6875rem 0;
+                            padding: 2rem 0;
                         }
                     }
                 }
