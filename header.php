@@ -83,7 +83,7 @@
 				</div>
 				<div class="modal-container__body">
 					<?php
-					echo do_shortcode('[gravityform id="1" title="false"]');
+					echo do_shortcode('[gravityform id="1" title="false" ajax="true"]');
 					?>
 					<p class="modal-in-touch minor">We will be in touch within one business day.</p>
 				</div>
