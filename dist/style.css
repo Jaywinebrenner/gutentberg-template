@@ -2414,6 +2414,9 @@ Component
 .info-cards.hidehr hr {
   display: none;
 }
+.info-cards.hidehr .info-cards__card {
+  gap: 0;
+}
 .info-cards hr {
   margin: 0;
   border: 0;
