@@ -1,7 +1,7 @@
 html,
 button {
   font-family: $body;
-  font-size: clamp(10px, 0.9vw, 19px);
+  font-size: clamp(10px, 0.9vw, 18px);
   color: $color-licorice;
 
   @media (max-width: $bp-small) {
