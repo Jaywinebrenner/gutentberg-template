@@ -223,13 +223,6 @@
                 color: $color-red;
                 cursor: pointer;
             }
-            &:last-child {
-                // border-bottom: none;
-                a {
-                    // padding: 0.5rem 1.3125rem;
-                }
-            }
-
             a {
                 padding: 1.625rem 0;
             }
@@ -376,89 +369,6 @@
         }
     }
 }
-
-// // NEW ABOVE------------------------------
-
-// .navigation {
-//     padding: 5.625rem 0;
-//     z-index: 1000;
-//     position: absolute;
-//     left: 0;
-//     right: 0;
-//     margin-left: auto;
-//     margin-right: auto;
-
-//     display: none;
-//     @media(max-width:$bp-small){
-//         display:none;
-//     }
-//     .btn_red p {
-//         &:hover {
-//             color: $color-linen!important;
-//         }
-//     }
-//     .navigation-wrapper {
-//         display: grid;
-//         grid-template-columns: 1fr 8fr;
-//         &__left {
-//             width: 22.625rem;
-//             margin-right: 3.5rem;
-//             img {
-//                 width: 300px;
-//             }
-//         }
-//         &__right {
-//             display: flex;
-//             justify-content: space-around;
-//             align-items: center;
-//         }
-//         &__link-with-submenu {
-//             position: relative;
-//             .submenu {
-//                 background-color: $color-white;
-//                 position: absolute;
-//                 padding: 1.5625rem 1.5625rem 0 1.5625rem;
-//                 display: none;
-//                 width: 13.4375rem;
-//                 &:hover {
-//                     display: block;
-//                 }
-//                 &__item {
-//                     p {
-//                         margin-bottom: 1.5625rem;
-//                     }
-//                 }
-//             }
-//             p {
-//                 // transition: .3s;
-//                 cursor: pointer;
-//                 &:hover {
-//                     color: $color-red;
-//                 }
-//                 &:hover ~ .submenu {
-//                     transition: .3s;
-//                     display: block;
-//                 }
-//                 margin-bottom: 0;
-//             }
-//         }
-//         &__link {
-//             position: relative;
-//             p {
-//                 transition: .3s;
-//                 &:hover {
-//                     color: $color-red;
-//                 }
-//                 margin-bottom: 0;
-//             }
-//         }
-//         &__link.btn_red {
-//             transition: none;
-//         }
-//     }
-// }
-
-// MOBILE-----------------------------------|
 
 .navigation-mobile {
     display: none;

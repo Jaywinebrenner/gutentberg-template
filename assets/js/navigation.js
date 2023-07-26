@@ -53,7 +53,7 @@ export default class Navigation {
 
                     // CSS necessary to open the Nav Menu
                     navigationMenu.fadeIn();
-                    mobileWrapper.css({"background-color": "#F7F4F0"})
+                    // mobileWrapper.css({"background-color": "#F7F4F0"})
                     mobileWrapper.css({"z-index": "1000"})
                     mobileColorBand.css({"display": "none"})
                     $(".mobile-container").css({"background-color": "white"});
@@ -71,7 +71,7 @@ export default class Navigation {
                     navigationMenu.css({"display": "none"});
                     $(".mobile-container").css({"background-color": "transparent"});
                     mobileWrapper.css({"z-index": "1"})
-                    mobileWrapper.css({"background-color": "transparent"})
+                    // mobileWrapper.css({"background-color": "transparent"})
                     mobileColorBand.css({"display": "block"})
                     $(":root").css("overflow", "visible");
                     $(":root").css("height", "unset");
