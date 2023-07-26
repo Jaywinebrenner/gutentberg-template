@@ -34,6 +34,24 @@ body {
   }
 }
 
+body.disable-scroll {
+  overflow: hidden;
+  height: 100%;
+}
+:root.disable-scroll {
+  overflow: hidden;
+  height: 100%;
+}
+
+body.enable-scroll {
+  overflow: auto;
+  height: auto;
+}
+:root.enable-scroll {
+  overflow: auto;
+  height: auto;
+}
+
 .container {
   max-width: 1400px;
   margin: auto;
@@ -237,8 +255,8 @@ html :where(.is-reusable) :where(.wp-block) {
         @media(max-width: $bp-small){
           margin-left: unset;
           margin-top: 130px;
-          margin-bottom: 69px;
-          transform: translate(2px, -112px);
+          margin-bottom: 100px;
+          transform: translate(2px, -45px);
         }
       }
     }
