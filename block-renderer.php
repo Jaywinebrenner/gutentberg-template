@@ -481,6 +481,30 @@ function init_acf_fields()
                 )
             )
         ));
+
+        // register source thank you
+        acf_register_block(array(
+            'name'              => 'thank-you',
+            'title'             => __('Thank You'),
+            'description'       => __('Thank You'),
+            'render_callback'   => 'block_renderer',
+            'category'          => 'formatting',
+            'icon'              => 'admin-comments',
+            'align'           => 'full',
+            'supports'        => array(
+                'align' => array('full'),
+                'jsx'             => true,
+            ),
+            'keywords'          => array('Thank You'),
+            'example'  => array(
+                'attributes' => array(
+                    'mode' => 'preview',
+                    'data' => array(
+                        'preview_image' => [],
+                    )
+                )
+            )
+        ));
     }
 }
 

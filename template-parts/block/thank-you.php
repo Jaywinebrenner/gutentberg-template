@@ -1,29 +1,27 @@
 <?php
 
 /**
- * Block Name: Image Content
+ * Block Name: Thank You
  *
- * This is the template that displays the Image Content block.
+ * This is the template that displays the Thank You block.
  */
 
 // create id attribute for specific styling
-$id = 'image-content-' . $block['id'];
+$id = 'thank-you-' . $block['id'];
 if (isset($block['data']['preview_image'])) : ?>
-    <img src="<?php echo get_template_directory_uri() . '/assets/images/block-previews/image-content.png' ?>" alt="">
+    <img src="<?php echo get_template_directory_uri() . '/assets/images/block-previews/thank-you.png' ?>" alt="">
 <?php return;
 endif;
 ?>
 
 <section 
 id="<?php echo $id; ?>" 
-class="image-content container 
-<?php echo get_field('reverse_columns') ? "reverse-columns" : "" ?>
-">
-    <div class="image-content__left" style='order: <?php echo the_field('reverse_columns') ? "1" : "" ?>'>
+class="thank-you container">
+    <div class="thank-you__left">
         <InnerBlocks />
     </div>
 
-    <div class="image-content__right">
+    <div class="thank-you__right">
         <?php if (get_field('right_column')) : ?>
             <div class="image-wrapper parallax-wrapper">
                 <img src="<?php the_field('right_column'); ?>" alt="">
