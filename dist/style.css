@@ -861,9 +861,7 @@ textarea:focus {
 }
 .modal #gform_1 .gform_body .ginput_container_textarea {
   padding-right: 0 !important;
-}
-.modal #gform_1 .gform_body .gfield--type-email {
-  margin-top: -42px;
+  height: 20px;
 }
 @media (max-width: 800px) {
   .modal #gform_1 .gform_body .gfield--type-email {
@@ -1024,7 +1022,7 @@ textarea:focus {
     font-size: 0.875rem;
     margin-left: unset;
     width: auto;
-    transform: translateY(13px);
+    transform: translateY(79px);
   }
 }
 .modal #gform_1 .gform_footer .gform_button:hover {
@@ -1305,8 +1303,8 @@ html :where(.is-reusable) :where(.wp-block) {
   .modal-container__body .modal-in-touch {
     margin-left: unset;
     margin-top: 130px;
-    margin-bottom: 69px;
-    transform: translate(2px, -112px);
+    margin-bottom: 100px;
+    transform: translate(2px, -45px);
   }
 }
 .modal-container .subtitle {
@@ -3937,6 +3935,13 @@ Component
   max-width: 200px;
 }
 
+@media (max-width: 800px) {
+  .contact .container, .contact .wp-block-columns, .contact .echojobs_plugin {
+    max-width: unset;
+    margin: unset;
+    width: unset;
+  }
+}
 .contact__top {
   display: flex;
   margin-bottom: 6.25rem;
@@ -3954,6 +3959,7 @@ Component
 @media (max-width: 800px) {
   .contact__top .top-left p {
     margin-bottom: 1.625rem;
+    padding: 0 10%;
   }
 }
 @media (max-width: 800px) {
@@ -4005,7 +4011,18 @@ Component
 }
 @media (max-width: 800px) {
   .contact__body {
-    padding: 53px 20px 100px 20px;
+    padding: 53px 20px 152px 20px;
+    border-radius: 0;
+  }
+}
+.contact__body .tell-us {
+  font-weight: 600;
+  margin-bottom: 32px;
+  display: none;
+}
+@media (max-width: 800px) {
+  .contact__body .tell-us {
+    display: block;
   }
 }
 .contact__body .we-will-be-in-touch {
@@ -4018,7 +4035,7 @@ Component
 @media (max-width: 800px) {
   .contact__body .we-will-be-in-touch {
     margin-left: 0;
-    transform: translate(-2px, 24px);
+    transform: translate(-2px, 56px);
   }
 }
 .contact__body #gform_1 .validation_error {
@@ -4093,8 +4110,9 @@ Component
     width: 100% !important;
   }
 }
-.contact__body #gform_2 .gform_body .gfield--type-email {
-  margin-top: -42px;
+.contact__body #gform_2 .gform_body .ginput_container_textarea {
+  padding-right: 0 !important;
+  height: 20px;
 }
 @media (max-width: 800px) {
   .contact__body #gform_2 .gform_body .gfield--type-email {
@@ -4209,7 +4227,7 @@ Component
     font-size: 0.875rem;
     margin-left: unset;
     width: auto;
-    transform: translateY(13px);
+    transform: translateY(59px);
   }
 }
 .contact__body #gform_2 .gform_footer .gform_button:hover {

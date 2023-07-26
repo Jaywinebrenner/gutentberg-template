@@ -237,10 +237,10 @@ textarea:focus {
 
   .ginput_container_textarea {
     padding-right: 0!important;
+    height: 20px;
   }
 
   .gfield--type-email {
-    margin-top: -42px;
     @media(max-width: $bp-small){
       margin-top: 0;
     }
@@ -378,7 +378,7 @@ textarea:focus {
       font-size: 0.875rem;
       margin-left: unset;
       width: auto;
-      transform: translateY(13px);
+      transform: translateY(79px);
     }
     &:hover {
       background-color: $color-red;

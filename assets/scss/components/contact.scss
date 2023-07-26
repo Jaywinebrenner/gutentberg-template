@@ -2,6 +2,13 @@
 
 
 .contact {
+    .container {
+        @media(max-width: $bp-small){
+            max-width: unset; 
+            margin: unset; 
+            width: unset;
+        }
+    }
     &__top {
         display: flex;
         margin-bottom: 6.25rem;
@@ -15,6 +22,7 @@
             p{
                 @media(max-width: $bp-small){
                     margin-bottom: 1.625rem;
+                    padding: 0 10%;
                 }
             }
             h1 {
@@ -61,8 +69,17 @@
         border-radius: 10px;
         position: relative;
         @media(max-width: $bp-small){
-            // padding: 53px 20px;
-            padding: 53px 20px 100px 20px;
+            padding: 53px 20px 152px 20px;
+            border-radius: 0;
+        }
+        .tell-us {
+            font-weight: 600;
+            margin-bottom: 32px;
+            display: none;
+            @media(max-width: $bp-small){
+                display: block;
+            }
+
         }
         .we-will-be-in-touch {
             margin-left: 50%;
@@ -72,7 +89,7 @@
             color: rgb(29, 8, 0, .5);
             @media(max-width: $bp-small){
                 margin-left: 0;
-                transform: translate(-2px, 24px);
+                transform: translate(-2px, 56px);
             }
         }
         // FORM
@@ -156,11 +173,11 @@
             }
           
             .ginput_container_textarea {
-            //   padding-right: 0!important;
+              padding-right: 0!important;
+                height: 20px;
             }
           
             .gfield--type-email {
-              margin-top: -42px;
               @media(max-width: $bp-small){
                 margin-top: 0;
               }
@@ -250,7 +267,7 @@
                 font-size: 0.875rem;
                 margin-left: unset;
                 width: auto;
-                transform: translateY(13px);
+                transform: translateY(59px);
               }
               &:hover {
                 background-color: $color-red;

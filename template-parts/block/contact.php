@@ -28,6 +28,7 @@ $id = 'contact-' . $block['id'];
             </div>
         </div>
         <div class="contact__body">
+            <p class="tell-us">Tell us a little bit about yourself and what you would like to discuss.</p>
         <?php
             echo do_shortcode('[gravityform id="2" title="false" ajax="true"]');
             ?>
