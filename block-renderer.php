@@ -458,6 +458,29 @@ function init_acf_fields()
                 )
             )
         ));
+
+        // register source contact block
+        acf_register_block(array(
+            'name'              => 'contact',
+            'title'             => __('Contact'),
+            'description'       => __('Contact'),
+            'render_callback'   => 'block_renderer',
+            'category'          => 'formatting',
+            'icon'              => 'admin-comments',
+            'align'           => 'full',
+            'supports'        => array(
+                'align' => array('full'),
+            ),
+            'keywords'          => array('Contact'),
+            'example'  => array(
+                'attributes' => array(
+                    'mode' => 'preview',
+                    'data' => array(
+                        'preview_image' => [],
+                    )
+                )
+            )
+        ));
     }
 }
 
