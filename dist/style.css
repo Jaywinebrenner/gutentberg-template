@@ -2363,6 +2363,9 @@ Component
   opacity: 0.5;
 }
 
+.info-cards .hidehr {
+  display: none;
+}
 .info-cards hr {
   margin: 0;
   border: 0;

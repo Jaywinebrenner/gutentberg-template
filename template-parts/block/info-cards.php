@@ -13,7 +13,7 @@ if (isset($block['data']['preview_image'])) : ?>
 <?php return; endif;
 ?>
 
-<section id="<?php echo $id; ?>" class="info-cards container">
+<section id="<?php echo $id; ?>" class="info-cards container <?php echo $block['className']; ?>">
 
   <?php if (have_rows('cards')) : ?>
     <div class="info-cards__cards">
