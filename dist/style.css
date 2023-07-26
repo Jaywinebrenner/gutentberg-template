@@ -2411,11 +2411,18 @@ Component
   opacity: 0.5;
 }
 
-.info-cards.hidehr hr {
+.info-cards.employeelogin hr {
   display: none;
 }
-.info-cards.hidehr .info-cards__card {
+.info-cards.employeelogin .info-cards__card {
   gap: 0;
+}
+.info-cards.employeelogin img {
+  height: 3.125rem;
+  width: auto;
+}
+.info-cards.employeelogin p {
+  font-size: 1rem;
 }
 .info-cards hr {
   margin: 0;
