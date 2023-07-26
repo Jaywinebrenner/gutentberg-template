@@ -49,7 +49,7 @@ class Modal {
             //     const errorIcon = document.createElement('span');
             //     errorIcon.classList.add('error-icon');
             //     errorIcon.textContent = '⚠️';
-            //     input.parentNode.appendChild(errorIcon);
+            //     div.parentNode.appendChild(errorIcon);
             //   }
             // });
 
