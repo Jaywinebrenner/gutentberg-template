@@ -1096,23 +1096,23 @@ body.fade {
 }
 
 body.disable-scroll {
-  overflow: hidden !important;
-  height: 100% !important;
+  overflow: hidden;
+  height: 100%;
 }
 
 :root.disable-scroll {
-  overflow: hidden !important;
-  height: 100% !important;
+  overflow: hidden;
+  height: 100%;
 }
 
 body.enable-scroll {
-  overflow: auto !important;
-  height: auto !important;
+  overflow: auto;
+  height: auto;
 }
 
 :root.enable-scroll {
-  overflow: auto !important;
-  height: auto !important;
+  overflow: auto;
+  height: auto;
 }
 
 .container, .echojobs_plugin, .wp-block-columns {
@@ -3939,12 +3939,13 @@ Component
 
 .contact__top {
   display: flex;
-  margin-bottom: 100px;
+  margin-bottom: 6.25rem;
 }
 @media (max-width: 800px) {
   .contact__top {
     display: block;
     text-align: center;
+    margin-bottom: 5rem;
   }
 }
 .contact__top .top-left {
@@ -3952,7 +3953,12 @@ Component
 }
 @media (max-width: 800px) {
   .contact__top .top-left p {
-    margin-bottom: 32px;
+    margin-bottom: 1.625rem;
+  }
+}
+@media (max-width: 800px) {
+  .contact__top .top-left h1 {
+    margin-bottom: 1.625rem;
   }
 }
 .contact__top .top-right {
@@ -3962,8 +3968,19 @@ Component
 .contact__top .top-right .bold {
   font-weight: 600;
 }
+@media (max-width: 800px) {
+  .contact__top .top-right .bold {
+    margin-top: 1.875rem;
+    margin-bottom: 0.625rem;
+  }
+}
 .contact__top .top-right .address-wrapper {
   margin-bottom: 18px;
+}
+@media (max-width: 800px) {
+  .contact__top .top-right .address-wrapper {
+    margin-bottom: 0.625rem;
+  }
 }
 .contact__top .top-right .address-wrapper p {
   margin-bottom: 0;
@@ -3988,7 +4005,7 @@ Component
 }
 @media (max-width: 800px) {
   .contact__body {
-    padding: 53px 20px;
+    padding: 53px 20px 100px 20px;
   }
 }
 .contact__body .we-will-be-in-touch {
@@ -3997,6 +4014,12 @@ Component
   transform: translate(-64px, -54px);
   font-style: italic;
   color: rgba(29, 8, 0, 0.5);
+}
+@media (max-width: 800px) {
+  .contact__body .we-will-be-in-touch {
+    margin-left: 0;
+    transform: translate(-2px, 24px);
+  }
 }
 .contact__body #gform_1 .validation_error {
   display: none !important;

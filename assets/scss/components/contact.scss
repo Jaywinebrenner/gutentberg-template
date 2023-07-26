@@ -4,16 +4,22 @@
 .contact {
     &__top {
         display: flex;
-        margin-bottom: 100px;
+        margin-bottom: 6.25rem;
         @media(max-width: $bp-small){
             display: block;
             text-align: center;
+            margin-bottom: 5rem;
         }
         .top-left {
             flex: 1;
             p{
                 @media(max-width: $bp-small){
-                    margin-bottom: 32px;
+                    margin-bottom: 1.625rem;
+                }
+            }
+            h1 {
+                @media(max-width: $bp-small){
+                    margin-bottom: 1.625rem;
                 }
             }
         }
@@ -22,9 +28,16 @@
             flex-direction: column;
             .bold {
                 font-weight: 600;
+                @media(max-width: $bp-small){
+                    margin-top: 1.875rem;
+                    margin-bottom: 0.625rem
+                }
             }
             .address-wrapper {
                 margin-bottom: 18px;
+                @media(max-width: $bp-small){
+                    margin-bottom: 0.625rem
+                }
                 p {
                     margin-bottom: 0;
                 }
@@ -48,7 +61,8 @@
         border-radius: 10px;
         position: relative;
         @media(max-width: $bp-small){
-            padding: 53px 20px;
+            // padding: 53px 20px;
+            padding: 53px 20px 100px 20px;
         }
         .we-will-be-in-touch {
             margin-left: 50%;
@@ -56,6 +70,10 @@
             transform: translate(-64px, -54px);
             font-style: italic;
             color: rgb(29, 8, 0, .5);
+            @media(max-width: $bp-small){
+                margin-left: 0;
+                transform: translate(-2px, 24px);
+            }
         }
         // FORM
          #gform_1 .validation_error {

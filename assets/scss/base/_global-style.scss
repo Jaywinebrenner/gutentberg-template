@@ -35,21 +35,21 @@ body {
 }
 
 body.disable-scroll {
-  overflow: hidden!important;
-  height: 100%!important;
+  overflow: hidden;
+  height: 100%;
 }
 :root.disable-scroll {
-  overflow: hidden!important;
-  height: 100%!important;
+  overflow: hidden;
+  height: 100%;
 }
 
 body.enable-scroll {
-  overflow: auto!important;
-  height: auto!important;
+  overflow: auto;
+  height: auto;
 }
 :root.enable-scroll {
-  overflow: auto!important;
-  height: auto!important;
+  overflow: auto;
+  height: auto;
 }
 
 .container {
