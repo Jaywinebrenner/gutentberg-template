@@ -602,17 +602,17 @@ hr {
   cursor: pointer;
 }
 
-form {
+.gform_wrapper form {
   display: flex;
   flex-direction: column;
 }
-form input[type=button] {
+.gform_wrapper form input[type=button] {
   line-height: normal;
 }
-form .field-wrap {
+.gform_wrapper form .field-wrap {
   position: relative;
 }
-form .active-label {
+.gform_wrapper form .active-label {
   background-color: #1D0800;
   color: #FFFFFF;
   font-size: 0.6rem;
@@ -620,22 +620,19 @@ form .active-label {
   z-index: 1;
   display: block;
 }
-form .textarea-wrap label {
+.gform_wrapper form .textarea-wrap label {
   top: 12px;
   bottom: auto;
 }
-
-.list-radio-wrap div > label {
+.gform_wrapper form .list-radio-wrap div > label {
   position: static;
   color: #2a2a2a;
   font-weight: 500 !important;
 }
-
-.list-radio-wrap li:before {
+.gform_wrapper form .list-radio-wrap li:before {
   content: none !important;
 }
-
-input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+.gform_wrapper form input::-webkit-input-placeholder, .gform_wrapper form textarea::-webkit-input-placeholder {
   font-size: 1rem;
   font-family: Inter;
   margin-bottom: 20px;
@@ -647,8 +644,7 @@ input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
           appearance: none;
   border-radius: 0;
 }
-
-input::-moz-placeholder, textarea::-moz-placeholder {
+.gform_wrapper form input::-moz-placeholder, .gform_wrapper form textarea::-moz-placeholder {
   font-size: 1rem;
   font-family: Inter;
   margin-bottom: 20px;
@@ -660,11 +656,10 @@ input::-moz-placeholder, textarea::-moz-placeholder {
        appearance: none;
   border-radius: 0;
 }
-
-input,
-input::placeholder,
-textarea,
-textarea::placeholder {
+.gform_wrapper form input,
+.gform_wrapper form input::placeholder,
+.gform_wrapper form textarea,
+.gform_wrapper form textarea::placeholder {
   font-size: 1rem;
   font-family: Inter;
   margin-bottom: 20px;
@@ -677,53 +672,43 @@ textarea::placeholder {
           appearance: none;
   border-radius: 0;
 }
-
-textarea::-webkit-input-placeholder {
+.gform_wrapper form textarea::-webkit-input-placeholder {
   transform: translateY(-6px);
 }
-
-textarea::-moz-placeholder {
+.gform_wrapper form textarea::-moz-placeholder {
   transform: translateY(-6px);
 }
-
-textarea::placeholder {
+.gform_wrapper form textarea::placeholder {
   transform: translateY(-6px);
 }
-
-button,
-input,
-textarea {
+.gform_wrapper form button,
+.gform_wrapper form input,
+.gform_wrapper form textarea {
   outline: none;
 }
-
-input,
-textarea {
+.gform_wrapper form input,
+.gform_wrapper form textarea {
   border: 1px solid rgba(29, 8, 0, 0.5);
 }
-
-textarea {
+.gform_wrapper form textarea {
   max-height: 150px;
   resize: none;
 }
-
-input:focus,
-textarea:focus {
+.gform_wrapper form input:focus,
+.gform_wrapper form textarea:focus {
   border-color: rgba(29, 8, 0, 0.5);
 }
-
-.nf-form-fields-required,
-.nf-form-title,
-.ninja-forms-req-symbol {
+.gform_wrapper form .nf-form-fields-required,
+.gform_wrapper form .nf-form-title,
+.gform_wrapper form .ninja-forms-req-symbol {
   display: none;
 }
-
-.nf-error-msg {
+.gform_wrapper form .nf-error-msg {
   font-family: Inter;
   font-size: 0.8rem;
 }
-
-[type=radio]:checked,
-[type=radio]:not(:checked) {
+.gform_wrapper form [type=radio]:checked,
+.gform_wrapper form [type=radio]:not(:checked) {
   position: absolute;
   border: 0;
   -webkit-appearance: none;
@@ -732,13 +717,11 @@ textarea:focus {
   height: 20px;
   margin: 0 !important;
 }
-
-.list-checkbox-wrap .nf-field-element li input, .list-radio-wrap .nf-field-element li input {
+.gform_wrapper form .list-checkbox-wrap .nf-field-element li input, .gform_wrapper form .list-radio-wrap .nf-field-element li input {
   min-width: 100%;
 }
-
-[type=radio]:checked + label,
-[type=radio]:not(:checked) + label {
+.gform_wrapper form [type=radio]:checked + label,
+.gform_wrapper form [type=radio]:not(:checked) + label {
   position: relative;
   padding-left: 28px;
   cursor: pointer;
@@ -747,9 +730,8 @@ textarea:focus {
   color: #575757;
   margin-left: 0 !important;
 }
-
-[type=radio]:checked + label:before,
-[type=radio]:not(:checked) + label:before {
+.gform_wrapper form [type=radio]:checked + label:before,
+.gform_wrapper form [type=radio]:not(:checked) + label:before {
   content: "";
   position: absolute;
   left: 0;
@@ -760,9 +742,8 @@ textarea:focus {
   border-radius: 100%;
   background: transparent;
 }
-
-[type=radio]:checked + label:after,
-[type=radio]:not(:checked) + label:after {
+.gform_wrapper form [type=radio]:checked + label:after,
+.gform_wrapper form [type=radio]:not(:checked) + label:after {
   content: "";
   width: 11px;
   height: 11px;
@@ -773,13 +754,11 @@ textarea:focus {
   border-radius: 100%;
   transition: all 0.2s ease;
 }
-
-[type=radio]:not(:checked) + label:after {
+.gform_wrapper form [type=radio]:not(:checked) + label:after {
   opacity: 0;
   transform: scale(0);
 }
-
-[type=radio]:checked + label:after {
+.gform_wrapper form [type=radio]:checked + label:after {
   opacity: 1;
   transform: scale(1);
 }
