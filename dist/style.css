@@ -639,7 +639,6 @@ hr {
   line-height: 28px;
   font-weight: 300;
   color: rgba(29, 8, 0, 0.4) !important;
-  background-color: #FFFFFF;
   -webkit-appearance: none;
           appearance: none;
   border-radius: 0;
@@ -651,7 +650,6 @@ hr {
   line-height: 28px;
   font-weight: 300;
   color: rgba(29, 8, 0, 0.4) !important;
-  background-color: #FFFFFF;
   -moz-appearance: none;
        appearance: none;
   border-radius: 0;
@@ -666,7 +664,6 @@ hr {
   line-height: 28px;
   font-weight: 300;
   color: rgba(29, 8, 0, 0.4) !important;
-  background-color: #FFFFFF;
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
@@ -1321,6 +1318,20 @@ html :where(.is-reusable) :where(.wp-block) {
     right: 25px;
     top: 25px;
   }
+}
+
+.gfield_error input {
+  background-image: url(4df9ae3f32291d1c8617.svg);
+  background-position: 98% 50%;
+  background-repeat: no-repeat;
+  background-size: auto;
+}
+
+.gfield_error textarea {
+  background-image: url(4df9ae3f32291d1c8617.svg);
+  background-position: 98% 10%;
+  background-repeat: no-repeat;
+  background-size: auto;
 }
 
 .wp-caption img {

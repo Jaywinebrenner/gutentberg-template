@@ -40,29 +40,13 @@ class Modal {
                 element.textContent = element.textContent.replace('(Required)', '*');
             });
 
+            const validationMessageDiv = document.querySelector('.gfield .validation_message');
 
-            // Add icon
-            // const divs = document.querySelectorAll('.gfield');
-            // divs.forEach((div) => {
-            //   if (checkAllChildrenHaveClass(div, "validation_message")) {
-            //     let input = div.querySelector(".ginput_container input")
-            //     const errorIcon = document.createElement('span');
-            //     errorIcon.classList.add('error-icon');
-            //     errorIcon.textContent = '⚠️';
-            //     div.parentNode.appendChild(errorIcon);
-            //   }
-            // });
-
-            // function checkAllChildrenHaveClass(parentElement, className) {
-            //     const children = parentElement.querySelectorAll('*');
-            //     for (const child of children) {
-            //         if (!child.classList.contains(className)) {
-            //             return false;
-            //         }
-            //     }
-            //     return true;
-            // }
-
+            if (validationMessageDiv) {
+              const pseudoElement = document.createElement('span');
+              pseudoElement.classList.add('pseudo-element');
+              validationMessageDiv.appendChild(pseudoElement);
+            }
 
         }
     }
