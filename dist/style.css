@@ -796,7 +796,7 @@ textarea:focus {
   display: none;
 }
 
-#validation_message_1_11 {
+#validation_message_1_8 {
   transform: translatey(89px);
 }
 
@@ -4057,7 +4057,7 @@ Component
 .contact__body .gform_wrapper.gravity-theme .gform_validation_errors {
   display: none;
 }
-.contact__body #validation_message_2_11 {
+.contact__body #validation_message_2_8 {
   transform: translatey(89px);
 }
 .contact__body #gform_2 .gform_body .gfield_required {
