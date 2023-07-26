@@ -19,20 +19,22 @@ $id = 'contact-' . $block['id'];
             </div>
             <div class="top-right">
                 <p class="bold">Headquarters</p>
-                <div class="address-wrapper">
-                    <p>9115 SW Oleson Rd, Ste 100</p>
+                <a class="address-wrapper" target="_blank" href="http://maps.google.com/?q=9115 SW Oleson Rd, Ste 105, Portland, OR 97223">
+                    <p>9115 SW Oleson Rd, Ste 105</p>
                     <p>Portland, OR 97223</p>
-                </div>
-                <a class="phone">503.726.4545</a>
+                </a>
+                <a class="phone" href="tel:5037264545">503.726.4545</a>
 
             </div>
         </div>
         <div class="contact__body">
         <?php
-					echo do_shortcode('[gravityform id="2" title="false" ajax="true"]');
-					?>
+            echo do_shortcode('[gravityform id="2" title="false" ajax="true"]');
+            ?>
+            <p class="we-will-be-in-touch">
+                We will be in touch within one business day
+            </p>
         </div>
-
     </div>
 
 </section>

@@ -5,8 +5,17 @@
     &__top {
         display: flex;
         margin-bottom: 100px;
+        @media(max-width: $bp-small){
+            display: block;
+            text-align: center;
+        }
         .top-left {
             flex: 1;
+            p{
+                @media(max-width: $bp-small){
+                    margin-bottom: 32px;
+                }
+            }
         }
         .top-right {
             display: flex;
@@ -25,6 +34,11 @@
                 font-size: 1.25rem;
                 font-weight: 300;
                 line-height: 150%;
+                font-family: "Inter";
+                @media(max-width: $bp-small){
+                    font-size: 1rem;
+                    font-weight: 300;
+                }
             }
         }
     }
@@ -32,7 +46,17 @@
         background: white;
         padding: 53px 80px;
         border-radius: 10px;
-
+        position: relative;
+        @media(max-width: $bp-small){
+            padding: 53px 20px;
+        }
+        .we-will-be-in-touch {
+            margin-left: 50%;
+            position: absolute;
+            transform: translate(-64px, -54px);
+            font-style: italic;
+            color: rgb(29, 8, 0, .5);
+        }
         // FORM
          #gform_1 .validation_error {
             display: none!important;
@@ -114,7 +138,7 @@
             }
           
             .ginput_container_textarea {
-              padding-right: 0!important;
+            //   padding-right: 0!important;
             }
           
             .gfield--type-email {
@@ -127,12 +151,7 @@
               @media(max-width: $bp-small){
                 margin-bottom: 32px;
               }
-            }
-          
-            .gfield_visibility_visible {
-          
-            }
-          
+            }  
             .ginput_container {
               width: 95%;
             }
@@ -183,58 +202,15 @@
             li {
               margin-bottom: 0;
             }
-            //LEFT COL
-            li:nth-child( -n + 4 ) {
-              display: inline-block;
-              vertical-align: top;
-              width: 50%;
-              padding-right: 16px;
-              float: left;
-              padding-right: 63px;
-              @media(max-width: $bp-small){
-                width: 100%;
-                padding-right: 0;
-              }
-            }
-            // RIGHT COL
-            li:nth-child( n + 5 ) {
-              display: inline-block;
-              vertical-align: top;
-              width: 50%;
-              padding-right: 16px;
-              float: none;
-              @media(max-width: $bp-small){
-                width: 100%;
-                padding-right: 0;
-              }
-            }
             .ginput_container_textarea {
               padding-right: 12px;
               @media(max-width: $bp-small){
                 padding-right: 0;
               }
             }
-            .left {
-              @media(max-width: $bp-small){
-                width: 100%;
-                padding-right: 0;
-              }
-              input {
-                width: 100%;
-              }
-            }
-            .right {
-              @media(max-width: $bp-small){
-                width: 100%;
-                padding-right: 0;
-              }
-              input {
-                width: 100%;
-              }
-            }
           }
           
-          .modal #gform_1 .gform_footer{
+          #gform_2 .gform_footer{
             position: relative;
             .gform_button {
               text-transform: uppercase;
@@ -266,10 +242,6 @@
               }
             }
           }
-              // End Contact Form specific styles
-          
-
-
         // END FORM
 
     }

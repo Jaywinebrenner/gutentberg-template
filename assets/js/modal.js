@@ -11,7 +11,7 @@ class Modal {
         if (modalHash === "#contact-modal") {
             const modal = document.querySelector('.modal');
             modal.classList.add('open');
-            this.disableScroll();
+            this.disableScroll(modal);
 
             const modalContainer = document.querySelector('.modal-container');
             modalContainer.addEventListener('click', (event) => {
@@ -39,31 +39,28 @@ class Modal {
             requiredTextElements.forEach((element) => {
                 element.textContent = element.textContent.replace('(Required)', '*');
             });
-
-            // Disable scrolling again when the browser is resized
-            // window.addEventListener('resize', this.disableScroll);
         }
     }
 
     closeModal(modal) {
         modal.classList.remove('open');
-        this.enableScroll();
-        // Remove the resize event listener when the modal is closed
-        // window.removeEventListener('resize', this.disableScroll);
+        this.enableScroll(modal);
     }
 
     disableScroll() {
-        document.body.style.overflow = 'hidden';
-        document.body.style.height = '100%';
-        document.documentElement.style.overflow = 'hidden';
-        document.documentElement.style.height = '100%';
+        document.body.classList.add('disable-scroll');
+        document.documentElement.classList.add('disable-scroll');
+
+        document.body.classList.remove('enable-scroll');
+        document.documentElement.classList.remove('enable-scroll');
     }
 
     enableScroll() {
-        document.body.style.overflow = 'auto';
-        document.body.style.height = 'auto';
-        document.documentElement.style.overflow = 'auto';
-        document.documentElement.style.height = 'auto';
+        document.body.classList.add('enable-scroll');
+        document.documentElement.classList.add('enable-scroll');
+
+        document.body.classList.remove('disable-scroll');
+        document.documentElement.classList.remove('disable-scroll');
     }
 }
 

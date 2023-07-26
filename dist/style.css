@@ -1095,6 +1095,26 @@ body.fade {
   }
 }
 
+body.disable-scroll {
+  overflow: hidden !important;
+  height: 100% !important;
+}
+
+:root.disable-scroll {
+  overflow: hidden !important;
+  height: 100% !important;
+}
+
+body.enable-scroll {
+  overflow: auto !important;
+  height: auto !important;
+}
+
+:root.enable-scroll {
+  overflow: auto !important;
+  height: auto !important;
+}
+
 .container, .echojobs_plugin, .wp-block-columns {
   max-width: 1400px;
   margin: auto;
@@ -3921,8 +3941,19 @@ Component
   display: flex;
   margin-bottom: 100px;
 }
+@media (max-width: 800px) {
+  .contact__top {
+    display: block;
+    text-align: center;
+  }
+}
 .contact__top .top-left {
   flex: 1;
+}
+@media (max-width: 800px) {
+  .contact__top .top-left p {
+    margin-bottom: 32px;
+  }
 }
 .contact__top .top-right {
   display: flex;
@@ -3941,11 +3972,31 @@ Component
   font-size: 1.25rem;
   font-weight: 300;
   line-height: 150%;
+  font-family: "Inter";
+}
+@media (max-width: 800px) {
+  .contact__top .top-right .phone {
+    font-size: 1rem;
+    font-weight: 300;
+  }
 }
 .contact__body {
   background: white;
   padding: 53px 80px;
   border-radius: 10px;
+  position: relative;
+}
+@media (max-width: 800px) {
+  .contact__body {
+    padding: 53px 20px;
+  }
+}
+.contact__body .we-will-be-in-touch {
+  margin-left: 50%;
+  position: absolute;
+  transform: translate(-64px, -54px);
+  font-style: italic;
+  color: rgba(29, 8, 0, 0.5);
 }
 .contact__body #gform_1 .validation_error {
   display: none !important;
@@ -4018,9 +4069,6 @@ Component
   .contact__body #gform_2 .gform_body .ginput_container {
     width: 100% !important;
   }
-}
-.contact__body #gform_2 .gform_body .ginput_container_textarea {
-  padding-right: 0 !important;
 }
 .contact__body #gform_2 .gform_body .gfield--type-email {
   margin-top: -42px;
@@ -4105,33 +4153,6 @@ Component
 .contact__body #gform_2 .gform_body li {
   margin-bottom: 0;
 }
-.contact__body #gform_2 .gform_body li:nth-child(-n+4) {
-  display: inline-block;
-  vertical-align: top;
-  width: 50%;
-  padding-right: 16px;
-  float: left;
-  padding-right: 63px;
-}
-@media (max-width: 800px) {
-  .contact__body #gform_2 .gform_body li:nth-child(-n+4) {
-    width: 100%;
-    padding-right: 0;
-  }
-}
-.contact__body #gform_2 .gform_body li:nth-child(n+5) {
-  display: inline-block;
-  vertical-align: top;
-  width: 50%;
-  padding-right: 16px;
-  float: none;
-}
-@media (max-width: 800px) {
-  .contact__body #gform_2 .gform_body li:nth-child(n+5) {
-    width: 100%;
-    padding-right: 0;
-  }
-}
 .contact__body #gform_2 .gform_body .ginput_container_textarea {
   padding-right: 12px;
 }
@@ -4140,28 +4161,10 @@ Component
     padding-right: 0;
   }
 }
-@media (max-width: 800px) {
-  .contact__body #gform_2 .gform_body .left {
-    width: 100%;
-    padding-right: 0;
-  }
-}
-.contact__body #gform_2 .gform_body .left input {
-  width: 100%;
-}
-@media (max-width: 800px) {
-  .contact__body #gform_2 .gform_body .right {
-    width: 100%;
-    padding-right: 0;
-  }
-}
-.contact__body #gform_2 .gform_body .right input {
-  width: 100%;
-}
-.contact__body .modal #gform_1 .gform_footer {
+.contact__body #gform_2 .gform_footer {
   position: relative;
 }
-.contact__body .modal #gform_1 .gform_footer .gform_button {
+.contact__body #gform_2 .gform_footer .gform_button {
   text-transform: uppercase;
   padding: 0 1.3125rem;
   letter-spacing: 0.63px;
@@ -4179,14 +4182,14 @@ Component
   transform: translate(14px, -60px);
 }
 @media (max-width: 800px) {
-  .contact__body .modal #gform_1 .gform_footer .gform_button {
+  .contact__body #gform_2 .gform_footer .gform_button {
     font-size: 0.875rem;
     margin-left: unset;
     width: auto;
     transform: translateY(13px);
   }
 }
-.contact__body .modal #gform_1 .gform_footer .gform_button:hover {
+.contact__body #gform_2 .gform_footer .gform_button:hover {
   background-color: #D64936;
   color: #FFFFFF !important;
   border: 1px solid #D64936;

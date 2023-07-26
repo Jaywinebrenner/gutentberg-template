@@ -34,6 +34,24 @@ body {
   }
 }
 
+body.disable-scroll {
+  overflow: hidden!important;
+  height: 100%!important;
+}
+:root.disable-scroll {
+  overflow: hidden!important;
+  height: 100%!important;
+}
+
+body.enable-scroll {
+  overflow: auto!important;
+  height: auto!important;
+}
+:root.enable-scroll {
+  overflow: auto!important;
+  height: auto!important;
+}
+
 .container {
   max-width: 1400px;
   margin: auto;
