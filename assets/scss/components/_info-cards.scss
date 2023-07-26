@@ -1,7 +1,9 @@
 .info-cards {
 
   &.hidehr {
-    display: none;
+    hr {
+      display: none;
+    }
   }
 
   hr {
