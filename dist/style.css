@@ -2411,7 +2411,7 @@ Component
   opacity: 0.5;
 }
 
-.info-cards .hidehr {
+.info-cards.hidehr {
   display: none;
 }
 .info-cards hr {
