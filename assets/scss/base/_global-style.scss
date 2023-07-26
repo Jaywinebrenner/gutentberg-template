@@ -271,14 +271,14 @@ html :where(.is-reusable) :where(.wp-block) {
   }
 }
 .gfield_error input {
-  background-image: url('../images/form/traingle-no.svg');
+  background-image: url('../images/form/warn.svg');
   background-position: 98% 50%;
   background-repeat: no-repeat;
   background-size: auto;
 }
 
 .gfield_error textarea {
-  background-image: url('../images/form/traingle-no.svg');
+  background-image: url('../images/form/warn.svg');
   background-position: 98% 10%;
   background-repeat: no-repeat;
   background-size: auto;

@@ -1002,6 +1002,7 @@ hr {
   margin-left: 50%;
   position: absolute;
   transform: translate(14px, -60px);
+  background-color: #FFFFFF;
 }
 @media (max-width: 800px) {
   .modal #gform_1 .gform_footer .gform_button {
@@ -1321,14 +1322,14 @@ html :where(.is-reusable) :where(.wp-block) {
 }
 
 .gfield_error input {
-  background-image: url(4df9ae3f32291d1c8617.svg);
+  background-image: url(6824b82e7c278ab1d24e.svg);
   background-position: 98% 50%;
   background-repeat: no-repeat;
   background-size: auto;
 }
 
 .gfield_error textarea {
-  background-image: url(4df9ae3f32291d1c8617.svg);
+  background-image: url(6824b82e7c278ab1d24e.svg);
   background-position: 98% 10%;
   background-repeat: no-repeat;
   background-size: auto;
@@ -4241,6 +4242,7 @@ Component
   margin-left: 50%;
   position: absolute;
   transform: translate(14px, -60px);
+  background-color: #FFFFFF;
 }
 @media (max-width: 800px) {
   .contact__body #gform_2 .gform_footer .gform_button {
