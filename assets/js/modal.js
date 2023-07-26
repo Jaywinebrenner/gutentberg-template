@@ -43,11 +43,18 @@ class Modal {
             const validationMessageDiv = document.querySelector('.gfield .validation_message');
 
             if (validationMessageDiv) {
-              const pseudoElement = document.createElement('span');
-              pseudoElement.classList.add('pseudo-element');
-              validationMessageDiv.appendChild(pseudoElement);
+                const pseudoElement = document.createElement('span');
+                pseudoElement.classList.add('pseudo-element');
+                validationMessageDiv.appendChild(pseudoElement);
             }
 
+            // Close modal when "Esc" key is pressed
+            document.addEventListener('keydown', (event) => {
+                if (event.key === 'Escape') {
+                    event.preventDefault();
+                    this.closeModal(modal);
+                }
+            });
         }
     }
 
