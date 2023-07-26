@@ -636,12 +636,12 @@ form .textarea-wrap label {
 }
 
 input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
-  font-size: 0.9em;
+  font-size: 1rem;
   font-family: Inter;
   margin-bottom: 20px;
   line-height: 28px;
-  font-weight: 100;
-  color: rgba(29, 8, 0, 0.5) !important;
+  font-weight: 300;
+  color: rgba(29, 8, 0, 0.4) !important;
   background-color: #FFFFFF;
   -webkit-appearance: none;
           appearance: none;
@@ -649,12 +649,12 @@ input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
 }
 
 input::-moz-placeholder, textarea::-moz-placeholder {
-  font-size: 0.9em;
+  font-size: 1rem;
   font-family: Inter;
   margin-bottom: 20px;
   line-height: 28px;
-  font-weight: 100;
-  color: rgba(29, 8, 0, 0.5) !important;
+  font-weight: 300;
+  color: rgba(29, 8, 0, 0.4) !important;
   background-color: #FFFFFF;
   -moz-appearance: none;
        appearance: none;
@@ -665,12 +665,12 @@ input,
 input::placeholder,
 textarea,
 textarea::placeholder {
-  font-size: 0.9em;
+  font-size: 1rem;
   font-family: Inter;
   margin-bottom: 20px;
   line-height: 28px;
-  font-weight: 100;
-  color: rgba(29, 8, 0, 0.5) !important;
+  font-weight: 300;
+  color: rgba(29, 8, 0, 0.4) !important;
   background-color: #FFFFFF;
   -webkit-appearance: none;
      -moz-appearance: none;
@@ -794,6 +794,10 @@ textarea:focus {
 
 .gform_wrapper.gravity-theme .gform_validation_errors {
   display: none;
+}
+
+#validation_message_1_11 {
+  transform: translatey(89px);
 }
 
 .modal #gform_1 .gform_body .gfield_required {
@@ -920,6 +924,12 @@ textarea:focus {
 }
 .modal #gform_1 .gform_body .textarea {
   height: 96px;
+  font-family: Inter;
+  font-size: 1rem !important;
+  font-style: normal;
+  font-weight: 400 !important;
+  line-height: 135.023%;
+  color: rgba(29, 8, 0, 0.5) !important;
 }
 .modal #gform_1 .gform_body input {
   margin-bottom: 10px;
@@ -4046,6 +4056,9 @@ Component
 }
 .contact__body .gform_wrapper.gravity-theme .gform_validation_errors {
   display: none;
+}
+.contact__body #validation_message_2_11 {
+  transform: translatey(89px);
 }
 .contact__body #gform_2 .gform_body .gfield_required {
   padding-left: 0;

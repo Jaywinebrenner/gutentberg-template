@@ -228,15 +228,6 @@ html :where(.is-reusable) :where(.wp-block) {
       overflow: auto;
       padding:  53px 20px 20px 20px;
     }
-    // @media(min-width: 1200px){
-    //   max-height: 70vh;
-    // }
-    // @media(min-width: 1600px){
-    //   height: 80vh;
-    // }
-    // @media(min-width: 1900px){
-    //   height: 70vh;
-    // }
     &__top {
       h3 {
         margin-bottom: 32px;
@@ -280,6 +271,16 @@ html :where(.is-reusable) :where(.wp-block) {
     }
   }
 }
+
+// #field_1_4 .ginput_container {
+//   position: relative;
+// }
+// body #input_1_4 {
+//   background-image: url('../images/form/traingle-no.svg');
+//   background-repeat: no-repeat;
+//   background-position: 97% 37%;
+//   z-index: 99999;
+// }
 
 
 
