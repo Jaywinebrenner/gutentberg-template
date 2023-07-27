@@ -73,7 +73,7 @@
   
   input:focus,
   textarea:focus {
-    border-color: $color-licorice;
+    border: 2px solid $color-licorice;
   }
   
   .nf-form-fields-required,
