@@ -25,11 +25,13 @@ $id = 'our-services-' . $block['id'];
                     </div>
                 <?php endif; ?>
 
-                <div class="mobile-image-wrapper">
-                    <div class="mobile-image parallax-wrapper" >
-                        <img src="<?php echo get_field('mobile_image') ? get_field('mobile_image') : get_field('image'); ?>" alt="">
+                <?php if (get_field('image') || get_field('mobile_image')) : ?>
+                    <div class="mobile-image-wrapper">
+                        <div class="mobile-image parallax-wrapper">
+                            <img src="<?php echo get_field('mobile_image') ? get_field('mobile_image') : get_field('image'); ?>" alt="">
+                        </div>
                     </div>
-                </div>
+                <?php endif; ?>
 
 
             </div>
