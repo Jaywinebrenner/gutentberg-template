@@ -1525,7 +1525,7 @@ Component
   top: 2rem;
   left: 0;
   padding: 1.7625rem;
-  width: 15rem;
+  width: 20rem;
   z-index: 100;
 }
 .navigation-menu-wrapper .menu-navigation-container .navigation-menu .sub-menu:before {
@@ -1549,6 +1549,11 @@ Component
 }
 .navigation-menu-wrapper .menu-navigation-container .navigation-menu .sub-menu .menu-item:last-of-type {
   padding-bottom: 0;
+}
+@media (min-width: 800px) and (max-width: 1000px) {
+  .navigation-menu-wrapper .menu-navigation-container .navigation-menu .sub-menu .menu-item a {
+    font-size: 1.1rem;
+  }
 }
 .navigation-menu-wrapper li,
 .navigation-menu-wrapper a {
