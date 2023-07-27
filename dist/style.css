@@ -3001,6 +3001,9 @@ Component
 .our-services.nobg .our-services-wrapper {
   background-color: transparent;
 }
+.our-services.nobg .our-services-top {
+  display: none;
+}
 .our-services__top {
   text-align: center;
   padding-bottom: 0;
