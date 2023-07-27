@@ -10,4 +10,5 @@ import './page-transitions';
 import './banner';
 import './modal';
 import './contact';
+import './info-cards';
 
