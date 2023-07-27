@@ -3001,7 +3001,7 @@ Component
 .our-services.nobg .our-services-wrapper {
   background-color: transparent;
 }
-.our-services.nobg .our-services-top {
+.our-services.nobg .our-services__top {
   display: none;
 }
 .our-services__top {
