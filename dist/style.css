@@ -696,7 +696,7 @@ hr {
 }
 .gform_wrapper form input:focus,
 .gform_wrapper form textarea:focus {
-  border: 2px solid #1D0800;
+  border: 1px solid #1D0800;
 }
 .gform_wrapper form .nf-form-fields-required,
 .gform_wrapper form .nf-form-title,
