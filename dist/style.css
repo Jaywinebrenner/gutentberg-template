@@ -2793,12 +2793,13 @@ Component
 .career-cta__left .image-wrapper {
   -webkit-mask-image: url(c2744794ba230111f061.svg);
           mask-image: url(c2744794ba230111f061.svg);
-  -webkit-mask-size: cover;
-          mask-size: cover;
+  -webkit-mask-size: contain;
+          mask-size: contain;
+  max-height: 20rem;
+  margin-bottom: 1.5rem;
   border-radius: 10px;
-  -webkit-mask-repeat: round;
-          mask-repeat: round;
-  transform: translateY(-33px);
+  -webkit-mask-repeat: no-repeat;
+          mask-repeat: no-repeat;
 }
 @media (min-width: 800px) and (max-width: 1100px) {
   .career-cta__left .image-wrapper {
@@ -2808,6 +2809,11 @@ Component
 @media (max-width: 800px) {
   .career-cta__left .image-wrapper {
     transform: translateY(0px);
+    -webkit-mask-size: cover;
+            mask-size: cover;
+    -webkit-mask-position: top-right;
+            mask-position: top-right;
+    max-height: 15rem;
   }
 }
 .career-cta__left img {
@@ -2817,7 +2823,6 @@ Component
      object-fit: cover;
   display: block;
   margin: 0;
-  max-height: 520px;
 }
 .career-cta__right .quote-card {
   background-color: #FFFFFF;
