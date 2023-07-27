@@ -2993,6 +2993,9 @@ Component
     padding: 0.8rem;
   }
 }
+.our-services.nobg .our-services-wrapper {
+  background-color: transparent;
+}
 .our-services__top {
   text-align: center;
   padding-bottom: 0;

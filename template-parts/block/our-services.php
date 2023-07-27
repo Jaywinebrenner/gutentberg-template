@@ -10,7 +10,7 @@
 $id = 'our-services-' . $block['id'];
 ?>
 
-<section id="<?php echo $id; ?>" class="our-services">
+<section id="<?php echo $id; ?>" class="our-services <?php echo $block['className']; ?>">
     <div class="container">
         <div class="our-services-wrapper">
 

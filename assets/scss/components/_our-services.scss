@@ -8,6 +8,13 @@
             padding: 0.8rem;
         }
     }
+
+    &.nobg {
+        .our-services-wrapper {
+            background-color: transparent;
+        }
+    }
+
     &__top {
         text-align: center;
         padding-bottom: 0;
@@ -19,14 +26,13 @@
         }
         @media (max-width: $bp-small) {
             padding: 5rem 1.2rem;
-
         }
         .image-wrapper {
             padding: 8rem 0;
             @media (max-width: $bp-small) {
                 display: none;
             }
-            @media (min-width: 800px) and (max-width: 950px){
+            @media (min-width: 800px) and (max-width: 950px) {
                 padding: 4rem 0;
             }
             @media (min-width: 1700px) {
@@ -48,8 +54,7 @@
                 mask-size: cover;
                 mask-repeat: round;
                 mask-position: unset;
-                @media(min-height: 2400px){
-
+                @media (min-height: 2400px) {
                 }
             }
         }
@@ -93,7 +98,7 @@
             // }
             h3 {
                 padding-right: 17%;
-                @media(max-width: $bp-small){
+                @media (max-width: $bp-small) {
                     padding-right: 0;
                     font-size: 1.6rem;
                 }
