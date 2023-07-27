@@ -14,7 +14,7 @@ if (isset($block['data']['preview_image'])) : ?>
 endif;
 ?>
 
-<section id="<?php echo $id; ?>" class="career-cta container">
+<section id="<?php echo $id; ?>" class="career-cta container <?php echo $block['className']; ?>">
 
     <div class="career-cta__left">
 

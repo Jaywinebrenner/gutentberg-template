@@ -2763,6 +2763,10 @@ Component
   grid-template-columns: 1fr 1fr;
   grid-gap: 8.125rem;
 }
+.career-cta.hidewhitebg .quote-card {
+  background-color: transparent;
+  padding: 0;
+}
 @media (max-width: 800px) {
   .career-cta {
     grid-template-columns: 1fr;
@@ -2775,7 +2779,8 @@ Component
     text-align: center;
   }
 }
-.career-cta__left h3, .career-cta__left p {
+.career-cta__left h3,
+.career-cta__left p {
   margin-bottom: 0;
 }
 .career-cta__left p {
