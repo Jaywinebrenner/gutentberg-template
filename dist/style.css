@@ -2766,6 +2766,7 @@ Component
 .career-cta.hidewhitebg .quote-card {
   background-color: transparent;
   padding: 0;
+  margin-bottom: 2.2rem;
 }
 @media (max-width: 800px) {
   .career-cta {
