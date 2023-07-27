@@ -18,6 +18,8 @@ if (isset($block['data']['preview_image'])) : ?>
     <?php if( get_field('image') ): ?>
       <img
         src="<?php the_field('image'); ?>"
+        style="background-color:<?php echo get_field('image_has_background_color') ? the_field('image_background_color') : null ?>;"
+        class="<?php echo get_field('image_has_background_color') ? 'image-has-background': ''; ?>"
       />
     <?php endif; ?>
     </div>
