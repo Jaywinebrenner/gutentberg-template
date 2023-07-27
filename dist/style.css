@@ -261,7 +261,7 @@ Base
 html,
 button {
   font-family: "Inter";
-  font-size: clamp(10px, 0.9vw, 18px);
+  font-size: clamp(10px, 0.9vw, 20px);
   color: #1D0800;
 }
 @media (max-width: 800px) {
@@ -344,7 +344,7 @@ h2,
 h3,
 .editor-styles-wrapper h3,
 .h3 {
-  font-weight: 300;
+  font-weight: 400;
   line-height: normal;
   margin-bottom: 1.25rem;
   font-size: 2.5rem;
@@ -364,7 +364,7 @@ h3,
 h4,
 .editor-styles-wrapper h4,
 .h4 {
-  font-weight: 300;
+  font-weight: 400;
   margin-bottom: 20px;
   font-size: 2rem;
   font-family: "Inter";
@@ -406,7 +406,7 @@ h5,
 
 h6,
 .editor-styles-wrapper h6 .h6 {
-  font-size: 1rem;
+  font-size: 1.1rem;
   font-family: "Inter";
   font-weight: 700;
   line-height: 135.023%;
@@ -425,8 +425,8 @@ h6,
 
 p,
 i {
-  font-size: 1.25rem;
-  font-weight: 300;
+  font-size: 1.3rem;
+  font-weight: 400;
   line-height: 150%;
 }
 @media (max-width: 800px) {
@@ -600,6 +600,13 @@ hr {
   color: #D64936 !important;
   border: 1px solid #D64936;
   cursor: pointer;
+}
+
+.gfield_error input {
+  background-image: url("https://d0973c2ec0.nxcli.io/wp-content/uploads/2023/07/Expertise.png");
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .gform_wrapper form {
@@ -1104,7 +1111,7 @@ body.enable-scroll {
 }
 
 .container, .echojobs_plugin, .wp-block-columns {
-  max-width: 1400px;
+  max-width: 1500px;
   margin: auto;
   width: 90%;
 }
@@ -2068,7 +2075,7 @@ Component
 }
 .banner-wrapper .has-image-banner .right .quote {
   font-weight: 600;
-  font-size: 14px;
+  font-size: 1rem;
 }
 .banner-wrapper .has-image-banner .right .quoter {
   margin-top: 0;
@@ -3031,7 +3038,7 @@ Component
 }
 .our-services__top .image-wrapper .image {
   height: 26vw;
-  min-height: 28.125rem;
+  max-height: 28.125rem;
   background-size: cover;
   background-attachment: fixed;
   background-position: center;

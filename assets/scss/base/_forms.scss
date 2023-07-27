@@ -1,4 +1,10 @@
-// Base ninja forms styling
+.gfield_error input {
+  background-image: url('https://d0973c2ec0.nxcli.io/wp-content/uploads/2023/07/Expertise.png');
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
 .gform_wrapper form {
   display: flex;
   flex-direction: column;
@@ -31,7 +37,7 @@
     color: $black;
     font-weight: 500 !important;
   }
-  
+
   .list-radio-wrap li:before {
     content: none !important;
   }
@@ -51,7 +57,7 @@
   textarea:focus::-webkit-input-placeholder {
     color: $color-licorice!important;
   }
-  
+
   input,
   input::placeholder,
   textarea,
@@ -69,43 +75,43 @@
   // textarea::placeholder {
   //   transform: translateY(-6px)
   // }
-  
+
   button,
   input,
   textarea {
     outline: none;
   }
-  
+
   input,
   textarea {
     border: 1px solid rgb(29, 8, 0, .5);
   }
-  
+
   textarea {
     max-height: 150px;
     resize: none;
   }
-  
+
   input:focus,
   textarea:focus {
     border: 1px solid $color-licorice;
   }
 
 
-  
+
   .nf-form-fields-required,
   .nf-form-title,
   .ninja-forms-req-symbol {
     display: none;
   }
-  
+
   .nf-error-msg {
     font-family: Inter;
     font-size: 0.8rem;
   }
-  
+
   // RADIO BUTTONS
-  
+
   [type="radio"]:checked,
   [type="radio"]:not(:checked) {
       position: absolute;
@@ -114,11 +120,11 @@
       height: 20px;
       margin: 0 !important;
   }
-  
+
   .list-checkbox-wrap .nf-field-element li input, .list-radio-wrap .nf-field-element li input {
     min-width: 100%;
   }
-  
+
   [type="radio"]:checked + label,
   [type="radio"]:not(:checked) + label
   {
@@ -165,7 +171,7 @@
       -webkit-transform: scale(1);
       transform: scale(1);
   }
-  
+
 }
 
 
@@ -295,7 +301,7 @@
     font-size: 1rem!important;
     font-style: normal;
     font-weight: 400!important;
-    line-height: 135.023%; 
+    line-height: 135.023%;
     color: rgb(29, 8, 0, .5);
     @media (max-width: $bp-small) {
       font-size: 0.875rem;
@@ -332,7 +338,7 @@
       padding-right: 0;
     }
   }
-  
+
   li {
     margin-bottom: 0;
   }
