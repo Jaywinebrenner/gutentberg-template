@@ -21,9 +21,9 @@
 
 					</div>
 					<div class="explore">
-						<h5>Explore Mode</h5>
 						<a href="<?php echo home_url() . '/contact-us';?>"><p class="minor bold">Contact Us</p></a>
 						<a href="<?php echo home_url() . '/employee-login';?>"><p class="minor bold">Employee Login</p></a>
+						<a href="<?php echo home_url() . '/jobs';?>"><p class="minor bold">Job Seekers</p></a>
 						<div class="social-wrapper">
 							<a target="_blank" href="https://www.linkedin.com/company/corsource-technology-group/"><img class="social" src="<?php echo get_stylesheet_directory_uri();?>/assets/images/footer/linkedin.svg"/></a>
 							<a target="_blank" href="https://twitter.com/CorSource"><img class="social" src="<?php echo get_stylesheet_directory_uri();?>/assets/images/footer/twitter.svg"/></a>

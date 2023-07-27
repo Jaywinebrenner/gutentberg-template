@@ -10,11 +10,25 @@ export default class Navigation {
             this.mobileMenuAccordion = this.mobileMenuAccordion.bind(this);
             this.init();
             this.ensureSiteIsScrollable = this.ensureSiteIsScrollable.bind(this);
+            this.changeSubmenuColor = this.changeSubmenuColor.bind(this);
         }
         init() {
             this.ensureSiteIsScrollable();
             this.hamburger();
             this.mobileMenuAccordion();
+            this.changeSubmenuColor();
+        }
+
+        changeSubmenuColor (){
+            let $ = jQuery;
+            let submenu = $(".sub-menu");
+            const backgroundColorBand = $('.background-color-band');
+            const inlineStyle = backgroundColorBand.attr('style');
+            if (inlineStyle && inlineStyle.includes('background-color: #F7F4F0')) {
+                return;
+            } else {
+                submenu.css('background-color', '#F7F4F0');
+            }
         }
 
         ensureSiteIsScrollable() {

@@ -639,6 +639,18 @@ hr {
 .gform_wrapper form .list-radio-wrap li:before {
   content: none !important;
 }
+.gform_wrapper form input::-webkit-input-placeholder {
+  color: #1D0800 !important;
+}
+.gform_wrapper form input:focus::-webkit-input-placeholder {
+  color: #1D0800 !important;
+}
+.gform_wrapper form textarea::-webkit-input-placeholder {
+  color: #1D0800 !important;
+}
+.gform_wrapper form textarea:focus::-webkit-input-placeholder {
+  color: #1D0800 !important;
+}
 .gform_wrapper form input::-webkit-input-placeholder, .gform_wrapper form textarea::-webkit-input-placeholder {
   font-size: 1rem;
   font-family: Inter;
@@ -646,7 +658,6 @@ hr {
   line-height: 28px;
   font-weight: 300;
   color: rgba(29, 8, 0, 0.4) !important;
-  background-color: #FFFFFF;
   -webkit-appearance: none;
           appearance: none;
   border-radius: 0;
@@ -658,7 +669,6 @@ hr {
   line-height: 28px;
   font-weight: 300;
   color: rgba(29, 8, 0, 0.4) !important;
-  background-color: #FFFFFF;
   -moz-appearance: none;
        appearance: none;
   border-radius: 0;
@@ -673,20 +683,10 @@ hr {
   line-height: 28px;
   font-weight: 300;
   color: rgba(29, 8, 0, 0.4) !important;
-  background-color: #FFFFFF;
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
   border-radius: 0;
-}
-.gform_wrapper form textarea::-webkit-input-placeholder {
-  transform: translateY(-6px);
-}
-.gform_wrapper form textarea::-moz-placeholder {
-  transform: translateY(-6px);
-}
-.gform_wrapper form textarea::placeholder {
-  transform: translateY(-6px);
 }
 .gform_wrapper form button,
 .gform_wrapper form input,
@@ -703,7 +703,7 @@ hr {
 }
 .gform_wrapper form input:focus,
 .gform_wrapper form textarea:focus {
-  border-color: rgba(29, 8, 0, 0.5);
+  border: 1px solid #1D0800;
 }
 .gform_wrapper form .nf-form-fields-required,
 .gform_wrapper form .nf-form-title,
@@ -1012,6 +1012,7 @@ hr {
   margin-left: 50%;
   position: absolute;
   transform: translate(14px, -60px);
+  background-color: #FFFFFF;
 }
 @media (max-width: 800px) {
   .modal #gform_1 .gform_footer .gform_button {
@@ -1265,11 +1266,15 @@ html :where(.is-reusable) :where(.wp-block) {
   border-radius: 10px;
   background: #fff;
   position: relative;
-  padding: 53px 80px;
+  padding: 53px 80px 0 80px;
   width: 89vw;
-  height: 80vh;
   max-width: 1800px;
   overflow: auto;
+}
+@media (max-height: 600px) {
+  .modal-container {
+    height: 100%;
+  }
 }
 @media (max-width: 800px) {
   .modal-container {
@@ -1324,6 +1329,20 @@ html :where(.is-reusable) :where(.wp-block) {
     right: 25px;
     top: 25px;
   }
+}
+
+.gfield_error input {
+  background-image: url(6824b82e7c278ab1d24e.svg);
+  background-position: 98% 50%;
+  background-repeat: no-repeat;
+  background-size: auto;
+}
+
+.gfield_error textarea {
+  background-image: url(6824b82e7c278ab1d24e.svg);
+  background-position: 98% 10%;
+  background-repeat: no-repeat;
+  background-size: auto;
 }
 
 .wp-caption img {
@@ -1411,7 +1430,7 @@ Component
   z-index: 1000;
   left: 0;
   right: 0;
-  max-width: 1800px;
+  max-width: 1400px;
   margin: auto;
   width: 89%;
   align-items: center;
@@ -1445,6 +1464,21 @@ Component
   display: flex;
   justify-content: flex-end;
   align-items: center;
+}
+@media (max-width: 1000px) and (min-width: 900px) {
+  .navigation-menu-wrapper .menu-navigation-container .navigation-menu li {
+    margin-right: 2.5rem !important;
+  }
+}
+@media (max-width: 900px) and (min-width: 840px) {
+  .navigation-menu-wrapper .menu-navigation-container .navigation-menu li {
+    margin-right: 2rem !important;
+  }
+}
+@media (max-width: 840px) and (min-width: 800px) {
+  .navigation-menu-wrapper .menu-navigation-container .navigation-menu li {
+    margin-right: 1.5rem !important;
+  }
 }
 @media (max-width: 1400px) and (min-width: 800px) {
   .navigation-menu-wrapper .menu-navigation-container .navigation-menu li a {
@@ -1511,6 +1545,7 @@ Component
 }
 .navigation-menu-wrapper .menu-navigation-container .navigation-menu .sub-menu .menu-item {
   padding-bottom: 1.7625rem;
+  margin-right: 0;
 }
 .navigation-menu-wrapper .menu-navigation-container .navigation-menu .sub-menu .menu-item:last-of-type {
   padding-bottom: 0;
@@ -3341,7 +3376,7 @@ Component
     flex-direction: column-reverse;
   }
 }
-.image-content.flip-on-mobile {
+.image-content.reverse-columns {
   flex-direction: column;
   grid-template-columns: 1.5fr 2fr;
 }
@@ -4233,6 +4268,7 @@ Component
   margin-left: 50%;
   position: absolute;
   transform: translate(14px, -60px);
+  background-color: #FFFFFF;
 }
 @media (max-width: 800px) {
   .contact__body #gform_2 .gform_footer .gform_button {
@@ -4247,6 +4283,82 @@ Component
   color: #FFFFFF !important;
   border: 1px solid #D64936;
   cursor: pointer;
+}
+
+.thank-you {
+  display: grid;
+  grid-template-columns: 2fr 1.5fr;
+  -moz-column-gap: 6.875rem;
+       column-gap: 6.875rem;
+  padding: 4rem 0;
+  min-height: 35vh;
+}
+@media (max-width: 800px) {
+  .thank-you {
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem 0;
+  }
+}
+@media (max-width: 800px) {
+  .thank-you__left {
+    text-align: center;
+    margin-bottom: 3.5rem;
+  }
+}
+.thank-you__right {
+  flex: 0 0 440px;
+  position: relative;
+}
+@media (max-width: 800px) {
+  .thank-you__right {
+    flex: unset;
+  }
+}
+.thank-you__right .image-wrapper {
+  -webkit-mask-image: url(c2744794ba230111f061.svg);
+          mask-image: url(c2744794ba230111f061.svg);
+  -webkit-mask-size: cover;
+          mask-size: cover;
+  -webkit-mask-repeat: round;
+          mask-repeat: round;
+  -webkit-mask-position: unset;
+          mask-position: unset;
+  height: 19vw;
+  max-height: 16rem;
+  width: 100%;
+}
+@media (max-width: 800px) {
+  .thank-you__right .image-wrapper {
+    display: none;
+  }
+}
+.thank-you__right .image-wrapper img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  display: block;
+  margin: 0;
+}
+@media (min-width: 800px) {
+  .thank-you__right .image-wrapper-mobile {
+    display: none;
+  }
+}
+.thank-you__right .image-wrapper-mobile img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  max-width: 100%;
+  -webkit-mask-image: url(af419a50e2e94f8ce13d.svg);
+          mask-image: url(af419a50e2e94f8ce13d.svg);
+  -webkit-mask-size: cover;
+          mask-size: cover;
+  -webkit-mask-repeat: round;
+          mask-repeat: round;
+  -webkit-mask-position: unset;
+          mask-position: unset;
 }
 
 /*--------------------------------------------------------------
