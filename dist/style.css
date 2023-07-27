@@ -2438,6 +2438,9 @@ Component
     width: 100%;
   }
 }
+.content-quote-with-image__left .image-has-background {
+  padding: 26px;
+}
 .content-quote-with-image__right {
   display: flex;
   flex-direction: column;
