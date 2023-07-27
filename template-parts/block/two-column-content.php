@@ -17,7 +17,7 @@ endif;
 <section id="<?php echo $id; ?>" class="two-column-content container">
 
     <div class="two-column-content__left">
-        <h3><?php the_field('left_column_content'); ?></h3>
+        <?php the_field('left_column_content'); ?>
     </div>
 
     <div class="two-column-content__right">
