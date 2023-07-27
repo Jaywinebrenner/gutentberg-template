@@ -27,8 +27,6 @@ export default class Navigation {
             if (inlineStyle && inlineStyle.includes('background-color: #F7F4F0')) {
                 return;
             } else {
-                // Do something if the condition is false
-                console.log("The inline style is NOT equal to 'background-color: #F7F4F0'");
                 submenu.css('background-color', '#F7F4F0');
             }
         }
