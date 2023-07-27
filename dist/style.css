@@ -4268,6 +4268,7 @@ Component
   -moz-column-gap: 6.875rem;
        column-gap: 6.875rem;
   padding: 4rem 0;
+  min-height: 35vh;
 }
 @media (max-width: 800px) {
   .thank-you {
