@@ -35,7 +35,22 @@
   .list-radio-wrap li:before {
     content: none !important;
   }
-  
+
+  // input placeholder focus
+  input::-webkit-input-placeholder {
+    color: $color-licorice!important;
+  }
+  input:focus::-webkit-input-placeholder {
+    color: $color-licorice!important;
+  }
+
+  textarea::-webkit-input-placeholder {
+    color: $color-licorice!important;
+  }
+
+  textarea:focus::-webkit-input-placeholder {
+    color: $color-licorice!important;
+  }
   
   input,
   input::placeholder,
@@ -51,9 +66,9 @@
     appearance: none;
     border-radius: 0;
   }
-  textarea::placeholder {
-    transform: translateY(-6px)
-  }
+  // textarea::placeholder {
+  //   transform: translateY(-6px)
+  // }
   
   button,
   input,
@@ -75,6 +90,8 @@
   textarea:focus {
     border: 2px solid $color-licorice;
   }
+
+
   
   .nf-form-fields-required,
   .nf-form-title,

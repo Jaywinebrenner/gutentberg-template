@@ -632,6 +632,18 @@ hr {
 .gform_wrapper form .list-radio-wrap li:before {
   content: none !important;
 }
+.gform_wrapper form input::-webkit-input-placeholder {
+  color: #1D0800 !important;
+}
+.gform_wrapper form input:focus::-webkit-input-placeholder {
+  color: #1D0800 !important;
+}
+.gform_wrapper form textarea::-webkit-input-placeholder {
+  color: #1D0800 !important;
+}
+.gform_wrapper form textarea:focus::-webkit-input-placeholder {
+  color: #1D0800 !important;
+}
 .gform_wrapper form input::-webkit-input-placeholder, .gform_wrapper form textarea::-webkit-input-placeholder {
   font-size: 1rem;
   font-family: Inter;
@@ -668,15 +680,6 @@ hr {
      -moz-appearance: none;
           appearance: none;
   border-radius: 0;
-}
-.gform_wrapper form textarea::-webkit-input-placeholder {
-  transform: translateY(-6px);
-}
-.gform_wrapper form textarea::-moz-placeholder {
-  transform: translateY(-6px);
-}
-.gform_wrapper form textarea::placeholder {
-  transform: translateY(-6px);
 }
 .gform_wrapper form button,
 .gform_wrapper form input,
