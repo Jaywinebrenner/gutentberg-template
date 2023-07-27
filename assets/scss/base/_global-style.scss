@@ -53,7 +53,7 @@ body.enable-scroll {
 }
 
 .container {
-  max-width: 1400px;
+  max-width: 1500px;
   margin: auto;
   width: 90%;
 
@@ -169,7 +169,7 @@ html :where(.is-reusable) :where(.wp-block) {
   height: 1px;
   background-color: $color-licorice;
   border: none;
-} 
+}
 
 .text-align-center {
   @media(max-width: 800px){
