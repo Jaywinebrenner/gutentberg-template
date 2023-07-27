@@ -51,7 +51,18 @@
             display: flex;
             justify-content: flex-end;
             align-items: center;
-            li a{
+            li {
+                @media  (max-width: 1000px) and (min-width: 900px)  {
+                    margin-right: 2.5rem!important;
+                }
+                @media  (max-width: 900px) and (min-width: 840px)  {
+                    margin-right: 2rem!important;
+                }
+                @media  (max-width: 840px) and (min-width: 800px)  {
+                    margin-right: 1.5rem!important;
+                }
+            }
+            li a {
                 @media  (max-width: 1400px) and (min-width: 800px)  {
                     font-size: 1.2rem;
                 }
