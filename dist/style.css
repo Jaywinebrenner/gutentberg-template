@@ -4386,6 +4386,63 @@ Component
           mask-position: unset;
 }
 
+.graphic-cards .cards-wrapper {
+  display: grid;
+  grid-gap: 1.25rem;
+  display: flex;
+}
+@media (max-width: 800px) {
+  .graphic-cards .cards-wrapper {
+    display: block;
+    padding-bottom: 20px;
+  }
+}
+.graphic-cards .card {
+  flex-grow: 1;
+  flex-basis: 0;
+}
+@media (max-width: 800px) {
+  .graphic-cards .card {
+    padding-bottom: 1.25rem;
+  }
+}
+.graphic-cards .card img {
+  height: 28.125rem;
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 100%;
+}
+.graphic-cards .card__top {
+  background-color: #FFFFFF;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  padding: 2.25rem;
+}
+@media (max-width: 800px) {
+  .graphic-cards .card__top .desktop-image {
+    display: none;
+  }
+}
+@media (min-width: 800px) {
+  .graphic-cards .card__top .mobile-image {
+    display: none;
+  }
+}
+.graphic-cards .card__bottom {
+  background-color: #1D0800;
+  padding: 1.5rem;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.graphic-cards .card p {
+  font-style: italic;
+  color: #FFFFFF;
+  margin-bottom: 0;
+}
+.graphic-cards .card h5 {
+  color: #FFFFFF;
+}
+
 /*--------------------------------------------------------------
 Views
 --------------------------------------------------------------*/
