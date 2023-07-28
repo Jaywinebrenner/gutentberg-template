@@ -1525,7 +1525,6 @@ Component
   top: 2rem;
   left: 0;
   padding: 1.7625rem;
-  width: 20rem;
   z-index: 100;
 }
 .navigation-menu-wrapper .menu-navigation-container .navigation-menu .sub-menu:before {
@@ -1546,6 +1545,7 @@ Component
 .navigation-menu-wrapper .menu-navigation-container .navigation-menu .sub-menu .menu-item {
   padding-bottom: 1.7625rem;
   margin-right: 0;
+  white-space: nowrap;
 }
 .navigation-menu-wrapper .menu-navigation-container .navigation-menu .sub-menu .menu-item:last-of-type {
   padding-bottom: 0;
