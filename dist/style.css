@@ -4400,6 +4400,8 @@ Component
 .graphic-cards .card {
   flex-grow: 1;
   flex-basis: 0;
+  display: flex;
+  flex-direction: column;
 }
 @media (max-width: 800px) {
   .graphic-cards .card {
@@ -4429,6 +4431,7 @@ Component
   }
 }
 .graphic-cards .card__bottom {
+  flex: 1;
   background-color: #1D0800;
   padding: 1.5rem;
   border-bottom-left-radius: 10px;

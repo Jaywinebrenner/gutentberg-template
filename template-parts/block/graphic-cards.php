@@ -23,9 +23,11 @@ endif;
                 $mobile_image = get_sub_field('mobile_image');
                 $title = get_sub_field('title');
                 $subtitle = get_sub_field('subtitle');
+                $background_color = get_sub_field('background_color');
         ?>
                 <div class="card">
-                    <div class="card__top">
+                    <div class="card__top"
+                        style="background-color: <?php echo $background_color?>!important;">
                         <img class="desktop-image" src="<?php echo $image; ?>" />
                         <img class="mobile-image" src="<?php echo $mobile_image ? $mobile_image : $image; ?>" />
                     </div>
