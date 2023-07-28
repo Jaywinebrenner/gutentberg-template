@@ -3052,12 +3052,12 @@ Component
 }
 @media (min-width: 1700px) {
   .our-services__top .image-wrapper {
-    padding: 7rem 0;
+    padding: 7rem 0 3.5rem 0;
   }
 }
 @media (min-width: 1900px) {
   .our-services__top .image-wrapper {
-    padding: 3rem 0;
+    padding: 3rem 0 1.5rem 0;
   }
 }
 @media (min-width: 2300px) {
