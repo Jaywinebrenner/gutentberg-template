@@ -2420,7 +2420,7 @@ Component
 }
 @media (max-width: 800px) {
   .content-quote-with-image {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr !important;
   }
 }
 @media (max-width: 800px) {
