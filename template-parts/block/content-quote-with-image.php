@@ -11,9 +11,15 @@ $id = 'content-quote-with-image-' . $block['id'];
 if (isset($block['data']['preview_image'])) : ?>
   <img src="<?php echo get_template_directory_uri() . '/assets/images/block-previews/content-quote-with-image.png' ?>" alt="">
 <?php return; endif;
+
+$larger_left_hand_column = get_field('larger_left_hand_column');
+$grid_template_column = $larger_left_hand_column ? "1.5fr 1fr;" : "1fr 1fr;";
 ?>
 
-<section id="<?php echo $id; ?>" class="content-quote-with-image container">
+<section 
+id="<?php echo $id; ?>" 
+class="content-quote-with-image container"
+style="grid-template-columns: <?php echo $grid_template_column; ?>">
     <div class="content-quote-with-image__left">
     <?php if( get_field('image') ): ?>
       <img

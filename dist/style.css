@@ -2417,7 +2417,6 @@ Component
 
 .content-quote-with-image {
   display: grid;
-  grid-template-columns: 1fr 1fr;
 }
 @media (max-width: 800px) {
   .content-quote-with-image {

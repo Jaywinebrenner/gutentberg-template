@@ -3,7 +3,6 @@
 
 .content-quote-with-image {
     display: grid;
-    grid-template-columns: 1fr 1fr;
     @media(max-width: $bp-small){
         grid-template-columns: 1fr;
     }
