@@ -425,8 +425,8 @@ h6,
 
 p,
 i {
-  font-size: 1.45rem;
-  font-weight: 350;
+  font-size: 1.3rem;
+  font-weight: 300;
   line-height: 150%;
 }
 @media (max-width: 800px) {
