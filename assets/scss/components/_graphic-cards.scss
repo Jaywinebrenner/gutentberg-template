@@ -31,11 +31,11 @@
                     display: none;
                 }
             }
-            // .mobile-image {
-            //     @media(min-width: 800px){
-            //         display: none;
-            //     }
-            // }
+            .mobile-image {
+                @media(min-width: 800px){
+                    display: none;
+                }
+            }
         }
         &__bottom {
             background-color: $color-licorice;

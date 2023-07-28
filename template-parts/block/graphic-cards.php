@@ -20,15 +20,14 @@ endif;
         if (have_rows('card')) :
             while (have_rows('card')) : the_row();
                 $image = get_sub_field('image');
+                $mobile_image = get_sub_field('mobile_image');
                 $title = get_sub_field('title');
                 $subtitle = get_sub_field('subtitle');
         ?>
                 <div class="card">
                     <div class="card__top">
                         <img class="desktop-image" src="<?php echo $image; ?>" />
-                        <?php if (get_field('mobile_image')) { ?>
-                            <img src="<?php echo get_field('mobile_image') ? get_field('mobile_image') : get_field('image'); ?>" alt="">
-                        <?php } ?>
+                        <img class="mobile-image" src="<?php echo $mobile_image ? $mobile_image : $image; ?>" />
                     </div>
                     <div class="card__bottom">
                         <h5><?php echo $title; ?></h5>

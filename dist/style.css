@@ -4423,6 +4423,11 @@ Component
     display: none;
   }
 }
+@media (min-width: 800px) {
+  .graphic-cards .card__top .mobile-image {
+    display: none;
+  }
+}
 .graphic-cards .card__bottom {
   background-color: #1D0800;
   padding: 1.5rem;
