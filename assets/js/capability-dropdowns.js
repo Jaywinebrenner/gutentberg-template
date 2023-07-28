@@ -39,6 +39,9 @@ class CapabilityDropdowns {
   setColumnsHeight() {
     const columns = this.el.querySelectorAll('.column-top-wrapper');
     let maxHeight = 0;
+    if(window.innerWidth < 800){
+      return;
+    }
     columns.forEach(function (column) {
       column.style.height = 'auto';
       const height = column.offsetHeight;
