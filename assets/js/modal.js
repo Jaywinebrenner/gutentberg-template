@@ -89,6 +89,8 @@ class Modal {
         console.log("document.body", document.body)
         this.savedScrollY = window.scrollY;
         document.body.style.top = `-${window.scrollY}px`;
+        document.body.style.right = '0';
+        document.body.style.left = '0';
         document.body.style.position = 'fixed';
 
 
