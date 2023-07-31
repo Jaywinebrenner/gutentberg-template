@@ -3,43 +3,39 @@ class Modal {
         this.init();
         this.disableScroll = this.disableScroll.bind(this);
         this.enableScroll = this.enableScroll.bind(this);
+        this.savedScrollY;
     }
 
     init() {
         const modal = document.querySelector('.modal');
-        
+
 
         // Event listener for URL changes
         window.addEventListener("popstate", (event) => {
             if (window.location.href.includes("#contact-modal")) {
 
-    
-
                 modal.classList.add('open');
                 this.disableScroll();
 
-                // Ensure you can click inside modal without closing it
-                const modalContainer = document.querySelector('.modal-container');
-                modalContainer.addEventListener('click', (event) => {
-                    if (
-                        event.target === modalContainer ||
-                        event.target.classList.contains('modal-content')
-                    ) {
-                        // Stop event propagation if clicking inside the modal container or modal content
-                        event.stopPropagation();
-                    } else {
-                        const scrollY = document.body.style.top;
-                        document.body.style.position = '';
-                        document.body.style.top = '';
-                        window.scrollTo(0, parseInt(scrollY || '0') * -1);
-                        this.closeModal(modal);
-                        this.removeHashFromURL();
-                    }
-                });
+                 // Close when clicking outside of modal container or X button
+                modal.addEventListener('click', (event) => {
+                if (event.target.classList.contains('modal-exit')) {
+                    event.preventDefault();
+                    this.closeModal(modal);
+                }
+            });
+
+            // Close when clicking X
+            let xButton = document.querySelector(".modal-close");
+            xButton.addEventListener('click', (event) => {
+                event.preventDefault();
+                this.closeModal(modal);
+            });
 
                 modal.addEventListener('click', (event) => {
                     if (event.target.classList.contains('modal-exit') || event.target.classList.contains('modal-close')) {
                         event.preventDefault();
+                        
                         this.closeModal(modal);
                         this.removeHashFromURL(); 
                     }
@@ -73,14 +69,12 @@ class Modal {
     }
 
     closeModal(modal) {
-        const scrollY = document.body.style.top;
-        document.body.style.position = '';
-        document.body.style.top = '';
-        window.scrollTo(0, parseInt(scrollY || '0') * -1);
+
         modal.classList.remove('open');
         this.enableScroll(modal);
         this.removeHashFromURL();
     }
+
     openModal(modal) {
         modal.classList.add('open');
         this.disableScroll(modal);
@@ -91,11 +85,21 @@ class Modal {
     }
 
     disableScroll() {
+        console.log("scrolly", window.scrollY)
+        console.log("document.body", document.body)
+        this.savedScrollY = window.scrollY;
+        document.body.style.top = `-${window.scrollY}px`;
+        document.body.style.position = 'fixed';
+
+
         document.body.classList.add('disable-scroll');
         document.documentElement.classList.add('disable-scroll');
 
         document.body.classList.remove('enable-scroll');
         document.documentElement.classList.remove('enable-scroll');
+
+
+
     }
 
     enableScroll() {
@@ -104,6 +108,13 @@ class Modal {
 
         document.body.classList.remove('disable-scroll');
         document.documentElement.classList.remove('disable-scroll');
+
+        // Restore the saved scroll position
+        window.scrollTo(0, this.savedScrollY);
+
+        // Remove the fixed positioning styles from the body element
+        document.body.style.position = '';
+        document.body.style.top = '';
     }
 }
 
