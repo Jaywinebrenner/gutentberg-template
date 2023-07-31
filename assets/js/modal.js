@@ -7,10 +7,13 @@ class Modal {
 
     init() {
         const modal = document.querySelector('.modal');
+        
 
         // Event listener for URL changes
         window.addEventListener("popstate", (event) => {
             if (window.location.href.includes("#contact-modal")) {
+
+    
 
                 modal.classList.add('open');
                 this.disableScroll();
@@ -25,6 +28,10 @@ class Modal {
                         // Stop event propagation if clicking inside the modal container or modal content
                         event.stopPropagation();
                     } else {
+                        const scrollY = document.body.style.top;
+                        document.body.style.position = '';
+                        document.body.style.top = '';
+                        window.scrollTo(0, parseInt(scrollY || '0') * -1);
                         this.closeModal(modal);
                         this.removeHashFromURL();
                     }
@@ -66,9 +73,17 @@ class Modal {
     }
 
     closeModal(modal) {
+        const scrollY = document.body.style.top;
+        document.body.style.position = '';
+        document.body.style.top = '';
+        window.scrollTo(0, parseInt(scrollY || '0') * -1);
         modal.classList.remove('open');
         this.enableScroll(modal);
         this.removeHashFromURL();
+    }
+    openModal(modal) {
+        modal.classList.add('open');
+        this.disableScroll(modal);
     }
 
     removeHashFromURL() {
