@@ -3,24 +3,22 @@ class Modal {
         this.init();
         this.disableScroll = this.disableScroll.bind(this);
         this.enableScroll = this.enableScroll.bind(this);
+        this.savedScrollY;
     }
 
     init() {
-        const modalHash = window.location.hash;
+        const modal = document.querySelector('.modal');
 
-        if (modalHash === "#contact-modal") {
-            const modal = document.querySelector('.modal');
-            modal.classList.add('open');
-            this.disableScroll(modal);
 
-            const modalContainer = document.querySelector('.modal-container');
-            modalContainer.addEventListener('click', (event) => {
-                // Stop event propagation if clicking inside the modal container
-                event.stopPropagation();
-            });
+        // Event listener for URL changes
+        window.addEventListener("popstate", (event) => {
+            if (window.location.href.includes("#contact-modal")) {
 
-            // Close when clicking outside of modal container or X button
-            modal.addEventListener('click', (event) => {
+                modal.classList.add('open');
+                this.disableScroll();
+
+                 // Close when clicking outside of modal container or X button
+                modal.addEventListener('click', (event) => {
                 if (event.target.classList.contains('modal-exit')) {
                     event.preventDefault();
                     this.closeModal(modal);
@@ -34,41 +32,74 @@ class Modal {
                 this.closeModal(modal);
             });
 
-            // Change '(Required)' to '*'
-            const requiredTextElements = document.querySelectorAll('.gfield_required_text');
-            requiredTextElements.forEach((element) => {
-                element.textContent = element.textContent.replace('(Required)', '*');
-            });
+                modal.addEventListener('click', (event) => {
+                    if (event.target.classList.contains('modal-exit') || event.target.classList.contains('modal-close')) {
+                        event.preventDefault();
+                        
+                        this.closeModal(modal);
+                        this.removeHashFromURL(); 
+                    }
+                });
 
-            const validationMessageDiv = document.querySelector('.gfield .validation_message');
+                // Close modal when "Esc" key is pressed
+                document.addEventListener('keydown', (event) => {
+                    if (event.key === 'Escape') {
+                        event.preventDefault();
+                        this.closeModal(modal);
+                    }
+                });
 
-            if (validationMessageDiv) {
-                const pseudoElement = document.createElement('span');
-                pseudoElement.classList.add('pseudo-element');
-                validationMessageDiv.appendChild(pseudoElement);
+            } else {
+                this.closeModal();
             }
+        });
 
-            // Close modal when "Esc" key is pressed
-            document.addEventListener('keydown', (event) => {
-                if (event.key === 'Escape') {
-                    event.preventDefault();
-                    this.closeModal(modal);
-                }
-            });
+        const requiredTextElements = document.querySelectorAll('.gfield_required_text');
+        requiredTextElements.forEach((element) => {
+            element.textContent = element.textContent.replace('(Required)', '*');
+        });
+
+        const validationMessageDiv = document.querySelector('.gfield .validation_message');
+
+        if (validationMessageDiv) {
+            const pseudoElement = document.createElement('span');
+            pseudoElement.classList.add('pseudo-element');
+            validationMessageDiv.appendChild(pseudoElement);
         }
     }
 
     closeModal(modal) {
+
         modal.classList.remove('open');
         this.enableScroll(modal);
+        this.removeHashFromURL();
+    }
+
+    openModal(modal) {
+        modal.classList.add('open');
+        this.disableScroll(modal);
+    }
+
+    removeHashFromURL() {
+        history.replaceState('', document.title, window.location.pathname + window.location.search);
     }
 
     disableScroll() {
+        this.savedScrollY = window.scrollY;
+        document.body.style.top = `-${window.scrollY}px`;
+        document.body.style.right = '0';
+        document.body.style.left = '0';
+        document.body.style.position = 'fixed';
+
+
         document.body.classList.add('disable-scroll');
         document.documentElement.classList.add('disable-scroll');
 
         document.body.classList.remove('enable-scroll');
         document.documentElement.classList.remove('enable-scroll');
+
+
+
     }
 
     enableScroll() {
@@ -77,6 +108,13 @@ class Modal {
 
         document.body.classList.remove('disable-scroll');
         document.documentElement.classList.remove('disable-scroll');
+
+        // Restore the saved scroll position
+        window.scrollTo(0, this.savedScrollY);
+
+        // Remove the fixed positioning styles from the body element
+        document.body.style.position = '';
+        document.body.style.top = '';
     }
 }
 
@@ -85,3 +123,5 @@ document.addEventListener('DOMContentLoaded', () => {
         new Modal();
     }
 });
+
+
