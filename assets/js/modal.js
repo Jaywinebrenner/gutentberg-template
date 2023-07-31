@@ -85,8 +85,6 @@ class Modal {
     }
 
     disableScroll() {
-        console.log("scrolly", window.scrollY)
-        console.log("document.body", document.body)
         this.savedScrollY = window.scrollY;
         document.body.style.top = `-${window.scrollY}px`;
         document.body.style.right = '0';
