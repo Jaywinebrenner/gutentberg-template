@@ -6,61 +6,73 @@ class Modal {
     }
 
     init() {
-        const modalHash = window.location.hash;
+        const modal = document.querySelector('.modal');
 
-        if (modalHash === "#contact-modal") {
-            const modal = document.querySelector('.modal');
-            modal.classList.add('open');
-            this.disableScroll(modal);
+        // Event listener for URL changes
+        window.addEventListener("popstate", (event) => {
+            if (window.location.href.includes("#contact-modal")) {
 
-            const modalContainer = document.querySelector('.modal-container');
-            modalContainer.addEventListener('click', (event) => {
-                // Stop event propagation if clicking inside the modal container
-                event.stopPropagation();
-            });
+                modal.classList.add('open');
+                this.disableScroll();
 
-            // Close when clicking outside of modal container or X button
-            modal.addEventListener('click', (event) => {
-                if (event.target.classList.contains('modal-exit')) {
-                    event.preventDefault();
-                    this.closeModal(modal);
-                }
-            });
+                // Ensure you can click inside modal without closing it
+                const modalContainer = document.querySelector('.modal-container');
+                modalContainer.addEventListener('click', (event) => {
+                    if (
+                        event.target === modalContainer ||
+                        event.target.classList.contains('modal-content')
+                    ) {
+                        // Stop event propagation if clicking inside the modal container or modal content
+                        event.stopPropagation();
+                    } else {
+                        this.closeModal(modal);
+                        this.removeHashFromURL();
+                    }
+                });
 
-            // Close when clicking X
-            let xButton = document.querySelector(".modal-close");
-            xButton.addEventListener('click', (event) => {
-                event.preventDefault();
-                this.closeModal(modal);
-            });
+                modal.addEventListener('click', (event) => {
+                    if (event.target.classList.contains('modal-exit') || event.target.classList.contains('modal-close')) {
+                        event.preventDefault();
+                        this.closeModal(modal);
+                        this.removeHashFromURL(); 
+                    }
+                });
 
-            // Change '(Required)' to '*'
-            const requiredTextElements = document.querySelectorAll('.gfield_required_text');
-            requiredTextElements.forEach((element) => {
-                element.textContent = element.textContent.replace('(Required)', '*');
-            });
+                // Close modal when "Esc" key is pressed
+                document.addEventListener('keydown', (event) => {
+                    if (event.key === 'Escape') {
+                        event.preventDefault();
+                        this.closeModal(modal);
+                    }
+                });
 
-            const validationMessageDiv = document.querySelector('.gfield .validation_message');
-
-            if (validationMessageDiv) {
-                const pseudoElement = document.createElement('span');
-                pseudoElement.classList.add('pseudo-element');
-                validationMessageDiv.appendChild(pseudoElement);
+            } else {
+                this.closeModal();
             }
+        });
 
-            // Close modal when "Esc" key is pressed
-            document.addEventListener('keydown', (event) => {
-                if (event.key === 'Escape') {
-                    event.preventDefault();
-                    this.closeModal(modal);
-                }
-            });
+        const requiredTextElements = document.querySelectorAll('.gfield_required_text');
+        requiredTextElements.forEach((element) => {
+            element.textContent = element.textContent.replace('(Required)', '*');
+        });
+
+        const validationMessageDiv = document.querySelector('.gfield .validation_message');
+
+        if (validationMessageDiv) {
+            const pseudoElement = document.createElement('span');
+            pseudoElement.classList.add('pseudo-element');
+            validationMessageDiv.appendChild(pseudoElement);
         }
     }
 
     closeModal(modal) {
         modal.classList.remove('open');
         this.enableScroll(modal);
+        this.removeHashFromURL();
+    }
+
+    removeHashFromURL() {
+        history.replaceState('', document.title, window.location.pathname + window.location.search);
     }
 
     disableScroll() {
@@ -85,3 +97,5 @@ document.addEventListener('DOMContentLoaded', () => {
         new Modal();
     }
 });
+
+
