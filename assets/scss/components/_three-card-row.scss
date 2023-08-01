@@ -1,12 +1,12 @@
 .three-card-row {
     &__top {
         text-align: center;
-        padding-top: 11.5rem;
+        // padding-top: 11.5rem;
         max-width: 65rem;
         margin-left: auto;
         margin-right: auto;
         @media (max-width: 800px) {
-            padding-top: 5rem;
+            // padding-top: 5rem;
         }
     }
     &__card__top {
