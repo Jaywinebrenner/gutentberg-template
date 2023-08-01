@@ -14,13 +14,16 @@ if (isset($block['data']['preview_image'])) : ?>
 endif;
 ?>
 
-<section id="<?php echo $id; ?>" class="two-column-content container">
+<section id="<?php echo $id; ?>" 
+class="two-column-content container">
 
     <div class="two-column-content__left">
         <?php the_field('left_column_content'); ?>
     </div>
 
-    <div class="two-column-content__right">
+    <div 
+    class="two-column-content__right"
+    style="background-color:<?php the_field('right_column_background_color'); ?>">
         <?php the_field('right_column_content'); ?>
     </div>
 
