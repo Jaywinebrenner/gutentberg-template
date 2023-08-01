@@ -2396,6 +2396,7 @@ Component
 @media (max-width: 800px) {
   .two-column-content {
     grid-template-columns: 1fr;
+    grid-gap: 3rem;
   }
 }
 .two-column-content__right {
