@@ -3332,7 +3332,6 @@ Component
   grid-template-columns: 2fr 1.5fr;
   -moz-column-gap: 6.875rem;
        column-gap: 6.875rem;
-  padding: 4rem 0;
 }
 @media (max-width: 800px) {
   .image-content {
