@@ -2953,17 +2953,9 @@ Component
 
 .testimonial {
   text-align: center;
-  padding-top: 11.5rem;
-  padding-bottom: 11.5rem;
 }
 .testimonial .slick-dotted.slick-slider {
   margin-bottom: 4.0625rem;
-}
-@media (max-width: 800px) {
-  .testimonial {
-    padding-top: 5rem;
-    padding-bottom: 5rem;
-  }
 }
 .testimonial__title {
   text-transform: uppercase;
@@ -3336,7 +3328,6 @@ Component
 @media (max-width: 800px) {
   .image-content {
     flex-direction: column-reverse;
-    padding: 1.5rem 0;
   }
 }
 .image-content__right {
