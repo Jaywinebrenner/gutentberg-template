@@ -2566,7 +2566,7 @@ Component
 }
 @media (max-width: 800px) {
   .capability-dropdowns .capability-dropdowns-wrapper__top {
-    padding: 4rem 0;
+    padding: 0 0 4rem 0;
   }
 }
 .capability-dropdowns .capability-dropdowns-wrapper__top h2 {
