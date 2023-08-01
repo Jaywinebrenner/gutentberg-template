@@ -2238,15 +2238,9 @@ Component
 
 .three-card-row__top {
   text-align: center;
-  padding-top: 11.5rem;
   max-width: 65rem;
   margin-left: auto;
   margin-right: auto;
-}
-@media (max-width: 800px) {
-  .three-card-row__top {
-    padding-top: 5rem;
-  }
 }
 .three-card-row__card__top {
   border-top-left-radius: 10px;
