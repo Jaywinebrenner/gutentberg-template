@@ -24,11 +24,19 @@ export default class Navigation {
             let submenu = $(".sub-menu");
             const backgroundColorBand = $('.background-color-band');
             const inlineStyle = backgroundColorBand.attr('style');
+            const inlineStyleMenuItem = backgroundColorBand.attr('style');
+            const menuItem = $('.menu-item')
+
+
             if (inlineStyle && inlineStyle.includes('background-color: #F7F4F0')) {
-                return;
+                console.log("includes linen");
             } else {
+                console.log("does not includes linen");
                 submenu.css('background-color', '#F7F4F0');
+                menuItem.css('background-color', '#FFF');
             }
+
+
         }
 
         ensureSiteIsScrollable() {
