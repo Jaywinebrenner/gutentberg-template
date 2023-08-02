@@ -2508,11 +2508,6 @@ Component
 .info-cards__content img {
   margin-bottom: 2rem;
 }
-@media (max-width: 800px) {
-  .info-cards__content h5 {
-    font-size: 21px;
-  }
-}
 @media (min-width: 1975px) {
   .info-cards__content h5 {
     font-size: 1.1125rem;
