@@ -13,7 +13,7 @@ class Modal {
         // Event listener for URL changes
         window.addEventListener("popstate", (event) => {
             if (window.location.href.includes("#contact-modal")) {
-
+                event.preventDefault();
                 modal.classList.add('open');
                 this.disableScroll();
 
@@ -35,9 +35,9 @@ class Modal {
                 modal.addEventListener('click', (event) => {
                     if (event.target.classList.contains('modal-exit') || event.target.classList.contains('modal-close')) {
                         event.preventDefault();
-                        
+
                         this.closeModal(modal);
-                        this.removeHashFromURL(); 
+                        this.removeHashFromURL();
                     }
                 });
 
