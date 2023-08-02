@@ -505,6 +505,30 @@ function init_acf_fields()
                 )
             )
         ));
+
+        // register source graphic cards
+        acf_register_block(array(
+            'name'              => 'graphic-cards',
+            'title'             => __('Graphic Cards'),
+            'description'       => __('Graphic Cards'),
+            'render_callback'   => 'block_renderer',
+            'category'          => 'formatting',
+            'icon'              => 'admin-comments',
+            'align'           => 'full',
+            'supports'        => array(
+                'align' => array('full'),
+                'jsx'             => true,
+            ),
+            'keywords'          => array('Graphic Cards'),
+            'example'  => array(
+                'attributes' => array(
+                    'mode' => 'preview',
+                    'data' => array(
+                        'preview_image' => [],
+                    )
+                )
+            )
+        ));
     }
 }
 

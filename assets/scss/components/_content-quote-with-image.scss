@@ -3,9 +3,8 @@
 
 .content-quote-with-image {
     display: grid;
-    grid-template-columns: 1fr 1fr;
     @media(max-width: $bp-small){
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr!important;
     }
     &__left {
         @media(max-width: $bp-small){
@@ -17,6 +16,9 @@
             @media(max-width: $bp-small){
                 width: 100%;
             }
+        }
+        .image-has-background {
+            padding: 26px;
         }
     }
     &__right {

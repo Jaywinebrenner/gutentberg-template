@@ -11,24 +11,70 @@ export default class Navigation {
             this.init();
             this.ensureSiteIsScrollable = this.ensureSiteIsScrollable.bind(this);
             this.changeSubmenuColor = this.changeSubmenuColor.bind(this);
+            this.checkScreenWidth = this.checkScreenWidth.bind(this);
         }
         init() {
             this.ensureSiteIsScrollable();
             this.hamburger();
             this.mobileMenuAccordion();
             this.changeSubmenuColor();
+            this.checkScreenWidth();
+            $(window).on("resize", this.checkScreenWidth);
         }
+        checkScreenWidth() {
+            const screenWidth = $(window).width();
+          
+            if (screenWidth > 800) {
+                console.log("big")
+                let $ = jQuery;
+                let submenu = $(".sub-menu");
+                const backgroundColorBand = $('.background-color-band');
+                const inlineStyle = backgroundColorBand.attr('style');
+                const menuItem = $('.sub-menu .menu-item')
+    
+                if (inlineStyle && inlineStyle.includes('background-color: #F7F4F0')) {
+                    console.log("LINEN")
+                    menuItem.css('background-color', '#FFF');
+                } else {
+                    console.log("WHITE")
+                    submenu.css('background-color', '#F7F4F0');
+                    menuItem.css('background-color', '#F7F4F0');
+                }
+            } 
+            if (screenWidth < 800) {
+                console.log("small")
+                let $ = jQuery;
+                let submenu = $(".sub-menu");
+                const backgroundColorBand = $('.background-color-band');
+                const inlineStyle = backgroundColorBand.attr('style');
+                const menuItem = $('.sub-menu .menu-item')
+    
+                if (inlineStyle && inlineStyle.includes('background-color: #F7F4F0')) {
+                    console.log("LINEN")
+                } else {
+                    console.log("WHITE")
+                }
+            } 
+
+
+          }
 
         changeSubmenuColor (){
-            let $ = jQuery;
-            let submenu = $(".sub-menu");
-            const backgroundColorBand = $('.background-color-band');
-            const inlineStyle = backgroundColorBand.attr('style');
-            if (inlineStyle && inlineStyle.includes('background-color: #F7F4F0')) {
-                return;
-            } else {
-                submenu.css('background-color', '#F7F4F0');
-            }
+
+            // let $ = jQuery;
+            // let submenu = $(".sub-menu");
+            // const backgroundColorBand = $('.background-color-band');
+            // const inlineStyle = backgroundColorBand.attr('style');
+            // const menuItem = $('.menu-item')
+
+            // if (inlineStyle && inlineStyle.includes('background-color: #F7F4F0')) {
+            //     console.log("hello")
+            // } else {
+            //     submenu.css('background-color', '#F7F4F0');
+            //     menuItem.css('background-color', '#FFF');
+            // }
+
+
         }
 
         ensureSiteIsScrollable() {

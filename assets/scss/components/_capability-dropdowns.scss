@@ -7,9 +7,9 @@
         }
         &__top {
             text-align: center;
-            padding: 0 23% 7rem 23%;
+            padding: 0 23% 3rem 23%;
             @media(max-width: $bp-small){
-                padding: 4rem 0;
+                padding: 0 0 4rem 0;
             }
             h2 {
                 margin-bottom: 2.25rem;
@@ -28,6 +28,9 @@
             }
             .capability-dropdowns-column {
                 .column-top-wrapper {
+                    @media(max-width: $bp-small){
+                        height: auto;
+                    }
  
                     .italics {
                         font-style: italic;

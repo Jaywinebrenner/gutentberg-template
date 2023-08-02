@@ -426,7 +426,7 @@ h6,
 p,
 i {
   font-size: 1.3rem;
-  font-weight: 400;
+  font-weight: 300;
   line-height: 150%;
 }
 @media (max-width: 800px) {
@@ -1525,7 +1525,6 @@ Component
   top: 2rem;
   left: 0;
   padding: 1.7625rem;
-  width: 20rem;
   z-index: 100;
 }
 .navigation-menu-wrapper .menu-navigation-container .navigation-menu .sub-menu:before {
@@ -1546,6 +1545,7 @@ Component
 .navigation-menu-wrapper .menu-navigation-container .navigation-menu .sub-menu .menu-item {
   padding-bottom: 1.7625rem;
   margin-right: 0;
+  white-space: nowrap;
 }
 .navigation-menu-wrapper .menu-navigation-container .navigation-menu .sub-menu .menu-item:last-of-type {
   padding-bottom: 0;
@@ -2238,15 +2238,9 @@ Component
 
 .three-card-row__top {
   text-align: center;
-  padding-top: 11.5rem;
   max-width: 65rem;
   margin-left: auto;
   margin-right: auto;
-}
-@media (max-width: 800px) {
-  .three-card-row__top {
-    padding-top: 5rem;
-  }
 }
 .three-card-row__card__top {
   border-top-left-radius: 10px;
@@ -2258,7 +2252,7 @@ Component
 .three-card-row .cards-wrapper {
   display: flex;
   width: 100%;
-  padding-top: 6.5625rem;
+  padding-top: 3rem;
 }
 @media (max-width: 800px) {
   .three-card-row .cards-wrapper {
@@ -2294,7 +2288,12 @@ Component
 }
 .three-card-row .btn-wrapper {
   text-align: center;
-  padding: 5rem 0;
+  padding: 5rem 0 10rem 0;
+}
+@media (max-width: 800px) {
+  .three-card-row .btn-wrapper {
+    padding: 5rem 0 5rem 0;
+  }
 }
 
 .quote-cards .cards-wrapper {
@@ -2402,10 +2401,10 @@ Component
 @media (max-width: 800px) {
   .two-column-content {
     grid-template-columns: 1fr;
+    grid-gap: 3rem;
   }
 }
 .two-column-content__right {
-  background-color: #FFFFFF;
   padding: 1.875rem;
   border-radius: 10px;
 }
@@ -2417,11 +2416,10 @@ Component
 
 .content-quote-with-image {
   display: grid;
-  grid-template-columns: 1fr 1fr;
 }
 @media (max-width: 800px) {
   .content-quote-with-image {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr !important;
   }
 }
 @media (max-width: 800px) {
@@ -2437,6 +2435,9 @@ Component
   .content-quote-with-image__left img {
     width: 100%;
   }
+}
+.content-quote-with-image__left .image-has-background {
+  padding: 26px;
 }
 .content-quote-with-image__right {
   display: flex;
@@ -2507,11 +2508,6 @@ Component
 .info-cards__content img {
   margin-bottom: 2rem;
 }
-@media (max-width: 800px) {
-  .info-cards__content h5 {
-    font-size: 21px;
-  }
-}
 @media (min-width: 1975px) {
   .info-cards__content h5 {
     font-size: 1.1125rem;
@@ -2560,11 +2556,11 @@ Component
 }
 .capability-dropdowns .capability-dropdowns-wrapper__top {
   text-align: center;
-  padding: 0 23% 7rem 23%;
+  padding: 0 23% 3rem 23%;
 }
 @media (max-width: 800px) {
   .capability-dropdowns .capability-dropdowns-wrapper__top {
-    padding: 4rem 0;
+    padding: 0 0 4rem 0;
   }
 }
 .capability-dropdowns .capability-dropdowns-wrapper__top h2 {
@@ -2582,6 +2578,11 @@ Component
   .capability-dropdowns .capability-dropdowns-wrapper__bottom {
     grid-template-columns: 1fr;
     padding: 1.6875rem;
+  }
+}
+@media (max-width: 800px) {
+  .capability-dropdowns .capability-dropdowns-wrapper__bottom .capability-dropdowns-column .column-top-wrapper {
+    height: auto;
   }
 }
 .capability-dropdowns .capability-dropdowns-wrapper__bottom .capability-dropdowns-column .column-top-wrapper .italics {
@@ -2946,17 +2947,9 @@ Component
 
 .testimonial {
   text-align: center;
-  padding-top: 11.5rem;
-  padding-bottom: 11.5rem;
 }
 .testimonial .slick-dotted.slick-slider {
   margin-bottom: 4.0625rem;
-}
-@media (max-width: 800px) {
-  .testimonial {
-    padding-top: 5rem;
-    padding-bottom: 5rem;
-  }
 }
 .testimonial__title {
   text-transform: uppercase;
@@ -3002,7 +2995,7 @@ Component
   background-color: #FFFFFF;
   border-radius: 10px;
   padding: 3.75rem;
-  padding: 8rem 3.75rem 3.75rem 3.75rem;
+  padding: 8rem 3.75rem 0 3.75rem;
 }
 @media (max-width: 800px) {
   .our-services .our-services-wrapper {
@@ -3031,7 +3024,7 @@ Component
   }
 }
 .our-services__top .image-wrapper {
-  padding: 8rem 0;
+  padding: 4rem 0 8rem 0;
 }
 @media (max-width: 800px) {
   .our-services__top .image-wrapper {
@@ -3045,17 +3038,12 @@ Component
 }
 @media (min-width: 1700px) {
   .our-services__top .image-wrapper {
-    padding: 7rem 0;
+    padding: 3.5rem 0 7rem 0;
   }
 }
 @media (min-width: 1900px) {
   .our-services__top .image-wrapper {
-    padding: 3rem 0;
-  }
-}
-@media (min-width: 2300px) {
-  .our-services__top .image-wrapper {
-    padding: 0;
+    padding: 3rem 0 3rem 0;
   }
 }
 .our-services__top .image-wrapper .image {
@@ -3330,12 +3318,10 @@ Component
   grid-template-columns: 2fr 1.5fr;
   -moz-column-gap: 6.875rem;
        column-gap: 6.875rem;
-  padding: 4rem 0;
 }
 @media (max-width: 800px) {
   .image-content {
     flex-direction: column-reverse;
-    padding: 1.5rem 0;
   }
 }
 .image-content__right {
@@ -4381,6 +4367,67 @@ Component
           mask-repeat: round;
   -webkit-mask-position: unset;
           mask-position: unset;
+}
+
+.graphic-cards .cards-wrapper {
+  display: grid;
+  grid-gap: 1.25rem;
+  display: flex;
+}
+@media (max-width: 800px) {
+  .graphic-cards .cards-wrapper {
+    display: block;
+    padding-bottom: 20px;
+  }
+}
+.graphic-cards .card {
+  flex-grow: 1;
+  flex-basis: 0;
+  display: flex;
+  flex-direction: column;
+}
+@media (max-width: 800px) {
+  .graphic-cards .card {
+    padding-bottom: 1.25rem;
+  }
+}
+.graphic-cards .card img {
+  height: 28.125rem;
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 100%;
+}
+.graphic-cards .card__top {
+  background-color: #FFFFFF;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  padding: 2.25rem;
+}
+@media (max-width: 800px) {
+  .graphic-cards .card__top .desktop-image {
+    display: none;
+  }
+}
+@media (min-width: 800px) {
+  .graphic-cards .card__top .mobile-image {
+    display: none;
+  }
+}
+.graphic-cards .card__bottom {
+  flex: 1;
+  background-color: #1D0800;
+  padding: 1.5rem;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.graphic-cards .card p {
+  font-style: italic;
+  color: #FFFFFF;
+  margin-bottom: 0;
+}
+.graphic-cards .card h5 {
+  color: #FFFFFF;
+  margin-bottom: 1rem;
 }
 
 /*--------------------------------------------------------------

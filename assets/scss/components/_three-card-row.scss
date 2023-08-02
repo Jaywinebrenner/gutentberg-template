@@ -1,12 +1,12 @@
 .three-card-row {
     &__top {
         text-align: center;
-        padding-top: 11.5rem;
+        // padding-top: 11.5rem;
         max-width: 65rem;
         margin-left: auto;
         margin-right: auto;
         @media (max-width: 800px) {
-            padding-top: 5rem;
+            // padding-top: 5rem;
         }
     }
     &__card__top {
@@ -19,7 +19,7 @@
     .cards-wrapper {
         display: flex;
         width: 100%;
-        padding-top: 6.5625rem;
+        padding-top: 3rem;
         @media (max-width: 800px) {
             display: block;
             padding-top: 1rem;
@@ -52,6 +52,9 @@
     }
     .btn-wrapper {
         text-align: center;
-        padding: 5rem 0;
+        padding: 5rem 0 10rem 0;
+        @media(max-width: $bp-small){
+            padding: 5rem 0 5rem 0;
+        }
     }
 }

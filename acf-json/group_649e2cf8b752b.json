@@ -6,6 +6,7 @@
             "key": "field_649e2cfd58cd3",
             "label": "Left Column Content",
             "name": "left_column_content",
+            "aria-label": "",
             "type": "textarea",
             "instructions": "",
             "required": 0,
@@ -25,6 +26,7 @@
             "key": "field_649e2d98fc9c8",
             "label": "Right Column Content",
             "name": "right_column_content",
+            "aria-label": "",
             "type": "wysiwyg",
             "instructions": "",
             "required": 0,
@@ -39,6 +41,32 @@
             "toolbar": "full",
             "media_upload": 1,
             "delay": 0
+        },
+        {
+            "key": "field_64c990fd2a8ae",
+            "label": "Right Column Background Color",
+            "name": "right_column_background_color",
+            "aria-label": "",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "white": "#FFFFFF",
+                "linen": "#F7F4F0"
+            },
+            "default_value": false,
+            "return_format": "value",
+            "multiple": 0,
+            "allow_null": 0,
+            "ui": 0,
+            "ajax": 0,
+            "placeholder": ""
         }
     ],
     "location": [
@@ -56,7 +84,8 @@
     "label_placement": "top",
     "instruction_placement": "label",
     "hide_on_screen": "",
-    "active": 1,
+    "active": true,
     "description": "",
-    "modified": 1688087975
+    "show_in_rest": 0,
+    "modified": 1690931511
 }
