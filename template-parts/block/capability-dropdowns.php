@@ -28,6 +28,7 @@ $id = 'capability-dropdowns-' . $block['id'];
                         $italics = get_sub_field('italics');
                         $quote = get_sub_field('quote');
                         $quoter = get_sub_field('quoter');
+                        $addQuote = get_sub_field('add_quote')
                         ?>
                         <div class="capability-dropdowns-column">
                             <div class="column-top-wrapper">
@@ -46,6 +47,7 @@ $id = 'capability-dropdowns-' . $block['id'];
                                     while( have_rows('dropdown') ) : the_row();
                                     $title = get_sub_field('title');
                                     $content = get_sub_field('content');
+
                                     ?>
                                     <div class="accordion-item">
                                         <div class="accordion-item__title">
@@ -61,10 +63,13 @@ $id = 'capability-dropdowns-' . $block['id'];
                                 endif;
                                 ?>
                             </div>
+                            <?php if ($addQuote) { ?>
                             <div class="quote-wrapper">
-                                <p class="minor quote"><?php echo $quote?></p>
-                                <p class="minor quoter"><?php echo $quoter?></p>
+                                <p class="minor quote"><?php echo $quote; ?></p>
+                                <p class="minor quoter"><?php echo $quoter; ?></p>
                             </div>
+                        <?php } ?>
+              
 
                 </div>
                 <?php
