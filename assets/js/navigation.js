@@ -11,22 +11,43 @@ export default class Navigation {
             this.init();
             this.ensureSiteIsScrollable = this.ensureSiteIsScrollable.bind(this);
             this.changeSubmenuColor = this.changeSubmenuColor.bind(this);
+            this.checkScreenWidth = this.checkScreenWidth.bind(this);
         }
         init() {
             this.ensureSiteIsScrollable();
             this.hamburger();
             this.mobileMenuAccordion();
             this.changeSubmenuColor();
+            $(window).on("resize", checkScreenWidth);
         }
+        checkScreenWidth() {
+            const screenWidth = $(window).width();
+          
+            if (screenWidth > 800) {
+                let $ = jQuery;
+                let submenu = $(".sub-menu");
+                const backgroundColorBand = $('.background-color-band');
+                const inlineStyle = backgroundColorBand.attr('style');
+                const menuItem = $('.menu-item')
+    
+                if (inlineStyle && inlineStyle.includes('background-color: #F7F4F0')) {
+                    return;
+                } else {
+                    submenu.css('background-color', '#F7F4F0');
+                    menuItem.css('background-color', '#FFF');
+                }
+            } else {
+                return;
+            }
+          }
 
         changeSubmenuColor (){
+
             let $ = jQuery;
             let submenu = $(".sub-menu");
             const backgroundColorBand = $('.background-color-band');
             const inlineStyle = backgroundColorBand.attr('style');
-            const inlineStyleMenuItem = backgroundColorBand.attr('style');
             const menuItem = $('.menu-item')
-
 
             if (inlineStyle && inlineStyle.includes('background-color: #F7F4F0')) {
                 return;
