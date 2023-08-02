@@ -11,7 +11,7 @@ class InfoCards {
 
             let images = document.querySelectorAll('.info-cards__content img');
             images.forEach((x) => {
-                x.style.width = '8.2drem';
+                x.style.width = '8.25rem';
                 })
             });
         }
