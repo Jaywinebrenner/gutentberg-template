@@ -34,11 +34,11 @@ endif;
             ?>
             <?php
             if ($left_column['button_url']) {
-            ?><p><a href="<?php echo $left_column['button_url']; ?>" class="btn_red"><?php echo $left_column['button_text']; ?></a><?php
-                } 
+            ?><a href="<?php echo $left_column['button_url']; ?>" class="btn_red"><?php echo $left_column['button_text']; ?></a><?php
+                }
             ?>
 
-            
+
 
         <?php endif; ?>
 
