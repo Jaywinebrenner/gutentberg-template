@@ -29,9 +29,8 @@ export default class Navigation {
 
 
             if (inlineStyle && inlineStyle.includes('background-color: #F7F4F0')) {
-                console.log("includes linen");
+                return;
             } else {
-                console.log("does not includes linen");
                 submenu.css('background-color', '#F7F4F0');
                 menuItem.css('background-color', '#FFF');
             }
