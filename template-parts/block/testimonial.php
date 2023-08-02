@@ -30,8 +30,11 @@ endif;
             <?php endif; ?>
         </div>
 
-        <?php $button = get_field('button'); ?>
-        <?php if ($button['url']) : ?>
+        <?php 
+        $button = get_field('button'); 
+        $addButton = get_field('add_button')
+        ?>
+        <?php if ($addButton) : ?>
             <a href="<?php echo $button['url']; ?>" class="btn_red"><?php echo $button['text']; ?></a>
         <?php endif; ?>
     </div>

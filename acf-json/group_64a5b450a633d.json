@@ -46,6 +46,26 @@
             "append": ""
         },
         {
+            "key": "field_64cadc4e11d48",
+            "label": "Add Button",
+            "name": "add_button",
+            "aria-label": "",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
             "key": "field_64a5d68d8af0e",
             "label": "Button",
             "name": "button",
@@ -53,7 +73,15 @@
             "type": "group",
             "instructions": "If the URL field is left empty, the button will remain hidden.",
             "required": 0,
-            "conditional_logic": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_64cadc4e11d48",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
             "wrapper": {
                 "width": "",
                 "class": "",
@@ -188,5 +216,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1688590233
+    "modified": 1691016338
 }
