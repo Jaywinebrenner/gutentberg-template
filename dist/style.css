@@ -2290,6 +2290,11 @@ Component
   text-align: center;
   padding: 5rem 0 10rem 0;
 }
+@media (max-width: 800px) {
+  .three-card-row .btn-wrapper {
+    padding: 5rem 0 5rem 0;
+  }
+}
 
 .quote-cards .cards-wrapper {
   display: grid;
