@@ -24,6 +24,9 @@ if (isset($block['data']['preview_image'])) : ?>
             <h5><?php the_sub_field('title'); ?></h5>
             <p class="minor"><?php the_sub_field('copy') ?></p>
           </div>
+
+
+
           <?php if (get_sub_field('add_cta_button')) : ?>
             <hr>
             <div class="info-cards__cta-wrapper">
@@ -39,6 +42,23 @@ if (isset($block['data']['preview_image'])) : ?>
               <?php endif; ?>
             </div>
           <?php endif; ?>
+
+
+          <?php if (get_sub_field('add_quote')) : ?>
+            <hr>
+            <div class="info-cards__cta-wrapper">
+              <?php $add_quote_data = get_sub_field('added_quote'); ?>
+              <p class="minor quote"><strong>
+                  <?php echo $add_quote_data; ?>
+                </strong></p>
+            </div>
+          <?php endif; ?>
+
+
+
+
+
+
         </div>
       <?php endwhile; ?>
     </div>
