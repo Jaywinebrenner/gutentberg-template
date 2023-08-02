@@ -14,20 +14,58 @@
 	<link rel="profile" href="http://gmpg.org/xfn/11">
 	<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
 	<!-- favicon -->
-	<link rel="apple-touch-icon" sizes="180x180" href="<?php echo get_template_directory_uri();?>/favicon/apple-touch-icon.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="<?php echo get_template_directory_uri();?>/favicon/favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="<?php echo get_template_directory_uri();?>/favicon/favicon-16x16.png">
-	<link rel="manifest" href="<?php echo get_template_directory_uri();?>/favicon/site.webmanifest">
-	<link rel="mask-icon" href="<?php echo get_template_directory_uri();?>/favicon/safari-pinned-tab.svg" color="#5bbad5">
+	<link rel="apple-touch-icon" sizes="180x180" href="<?php echo get_template_directory_uri(); ?>/favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="<?php echo get_template_directory_uri(); ?>/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="<?php echo get_template_directory_uri(); ?>/favicon/favicon-16x16.png">
+	<link rel="manifest" href="<?php echo get_template_directory_uri(); ?>/favicon/site.webmanifest">
+	<link rel="mask-icon" href="<?php echo get_template_directory_uri(); ?>/favicon/safari-pinned-tab.svg" color="#5bbad5">
 	<meta name="msapplication-TileColor" content="#da532c">
 	<meta name="theme-color" content="#ffffff">
 	<!-- end favicon -->
 	<link rel="stylesheet" href="<?php echo get_template_directory_uri() . '/assets/css/style.css' ?>">
 	<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+
+	<!-- Tracking scripts -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-30953485-1"></script>
+	<script>
+		if (location.hostname !== "localhost" || location.hostname !== "127.0.0.1") {
+			window.dataLayer = window.dataLayer || [];
+
+			function gtag() {
+				dataLayer.push(arguments);
+			}
+			gtag('js', new Date());
+
+			gtag('config', 'UA-30953485-1');
+		}
+	</script>
+
+	<script type="text/javascript">
+		_linkedin_partner_id = "1927161";
+		window._linkedin_data_partner_ids = window._linkedin_data_partner_ids || [];
+		window._linkedin_data_partner_ids.push(_linkedin_partner_id);
+	</script>
+	<script type="text/javascript">
+		if (location.hostname !== "localhost" || location.hostname !== "127.0.0.1") {
+			(function() {
+				var s = document.getElementsByTagName("script")[0];
+				var b = document.createElement("script");
+				b.type = "text/javascript";
+				b.async = true;
+				b.src = "https://snap.licdn.com/li.lms-analytics/insight.min.js";
+				s.parentNode.insertBefore(b, s);
+			})();
+		}
+	</script>
+	<!-- END Tracking scripts -->
+
 	<?php wp_head(); ?>
 </head>
 
 <body <?php body_class('fade'); ?>>
+	<noscript>
+		<img height="1" width="1" style="display:none;" alt="" src="https://px.ads.linkedin.com/collect/?pid=1927161&fmt=gif" />
+	</noscript>
 
 	<!-- DESKTOP -->
 	<div class="background-color-band" style="background-color: <?php the_field('header_background_color') ?>">
