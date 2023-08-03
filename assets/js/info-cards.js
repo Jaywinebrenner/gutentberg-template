@@ -10,7 +10,7 @@ class InfoCards {
             element.setAttribute('target', '_blank');
 
             let images = document.querySelectorAll('.info-cards__content img');
-            images.forEach((x) => {
+            images.forEach((x, index) => {
                 x.style.width = '7.25rem';
                 if (index === 2) {
                     x.style.width = '9rem';
