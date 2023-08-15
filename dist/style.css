@@ -439,6 +439,7 @@ i {
 p {
   margin: 0;
   margin-bottom: 18px;
+  font-weight: 400;
 }
 p.major {
   font-size: 1.813rem;
@@ -450,10 +451,11 @@ p.major {
   }
 }
 p.minor {
-  font-size: 1rem;
+  font-size: 1.1rem;
   font-family: "Inter";
   line-height: 135.023%;
   letter-spacing: 0.045rem;
+  font-weight: 500;
 }
 @media (max-width: 800px) {
   p.minor {
@@ -2490,7 +2492,7 @@ Component
 }
 .info-cards__card {
   display: flex;
-  padding: 1.5rem;
+  padding: 1.5rem 2.5rem;
   flex-direction: column;
   align-items: flex-start;
   gap: 3rem;
@@ -2506,7 +2508,7 @@ Component
   flex: 1;
 }
 .info-cards__content img {
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
 }
 @media (min-width: 1975px) {
   .info-cards__content h5 {
