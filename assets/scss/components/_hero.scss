@@ -38,11 +38,14 @@
     @media(max-width: 1350px) and (min-width: 1275px){
       padding-bottom: 2.5%;
     }
-    @media(max-width: 1275px) and (min-width: 1150px){
+    @media(max-width: 1275px) and (min-width: 1200px){
       padding-bottom: 1.5%;
     }
-    @media(max-width: 1150px) and (min-width: 800px){
+    @media(max-width: 1200px) and (min-width: 800px){
       padding-bottom: 5.5%;
+    }
+    @media(max-width: 800px) and (min-width: 700px){
+      padding-bottom: 6.5%;
     }
     h1,
     p {
@@ -72,7 +75,6 @@
         mask-repeat: round;
         mask-position: unset;
       }
-
     }
 
     .mobile-image {

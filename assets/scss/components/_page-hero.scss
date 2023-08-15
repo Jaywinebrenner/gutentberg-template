@@ -24,6 +24,12 @@
       grid-template-columns: 1fr;
       grid-gap: 0;
     }
+    @media(min-width: 1900px){
+      padding: 10% 0;
+      h1 {
+        font-size: 3.3rem;
+      }
+    }
     &__left {
       padding-bottom: 8%;
       display: flex;
