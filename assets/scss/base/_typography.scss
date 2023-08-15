@@ -25,7 +25,8 @@ h1,
 .editor-styles-wrapper h1:not(.wp-block-post-title),
 .h1 {
   font-style: normal;
-  font-size: 5rem;
+  font-size: 4.8rem;
+
   line-height: 111%;
   font-weight: $regular;
   margin-bottom: 1rem;
@@ -38,7 +39,7 @@ h1,
     margin-bottom: 2.5625rem;
   }
   @media (min-width: 1400px) {
-    font-size: clamp(4.3rem, 4.3rem + 0vw, 4.3rem);
+    font-size: clamp(4.2rem, 4.2rem + 0vw, 4.2rem);
 
   }
 
