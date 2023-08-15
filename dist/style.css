@@ -432,7 +432,7 @@ i {
 @media (max-width: 800px) {
   p,
   i {
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
 }
 
@@ -459,7 +459,7 @@ p.minor {
 }
 @media (max-width: 800px) {
   p.minor {
-    font-size: 0.875rem;
+    font-size: 1rem !important;
   }
 }
 p.italic, p i {
