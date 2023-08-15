@@ -2187,6 +2187,31 @@ Component
     padding-top: 1rem;
   }
 }
+@media (max-width: 1575px) and (min-width: 1425px) {
+  .hero__top {
+    padding-bottom: 4.5%;
+  }
+}
+@media (max-width: 1425px) and (min-width: 1350px) {
+  .hero__top {
+    padding-bottom: 3.5%;
+  }
+}
+@media (max-width: 1350px) and (min-width: 1275px) {
+  .hero__top {
+    padding-bottom: 2.5%;
+  }
+}
+@media (max-width: 1275px) and (min-width: 1150px) {
+  .hero__top {
+    padding-bottom: 1.5%;
+  }
+}
+@media (max-width: 1150px) and (min-width: 800px) {
+  .hero__top {
+    padding-bottom: 5.5%;
+  }
+}
 .hero__top h1,
 .hero__top p {
   text-align: center;

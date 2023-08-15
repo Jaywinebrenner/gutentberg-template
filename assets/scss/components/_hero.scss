@@ -29,6 +29,21 @@
       padding: 3.5rem 0;
       padding-top: 1rem;
     }
+    @media(max-width: 1575px) and (min-width: 1425px){
+      padding-bottom: 4.5%;
+    }
+    @media(max-width: 1425px) and (min-width: 1350px){
+      padding-bottom: 3.5%;
+    }
+    @media(max-width: 1350px) and (min-width: 1275px){
+      padding-bottom: 2.5%;
+    }
+    @media(max-width: 1275px) and (min-width: 1150px){
+      padding-bottom: 1.5%;
+    }
+    @media(max-width: 1150px) and (min-width: 800px){
+      padding-bottom: 5.5%;
+    }
     h1,
     p {
       text-align: center;
@@ -42,9 +57,6 @@
         color: $color-licorice;
       }
     }
-  }
-  &__content {
-    // z-index: 5;
   }
   &__bottom {
     position: relative;
@@ -60,6 +72,7 @@
         mask-repeat: round;
         mask-position: unset;
       }
+
     }
 
     .mobile-image {
