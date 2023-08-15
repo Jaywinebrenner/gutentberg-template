@@ -30,6 +30,7 @@
         font-size: 3.3rem;
       }
     }
+
     &__left {
       padding-bottom: 8%;
       display: flex;
@@ -40,11 +41,12 @@
         padding-right: 0;
         padding-bottom: 0;
       }
-      // @media (min-width: 800px) and (max-width: 950px) {
-      //   h1 {
-      //     color: red;
-      //   };
-      // }
+      @media(min-width: 800px) and (max-width: 1900px){
+        h1 {
+          font-size: 3.3rem;
+          color: red;
+        }
+      }
       .btn-wrapper {
         margin-top: 5%;
         @media (max-width: $bp-small) {
