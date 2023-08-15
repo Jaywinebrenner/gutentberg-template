@@ -2713,9 +2713,14 @@ Component
     margin-bottom: 0;
   }
 }
-@media (max-width: 1050px) and (min-width: 800px) {
+@media (max-width: 1050px) and (min-width: 900px) {
   .page-hero .page-hero-wrapper__left h1 {
     font-size: 4rem;
+  }
+}
+@media (max-width: 900px) and (min-width: 800px) {
+  .page-hero .page-hero-wrapper__left h1 {
+    font-size: 3.5rem;
   }
 }
 .page-hero .page-hero-wrapper__right {
