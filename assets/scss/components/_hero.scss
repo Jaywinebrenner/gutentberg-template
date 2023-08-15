@@ -75,6 +75,30 @@
         mask-repeat: round;
         mask-position: unset;
       }
+
+
+      // Account for padding on bottom issues
+      @media(max-width: 1575px) and (min-width: 1425px){
+        margin-bottom: -4.5%;
+      }
+      @media(max-width: 1425px) and (min-width: 1350px){
+        margin-bottom: -3.5%;
+      }
+      @media(max-width: 1350px) and (min-width: 1275px){
+        margin-bottom: -2.5%;
+      }
+      @media(max-width: 1275px) and (min-width: 1200px){
+        margin-bottom: -1.5%;
+      }
+      @media(max-width: 1200px) and (min-width: 800px){
+        margin-bottom: -5.5%;
+      }
+      @media(max-width: 800px) and (min-width: 700px){
+        margin-bottom: 6.5%;
+      }
+      // Account for padding on bottom issues
+
+
     }
 
     .mobile-image {
