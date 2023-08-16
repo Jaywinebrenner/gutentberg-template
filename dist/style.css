@@ -326,7 +326,7 @@ h1.hero,
 h2,
 .editor-styles-wrapper h2,
 .h2 {
-  font-size: 4rem;
+  font-size: 3.8rem;
   line-height: 120%;
   font-weight: 400;
   margin-top: 0;
@@ -2762,7 +2762,7 @@ Component
 }
 @media (min-width: 1900px) {
   .page-hero .page-hero-wrapper h1 {
-    font-size: 4.5rem;
+    font-size: 4rem;
   }
 }
 @media (min-width: 800px) and (max-width: 1900px) {
