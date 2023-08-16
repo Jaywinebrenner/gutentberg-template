@@ -54,7 +54,7 @@ endif;
         ?>
                 <div class="quote-card">
                     <p class="quote"><?php echo $quote ?></p>
-                    <p class="minor quoter"><?php echo $quoter ?></p>
+                    <p class="minor quoter italic"><?php echo $quoter ?></p>
                 </div>
         <?php
             endwhile;

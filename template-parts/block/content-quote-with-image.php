@@ -37,7 +37,7 @@ style="grid-template-columns: <?php echo $grid_template_column; ?>">
         </div>
         <div class="bottom">
             <p class="quote"><?php the_field('quote'); ?></p>
-            <p class="quoter"><?php the_field('quoter'); ?></p>
+            <p class="italic"><?php the_field('quoter'); ?></p>
         </div>
     </div>
 

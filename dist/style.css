@@ -396,11 +396,18 @@ h5,
   line-height: 143.023%;
   margin-top: 0;
 }
+@media (min-width: 800px) and (max-width: 1200px) {
+  h5,
+  .editor-styles-wrapper h5,
+  .h5 {
+    font-size: 1.55rem;
+  }
+}
 @media (max-width: 800px) {
   h5,
   .editor-styles-wrapper h5,
   .h5 {
-    font-size: 1.125rem;
+    font-size: 1.4rem;
   }
 }
 
@@ -456,6 +463,11 @@ p.minor {
   line-height: 135.023%;
   letter-spacing: 0.045rem;
   font-weight: 500;
+}
+@media (min-width: 800px) and (max-width: 1200px) {
+  p.minor {
+    font-size: 1.3rem;
+  }
 }
 @media (max-width: 800px) {
   p.minor {
@@ -2083,13 +2095,11 @@ Component
 }
 .banner-wrapper .has-image-banner .right .quote {
   font-weight: 600;
-  font-size: 1rem;
+  font-size: 1.2rem;
 }
 .banner-wrapper .has-image-banner .right .quoter {
   margin-top: 0;
   margin-bottom: 0;
-  font-style: italic;
-  opacity: 0.5;
 }
 .banner-wrapper .banner {
   display: grid;
@@ -2400,7 +2410,7 @@ Component
 }
 .quote-cards .quotecard p {
   font-style: italic;
-  opacity: 0.5;
+  opacity: 0.6;
 }
 
 .hc-icon-row .icons {
@@ -2519,7 +2529,7 @@ Component
 .content-quote-with-image__right .bottom .quoter {
   font-style: italic;
   margin-bottom: 0;
-  opacity: 0.5;
+  opacity: 0.6;
 }
 
 .info-cards.employeelogin hr {
@@ -2655,7 +2665,7 @@ Component
 }
 .capability-dropdowns .capability-dropdowns-wrapper__bottom .capability-dropdowns-column .column-top-wrapper .italics {
   font-style: italic;
-  opacity: 0.5;
+  opacity: 0.6;
 }
 .capability-dropdowns .capability-dropdowns-wrapper__bottom .capability-dropdowns-column .column-top-wrapper .col-subtitle {
   font-weight: 400;
@@ -2717,7 +2727,7 @@ Component
 }
 .capability-dropdowns .capability-dropdowns-wrapper__bottom .capability-dropdowns-column .quote-wrapper .quoter {
   font-style: italic;
-  opacity: 0.5;
+  opacity: 0.6;
 }
 
 .page-hero {
@@ -3286,7 +3296,7 @@ Component
   width: 100%;
 }
 .source-aq-cta .source-aq-cta-wrapper__left em {
-  opacity: 0.5;
+  opacity: 0.6;
 }
 
 .reveal-text {
