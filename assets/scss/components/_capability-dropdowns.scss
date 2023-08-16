@@ -29,7 +29,7 @@
             .capability-dropdowns-column {
                 .column-top-wrapper {
                     @media(max-width: $bp-small){
-                        height: auto;
+                        height: auto!important;
                     }
  
                     .italics {
