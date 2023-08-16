@@ -465,7 +465,7 @@ p.minor {
 }
 p.italic, p i {
   font-style: italic;
-  opacity: 0.5;
+  opacity: 0.6;
 }
 
 strong,
@@ -2931,7 +2931,7 @@ Component
 }
 .career-cta__right .quote-card .quoter {
   font-style: italic;
-  opacity: 0.5;
+  opacity: 0.6;
 }
 .footer {
   background-color: #1D0800;
