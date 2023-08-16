@@ -26,7 +26,7 @@ endif;
                     </div>
                     <div class="right" style="color:<?php echo (get_field('background_color') === '#D64936') ? "#FFF" : "#1D0800"; ?>">
                         <p class="quote"><?php the_field('quote') ?></p>
-                        <p class="quoter"><?php the_field('quoter') ?></p>
+                        <p class="quoter italic"><?php the_field('quoter') ?></p>
                     </div>
                 </div>
             <?php

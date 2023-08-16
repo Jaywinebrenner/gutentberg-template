@@ -66,7 +66,7 @@ $id = 'capability-dropdowns-' . $block['id'];
                             <?php if ($addQuote) { ?>
                             <div class="quote-wrapper">
                                 <p class="minor quote"><?php echo $quote; ?></p>
-                                <p class="minor quoter"><?php echo $quoter; ?></p>
+                                <p class="minor italic"><?php echo $quoter; ?></p>
                             </div>
                         <?php } ?>
               

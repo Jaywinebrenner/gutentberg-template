@@ -108,9 +108,12 @@ h5,
   font-weight: $bold;
   line-height: 143.023%;
   margin-top: 0;
+  @media(min-width: 800px) and (max-width: 1200px){
+    font-size: 1.55rem;
+  }
 
   @media (max-width: $bp-small) {
-    font-size: 1.125rem;
+    font-size: 1.4rem;
   }
 }
 
@@ -162,6 +165,9 @@ p {
     line-height: 135.023%;
     letter-spacing: 0.045rem;
     font-weight: 500;
+    @media(min-width: 800px) and (max-width: 1200px){
+      font-size: 1.3rem;
+    }
 
     @media (max-width: $bp-small) {
       font-size: 1rem!important;
