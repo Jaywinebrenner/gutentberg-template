@@ -25,9 +25,22 @@
       grid-gap: 0;
     }
     @media(min-width: 1900px){
-      padding: 10% 0;
+      // padding: 10% 0;
       h1 {
-        font-size: 3.3rem;
+        font-size: 4.5rem;
+      }
+    }
+    @media(min-width: 800px) and (max-width: 1900px){
+      h1 {
+        font-size: 4.5rem;
+      }
+    }
+    h1 {
+      @media (max-width: 1050px) and (min-width: 900px) {
+        font-size: 4.5rem;
+      }
+      @media (max-width: 900px) and (min-width: 800px) {
+        font-size: 4rem;
       }
     }
 
@@ -41,11 +54,7 @@
         padding-right: 0;
         padding-bottom: 0;
       }
-      @media(min-width: 800px) and (max-width: 1900px){
-        h1 {
-          font-size: 4.5rem;
-        }
-      }
+
       .btn-wrapper {
         margin-top: 5%;
         @media (max-width: $bp-small) {
@@ -60,14 +69,7 @@
           }
         }
       }
-      h1 {
-        @media (max-width: 1050px) and (min-width: 900px) {
-          font-size: 4rem;
-        }
-        @media (max-width: 900px) and (min-width: 800px) {
-          font-size: 3.5rem;
-        }
-      }
+
     }
     &__right {
       position: relative;
