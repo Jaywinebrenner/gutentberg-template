@@ -460,11 +460,12 @@ p.minor {
 @media (max-width: 800px) {
   p.minor {
     font-size: 1rem !important;
+    font-weight: 400;
   }
 }
 p.italic, p i {
   font-style: italic;
-  opacity: 0.5;
+  opacity: 0.6;
 }
 
 strong,
@@ -2570,14 +2571,14 @@ Component
 .info-cards__content img {
   margin-bottom: 3rem;
 }
+@media only screen and (max-width: 1100px) and (min-width: 800px) {
+  .info-cards__content h5 {
+    font-size: 1.5rem;
+  }
+}
 @media (min-width: 1975px) {
   .info-cards__content h5 {
     font-size: 1.1125rem;
-  }
-}
-@media only screen and (max-width: 900px) and (min-width: 800px) {
-  .info-cards__content h5 {
-    font-size: 1.1rem;
   }
 }
 @media (max-width: 800px) {
@@ -2587,6 +2588,11 @@ Component
 }
 .info-cards__content .minor {
   margin-bottom: 0;
+}
+@media only screen and (max-width: 1100px) and (min-width: 800px) {
+  .info-cards__content .minor {
+    font-size: 1.2rem;
+  }
 }
 @media (min-width: 1400px) {
   .info-cards__content .minor {
@@ -2925,7 +2931,7 @@ Component
 }
 .career-cta__right .quote-card .quoter {
   font-style: italic;
-  opacity: 0.5;
+  opacity: 0.6;
 }
 .footer {
   background-color: #1D0800;

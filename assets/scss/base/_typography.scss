@@ -3,7 +3,6 @@ button {
   font-family: $body;
   font-size: clamp(10px, 0.9vw, 20px);
   color: $color-licorice;
-
   @media (max-width: $bp-small) {
     font-size: clamp(14px, 1vw, 1000vw);
   }
@@ -166,12 +165,13 @@ p {
 
     @media (max-width: $bp-small) {
       font-size: 1rem!important;
+      font-weight: 400;
     }
   }
 
   &.italic, i {
     font-style: italic;
-    opacity: 0.5;
+    opacity: 0.6;
   }
 }
 
