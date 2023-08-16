@@ -2660,7 +2660,7 @@ Component
 }
 @media (max-width: 800px) {
   .capability-dropdowns .capability-dropdowns-wrapper__bottom .capability-dropdowns-column .column-top-wrapper {
-    height: auto;
+    height: auto !important;
   }
 }
 .capability-dropdowns .capability-dropdowns-wrapper__bottom .capability-dropdowns-column .column-top-wrapper .italics {

@@ -2,6 +2,15 @@ class CapabilityDropdowns {
   constructor(el) {
     this.el = el;
     this.init();
+    this.debouncedSetColumnsHeight = this.debounce(this.setColumnsHeight, 100);
+  }
+
+  debounce(func, delay) {
+    let timeoutId;
+    return function (...args) {
+      clearTimeout(timeoutId);
+      timeoutId = setTimeout(() => func.apply(this, args), delay);
+    };
   }
 
   init() {
@@ -33,18 +42,22 @@ class CapabilityDropdowns {
     });
 
     this.setColumnsHeight();
-    $(window).on('resize', this.setColumnsHeight);
+
+    const self = this;
+    window.addEventListener('resize', function () {
+      window.requestAnimationFrame(() => {
+        self.debouncedSetColumnsHeight();
+      });
+    });
   }
 
   setColumnsHeight() {
     const columns = this.el.querySelectorAll('.column-top-wrapper');
     let maxHeight = 0;
-    if(window.innerWidth < 800){
-      return;
-    }
     columns.forEach(function (column) {
       column.style.height = 'auto';
       const height = column.offsetHeight;
+      console.log("heightheight", height);
       if (height > maxHeight) {
         maxHeight = height;
       }

@@ -25,7 +25,7 @@ export default class Navigation {
             const screenWidth = $(window).width();
           
             if (screenWidth > 800) {
-                console.log("big")
+    
                 let $ = jQuery;
                 let submenu = $(".sub-menu");
                 const backgroundColorBand = $('.background-color-band');
@@ -33,10 +33,8 @@ export default class Navigation {
                 const menuItem = $('.sub-menu .menu-item')
     
                 if (inlineStyle && inlineStyle.includes('background-color: #F7F4F0')) {
-                    console.log("LINEN")
                     menuItem.css('background-color', '#FFF');
                 } else {
-                    console.log("WHITE")
                     submenu.css('background-color', '#F7F4F0');
                     menuItem.css('background-color', '#F7F4F0');
                 }
@@ -50,9 +48,9 @@ export default class Navigation {
                 const menuItem = $('.sub-menu .menu-item')
     
                 if (inlineStyle && inlineStyle.includes('background-color: #F7F4F0')) {
-                    console.log("LINEN")
+                    // console.log("LINEN")
                 } else {
-                    console.log("WHITE")
+                    // console.log("WHITE")
                 }
             } 
 
