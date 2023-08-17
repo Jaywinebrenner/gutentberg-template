@@ -1,7 +1,6 @@
 .page-hero {
   position: relative;
 
-  // height: 80vh;
   .container {
     padding-top: 5rem;
     @media (max-width: $bp-small) {
@@ -25,7 +24,6 @@
       grid-gap: 0;
     }
     @media(min-width: 1900px){
-      // padding: 10% 0;
       h1 {
         font-size: 4rem;
       }
@@ -42,6 +40,9 @@
       @media (max-width: 900px) and (min-width: 800px) {
         font-size: 4rem;
       }
+      @media(max-height: 900px){
+        font-size: 3.7rem;
+      }
     }
 
     &__left {
@@ -57,6 +58,9 @@
 
       .btn-wrapper {
         margin-top: 5%;
+        @media(max-height: 900px){
+          margin-top: 0;
+        }
         @media (max-width: 1100px) and (min-width: 800px) {
           margin-top: 0;
         }
@@ -86,6 +90,9 @@
         mask-position: top right;
         border-radius: 10px;
         mask-repeat: no-repeat;
+        @media(max-height: 900px){
+          height: 31vh;
+        }
         @media (min-width: $bp-xlarge) {
           max-height: 31.25rem;
         }
