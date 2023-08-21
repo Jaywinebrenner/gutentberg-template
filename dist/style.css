@@ -2760,12 +2760,12 @@ Component
     grid-gap: 0;
   }
 }
-@media (min-width: 1900px) {
+@media (min-width: 1800px) {
   .page-hero .page-hero-wrapper h1 {
     font-size: 4rem;
   }
 }
-@media (min-width: 800px) and (max-width: 1900px) {
+@media (min-width: 800px) and (max-width: 1800px) {
   .page-hero .page-hero-wrapper h1 {
     font-size: 4.5rem;
   }
@@ -2845,6 +2845,11 @@ Component
 @media (max-height: 900px) {
   .page-hero .page-hero-wrapper__right .desktop-image {
     height: 31vh;
+  }
+}
+@media (min-width: 1800px) {
+  .page-hero .page-hero-wrapper__right .desktop-image {
+    background-color: red;
   }
 }
 @media (min-width: 1900px) {

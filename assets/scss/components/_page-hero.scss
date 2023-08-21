@@ -23,12 +23,12 @@
       grid-template-columns: 1fr;
       grid-gap: 0;
     }
-    @media(min-width: 1900px){
+    @media(min-width: 1800px){
       h1 {
         font-size: 4rem;
       }
     }
-    @media(min-width: 800px) and (max-width: 1900px){
+    @media(min-width: 800px) and (max-width: 1800px){
       h1 {
         font-size: 4.5rem;
       }
@@ -92,6 +92,9 @@
         mask-repeat: no-repeat;
         @media(max-height: 900px){
           height: 31vh;
+        }
+        @media(min-width: 1800px){
+          background-color: red;
         }
         @media (min-width: $bp-xlarge) {
           max-height: 31.25rem;
