@@ -22,7 +22,11 @@ endif;
             ?>
                 <div class="has-image-banner" style="background-color:<?php the_field('background_color'); ?>">
                     <div class="left">
-                        <img src="<?php the_field('image'); ?>" />
+                        <?php if (get_field('image_mobile')) : ?>
+                            <img class="mobile" src="<?php the_field('image_mobile'); ?>" />
+                        <?php else : ?>
+                            <img class="desktop" src="<?php the_field('image'); ?>" />
+                        <?php endif; ?>
                     </div>
                     <div class="right" style="color:<?php echo (get_field('background_color') === '#D64936') ? "#FFF" : "#1D0800"; ?>">
                         <p class="quote"><?php the_field('quote') ?></p>
