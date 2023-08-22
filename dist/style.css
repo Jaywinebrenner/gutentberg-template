@@ -2097,7 +2097,7 @@ Component
   font-weight: 600;
   font-size: 1.2rem;
 }
-@media (max-width: 1200px) {
+@media (min-width: 1200px) {
   .banner-wrapper .has-image-banner .right .quote {
     font-size: 1.4rem;
   }
