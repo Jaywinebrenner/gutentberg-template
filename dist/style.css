@@ -2086,7 +2086,7 @@ Component
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-right: 15%;
+  padding-right: 5%;
 }
 @media (max-width: 800px) {
   .banner-wrapper .has-image-banner .right {
