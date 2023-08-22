@@ -2849,11 +2849,6 @@ Component
 }
 @media (min-width: 1800px) {
   .page-hero .page-hero-wrapper__right .desktop-image {
-    background-color: red;
-  }
-}
-@media (min-width: 1900px) {
-  .page-hero .page-hero-wrapper__right .desktop-image {
     max-height: 31.25rem;
   }
 }

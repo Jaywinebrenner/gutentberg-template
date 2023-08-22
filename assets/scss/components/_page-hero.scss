@@ -94,9 +94,9 @@
           height: 31vh;
         }
         @media(min-width: 1800px){
-          background-color: red;
+          // background-color: red;
         }
-        @media (min-width: $bp-xlarge) {
+        @media (min-width: 1800px) {
           max-height: 31.25rem;
         }
         @media (max-width: 800px) {
