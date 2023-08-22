@@ -9,17 +9,17 @@
             grid-template-columns: 1fr;
             grid-gap: 1.25rem;
         }
-        // .desktop {
-        //     @media(max-width: 800px){
-        //         display: none;
-        //     }
+        .desktop {
+            @media(max-width: 800px){
+                display: none;
+            }
 
-        // }
-        // .mobile {
-        //     @media(min-width: 800px){
-        //         display: none;
-        //     }
-        // }
+        }
+        .mobile {
+            @media(min-width: 800px){
+                display: none;
+            }
+        }
         .left {
             display: flex;
             justify-content: center;
