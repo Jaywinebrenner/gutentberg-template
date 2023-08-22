@@ -462,7 +462,7 @@ p.minor {
   font-family: "Inter";
   line-height: 135.023%;
   letter-spacing: 0.045rem;
-  font-weight: 500;
+  font-weight: 400;
 }
 @media (min-width: 800px) and (max-width: 1200px) {
   p.minor {
