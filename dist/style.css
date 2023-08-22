@@ -2057,6 +2057,16 @@ Component
     grid-gap: 1.25rem;
   }
 }
+@media (max-width: 800px) {
+  .banner-wrapper .has-image-banner .desktop {
+    display: none;
+  }
+}
+@media (min-width: 800px) {
+  .banner-wrapper .has-image-banner .mobile {
+    display: none;
+  }
+}
 .banner-wrapper .has-image-banner .left {
   display: flex;
   justify-content: center;

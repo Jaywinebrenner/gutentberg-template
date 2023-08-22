@@ -20,7 +20,7 @@
                 "#D64936": "Red",
                 "#FFFFFF": "White"
             },
-            "default_value": false,
+            "default_value": [],
             "allow_null": 0,
             "multiple": 0,
             "ui": 0,
@@ -80,6 +80,39 @@
             "max_height": "",
             "max_size": "",
             "mime_types": ""
+        },
+        {
+            "key": "field_64e51419cd3a6",
+            "label": "Image Mobile",
+            "name": "image_mobile",
+            "aria-label": "",
+            "type": "image",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_649df2637e13b",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "url",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": "",
+            "preview_size": "medium"
         },
         {
             "key": "field_649df2c7086a3",
@@ -152,7 +185,7 @@
             "label": "Title",
             "name": "title",
             "aria-label": "",
-            "type": "wysiwyg",
+            "type": "textarea",
             "instructions": "",
             "required": 0,
             "conditional_logic": [
@@ -170,10 +203,10 @@
                 "id": ""
             },
             "default_value": "",
-            "tabs": "all",
-            "toolbar": "full",
-            "media_upload": 1,
-            "delay": 0
+            "placeholder": "",
+            "maxlength": "",
+            "rows": "",
+            "new_lines": ""
         },
         {
             "key": "field_649e0770a25a2",
@@ -250,5 +283,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1688667936
+    "modified": 1692735114
 }
