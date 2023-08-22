@@ -77,9 +77,9 @@
                     }
                     .accordion-item__content {
                         display: none;
-                        .content {
-                            font-size: 0.95rem;
-                        }
+                        // .content {
+                        //     font-size: 0.95rem;
+                        // }
                       }
                       .accordion-item.active .accordion-item__content {
                         display: block;
