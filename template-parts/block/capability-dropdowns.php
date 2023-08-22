@@ -55,7 +55,7 @@ $id = 'capability-dropdowns-' . $block['id'];
                                             <img class="chevron" src="<?php echo get_stylesheet_directory_uri();?>/assets/images/capability-dropdowns/chevron.svg"/>
                                         </div>
                                         <div class="accordion-item__content">
-                                            <p class="content"><?php echo $content?></p>
+                                            <p class="minor"><?php echo $content?></p>
                                         </div>
                                     </div>
                                     <?php
