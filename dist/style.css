@@ -2844,7 +2844,7 @@ Component
   -webkit-mask-repeat: no-repeat;
           mask-repeat: no-repeat;
 }
-@media (max-height: 900px) {
+@media (max-height: 800px) {
   .page-hero .page-hero-wrapper__right .desktop-image {
     height: 31vh;
   }
