@@ -2046,7 +2046,7 @@ Component
 
 .banner-wrapper .has-image-banner {
   display: grid;
-  grid-template-columns: 1fr 4fr;
+  grid-template-columns: 1.5fr 4fr;
   padding: 1.25rem;
   grid-gap: 4rem;
   border-radius: 10px;
@@ -2086,7 +2086,7 @@ Component
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-right: 10%;
+  padding-right: 15%;
 }
 @media (max-width: 800px) {
   .banner-wrapper .has-image-banner .right {
@@ -2096,6 +2096,11 @@ Component
 .banner-wrapper .has-image-banner .right .quote {
   font-weight: 600;
   font-size: 1.2rem;
+}
+@media (max-width: 1200px) {
+  .banner-wrapper .has-image-banner .right .quote {
+    font-size: 1.4rem;
+  }
 }
 .banner-wrapper .has-image-banner .right .quoter {
   margin-top: 0;
