@@ -26,7 +26,7 @@
 	<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
 
 	<!-- Tracking scripts -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-30953485-1"></script>
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-CCYND841ET"></script>
 	<script>
 		if (location.hostname !== "localhost" || location.hostname !== "127.0.0.1") {
 			window.dataLayer = window.dataLayer || [];
@@ -35,8 +35,7 @@
 				dataLayer.push(arguments);
 			}
 			gtag('js', new Date());
-
-			gtag('config', 'UA-30953485-1');
+			gtag('config', 'G-CCYND841ET');
 		}
 	</script>
 
