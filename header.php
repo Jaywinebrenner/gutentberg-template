@@ -35,8 +35,7 @@
 				dataLayer.push(arguments);
 			}
 			gtag('js', new Date());
-
-			gtag('config', 'UA-30953485-1');
+			gtag('config', 'G-CCYND841ET');
 		}
 	</script>
 
