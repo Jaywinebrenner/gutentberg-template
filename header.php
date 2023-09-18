@@ -58,6 +58,39 @@
 
 	<!-- MOBILE -->
 
+  <section class="navigation-mobile">
+    <div class="container">
+      <div class="hamburger-and-image-wrapper">
+        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/navigation/text-logo.svg" />
+        <div id="myBtn" class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="navigation-menu-mobile container">
+      <div class="hamburger-and-image-wrapper-mobile-open">
+        <img class="logo" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/navigation/text-logo.svg" />
+        <div class="x-wrapper">
+          <img class="x-img" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/navigation/close.svg" />
+        </div>
+      </div>
+      <?php
+      wp_nav_menu(array(
+        'menu' => 'navigation',
+        'theme_location' => 'navigation',
+        'sort_order' => 'DESC'
+      ));
+      ?>
+    </div>
+
+
+  </section>
+
 
 	<div id="page" class="hfeed site">
 
