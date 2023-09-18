@@ -131,6 +131,11 @@
             }
         }
     }
+
+    .reset {
+        // transform: translate(-100%, -107px);
+        // background-color: green;
+    }
     .navigation-menu-mobile.open {
         transform: translate(0, -107px);
     }
