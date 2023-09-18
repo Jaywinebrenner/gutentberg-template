@@ -1,12 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@400..500&display=swap");
+
+
 html,
-button {
-  font-family: $body;
-  font-size: clamp(10px, 0.9vw, 20px);
-  color: $color-licorice;
-  @media (max-width: $bp-small) {
-    font-size: clamp(14px, 1vw, 1000vw);
-  }
-}
 
 h1,
 h2,
@@ -20,9 +15,7 @@ h6 {
   font-family: $header;
 }
 
-h1,
-.editor-styles-wrapper h1:not(.wp-block-post-title),
-.h1 {
+h1 {
   font-style: normal;
   font-size: 4.8rem;
 
@@ -52,9 +45,7 @@ h1,
     }
   }
 }
-h2,
-.editor-styles-wrapper h2,
-.h2 {
+h2 {
   font-size: 3.8rem;
   line-height: 120%;
   font-weight: $semi;
@@ -66,9 +57,7 @@ h2,
     font-size: 1.75rem;
   }
 }
-h3,
-.editor-styles-wrapper h3,
-.h3 {
+h3 {
   font-weight: 400;
   line-height: normal;
   margin-bottom: 1.25rem;
@@ -82,9 +71,7 @@ h3,
     line-height: normal;
   }
 }
-h4,
-.editor-styles-wrapper h4,
-.h4 {
+h4 {
   font-weight: 400;
   margin-bottom: 20px;
   font-size: 2rem;
@@ -99,9 +86,7 @@ h4,
     font-size: 1.6rem;
   }
 }
-h5,
-.editor-styles-wrapper h5,
-.h5 {
+h5 {
   margin-bottom: 1.25rem;
   font-size: 1.3125rem;
   font-family: "Inter";
@@ -125,7 +110,7 @@ h6,
   line-height: 135.023%;
   letter-spacing: 0.045rem;
   text-transform: uppercase;
-  color: $color-red;
+  color: $color-yellow;
   margin-top: 0;
   margin-bottom: 1rem;
 
@@ -194,10 +179,10 @@ a {
 }
 
 a {
-  color: $color-licorice;
+  color: $color-black;
 }
 a:not(.button):visited {
-  color: $color-licorice;
+  color: $color-black;
 }
 
 li {

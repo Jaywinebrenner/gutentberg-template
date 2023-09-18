@@ -7,36 +7,39 @@
 
 
 //COLORS
-$color-red: #D64936;
-$color-linen: #F7F4F0;
+$color-black--bg: #1A1A1A;
+$color-black: #0A0A0A;
 $color-white: #FFFFFF;
-$color-licorice: #1D0800;
+$color-gray: #E5E5E5;
+$color-yellow: #FFB300;
+$color-blue: #00FFF0;
+$color-blue--transparent: rgba(0, 255, 240, 0.2);
 
-//PLACEHOLDER
+$color-brand: $color-yellow;
+$color-brand-secondary: $color-black;
+
+//MEDIA QUERY WIDTHS
 $bp-small: 800px;
 $bp-medium: 1024px;
 $bp-large: 1200px;
-$bp-xlarge: 1900px;
+$bp-xlarge: 1700px;
 $gutter: 0px;
-$image-height: 400px;
-$content-max-width-large: 1400px;
-$content-max-width: 1400px;
-$content-max-width-small: 720px;
-$spacing-small: 1.5rem;
-$spacing-medium: 2rem;
-$spacing-large: 4rem;
-$spacing-xlarge: 10rem;
+
 
 //FONTS
-$header: "Inter";
-$body: "Inter";
-$sans: 'Helvetica', sans-serif;
-$title: 'Helvetica', sans-serif;
+$headerSans: "Helvetica";
+$mainSans: "Work Sans";
+$header: "Helvetica";
 
 //FONT WEIGHTS
 $regular: 300;
 $semi: 400;
 $bold: 500;
+
+
+// MIN / MAX SCREENS
+$minScreen: 300;
+$maxScreen: 1366;
 
 //CAME WITH THEME
 $base-body-color: #fff;
@@ -49,3 +52,11 @@ $grey-d: #575757;
 $white: #FFFFFF;
 $black: #2a2a2a;
 $brand: #2a2a2a;
+
+
+// FLEX GOODIES
+$allFlex: (
+  display: flex,
+  justify-content: space-between,
+  align-items: center
+);
