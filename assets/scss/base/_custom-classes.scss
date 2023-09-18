@@ -88,20 +88,14 @@ button,
 }
 
 
-
-
-
 .container {
-    max-width: 1200px;
+  max-width: 1500px;
+  margin: auto;
+  width: 90%;
+
+  &--small {
+    max-width: 720px;
     margin: auto;
-    padding-left: 140px;
-    padding-right: 32px;
-  
-    @media(max-width: $bp-small) {
-      padding-left: 32px;
-      padding-right: 16px;
-    }
-    @media (min-width: $bp-small) and (max-width: $bp-medium) {
-      padding-left: 100px;
-    }
+    width: calc(100vw - 15%);
   }
+}

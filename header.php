@@ -43,25 +43,17 @@
 	<section class="navigation">
     <div class="navigation__top container">
       <div class="text-logo-wrapper">
-        <img id="open-button"  src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/navigation/text-logo.svg" />
+        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/navigation/text-logo.svg" />
       </div>
+        <?php
+          wp_nav_menu(array(
+            'menu' => 'navigation',
+            'theme_location' => 'navigation',
+            'menu_class' => 'navigation-menu',
+            'sort_order' => 'DESC'
+          ));
+          ?>
     </div>
-
-    <div class="nav-drawer">
-      <div id="close-button" class="close-wrapper">
-        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/navigation/close.svg" />
-      </div>
-
-      <?php
-      wp_nav_menu(array(
-        'menu' => 'navigation',
-        'theme_location' => 'navigation',
-        'menu_class' => 'navigation-menu',
-        'sort_order' => 'DESC'
-      ));
-      ?>
-    </div>
-
 	</section>
 
 	<!-- MOBILE -->

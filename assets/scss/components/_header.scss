@@ -5,43 +5,26 @@
     background-color: $color-gray;
     &__top {
         background-color: $color-gray;
+        padding-top: 120px;
         .text-logo-wrapper {
-            z-index: 1000;
-            padding-top: 120px;
             position: relative;
-            #open-button {
-                cursor: pointer;
+            margin-left: -10px;
+            img {
                 width: 100px;
             }
         }
-    }
-    .nav-drawer {
-        position: fixed;
-        background-color: $color-yellow;
-        height: 100%;
-        width: 100vw;
-        padding-top: 50px;
-        padding-left: 140px;
-        z-index: 1000;
-        overflow-y: scroll;
-        // transform: translateX(-100%); 
-        transform: translate(-100%, -160px);
-        transition: transform 0.3s ease-out; 
-
-        .close-wrapper {
-            position: relative;
-            cursor: pointer;
-            img {
-                position: absolute;
-                left: -121px;
+        .navigation-menu {
+            display: flex;
+            padding-left: 0;
+            li {
+                padding-right: 10px;
+            }
+            li.active {
+                color: $color-yellow
             }
         }
-    }
-    .slide-out {
-        // transform: translateX(-100%); 
-        // transition: transform 0.3s ease-out; 
+        .nav-links-wrapper {
 
-        transform: translateY(-160px); 
-        transition: transform 0.3s ease-out;
-      }
+        }
+    }
 }
