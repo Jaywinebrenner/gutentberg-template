@@ -131,11 +131,6 @@
             }
         }
     }
-
-
-    .navigation-menu-mobile.open {
-        // transform: translate(0, -107px)!important;
-    }
     .menu-navigation-container {
         max-width: 1500px;
         margin: auto;
@@ -145,7 +140,53 @@
             padding-left: 0;
             li {
                 font-size: 3rem;
+                position: relative;
+                // ANIMATE NAV LINK REVEAL
+                a::before {
+                    height: 75px; 
+                    width: 100%;
+                    content: "";
+                    position: absolute;
+                    background-color: $color-yellow;
+                    transition: height 0.15s ease-out;
+                }
+                
+                .animate-text::before {
+                    height: 0;
+                    animation-name: animateOut;
+                    animation-duration: 2s;
+                }
+                
+                @keyframes animateOut {
+                    from {
+                        height: 75px; 
+                    }
+                    to {
+                        height: 0; 
+                    }
+                }
+                
+                .animate-text.finished::before {
+                    animation-name: animateIn;
+                    animation-duration: 2s;
+                    animation-fill-mode: forwards;
+                }
+
+                .finished::before {
+                    height: 75px;
+                }
+                
+                @keyframes animateIn {
+                    from {
+                        height: 0; 
+                    }
+                    to {
+                        height: 75px; 
+                    }
+                }
+                // END ANIMATE NAV LINK REVEAL
             }
+
             .mobi-active a {
                 color: $color-white;
             }
