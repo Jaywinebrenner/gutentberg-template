@@ -4,6 +4,18 @@ class Navigation {
 	}
 	init() {
 
+
+		// Ensure page is scrollable if a user opens the hamburger on mobile width disabling scroll, then resizing browswer to desktop
+		function handleWindowResize() {
+			if (window.innerWidth >= 800) {
+				document.body.style.overflow = 'auto';
+				document.documentElement.style.overflow = 'visible';
+				document.documentElement.style.height = 'unset';
+			}
+		}
+		window.addEventListener('resize', handleWindowResize);
+		handleWindowResize();
+
 		//CHANGE COLOR OF DESKTOP NAV ITEM COLOR IF ACTIVE
 		let menuItems = document.querySelectorAll('.navigation-menu li');
 		let menuItemsMobile = document.querySelectorAll('.menu li');
@@ -72,6 +84,8 @@ class Navigation {
 			}, 300);
 		})
 	}
+
+
 	
 }
 
