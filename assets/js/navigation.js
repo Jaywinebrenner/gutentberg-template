@@ -33,16 +33,6 @@ class Navigation {
 		var navMenuMobile = document.querySelector('.navigation-menu-mobile');
 		var body = document.body;
 
-		function reset() {
-			console.log("reset")
-			// navMenuMobile.classList.remove('reset');
-			// navMenuMobile.style.display = 'none;'
-			// navMenuMobile.style.transform = 'translate(100%, -107px)'
-			setTimeout(() => {
-				navMenuMobile.style.background = 'red;'
-			}, 300);
-		}
-	
 		function disableScroll() {
 			navMenuMobile.style.transform = 'translate(0, -107px)';
 			body.style.overflow = 'hidden';
@@ -82,9 +72,11 @@ class Navigation {
 			setTimeout(function() {
 				navMenuMobile.classList.remove('open');
 			}, 300);
-
+		})
 	}
+	
 }
+
 
 document.addEventListener('DOMContentLoaded', () => {
     if (document.querySelector('.navigation')) {
