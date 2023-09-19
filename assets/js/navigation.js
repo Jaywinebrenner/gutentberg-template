@@ -68,7 +68,6 @@ class Navigation {
 	
 			if (navMenuMobile.classList.contains('open')) {
 				disableScroll();
-				// navMenuMobile.style.transform = 'translate(0, -107px)';
 			} else {
 				enableScroll();
 				navMenuMobile.style.transform = 'translate(100%, -107px)';
@@ -78,18 +77,11 @@ class Navigation {
 	
 		// Add a click event listener to the X image
 		xImage.addEventListener('click', function() {
-			// Slide out the navigation-menu-mobile to the right
 			navMenuMobile.style.transform = 'translate(100%, -107px)';
-			
-			// Enable scrolling when the menu is closed
 			enableScroll();
-			
-			// Remove the 'open' class after sliding out
 			setTimeout(function() {
 				navMenuMobile.classList.remove('open');
-			}, 300); // Adjust the time to match your transition duration
-		});
-
+			}, 300);
 
 	}
 }
