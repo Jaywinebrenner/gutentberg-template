@@ -15,31 +15,63 @@ function init_acf_fields()
             'render_callback'   => 'block_renderer',
             'category'          => 'formatting',
             'icon'              => 'admin-comments',
-            'align'           => 'full',
-            'supports'        => array(
+            'align'             => 'full',
+            'supports'          => array(
                 'align' => array('full'),
-                'jsx'             => true,
-
+                'jsx'   => true,
             ),
             'keywords'          => array('Typography'),
-            'enqueue_assets' => function () {
+            'enqueue_assets'    => function () {
                 wp_enqueue_script(
                     'jquery',
-                    'https://code.jquery.com/jquery-3.7.0.min.js"
-                            integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=',
-
-                    ['wp-blocks', 'wp-element', 'wp-components', 'wp-i18n'],
-                    22
+                    'https://code.jquery.com/jquery-3.7.0.min.js',
+                    array(),
+                    '3.7.0',
+                    true
                 );
                 wp_enqueue_script(
-
                     'our-services-script',
-                    get_template_directory_uri() . '/assets/js/our-services.js',
-                    ['wp-blocks', 'wp-element', 'wp-components', 'wp-i18n'],
-                    22
+                    get_template_directory_uri() . '/assets/js/typography.js',
+                    array('wp-blocks', 'wp-element', 'wp-components', 'wp-i18n'),
+                    '1.0',
+                    true
                 );
             },
         ));
+
+        // register hero block
+        acf_register_block(array(
+            'name'              => 'hero',
+            'title'             => __('Hero'),
+            'description'       => __('Hero'),
+            'render_callback'   => 'block_renderer',
+            'category'          => 'formatting',
+            'icon'              => 'admin-comments',
+            'align'             => 'full',
+            'supports'          => array(
+                'align' => array('full'),
+                'jsx'   => true,
+            ),
+            'keywords'          => array('Hero'),
+            'enqueue_assets'    => function () {
+                wp_enqueue_script(
+                    'jquery',
+                    'https://code.jquery.com/jquery-3.7.0.min.js',
+                    array(),
+                    '3.7.0',
+                    true
+                );
+                wp_enqueue_script(
+                    'our-services-script',
+                    get_template_directory_uri() . '/assets/js/hero.js',
+                    array('wp-blocks', 'wp-element', 'wp-components', 'wp-i18n'),
+                    '1.0',
+                    true
+                );
+            },
+        ));
+
+        
     }
 }
 
