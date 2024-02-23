@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Block Name: Test
+ * Block Name: Typography
  *
  * This is the template that displays the test block.
  */
@@ -16,26 +16,26 @@ endif;
 
 <section id="<?php echo $id; ?>" class="test-wrapper">
     <div class="container">
-        <h1><?php the_field('test_title'); ?></h1>
+        <h1><?php the_field('title'); ?></h1>
         <h3><?php the_field('subtitle'); ?></h3>
         <img class="mobile" src="<?php the_field('image'); ?>" />
+        <h1>I am an H1</h1>
+        <h2>I am an h2</h2>
+        <h3>I am an h3</h3>
+        <h4>I am an h4</h1>
+        <h5>I am an h5</h5>
+        <h6>I am an h6</h1>
+        <p>I am an p</h1>
+        <p class="minor">I am an p minor</p>
+        <p class="italic">I am an p with the italic class</p>
+        <ul>
+            <li>I am a list item</li>
+            <li>I am a list item</li>
+            <li>I am a list item</li>
+            <li>I am a list item</li>
+        </ul>
 
     </div>
 </section>
 
 
-<h1>I am an H1</h1>
-<h2>I am an h2</h2>
-<h3>I am an h3</h3>
-<h4>I am an h4</h1>
-<h5>I am an h5</h5>
-<h6>I am an h6</h1>
-<p>I am an p</h1>
-<p class="minor">I am an p minor</p>
-<p class="italic">I am an p with the italic class</p>
-<ul>
-    <li>I am a list item</li>
-    <li>I am a list item</li>
-    <li>I am a list item</li>
-    <li>I am a list item</li>
-</ul>

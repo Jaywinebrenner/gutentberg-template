@@ -25,63 +25,6 @@ main {
 body {
   margin: 0px;
   padding: 0px;
-  color: $color-black--bg;
-
-  .dark-mode {
-    color: $color-white;
-    background-color: $color-black--bg;
-
-    & * {
-      color: $color-white;
-      background-color: $color-black--bg;
-
-      & .nav__burger span {
-        background-color: $color-white !important;
-      }
-
-      & .nav__link,
-      & .nav__sub-menu,
-      & .nav__sub-menu * {
-        color: $color-white;
-      }
-
-      & .nav__link::after {
-        border-color: $color-white;
-      }
-
-      & .nav__link {
-        &:hover,
-        &:active,
-        &:focus {
-          &:after {
-            border-color: $color-brand;
-          }
-        }
-      }
-    }
-  }
-
-  * {
-    transition-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
-  }
-
-  &.no-scroll {
-    height: 100vh;
-    overflow: hidden;
-  }
-}
-
-@keyframes slide {
-  0% {
-    transform: translate3d(0, 0, 0);
-  }
-  100% {
-    transform: translate3d(-100vw, 0, 0);
-  }
-}
-
-figure {
-  margin: 0;
 }
 
 img,

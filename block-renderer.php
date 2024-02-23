@@ -7,11 +7,11 @@ function init_acf_fields()
     // check function exists
     if (function_exists('acf_register_block')) {
 
-        // register test block
+        // register typography block
         acf_register_block(array(
-            'name'              => 'test',
-            'title'             => __('Test'),
-            'description'       => __('Test'),
+            'name'              => 'typography',
+            'title'             => __('Typography'),
+            'description'       => __('Typography'),
             'render_callback'   => 'block_renderer',
             'category'          => 'formatting',
             'icon'              => 'admin-comments',
@@ -21,7 +21,7 @@ function init_acf_fields()
                 'jsx'             => true,
 
             ),
-            'keywords'          => array('Test'),
+            'keywords'          => array('Typography'),
             'enqueue_assets' => function () {
                 wp_enqueue_script(
                     'jquery',

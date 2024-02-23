@@ -3,29 +3,26 @@
 
 	<section class="footer">
 		<div class="container">
-			<div class="footer-wrapper">
-				<div class="left">
-					<a href="/work">Work</a>
-					<a href="/about">About</a>
-					<a href="/contact">Contact</a>
-					<a href="/chance">Chance</a>
-					<p>©</p><span>2023 All Rights Reserved</span>
-				</div>
-				<div class="right">
-					<img src="<?php echo get_stylesheet_directory_uri();?>/assets/images/icons/bird.svg"/>
-				</div>
+		<h1>FOOTER</h1>
+		<?php
+          wp_nav_menu(array(
+            'menu' => 'footer',
+            'theme_location' => 'navigation',
+            'menu_class' => 'navigation-menu',
+            'sort_order' => 'DESC'
+          ));
+          ?>
 
 		</div>
+	</section>
 
-	</section><!-- .site-info -->
-
-</footer><!-- #colophon -->
-
+</footer>
 
 
-</div><!-- .wrap -->
 
-</div><!-- #page -->
+</div>
+
+</div>
 
 <?php wp_footer(); ?>
 
