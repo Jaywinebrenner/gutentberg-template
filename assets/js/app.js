@@ -4,5 +4,6 @@
 import './text-reveal';
 import './error-404';
 import './navigation';
+import './hero';
 
 

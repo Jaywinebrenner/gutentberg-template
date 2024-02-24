@@ -30,7 +30,7 @@ function init_acf_fields()
                     true
                 );
                 wp_enqueue_script(
-                    'our-services-script',
+                    'typography',
                     get_template_directory_uri() . '/assets/js/typography.js',
                     array('wp-blocks', 'wp-element', 'wp-components', 'wp-i18n'),
                     '1.0',
@@ -71,7 +71,7 @@ function init_acf_fields()
             },
         ));
 
-        
+
     }
 }
 
